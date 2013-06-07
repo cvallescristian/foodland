@@ -1,0 +1,1 @@
+<h1>Estoy en el administrador de locales</h1>
