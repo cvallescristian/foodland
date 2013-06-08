@@ -1,6 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
+
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">    
@@ -19,9 +17,8 @@
     <link href="http://foodland.cl/foodland2/implementacion/admin/css/dashboard.css" rel="stylesheet">   
 
     <link href="http://foodland.cl/foodland2/implementacion/admin/css/custom.css" rel="stylesheet">
-</head>
-<body>
-	<div class="extra">
+
+	<div class="extra" style="margin-top:42px;">
 	<div class="container">
 		<div class="row">			
 			
@@ -55,5 +52,18 @@
 	</div> <!-- /container -->
 </div> <!-- /extra -->
 
+
+<script src="./js/jquery-1.8.3.min.js"></script>
+<script src="./js/jquery-ui-1.10.0.custom.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+<script src="./js/jquery.flot.js"></script>
+<script src="./js/jquery.flot.pie.js"></script>
+<script src="./js/jquery.flot.resize.js"></script>
+
+<script src="./js/Application.js"></script>
+
+<script src="./js/area.js"></script>
+<script src="./js/donut.js"></script>
 </body>
 </html>

@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<!-- saved from url=(0066)http://foodland.cl/foodland2/implementacion/admin/admin_inicio.php -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>Administracion Foodland</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">    
-    
-    <link href="http://jumpstartuidemo.com/themes/base/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://jumpstartuidemo.com/themes/base/css/bootstrap-responsive.min.css" rel="stylesheet">
-    
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
-    <link href="http://foodland.cl/foodland2/implementacion/admin/css/font-awesome.min.css" rel="stylesheet">   
-    
-    <link href="http://foodland.cl/foodland2/implementacion/admin/css/ui-lightness/jquery-ui-1.10.0.custom.min.css" rel="stylesheet">
-    
-    <link href="http://foodland.cl/foodland2/implementacion/admin/css/base-admin-2.css" rel="stylesheet">
-    <link href="http://foodland.cl/foodland2/implementacion/admin/css/base-admin-2-responsive.css" rel="stylesheet">
-    
-    <link href="http://foodland.cl/foodland2/implementacion/admin/css/dashboard.css" rel="stylesheet">   
 
-    <link href="http://foodland.cl/foodland2/implementacion/admin/css/custom.css" rel="stylesheet">
-</head>
-
-<body style="background: #DDDCE2 url(img/body_bg.jpg) repeat left top;">  
-    
-<?php include('header.php') ?>
 
 <div class="main">
     <div class="container">
@@ -170,23 +143,3 @@
     
 <br> <br> <br>
 
-<?php include('footer.php') ?>
-
-<script src="./js/jquery-1.8.3.min.js"></script>
-<script src="./js/jquery-ui-1.10.0.custom.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
-
-<script src="./js/jquery.flot.js"></script>
-<script src="./js/jquery.flot.pie.js"></script>
-<script src="./js/jquery.flot.resize.js"></script>
-
-<script src="./js/Application.js"></script>
-
-<script src="./js/area.js"></script>
-<script src="./js/donut.js"></script>
-
-  
-
-<a id="back-to-top" href="http://jumpstartuidemo.com/themes/base/index.html#top" style="display: none;">
-	<i class="icon-chevron-up"></i></a><a id="back-to-top" href="http://foodland.cl/foodland2/implementacion/admin/
-	admin_inicio.php#top" style="display: none;"><i class="icon-chevron-up"></i></a></body></html>
