@@ -1,7 +1,17 @@
 <?php 
 class home_model extends CI_Model{
 
-	function get_usuario(){
+  
+
+    function get_producto(){
+        $query = "select * from Producto";
+        $result = $this->db->query($query);
+        return $result->result();      
+
+    }	
+
+
+    function get_usuario(){
 		// Consulta SQL
         $this -> db -> select('*');
         $this -> db -> from('usuario');

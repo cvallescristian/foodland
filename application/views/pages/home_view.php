@@ -52,7 +52,14 @@
                             </span>
                             <div class="cnt">
                                 
-                                <h1><font><font>Sushi Tempura </font></font></h1>
+                                <h1><font><font>Sushi Tempura
+                                        <?php 
+                                            foreach ($productos as $producto){
+                                                echo "<pre>$producto->titulo_producto</pre>";
+                                                echo "<pre>$producto->precio</pre>";
+                                            }   
+                                         ?>
+                                 </font></font></h1>
                                 <strong><font><font>10 piezas de Sake roll : salmon tempurizado, queso crema cubierto con palta</font></font></strong>
                                 <a href="productos.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
                             </div>
