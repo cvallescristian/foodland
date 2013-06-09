@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 <div class="navbar transparent navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
          <a class="span3" href="admin_inicio.html" style="position:relative; left:20px;">
@@ -47,69 +49,65 @@
                   </li>
                    
                 </ul>
+=======
+        
+        <div id="myCarousel" class="carousel slide" style="top:-100px; height:600px; ">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+                <img src="<?= base_url();?>img/slider/1.jpg" width="100%">
+                
+>>>>>>> 62590bf02a19e66d33d237362229d252ee112336
             </div>
-        </div>
-    </div>
-</div>
+            <div class="item">
+                <img src="<?= base_url();?>img/slider/2.jpg" width="100%" >
 
-<!-- Carousel
-    Change your images in the main.css file.
-    ================================================== -->
-    <div id="header" class="carousel slide animated fadeIn">
-      <div class="carousel-inner">
-        <div class="item one" style="background: url(<?= base_url();?>/img/slider/2.jpg) no-repeat center center; background-size: cover;">
-          <div class="container animated fadeInUp">
-            <div class="carousel-caption">
-              <h1><font><font>Presentación de Lava</font></font></h1>
-              <p class="lead margin-40"><em><font><font>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</font></font></em></p>
-              <a class="btn-main" href="http://themearmada.com/demos/lava/multipage/about.html"><i class="icon-chevron-right"></i><font><font> Más</font></font></a>
+
             </div>
+            <div class="item"><img src="<?= base_url();?>img/slider/3.jpg" width="100%"></div>
           </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
-        <div class="item two active" style="background: url(<?= base_url();?>/img/slider/2.jpg) no-repeat center center; background-size: cover;">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1><font><font>Construido con Bootstrap</font></font></h1>
-              <p class="lead margin-40"><em><font><font>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</font></font></em></p>
-              <a class="btn-main" href="http://themearmada.com/demos/lava/multipage/services.html"><i class="icon-chevron-right"></i><font><font> Más</font></font></a>
-            </div>
-          </div>
-        </div>
-        <div class="item three" style="background: url(<?= base_url();?>/img/slider/3.jpg) no-repeat center center; background-size: cover;">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1><font><font>100% Responsive</font></font></h1>
-              <p class="lead margin-40"><em><font><font>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</font></font></em></p>
-              <a class="btn-main" href="http://themearmada.com/demos/lava/multipage/pricing.html"><i class="icon-chevron-right"></i><font><font> Más</font></font></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control hidden-phone" href="http://themearmada.com/demos/lava/multipage/index.html#header" data-slide="prev"><i class="icon-angle-left"></i></a>
-      <a class="right carousel-control hidden-phone" href="http://themearmada.com/demos/lava/multipage/index.html#header" data-slide="next"><i class="icon-angle-right"></i></a>
-    </div>
-    <!-- /.carousel -->
+        
+
+       
+        <!--################ WRAP START ################-->
 
 
             <!--################ HEADER START ################-->
+            
+         
 
-       <div id="wrap">  
-
-            <section class="portfolio">
+            <section class="portfolio" style="position:relative; top:-120px;">
 
                 <div class="container">
 
                     <div class="row">
+                        <div class="span12 center">
+                            <h1 class="big-heading"><font><font>Productos por llamado Telefonico</font></font></h1>
+                            <h4 class="sub-heading"><font><font>Te mostramos lo mejor de nuestra linea telefonica...</font></font></h4>
+                 </div>
+
                      
 
-                        <div class="span10 offset1 project" style="height:400px;">
+                        <div class="span12  project" style="height:400px;">
 
                             <img src="<?= base_url();?>img/slider/1.jpg"  class="project-img">
-                            <span class="overlay"></span>
+                            <span class="overlay"> 
+                                <img src="<?= base_url();?>img/locales/logo.png" alt="" style="width:120px; height:120px; position:relative; left:790px; top:20px;">
+                            </span>
                             <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-                                <strong><font><font>Esta es la descripción de su proyecto ... </font></font></strong>
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
+                                
+                                <h1><font><font>Sushi Tempura </font></font></h1>
+                                <strong><font><font>10 piezas de Sake roll : salmon tempurizado, queso crema cubierto con palta</font></font></strong>
+                                <a href="productos.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
                             </div>
 
 
@@ -121,14 +119,18 @@
 
                     <div class="row">
                         <br>
-                        <div class="span4 project">
+                        <div class="span6 project">
 
                             <img src="<?= base_url();?>img/slider/1.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
+                            <span class="overlay">
+                                <img src="<?= base_url();?>img/locales/logo.png" alt="" style="width:70px; height:70px; position:relative; left:350px; top:20px;">
+                            </span>
                             <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-                                <strong><font><font>Esta es la descripción de su proyecto ... </font></font></strong>
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
+                                <h5><font><font>Suhi Premiun</font></font></h5>
+                               <div class="span4 offset1"><strong><font><font>10 piezas de camarón acevichado relleno con lechuga, palta camarón marinado con limón.</font></font></strong>
+                                </div> 
+                                <a href="producto.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
+                                
                             </div>
 
 
@@ -137,14 +139,16 @@
 
                         </div>
 
-                        <div class="span4 project">
+                        <div class="span6 project">
 
                             <img src="<?= base_url();?>img/slider/2.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
+                            <span class="overlay">
+                                <img src="<?= base_url();?>img/locales/logo.png" alt="" style="width:70px; height:70px; position:relative; left:350px; top:20px;">
+                            </span>
                             <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-                                <strong><font><font>Esta es la descripción de su proyecto ... </font></font></strong>
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
+                                <h5><font><font>Sushi de pene</font></font></h5>
+                                <strong><font><font>10 piezas de camarón acevichado relleno con lechuga, palta camarón marinado con limón.</font></font></strong>
+                                <a href="producto.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
                             </div>
 
 
@@ -152,17 +156,7 @@
 
 
                         </div>
-                        <div class="span4 project">
-
-                            <img src="<?= base_url();?>img/slider/3.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-                                <strong><font><font>Esta es la descripción de su proyecto ... </font></font></strong>
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
-                            </div>
-
-                        </div>
+                       
                         
                 </div>
                 <div class="row">
@@ -172,8 +166,8 @@
                             <img src="<?= base_url();?>img/slider/1.jpg" alt="" class="project-img">
                             <span class="overlay"></span>
                             <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-                                <strong><font><font>Esta es la descripción de su proyecto ... </font></font></strong>
+                                <h5><font><font>Pizza Napolitana</font></font></h5>
+                                <strong><font><font>Queso, jamon. </font></font></strong>
                                 <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
                             </div>
 
@@ -188,8 +182,8 @@
                             <img src="<?= base_url();?>img/slider/2.jpg" alt="" class="project-img">
                             <span class="overlay"></span>
                             <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-                                <strong><font><font>Esta es la descripción de su proyecto ... </font></font></strong>
+                                <h5><font><font>Pizza Española</font></font></h5>
+                                <strong><font><font>pizza mas bebida</font></font></strong>
                                 <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
                             </div>
 
@@ -203,7 +197,133 @@
                             <img src="<?= base_url();?>img/slider/3.jpg" alt="" class="project-img">
                             <span class="overlay"></span>
                             <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
+                                <h5><font><font>Pizza Italiana</font></font></h5>
+                                <strong><font><font>Esta es la descripción de su proyecto ... </font></font></strong>
+                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
+                            </div>
+
+                        </div>
+                        
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <br><br>
+                    <div class="row">
+                        <div class="span12 center">
+                            <h1 class="big-heading"><font><font>Productos por en Valparaiso </font></font></h1>
+                            <h4 class="sub-heading"><font><font></font></font></h4>
+                            <br> <br>
+                 </div>
+
+                     
+
+                        <div class="span12  project" style="height:400px;">
+
+                            <img src="<?= base_url();?>img/slider/1.jpg"  class="project-img">
+                            <span class="overlay"> 
+                                <img src="<?= base_url();?>img/locales/logo.png" alt="" style="width:120px; height:120px; position:relative; left:790px; top:20px;">
+                            </span>
+                            <div class="cnt">
+                                
+                                <h1><font><font>Sushi Tempura </font></font></h1>
+                                <strong><font><font>10 piezas de Sake roll : salmon tempurizado, queso crema cubierto con palta</font></font></strong>
+                                <a href="productos.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <br>
+                        <div class="span6 project">
+
+                            <img src="<?= base_url();?>img/slider/1.jpg" alt="" class="project-img">
+                            <span class="overlay">
+                                <img src="<?= base_url();?>img/locales/logo.png" alt="" style="width:70px; height:70px; position:relative; left:350px; top:20px;">
+                            </span>
+                            <div class="cnt">
+                                <h5><font><font>Suhi Premiun</font></font></h5>
+                               <div class="span4 offset1"><strong><font><font>10 piezas de camarón acevichado relleno con lechuga, palta camarón marinado con limón.</font></font></strong>
+                                </div> 
+                                <a href="producto.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
+                                
+                            </div>
+
+
+
+
+
+                        </div>
+
+                        <div class="span6 project">
+
+                            <img src="<?= base_url();?>img/slider/2.jpg" alt="" class="project-img">
+                            <span class="overlay">
+                                <img src="<?= base_url();?>img/locales/logo.png" alt="" style="width:70px; height:70px; position:relative; left:350px; top:20px;">
+                            </span>
+                            <div class="cnt">
+                                <h5><font><font>Sushi de pene</font></font></h5>
+                                <strong><font><font>10 piezas de camarón acevichado relleno con lechuga, palta camarón marinado con limón.</font></font></strong>
+                                <a href="producto.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
+                            </div>
+
+
+
+
+
+                        </div>
+                       
+                        
+                </div>
+                <div class="row">
+                        <br>
+                        <div class="span4 project">
+
+                            <img src="<?= base_url();?>img/slider/1.jpg" alt="" class="project-img">
+                            <span class="overlay"></span>
+                            <div class="cnt">
+                                <h5><font><font>Pizza Napolitana</font></font></h5>
+                                <strong><font><font>Queso, jamon. </font></font></strong>
+                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                        <div class="span4 project">
+
+                            <img src="<?= base_url();?>img/slider/2.jpg" alt="" class="project-img">
+                            <span class="overlay"></span>
+                            <div class="cnt">
+                                <h5><font><font>Pizza Española</font></font></h5>
+                                <strong><font><font>pizza mas bebida</font></font></strong>
+                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="span4 project">
+
+                            <img src="<?= base_url();?>img/slider/3.jpg" alt="" class="project-img">
+                            <span class="overlay"></span>
+                            <div class="cnt">
+                                <h5><font><font>Pizza Italiana</font></font></h5>
                                 <strong><font><font>Esta es la descripción de su proyecto ... </font></font></strong>
                                 <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
                             </div>
@@ -219,22 +339,29 @@
 
 
             </section>
-            <section class="portfolio rev">
-
+            <section class="portfolio rev" style=" position:relative; top:-120px;">
+                
+                
                 <div class="container" id="portfolio">
+                    
                     <div class="row">
-                        <div class="span12">
+
+                        <div class="span12 center" style=" position:relative; top:-50px;">
+                            <h1 class="big-heading"><font><font>Productos por Categoria</font></font></h1>
+                        </div>
+
+                       <div class="span12">
                             <div id="filters_container">
                                 <ul id="filters">
-                                    <li><a href="index.html#" data-filter="*" class="active"><font><font>Sushi</font></font></a></li>
+                                    <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter="*" class="active"><font><font>Sushi</font></font></a></li>
                                     <li class="separator"><font><font>/</font></font></li>
-                                    <li><a href="index.html#" data-filter=".art"><font><font>Pizzas</font></font></a></li>
+                                    <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".art"><font><font>Pizzas</font></font></a></li>
                                     <li class="separator"><font><font>/</font></font></li>
-                                    <li><a href="index.html#" data-filter=".illustration"><font><font>Comida Rapida</font></font></a></li>
+                                    <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".illustration"><font><font>Comida Rapida</font></font></a></li>
                                     <li class="separator"><font><font>/</font></font></li>
-                                    <li><a href="index.html#" data-filter=".print"><font><font>Comida China</font></font></a></li>
+                                    <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".print"><font><font>Comida China</font></font></a></li>
                                     <li class="separator"><font><font>/</font></font></li>
-                                    <li><a href="index.html#" data-filter=".web"><font><font>Otros</font></font></a></li>
+                                    <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".web"><font><font>Otros</font></font></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -378,7 +505,8 @@
 
             </section>
 
-    </div>
+        
 
-    <!-- Pricing Option -->
+        <!--################ PUSH WILL KEEP THE FOOTER AT BOTTOM IF YOU WANT TO CREATE OTHER PAGES ################-->
 
+        <div id="push"></div>
