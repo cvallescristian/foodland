@@ -7,9 +7,9 @@ class Producto extends CI_Controller {
 	public function index()
 	{
 		
-		$this->load->view('templades/header');
+		$this->load->view('templades/header_producto');
 		$this->load->view('pages/producto_view');
-		$this->load->view('templades/footer');
+		$this->load->view('templades/footer_producto');
 	}
 }
 

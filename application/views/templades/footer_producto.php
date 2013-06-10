@@ -54,22 +54,13 @@
 
         <!--################ FOOTER END ################-->
 
-
-    <!-- Scripts -->
-    <script src="<?= base_url();?>js/jquery-latest.js"></script>
-    <script src="<?= base_url();?>js/theme.js"></script>
-
-    <script type="text/javascript" src="<?= base_url();?>js/index-slider.js"></script>	
-
-    
-
-        <script src="<?= base_url();?>js/modernizr.js"></script>
-        <script src="<?= base_url();?>js/bootstrap.js"></script>
-        <script src="<?= base_url();?>js/stellar.js"></script>
-        <script src="<?= base_url();?>js/jquery.isotope.min.js"></script>
-        <script src="<?= base_url();?>js/retina.js"></script>
-        <script src="<?= base_url();?>js/portfolio.js"></script>
+   
  <!-- Scripts producto -->
+
+ 
+    <script type="text/javascript" src="<?= base_url();?>js/js_producto/bootstrap.js"></script>
+    <script type="text/javascript" src="<?= base_url();?>js/js_producto/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="<?= base_url();?>js/js_producto/theme.js"></script>
 
 
 </body></html>
