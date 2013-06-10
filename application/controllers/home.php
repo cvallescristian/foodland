@@ -10,7 +10,7 @@ class Home extends CI_Controller {
 		$this->load ->model('home_model','uum');
 		$productos= $this->uum->get_producto();
 	//	echo "<pre>".print_r($productos,true)."</pre>";
-
+		
 		$data['productos']=$productos;
 		$this->load->view('templades/header',$data);
 		$this->load->view('pages/home_view',$data);

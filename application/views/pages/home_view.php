@@ -40,257 +40,80 @@
                         <div class="span12 center">
                             <h1 class="big-heading"><font><font>Productos por llamado Telefonico</font></font></h1>
                             <h4 class="sub-heading"><font><font>Te mostramos lo mejor de nuestra linea telefonica...</font></font></h4>
-                 </div>
-
-                     
-
-                        <div class="span12  project" style="height:400px;">
-
-                            <img src="<?= base_url();?>img/slider/1.jpg"  class="project-img">
-                            <span class="overlay"> 
-                                <img src="<?= base_url();?>img/locales/logo.png" alt="" style="width:120px; height:120px; position:relative; left:790px; top:20px;">
-                            </span>
-                            <div class="cnt">
-                                
-                                <h1><font><font>Sushi Tempura
-                                        <?php 
-                                            foreach ($productos as $producto){
-                                                echo "<pre>$producto->titulo_producto</pre>";
-                                                echo "<pre>$producto->precio</pre>";
-                                            }   
-                                         ?>
-                                 </font></font></h1>
-                                <strong><font><font>10 piezas de Sake roll : salmon tempurizado, queso crema cubierto con palta</font></font></strong>
-                                <a href="productos.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
-                            </div>
-
-
-
-
-
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <br>
-                        <div class="span6 project">
-
-                            <img src="<?= base_url();?>img/slider/1.jpg" alt="" class="project-img">
-                            <span class="overlay">
-                                <img src="<?= base_url();?>img/locales/logo.png" alt="" style="width:70px; height:70px; position:relative; left:350px; top:20px;">
+                     <?php 
+                        $cont= 0;
+                        foreach ($productos as $producto) {
+                            $id= $producto->id_producto;
+                            $id_local=$producto->id_local;
+                        
+                        if($cont==0){
+                      ?>
+                        <!-- Inicio Bloque Grande-->
+                        <div class="span12  project" style="height:400px;">
+                            <!-- Imagen de fondo-->
+                            <img src="<?= base_url();?>img/locales/<?=$id_local?>_<?=$id?>.jpg"  class="project-img"> 
+                            <!-- Logo del local-->
+                            <span class="overlay"> 
+                                <img src="<?= base_url();?>img/locales/<?=$id_local?>_logo.png" alt="" style="width:120px; height:120px; position:relative; left:790px; top:20px;">
                             </span>
+
                             <div class="cnt">
-                                <h5><font><font>Suhi Premiun</font></font></h5>
-                               <div class="span4 offset1"><strong><font><font>10 piezas de camarón acevichado relleno con lechuga, palta camarón marinado con limón.</font></font></strong>
+                                <!-- Titulo Del producto-->
+                                <h1><font><font><?= $producto->titulo_producto ?></font></font></h1>
+                                <!-- Descripcion del producto -->
+                                <strong><font><font><?= $producto->descrip_producto?></font></font></strong>
+                                 <!-- Precio Del producto-->
+                                 <h1><font><font> <?= $producto->precio  ?></font></font></h1>
+
+                                <a href="productos.php" class="btn btn-large"><font><font>Ver detalles</font></font></a>
+                            </div>
+                        </div>
+                        <!-- Termino Bloque Grande-->
+                        
+                        <?php 
+                          
+                         }else{
+
+                            ?>
+                                                 <!-- Inicio bloque chico-->
+                        <div class="span6 project" style="height: 280px;">
+                            <!-- imagen de fondo -->
+                            <img src="<?= base_url();?>img/locales/<?=$id_local."_".$id?>.jpg" alt="" class="project-img">
+                            <!-- logo del producto -->
+                            <span class="overlay">
+                                <img src="<?= base_url();?>img/locales/<?=$id_local?>_logo.png" alt="" style="width:70px; height:70px; position:relative; left:350px; top:20px;">
+                            </span>
+
+                            <div class="cnt">
+                                <!-- Titulo producto -->
+                                <h5><font><font><?=$producto->titulo_producto?></font></font></h5>
+
+                                <!-- Descripcion Producto -->
+                               <div class="span4 offset1"><strong><font><font><?= $producto->descrip_producto; ?></font></font></strong>
+                                <!-- Precio producto -->
+                                <h5><font><font>$ <?=$producto->precio?> </font></font></h5>
                                 </div> 
                                 <a href="producto.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
                                 
                             </div>
-
-
-
-
-
                         </div>
+                        <!-- Termino bloque chico -->
 
-                        <div class="span6 project">
+                            <?php
 
-                            <img src="<?= base_url();?>img/slider/2.jpg" alt="" class="project-img">
-                            <span class="overlay">
-                                <img src="<?= base_url();?>img/locales/logo.png" alt="" style="width:70px; height:70px; position:relative; left:350px; top:20px;">
-                            </span>
-                            <div class="cnt">
-                                <h5><font><font>Sushi de pene</font></font></h5>
-                                <strong><font><font>10 piezas de camarón acevichado relleno con lechuga, palta camarón marinado con limón.</font></font></strong>
-                                <a href="producto.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
-                            </div>
+                        }
+                        $cont++;
+                        if($cont==3){
+                            $cont=0;
+                        }
 
-
-
-
-
-                        </div>
-                       
-                        
-                </div>
-                <div class="row">
-                        <br>
-                        <div class="span4 project">
-
-                            <img src="<?= base_url();?>img/slider/1.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Pizza Napolitana</font></font></h5>
-                                <strong><font><font>Queso, jamon. </font></font></strong>
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-
-                        <div class="span4 project">
-
-                            <img src="<?= base_url();?>img/slider/2.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Pizza Española</font></font></h5>
-                                <strong><font><font>pizza mas bebida</font></font></strong>
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-                        <div class="span4 project">
-
-                            <img src="<?= base_url();?>img/slider/3.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Pizza Italiana</font></font></h5>
-                                <strong><font><font>Esta es la descripción de su proyecto ... </font></font></strong>
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
-                            </div>
-
-                        </div>
-                        
-
-
-
-
+                            }
+                         ?>
                     </div>
-                </div>
-
-
-                <div class="container">
-                    <br><br>
-                    <div class="row">
-                        <div class="span12 center">
-                            <h1 class="big-heading"><font><font>Productos por en Valparaiso </font></font></h1>
-                            <h4 class="sub-heading"><font><font></font></font></h4>
-                            <br> <br>
-                 </div>
-
-                     
-
-                        <div class="span12  project" style="height:400px;">
-
-                            <img src="<?= base_url();?>img/slider/1.jpg"  class="project-img">
-                            <span class="overlay"> 
-                                <img src="<?= base_url();?>img/locales/logo.png" alt="" style="width:120px; height:120px; position:relative; left:790px; top:20px;">
-                            </span>
-                            <div class="cnt">
-                                
-                                <h1><font><font>Sushi Tempura </font></font></h1>
-                                <strong><font><font>10 piezas de Sake roll : salmon tempurizado, queso crema cubierto con palta</font></font></strong>
-                                <a href="productos.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <br>
-                        <div class="span6 project">
-
-                            <img src="<?= base_url();?>img/slider/1.jpg" alt="" class="project-img">
-                            <span class="overlay">
-                                <img src="<?= base_url();?>img/locales/logo.png" alt="" style="width:70px; height:70px; position:relative; left:350px; top:20px;">
-                            </span>
-                            <div class="cnt">
-                                <h5><font><font>Suhi Premiun</font></font></h5>
-                               <div class="span4 offset1"><strong><font><font>10 piezas de camarón acevichado relleno con lechuga, palta camarón marinado con limón.</font></font></strong>
-                                </div> 
-                                <a href="producto.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
-                                
-                            </div>
-
-
-
-
-
-                        </div>
-
-                        <div class="span6 project">
-
-                            <img src="<?= base_url();?>img/slider/2.jpg" alt="" class="project-img">
-                            <span class="overlay">
-                                <img src="<?= base_url();?>img/locales/logo.png" alt="" style="width:70px; height:70px; position:relative; left:350px; top:20px;">
-                            </span>
-                            <div class="cnt">
-                                <h5><font><font>Sushi de pene</font></font></h5>
-                                <strong><font><font>10 piezas de camarón acevichado relleno con lechuga, palta camarón marinado con limón.</font></font></strong>
-                                <a href="producto.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-                       
-                        
-                </div>
-                <div class="row">
-                        <br>
-                        <div class="span4 project">
-
-                            <img src="<?= base_url();?>img/slider/1.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Pizza Napolitana</font></font></h5>
-                                <strong><font><font>Queso, jamon. </font></font></strong>
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-
-                        <div class="span4 project">
-
-                            <img src="<?= base_url();?>img/slider/2.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Pizza Española</font></font></h5>
-                                <strong><font><font>pizza mas bebida</font></font></strong>
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-                        <div class="span4 project">
-
-                            <img src="<?= base_url();?>img/slider/3.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Pizza Italiana</font></font></h5>
-                                <strong><font><font>Esta es la descripción de su proyecto ... </font></font></strong>
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
-                            </div>
-
-                        </div>
-                        
-
-
-
-
-                    </div>
-                </div>
-
+        
+                
 
             </section>
             <section class="portfolio rev" style=" position:relative; top:-120px;">
@@ -309,7 +132,7 @@
                                 <ul id="filters">
                                     <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter="*" class="active"><font><font>Sushi</font></font></a></li>
                                     <li class="separator"><font><font>/</font></font></li>
-                                    <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".art"><font><font>Pizzas</font></font></a></li>
+                                    <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".pizza"><font><font>Pizzas</font></font></a></li>
                                     <li class="separator"><font><font>/</font></font></li>
                                     <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".illustration"><font><font>Comida Rapida</font></font></a></li>
                                     <li class="separator"><font><font>/</font></font></li>
@@ -322,7 +145,7 @@
                     </div>        
 
                     <div class="row isotope" id="portfolio-container" style="position: relative; overflow: hidden; height: 704px;">
-                        <div class="span3 project art isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                        <div class="span3 project pizza isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
 
                             <img src="<?= base_url();?>img/slider/1.jpg" alt="" class="project-img">
                             <span class="overlay"></span>
