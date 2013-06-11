@@ -48,7 +48,6 @@
                 <ul class="nav pull-right" style="position:relavite; top:-10px;">
                         
                         <li><a href="" class="active">INICIO</a></li>
-                        <li><a href="">MAPA LOCALES</a></li>
                         <li class="dropdown">
                             <a href="http://cleancanvas.herokuapp.com/#" class="dropdown-toggle" data-toggle="dropdown">
                                 PRODUCTOS

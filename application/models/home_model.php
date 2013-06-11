@@ -9,7 +9,11 @@ class home_model extends CI_Model{
         return $result->result();      
 
     }	
-
+    function get_categoria(){
+        $query="select * from Tipo_producto";
+         $result = $this->db->query($query);
+         return $result->result();    
+    }
 
     function get_usuario(){
 		// Consulta SQL
