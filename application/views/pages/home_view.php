@@ -9,27 +9,22 @@
           <div class="carousel-inner">
             <div class="active item" style="background: url(<?= base_url();?>img/slider/1.jpg);background-size: 100%;">
                 <div class="container" >
-                    <div class="row" style="margin-top:160px; background:rgba(193, 193, 193, 0.76)">
+                    <div class="row" style="margin-top:160px; background:rgba(7, 7, 7, 0.68)">
                         <div class="span10">
                              <div class="span5 offset3" style="padding:30px;">
                                 <form class="form-search" style="margin-bottom: 0px;">
-                                  <input type="text" class="input-xlarge search-query" style="height: 35px; font-size: 24px;" placeholder="¿Qu&eacute quieres comer?">
+                                  <input type="text" class="input-xlarge search-query" style="height: 35px; font-size: 24px;" placeholder="¿Qu&eacute quieres comer?" required>
                                   <button type="submit" class="btn btn-danger">Search</button>
                                 </form>
                             </div>
 
                             <div class="span10 offset1" style="text-align:left;padding: 20px;">
                                 <h2>¿D&oacutende est&aacutes?</h2>
-                               
-                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
-                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
-                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
-                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
-                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
-                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
-                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
-                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
-                                
+                               <?php foreach ($sector_entregas as $sector_entrega) {
+                                   
+                                ?>
+                                <div class="span2"><h4><a href="home_view?sector=<?= $sector_entrega->nombre_sector_entrega?>"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
+                                <?php } ?>
                             </div>
                         </div>
                        

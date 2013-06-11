@@ -14,7 +14,11 @@ class home_model extends CI_Model{
          $result = $this->db->query($query);
          return $result->result();    
     }
-
+    function get_sector_entrega(){
+        $query="select * from Sector_entrega";
+         $result = $this->db->query($query);
+         return $result->result();    
+    }
     function get_usuario(){
 		// Consulta SQL
         $this -> db -> select('*');
