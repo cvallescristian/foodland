@@ -213,7 +213,7 @@ hr {
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;;
-    min-height: 300px;
+    min-height: 150px;
     text-align:center;
     color:black;
 }

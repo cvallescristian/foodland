@@ -14,19 +14,56 @@
 	
 
 	<!-- Portfolio Carousel -->
-		<div id="example">
 			<div class="container">
 				<div class="row">
-					<div class="span2"></div>
-					<div class="span8">
-						
+					
+					<div class="row ">
+					        <div class="span12 ">
+					            <div class="padding-large">
+					                <div class="span10">
+					                    <img src="" style="position:absolute; left:800px; width:130px; height:130px;">
+					                </div>
+					                <div class="span10">
+					                    <h1>Detalles de compra</h1>
 
-					</div><!-- span8 -->
-					<div class="span2"></div>
+					                </div>
+					                <div class="span5">
+					                    <br>
+					                    <h2>Ingredientes</h2>
+					                    <h4><p></p>
+					                    </h4> 
+					                    <h2>Descripcion</h2>
+					                    <h4>
+					                    <p>Poducto disponible solo para placeres, baron, recreo </p>
+					                    </h4>
+
+					                    
+
+					                </div>
+
+					                <div class="span5 ">
+					                    <br>
+
+					                    <h2>Sobre el Local</h2>
+					                    <h4>
+					                        <p> <b>Nombre del local:</b>
+					            </br>
+					            </br>
+					            <b>Direccion: </b>
+					            </br>
+					            </br>
+					          
+					            </br></br></p>
+					                    </h4>
+					                    
+					                   
+					                </div>
+					            </div>
+					        </div>
+					</div>
 				</div><!-- row -->
 			</div><!-- container -->
-		</div><!-- example -->
-		
+				
 	
 
 	<!-- Bottom Map -->
