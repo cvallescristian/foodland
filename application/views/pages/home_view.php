@@ -145,6 +145,7 @@
                     </div>        
 
                     <div class="row isotope" id="portfolio-container" style="position: relative; overflow: hidden; height: 704px;">
+                       
                         <div class="span3 project pizza isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
 
                             <img src="<?= base_url();?>img/slider/1.jpg" alt="" class="project-img">
