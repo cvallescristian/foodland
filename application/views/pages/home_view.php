@@ -7,16 +7,40 @@
           </ol>
           <!-- Carousel items -->
           <div class="carousel-inner">
-            <div class="active item">
-                <img src="<?= base_url();?>img/slider/1.jpg" width="100%">
+            <div class="active item" style="background: url(<?= base_url();?>img/slider/1.jpg);background-size: 100%;">
+                <div class="container" >
+                    <div class="row" style="margin-top:160px; background:rgba(193, 193, 193, 0.76)">
+                        <div class="span10">
+                             <div class="span5 offset3" style="padding:30px;">
+                                <form class="form-search" style="margin-bottom: 0px;">
+                                  <input type="text" class="input-xlarge search-query" style="height: 35px; font-size: 24px;" placeholder="¿Qu&eacute quieres comer?">
+                                  <button type="submit" class="btn btn-danger">Search</button>
+                                </form>
+                            </div>
+
+                            <div class="span10 offset1" style="text-align:left;padding: 20px;">
+                                <h2>¿D&oacutende est&aacutes?</h2>
+                               
+                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
+                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
+                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
+                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
+                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
+                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
+                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
+                                <div class="span2"><h4><a href="">Viña del mar</a></h4></div>
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background: url(<?= base_url();?>img/slider/2.jpg);background-size: 100%;" >
                 
             </div>
-            <div class="item">
-                <img src="<?= base_url();?>img/slider/2.jpg" width="100%" >
-
-
+            <div class="item" style="background: url(<?= base_url();?>img/slider/3.jpg);background-size: 100%;">
             </div>
-            <div class="item"><img src="<?= base_url();?>img/slider/3.jpg" width="100%"></div>
           </div>
           <!-- Carousel nav -->
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>

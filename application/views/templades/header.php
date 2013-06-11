@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="http://responsivewebinc.com/premium/metroman/style/font-awesome.css">
 
         <link rel="stylesheet" href="<?= base_url();?>css/slider-main.css">
-        <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
+       
         <link href="<?= base_url();?>css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/jquery.fancybox.css" media="all">
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/jquery.fancybox-thumbs.css">
@@ -29,6 +29,7 @@
         <link href="<?= base_url();?>css/isotope.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/style.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/style-responsive.css" rel="stylesheet" type="text/css">
+         <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
        
 
     
