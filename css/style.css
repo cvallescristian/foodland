@@ -20,7 +20,7 @@ html,body {
     height:100%;
     /* The html and body elements cannot have any padding or margin. */
     font-family:'Open Sans', sans-serif;
-    background-color:#f4f5f6;
+    background-color:white;
 }
 
 /*#features,#support,#testimonials,#news, #bottom{background-color: #f4f5f6;}*/

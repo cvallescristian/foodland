@@ -13,62 +13,82 @@
 		</div><!-- projectwrap -->
 	
 
-	<!-- Portfolio Carousel -->
-			<div class="container">
-				<div class="row">
-					
-					<div class="row ">
-					        <div class="span12 ">
-					            <div class="padding-large">
-					                <div class="span10">
-					                    <img src="" style="position:absolute; left:800px; width:130px; height:130px;">
-					                </div>
-					                <div class="span10">
-					                    <h1>Detalles de compra</h1>
+	<div class="container" style="position:relative; top:50px;">
+   
 
-					                </div>
-					                <div class="span5">
-					                    <br>
-					                    <h2>Ingredientes</h2>
-					                    <h4><p></p>
-					                    </h4> 
-					                    <h2>Descripcion</h2>
-					                    <h4>
-					                    <p>Poducto disponible solo para placeres, baron, recreo </p>
-					                    </h4>
+    
 
-					                    
+    <div class="row">
+        <div class="span8 white-panel no-padding offset1">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="https://www.gathercontent.com/#home" data-toggle="tab" class="gc-icon agency-icon"><font><font>Producto</font></font></a></li>
+                <li><a href="https://www.gathercontent.com/#profile" data-toggle="tab" class="gc-icon enterprise-icon"><font><font>Detalles</font></font></a></li>
+                            </ul> <!-- End tabs -->
 
-					                </div>
+            <div class="tab-content">
+                <div class="tab-pane" id="home">
+                    <div class="span5">
+                        <h2><font><font>Pizza Española</font></font></h2>
 
-					                <div class="span5 ">
-					                    <br>
+                        <ul class="green-checks">
+                            <li><font><font>Colabore con su equipo y clientes</font></font></li>
+                            <li><font><font>Mantenga contenido estructurado, en un lugar centralizado</font></font></li>
+                            <li><font><font>Control de cambios, y ver quién ha hecho qué</font></font></li>
+                            <li><font><font>Exportación de contenido directamente en el CMS</font></font></li>
+                            <li><font><font>Ahorrar enormes cantidades de tiempo y dinero</font></font></li>
+                        </ul>
 
-					                    <h2>Sobre el Local</h2>
-					                    <h4>
-					                        <p> <b>Nombre del local:</b>
-					            </br>
-					            </br>
-					            <b>Direccion: </b>
-					            </br>
-					            </br>
-					          
-					            </br></br></p>
-					                    </h4>
-					                    
-					                   
-					                </div>
-					            </div>
-					        </div>
-					</div>
-				</div><!-- row -->
-			</div><!-- container -->
+                        <a href="https://www.gathercontent.com/signup" class="btn btn-warning btn-large"><font><font>Comience ahora</font></font></a>
+
+                       
+                    </div>
+                    <div class="span5  pull-right">
+                        <img src="<?= base_url();?>img/slider/1.jpg" class="img-tilt">
+                        <p class="small-text pull-right"><font><font>Agencia Bloom, domar el caos contenido.</font></font></p>
+                    </div>
+                 </div>
+
+                <div class="tab-pane active" id="profile">
+                    <div class="span5">
+                        <img src="<?= base_url();?>img/slider/1.jpg" class="img-tilt">
+                    </div>
+                    <div class="span5 pull-right">
+                        <h2><font><font>Detalles</font></font></h2>
+
+                        <ul class="green-checks">
+                            <li><font><font>Colaborar y brindar orientación</font></font></li>
+                            <li><font><font>Mantenga contenido estructurado, en un lugar centralizado</font></font></li>
+                            <li><font><font>Control de cambios, y ver quién ha hecho qué</font></font></li>
+                            <li><font><font>Enviar automáticamente recordatorios de plazos</font></font></li>
+                            <li><font><font>Ahorrar enormes cantidades de tiempo y dinero</font></font></li>
+                        </ul>
+
+                       
+
+                       
+                    </div>
+                </div>
+
+            </div> <!-- End .tab-content -->
+        </div>
+
+
+
+
+    </div>
+
+
+</div>
 				
 	
 
 	<!-- Bottom Map -->
+
+	<div class="container" style="position:relative; top:50px;">
+   
 		<div id="map"><iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.cl/maps?hl=es&amp;ie=UTF8&amp;ll=-33.037306,-71.590862&amp;spn=0.087639,0.154324&amp;t=m&amp;z=13&amp;output=embed"></iframe></div>
 
+	</div>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

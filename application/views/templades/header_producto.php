@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0059)http://uexel.us/themes/purity/multipage/wide/portfolio.html -->
-<html lang="en" style="overflow-y: hidden;">
+<html lang="en">
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -16,6 +16,7 @@
         <link rel="stylesheet" id="prettyphoto-css" href="<?= base_url();?>css/css_productos/prettyPhoto.css" type="text/css" media="all">
         <link href="<?= base_url();?>css/bootstrap-responsive.css" rel="stylesheet">
         <link href="http://wbpreview.com/previews/WB0225S29/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
        
 
     <style>
