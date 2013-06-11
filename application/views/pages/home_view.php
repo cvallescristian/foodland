@@ -61,8 +61,8 @@
                                 <!-- Descripcion del producto -->
                                 <strong><font><font><?= $producto->descrip_producto?></font></font></strong>
                                  <!-- Precio Del producto-->
-                                 <h1><font><font> <?= $producto->precio  ?></font></font></h1>
-
+                                 <h1><font><font> $<?=  $producto->precio  ?></font></font></h1>
+                                <br><br>
                                 <a href="productos.php" class="btn btn-large"><font><font>Ver detalles</font></font></a>
                             </div>
                         </div>
@@ -112,6 +112,7 @@
                 
 
             </section>
+            <!--INICIO PRODUCTOS POR CATEGORIA-->
             <section class="portfolio rev" style=" position:relative; top:-120px;">
                 
                 
@@ -126,157 +127,54 @@
                        <div class="span12">
                             <div id="filters_container">
                                 <ul id="filters">
-                                    <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter="*" class="active"><font><font>Sushi</font></font></a></li>
-                                    <li class="separator"><font><font>/</font></font></li>
-                                    <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".pizza"><font><font>Pizzas</font></font></a></li>
-                                    <li class="separator"><font><font>/</font></font></li>
-                                    <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".illustration"><font><font>Comida Rapida</font></font></a></li>
-                                    <li class="separator"><font><font>/</font></font></li>
-                                    <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".print"><font><font>Comida China</font></font></a></li>
-                                    <li class="separator"><font><font>/</font></font></li>
-                                    <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".web"><font><font>Otros</font></font></a></li>
+                                      <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter="*" class="active"><font><font>TODOS</font></font></a></li>
+                                    
+                                    <?php 
+                                        foreach ($tipo_productos as $tproducto ) {
+                                            ?>
+                                            <li class="separator"><font><font>/</font></font></li>
+                                            <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".<?= $tproducto->nombre_tipo_producto;?>"><font><font><?= $tproducto->nombre_tipo_producto;?></font></font></a></li>
+                                            <?php
+                                        }
+                                     ?>
                                 </ul>
                             </div>
                         </div>
-                    </div>        
+                    </div>
 
                     <div class="row isotope" id="portfolio-container" style="position: relative; overflow: hidden; height: 704px;">
-                        <div class="span3 project pizza isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                    <?php 
+                         foreach ($tipo_productos as $tproducto ) {
+                        
+                     ?>
+                           
+                            <?php  
+                                $tamaño=0;
+                                foreach ($productos as $producto) { 
+                                if($producto->id_tipo_producto == $tproducto->id_tipo_producto){
+                            ?>
+                            <div class="span3 project <?= $tproducto->nombre_tipo_producto; ?> isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(<?= $tamaño;?>px, 0px, 0px);">
+                                <img src="<?= base_url();?>img/locales/<?= $producto->id_local?>_<?= $producto->id_producto;?>.jpg" alt="" class="project-img">
+                                <span class="overlay"></span>
+                                <div class="cnt">
+                                    <h5><font><font><?= $producto->titulo_producto; ?></font></font></h5>
 
-                            <img src="<?= base_url();?>img/slider/1.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-
-                                <a href="" class="btn btn-normal"><font><font>Ver más detalles</font></font></a>
+                                    <a href="" class="btn btn-normal"><font><font>Ver más detalles</font></font></a>
+                                </div>
                             </div>
-
-
-
-
-
-                        </div>
-
-
-
-                        <div class="span3 project web isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(300px, 0px, 0px);">
-
-                            <img src="<?= base_url();?>img/slider/2.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-
-                                <a href="" class="btn btn-normal"><font><font>Ver más detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-
-                        <div class="span3 project illustration isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(600px, 0px, 0px);">
-
-                            <img src="<?= base_url();?>img/slider/3.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-
-                                <a href="" class="btn btn-normal"><font><font>Ver más detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-
-                        <div class="span3 project web print isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(900px, 0px, 0px);">
-
-                            <img src="<?= base_url();?>img/slider/5.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver más detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-                        <div class="span3 project art print isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 286px, 0px);">
-
-                            <img src="<?= base_url();?>img/slider/3.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver más detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-                        <div class="span3 project art web illustration isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(600px, 286px, 0px);">
-
-                            <img src="<?= base_url();?>img/slider/1.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver más detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-                        <div class="span3 project print web isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(300px, 418px, 0px);">
-
-                            <img src="<?= base_url();?>img/slider/2.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-
-                                <a href="" class="btn btn-normal"><font><font>Ver más detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-                        <div class="span3 project  web isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(900px, 418px, 0px);">
-
-                            <img src="<?= base_url();?>img/slider/4.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5><font><font>Proyecto</font></font></h5>
-
-                                <a href="http://uexel.us/themes/purity/multipage/wide/single-portfolio.html" class="btn btn-normal"><font><font>Ver más detalles</font></font></a>
-                            </div>
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-                    </div>
+                            <?php 
+                                $tamaño=$tamaño+300;
+                                }
+                            }
+                             ?>
+                    <?php 
+                    } 
+                    ?>
                 </div>
 
 
             </section>
+            <!--INICIO PRODUCTOS POR CATEGORIA-->
 
         
 
