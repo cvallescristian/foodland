@@ -14,7 +14,7 @@
                              <div class="span5 offset3" style="padding:30px;">
                                 <form class="form-search" style="margin-bottom: 0px;">
                                   <input type="text" class="input-xlarge search-query" style="height: 35px; font-size: 24px;" placeholder="¿Qu&eacute quieres comer?" required>
-                                  <button type="submit" class="btn btn-danger">Search</button>
+                                  <button type="submit" class="btn btn-danger" style="height: 44px;">Buscar</button>
                                 </form>
                             </div>
 
@@ -92,7 +92,7 @@
                                  <!-- Precio Del producto-->
                                  <h1><font><font> $<?=  $producto->precio  ?></font></font></h1>
                                 <br><br>
-                                <a href="productos.php" class="btn btn-large"><font><font>Ver detalles</font></font></a>
+                                <a href="productos.php" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
                             </div>
                         </div>
                         <!-- Termino Bloque Grande-->
@@ -120,7 +120,7 @@
                                 <!-- Precio producto -->
                                 <h5><font><font>$ <?=$producto->precio?> </font></font></h5>
                                 </div> 
-                                <a href="producto.php" class="btn btn-normal"><font><font>Ver detalles</font></font></a>
+                                <a href="producto.php" class="btn btn-warning"><font><font>Ver detalles</font></font></a>
                                 
                             </div>
                         </div>
@@ -142,10 +142,10 @@
 
             </section>
             <!--INICIO PRODUCTOS POR CATEGORIA-->
-            <section class="portfolio rev" style=" position:relative; top:-120px;">
+            <section class="portfolio rev" style=" position:relative; top:-120px;" >
                 
                 
-                <div class="container" id="portfolio">
+                <div class="container" id="portfolio" >
                     
                     <div class="row">
 
@@ -188,7 +188,7 @@
                                 <div class="cnt">
                                     <h5><font><font><?= $producto->titulo_producto; ?></font></font></h5>
 
-                                    <a href="" class="btn btn-normal"><font><font>Ver más detalles</font></font></a>
+                                    <a href="" class="btn btn-warning"><font><font>Ver más detalles</font></font></a>
                                 </div>
                             </div>
                             <?php 

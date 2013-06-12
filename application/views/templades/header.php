@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0059)http://uexel.us/themes/purity/multipage/wide/portfolio.html -->
-<html lang="en" style="overflow-y: hidden;">
+<html lang="en" >
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-
-
-
-       
 
         <!--Le HTML5 shim, for IE6-8 support of HTML5 elements--> 
         <!--[if lt IE 9]>
@@ -48,17 +44,18 @@
           <div class="nav-collapse">
                 <ul class="nav pull-right" style="position:relavite; top:-10px;">
                         
-                        <li><a href="" class="active">INICIO</a></li>
+                        <li><a href="<?= base_url();?>" class="active">Inicio</a></li>
+                        <li><a href="#portfolio">Categoria Productos</a></li>
                         <li class="dropdown">
-                            <a href="http://cleancanvas.herokuapp.com/#" class="dropdown-toggle" data-toggle="dropdown">
-                                PRODUCTOS
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                Sector reparto
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="">Pizza</a></li>
-                                <li><a href="">Sushi</a></li>
-                                <li><a href="">China</a></li>
-                            
+                                <?php foreach ($sector_entregas as $s) {
+                                ?>    
+                                <li><a href="<?= base_url();?>home?sector=<?= $s->id_sector_entrega  ?>"><?= $s->nombre_sector_entrega ?></a></li>
+                                <?php }?>
                             </ul>
                         </li>
                         
