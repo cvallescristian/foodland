@@ -25,32 +25,31 @@
 					
 					<!-- Formulario del Login -->
 					<fieldset>
-						<form class="form-horizontal" action="<?= base_url(); ?>admin_local">
-						  <div class="control-group">
-						  	<label class="control-label" for="inputNombre">Nombre</label>
-						    <div class="controls">
-						      <input type="text" id="inputNombre" placeholder="ej: Cristian Valles" value="">
-						    
-						    </div>
-						  </div>
-
-						  <div class="control-group">
-						    <label class="control-label" for="inputEmail">Email</label>
-						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej: ejemplo@ejemplo.cl" value="">
-						    
-						    </div>
-						  </div>
-						  <div class="control-group">
-						    <label class="control-label" for="inputEmail"></label>
-						    <div class="controls">						    
-						    </div>
-						    <div class="control-group" style="margin-right: 60px;">
-						    <div class="controls">
-						      <button type="submit" class="btn btn-small btn-block btn-warning" style="width:100px">Editar</button>
-						    </div>
-						  </div>
-						  </div>						  
+						<form class="form-horizontal">
+							<!-- Email -->
+	  						<div class="control-group">
+						    	<label class="control-label" for="inputEmail">Email</label>
+						    	<div class="controls">
+						      		<input type="text" id="inputEmail">
+						    	</div>
+						  	</div>
+							<!-- Pass -->
+						  	<div class="control-group">
+						    	<label class="control-label" for="inputNombre">Contraseña</label>
+						    	<div class="controls">
+						      		<input type="password" id="inputNombre">
+						        </div>
+						  	</div>
+							<!-- Enviar -->
+						  	<div class="control-group">
+							    	<label class="control-label" for="inputEmail"></label>
+							    <div class="controls"></div>
+							    <div class="control-group" style="margin-right: 60px;">
+							    	<div class="controls">
+						      			<button type="submit" class="btn btn-small btn-block btn-warning" style="width:100px">Editar</button>
+						    		</div>
+						  		</div>
+						  	</div>						  
 					</form>
 				</fieldset>
 				</div> <!-- /widget-content -->

@@ -1,5 +1,3 @@
-
-
 <div class="main">
     <div class="container">
       <div class="row">     	
@@ -18,10 +16,8 @@
 								<th>Ciudad</th>
 								<th>Teléfono</th>
 								<th>Email</th>
-								<th>Sector reparto</th>
 								<th>Borrar</th>
 								<th>Editar</th>
-
 							</tr>
 						</thead>
 						<tbody>
@@ -31,7 +27,6 @@
 								<td>Valparaíso</td>										
 								<td>11111111</td>
 								<td>contacto@metpizza.cl</td>
-								<td></td>
 								<td> <a href class="btn btn-danger">Borrar</a></td>
 								<td> <a href class="btn btn-success">Editar</a></td>
 							</tr>
@@ -41,7 +36,6 @@
 								<td>Valparaíso</td>										
 								<td>11111111</td>
 								<td>contacto@met.cl</td>
-								<td></td>
 								<td> <a href class="btn btn-danger">Borrar</a></td>
 								<td> <a href class="btn btn-success">Editar</a></td>
 							</tr>
@@ -51,7 +45,6 @@
 								<td>Valparaíso</td>
 								<td>11111111</td>
 								<td>contacto@xl.cl</td>
-								<td></td>
 								<td> <a href class="btn btn-danger">Borrar</a></td>
 								<td> <a href class="btn btn-success">Editar</a></td>
 							</tr>
@@ -61,7 +54,6 @@
 								<td>Valparaíso</td>
 								<td>11111111</td>
 								<td>contacto@met-valpo.cl</td>
-								<td></td>
 								<td> <a href class="btn btn-danger">Borrar</a></td>
 								<td> <a href class="btn btn-success">Editar</a></td>
 							</tr>
@@ -71,19 +63,122 @@
 			</div> <!-- /widget -->	
 	    </div> <!-- /span6 -->
 
-     <!-- agregar local -->
-		<div class="offset3 span6">
+     <div class="row">	<!-- row2 -->
+		<div class="span6">      	<!-- agregar local -->
+	    	<div class="widget stacked">					
+				<div class="widget-header">
+				<i class="icon-th-list"></i>
+					<h3>Agregar Local</h3>
+				</div>				
+				<div class="widget-content">
+					<fieldset>					
+					<form class="form-horizontal">
+						
+						<div class="control-group">
+						    <label class="control-label" for="inputEmail">Nombre</label>
+						    <div class="controls">
+							<select>
+  								<option>MetPizza</option>
+ 								<option>Xl</option>
+ 								<option>etc...</option>  <!-- ASOCIAR A LA BD!! -->
+							</select>
+						    </div>
+						  </div>						 
+						  <div class="control-group">
+						    <label class="control-label" for="inputEmail">Direccion</label>
+						    <div class="controls">
+						      <input type="text" id="inputEmail" placeholder="ej : direccion #111">
+						    </div>
+						  </div>						 
+
+						  <div class="control-group">
+						    <label class="control-label" for="inputEmail">Ciudad</label>
+						    <div class="controls">
+						      <input type="text" id="inputEmail" placeholder="ej: Valparaiso">
+						    </div>
+						  </div>
+						  
+						  <div class="control-group">
+						    <label class="control-label" for="inputEmail">Teléfono</label>
+						    <div class="controls">
+						      <input type="text" id="inputEmail" placeholder="ej:032 8657983">						    
+						    </div>
+						  </div>
+
+						   <div class="control-group">
+						    <label class="control-label" for="inputEmail">Email</label>
+						    <div class="controls">
+						      <input type="text" id="inputEmail" placeholder="ej: ejemplo@ejemplo.cl">
+						    </div>
+						  </div>
+
+						  <div class="control-group" style="margin-right: 60px;">
+						    <div class="controls">
+						      <button type="submit" class="btn btn-small btn-block btn-warning" style="width:100px">Agregar</button>
+						    </div>
+						  </div>
+					</form>				
+				</fieldset>					
+				</div> 
+			</div>
+	    </div> <!-- agregar local -->
+
+		<!-- sectores de locales -->
+		<div class="span6">
 	    	<div class="widget stacked">
 					
 				<div class="widget-header">
 				<i class="icon-th-list"></i>
-					<h3>Agregar Local</h3>
-				</div> <!-- /widget-header -->
-				
+					<h3>Por sector</h3>
+				</div>
 				<div class="widget-content">
-					
+					<label class="checkbox inline">
+  					<input type="checkbox">
+  					Placeres
+					</label>	<br>
+					<label class="checkbox inline">
+  					<input type="checkbox">
+  					Plan 
+					</label>	<br>
+					<label class="checkbox inline">
+  					<input type="checkbox">
+  					Viña del mar
+					</label>	<br>
+					<label class="checkbox inline">
+  					<input type="checkbox">
+  					Reñaca
+					</label>	<br>
+					<label class="checkbox inline">
+  					<input type="checkbox">
+  					Con Con
+					</label>	<br>
+					<label class="checkbox inline">
+  					<input type="checkbox">
+  					Quilpué
+  					</label>	<br>
+					<label class="checkbox inline">
+  					<input type="checkbox">
+  					El Belloto
+					</label>  	<br>	
+					<label class="checkbox inline">
+  					<input type="checkbox">
+  					Villa Alemana
+  					</label>	<br>								
+				</div> 
+			</div>
+		</div> <!--sectores de locales -->
+	</div> <!-- row2 -->
+
+	<div class="span6">      	<!-- editar local -->
+	    	<div class="widget stacked">					
+				<div class="widget-header">
+				<i class="icon-th-list"></i>
+					<h3>Agregar Local</h3>
+				</div>				
+				<div class="widget-content">
 					<fieldset>					
 					<form class="form-horizontal">
+						
 						<div class="control-group">
 						    <label class="control-label" for="inputEmail">Nombre</label>
 						    <div class="controls">
@@ -119,13 +214,6 @@
 						    </div>
 						  </div>
 
-						   <div class="control-group">
-						    <label class="control-label" for="inputEmail">Sector Reparto</label>
-						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej: ejemplo@ejemplo.cl">
-						    </div>
-						  </div>
-
 						  <div class="control-group" style="margin-right: 60px;">
 						    <div class="controls">
 						      <button type="submit" class="btn btn-small btn-block btn-warning" style="width:100px">Agregar</button>
@@ -135,10 +223,10 @@
 				</fieldset>					
 				</div> 
 			</div>
-	    </div> <!-- agregar local -->
+	    </div> <!-- editar local -->
 
-      </div> <!-- /row -->
-    </div> <!-- /container -->   
+    </div> <!-- /row -->
+	</div> <!-- /container -->   
 </div> <!-- /main -->
     
 <br> <br> <br>

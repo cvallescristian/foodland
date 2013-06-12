@@ -25,7 +25,7 @@
      		</div> 
      	</div>
 
-     	<!-- agregar local -->
+<!-- agregar producto -->
 		<div class="offset3 span6">
 	    	<div class="widget stacked">					
 				<div class="widget-header">
@@ -88,7 +88,7 @@
 				</fieldset>					
 				</div> 
 			</div>
-	    </div> <!-- agregar local -->
+	    </div> <!-- agregar producto -->
       </div> <!-- /row -->
     </div> <!-- /container -->   
 </div> <!-- /main -->
