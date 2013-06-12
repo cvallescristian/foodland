@@ -41,7 +41,7 @@
 
     <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px;">
       <div class="navbar-inner" style="height:45px;">
-         <a class="span3 offset2" href="admin_inicio.html" style="position:relative; left:20px;">
+         <a class="span3 offset2" href="<?= base_url();?>home" style="position:relative; left:20px;">
                 <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">2.0</sup>
             </a>     
         <div class="container">

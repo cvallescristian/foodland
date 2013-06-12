@@ -19,11 +19,21 @@
                             </div>
 
                             <div class="span10 offset1" style="text-align:left;padding: 20px;">
-                                <h2>¿D&oacutende est&aacutes?</h2>
+                                <h2><?php 
+                                    if($sector==""){
+                                    ?>¿D&oacutende est&aacutes? <?php 
+                                    }else{ 
+                                    ?> Estas en <?php foreach ($sector_entregas as $s ) {
+                                                        if($s->id_sector_entrega==$sector){
+                                                            echo "$s->nombre_sector_entrega,  ¿Deseas cambiar de sector?";
+                                                            break;
+                                                        }
+                                                    }
+                                    } ?></h2>
                                <?php foreach ($sector_entregas as $sector_entrega) {
                                    
                                 ?>
-                                <div class="span2"><h4><a href="home_view?sector=<?= $sector_entrega->nombre_sector_entrega?>"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
+                                <div class="span2"><h4><a href="<?= base_url();?>home?sector=<?= $sector_entrega->id_sector_entrega?>"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
                                 <?php } ?>
                             </div>
                         </div>
