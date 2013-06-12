@@ -57,8 +57,7 @@
 				</div> <!-- /widget-content -->
 			</div> <!-- /widget -->	
 	    </div> <!-- /span8 -->
-
-	<div class="row"> <!-- row2 -->
+	<div class="row">
 		<div class="span5">      	<!-- agregar local -->
 	    	<div class="widget stacked">					
 				<div class="widget-header">
@@ -159,66 +158,7 @@
 				</div> 
 			</div>
 		</div> <!--sectores de locales -->
-
-		<div class="span5">      <!-- editar local -->
-	    	<div class="widget stacked">					
-				<div class="widget-header">
-				<i class="icon-th-list"></i>
-					<h3>Editar Local</h3>
-				</div>				
-				<div class="widget-content">
-					<fieldset>					
-					<form class="form-horizontal">
-						
-						<div class="control-group">
-						    <label class="control-label" for="inputEmail">Nombre</label>
-						    <div class="controls">
-							<select>
-  								<option>MetPizza</option>
- 								<option>Xl</option>
- 								<option>etc...</option>  <!-- ASOCIAR A LA BD!! -->
-							</select>
-						    </div>
-						 </div>						 
-						  <div class="control-group">
-						    <label class="control-label" for="inputEmail">Dirección</label>
-						    <div class="controls">
-						      <input type="text" id="inputEmail" value="asociar a bd" name="direccion">
-						    </div>
-						  </div>						 
-
-						  <div class="control-group">
-						    <label class="control-label" for="inputEmail">Ciudad</label>
-						    <div class="controls">
-						      <input type="text" id="inputEmail" value="asociar a bd" name="ciudad">
-						    </div>
-						  </div>
-						  
-						  <div class="control-group">
-						    <label class="control-label" for="inputEmail">Teléfono</label>
-						    <div class="controls">
-						      <input type="text" id="inputEmail" value="asociar a bd" name="telefono">						    
-						    </div>
-						  </div>
-
-						   <div class="control-group">
-						    <label class="control-label" for="inputEmail">Email</label>
-						    <div class="controls">
-						      <input type="text" id="inputEmail" value="asociar a bd" name="email">
-						    </div>
-						  </div>
-
-						  <div class="control-group" style="margin-right: 60px;">
-						    <div class="controls">
-						      <button type="submit" class="btn btn-small btn-block btn-success" style="width:200px">Guardar Cambios</button>
-						    </div>
-						  </div>
-					</form>				
-				</fieldset>					
-				</div> 
-			</div>
-	    </div> <!-- editar local -->
-		</div> <!-- row2 -->
+	</div> <!--row2 -->
     </div> <!-- /row -->
 	</div> <!-- /container -->   
 </div> <!-- /main -->
