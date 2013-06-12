@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <!-- saved from url=(0059)http://uexel.us/themes/purity/multipage/wide/portfolio.html -->
-<html lang="en">
+<html lang="en" style="overflow-y: hidden;">
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-        <!-- Le styles -->
+        <!-- styles de Menu-->
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/theme.css">
         <link href="<?= base_url();?>css/css.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="http://responsivewebinc.com/premium/metroman/style/font-awesome.css">
+        <link href="<?= base_url();?>css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
-        <link href="<?= base_url();?>css/style.css" rel="stylesheet" type="text/css">
-        <link href="<?= base_url();?>css/style-responsive.css" rel="stylesheet" type="text/css">
+       
+       <!-- styles Producto-->
+
+        <link href="https://gathercontent.com/assets/css/global/_dynamic.php?v=1370983940" rel="stylesheet" media="screen">
+        <link href="https://gathercontent.com/assets/css/homepage/_dynamic.php?v=1370983940" rel="stylesheet" media="screen">
         <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
         <link rel="stylesheet" id="prettyphoto-css" href="<?= base_url();?>css/css_productos/prettyPhoto.css" type="text/css" media="all">
-        <link href="<?= base_url();?>css/bootstrap-responsive.css" rel="stylesheet">
-        <link href="http://wbpreview.com/previews/WB0225S29/assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-       
-
-    <style>
-      body {
-        padding-top: 0px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    
-   
-    
 </head>
 
     <body>
 
-    <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px;">
-      <div class="navbar-inner" style="height:45px;">
+    <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:70px;">
+      <div class="navbar-inner" style="height:70px;">
          <a class="span3 offset2" href="admin_inicio.html" style="position:relative; left:20px;">
                 <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">2.0</sup>
             </a>     
@@ -41,7 +31,6 @@
                 <ul class="nav pull-right" style="position:relavite; top:-10px;">
                         
                         <li><a href="" class="active">INICIO</a></li>
-                        <li><a href="">MAPA LOCALES</a></li>
                         <li class="dropdown">
                             <a href="http://cleancanvas.herokuapp.com/#" class="dropdown-toggle" data-toggle="dropdown">
                                 PRODUCTOS

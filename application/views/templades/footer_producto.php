@@ -54,13 +54,12 @@
 
         <!--################ FOOTER END ################-->
 
-   
- <!-- Scripts producto -->
 
- 
-    <script type="text/javascript" src="<?= base_url();?>js/js_producto/bootstrap.js"></script>
-    <script type="text/javascript" src="<?= base_url();?>js/js_producto/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="<?= base_url();?>js/js_producto/theme.js"></script>
+    <!-- Scripts De Menu-->
+    <script src="<?= base_url();?>js/jquery-latest.js"></script>
+    <script src="<?= base_url();?>js/bootstrap.js"></script>
+        
+ <!-- Scripts producto -->
 
 
 </body></html>

@@ -1,7 +1,5 @@
 /********** MAIN CONFIGURATION **********/
-body{position:relative;
-	background-color:white;
-	font-family:'Open Sans Condensed',sans-serif;font-size:16px;color:#000;}
+
 h2,h3,h4,h5,h6{font-family:'Open Sans Condensed',sans-serif;color:#666;}
 h1 {
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -108,18 +106,6 @@ hr {
 
 
 /********** HEADER WRAP **********/
-#headerwrap {
-    width: 100%;
-    background: url(../img/topbg5.jpg) no-repeat center center fixed; 
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;;
-    min-height: 600px;
-    margin-top: -60px;
-    padding-top:160px;
-    text-align:center;
-}
 
 #headerwrap h1 {
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -209,13 +195,14 @@ hr {
 
 /********** PROJECT WRAP **********/
 #projectwrap {
-    width: 100%;
+    
     background: url(../../img/slider/1.jpg) no-repeat center center fixed; 
+    width: 100%;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;;
-    min-height: 150px;
+    height: 180px;
     text-align:center;
     color:black;
 }
