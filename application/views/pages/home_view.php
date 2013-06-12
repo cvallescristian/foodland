@@ -23,7 +23,7 @@
                                <?php foreach ($sector_entregas as $sector_entrega) {
                                    
                                 ?>
-                                <div class="span2"><h4><a href="home?sector=<?= $sector_entrega->id_sector_entrega;?>"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
+                                <div class="span2"><h4><a href="home_view?sector=<?= $sector_entrega->nombre_sector_entrega?>"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
                                 <?php } ?>
                             </div>
                         </div>

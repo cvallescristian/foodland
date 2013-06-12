@@ -7,7 +7,6 @@ class Home extends CI_Controller {
 	public function index()
 	{
 	
-
 		$this->load ->model('home_model','uum');
 		$productos= $this->uum->get_producto();
 		$tipo_productos = $this->uum->get_categoria();
@@ -17,12 +16,9 @@ class Home extends CI_Controller {
 		$data['productos']=$productos;
 		$data['tipo_productos']=$tipo_productos;
 		$data['sector_entregas']=$sector_entregas;
-
-
 		$this->load->view('templades/header',$data);
 		$this->load->view('pages/home_view',$data);
 		$this->load->view('templades/footer',$data);
 	}
 }
-?>
 
