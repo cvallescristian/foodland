@@ -95,7 +95,60 @@
 	    </div> <!-- /lista productos -->	
 
     </div> <!-- /row -->
+
+	<div class="row">
+		<div class="span5">      	<!-- editar Producto -->
+	    	<div class="widget stacked">					
+				<div class="widget-header">
+				<i class="icon-th-list"></i>
+					<h3>Editar Producto</h3>
+				</div>				
+				<div class="widget-content">
+					<fieldset>					
+					<form class="form-horizontal">
+						
+						<div class="control-group">
+						    <label class="control-label" for="inputEmail">Nombre</label>
+						    <div class="controls">
+							<select>
+  								<option>Completo</option>
+ 								<option>Pizza</option>
+ 								<option>etc...</option>  <!-- ASOCIAR A LA BD!! -->
+							</select>
+						    </div>
+						 </div>						 
+						  <div class="control-group">
+						    <label class="control-label" for="inputEmail">Local Asociado</label>
+						    <div class="controls">
+						      <input type="text" id="inputEmail" value="asociar a bd" name="direccion">
+						    </div>
+						  </div>						 
+
+						  <div class="control-group">
+						    <label class="control-label" for="inputEmail">Precio</label>
+						    <div class="controls">
+						      <input type="text" id="inputEmail" value="asociar a bd" name="ciudad">
+						    </div>
+						  </div>
+						  
+						  <div class="control-group">
+						    <label class="control-label" for="inputEmail">Descripción</label>
+						    <div class="controls">
+						      <textarea rows="3" type="text" value="asociar a bd"></textarea>					    
+						    </div>
+						  </div>
+
+						  <div class="control-group" style="margin-right: 60px;">
+						    <div class="controls">
+						      <button type="submit" class="btn btn-small btn-block btn-success" style="width:200px">Guardar Cambios</button>
+						    </div>
+						  </div>
+					</form>				
+				</fieldset>					
+				</div> 
+			</div>
+	    </div> <!-- editar producto -->
+	</div>
+
 	</div> <!-- /container -->   
 </div> <!-- /main -->
-    
-<br> <br> <br>
