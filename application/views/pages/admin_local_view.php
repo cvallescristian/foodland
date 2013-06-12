@@ -1,7 +1,7 @@
 <div class="main">
     <div class="container">
-      <div class="row">     	
-      	<div class="offset1 span10">     		
+      <div class="row">   
+      	<div class="span9">     	<!-- lista locales -->  		
 			<div class="widget stacked widget-table action-table">				
 				<div class="widget-header">
 					<i class="icon-th-list"></i>
@@ -17,7 +17,6 @@
 								<th>Teléfono</th>
 								<th>Email</th>
 								<th>Borrar</th>
-								<th>Editar</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -28,7 +27,6 @@
 								<td>11111111</td>
 								<td>contacto@metpizza.cl</td>
 								<td> <a href class="btn btn-danger">Borrar</a></td>
-								<td> <a href class="btn btn-success">Editar</a></td>
 							</tr>
 							<tr>
 								<td>Met</td>
@@ -37,7 +35,6 @@
 								<td>11111111</td>
 								<td>contacto@met.cl</td>
 								<td> <a href class="btn btn-danger">Borrar</a></td>
-								<td> <a href class="btn btn-success">Editar</a></td>
 							</tr>
 							<tr>
 								<td>Xl Express</td>
@@ -46,7 +43,6 @@
 								<td>11111111</td>
 								<td>contacto@xl.cl</td>
 								<td> <a href class="btn btn-danger">Borrar</a></td>
-								<td> <a href class="btn btn-success">Editar</a></td>
 							</tr>
 							<tr>
 								<td>Met-Valpo</td>
@@ -55,16 +51,15 @@
 								<td>11111111</td>
 								<td>contacto@met-valpo.cl</td>
 								<td> <a href class="btn btn-danger">Borrar</a></td>
-								<td> <a href class="btn btn-success">Editar</a></td>
 							</tr>
 							</tbody>
 						</table>					
 				</div> <!-- /widget-content -->
 			</div> <!-- /widget -->	
-	    </div> <!-- /span6 -->
+	    </div> <!-- /span8 -->
 
-     <div class="row">	<!-- row2 -->
-		<div class="span6">      	<!-- agregar local -->
+	<div class="row"> <!-- row2 -->
+		<div class="span5">      	<!-- agregar local -->
 	    	<div class="widget stacked">					
 				<div class="widget-header">
 				<i class="icon-th-list"></i>
@@ -77,15 +72,12 @@
 						<div class="control-group">
 						    <label class="control-label" for="inputEmail">Nombre</label>
 						    <div class="controls">
-							<select>
-  								<option>MetPizza</option>
- 								<option>Xl</option>
- 								<option>etc...</option>  <!-- ASOCIAR A LA BD!! -->
-							</select>
+						      <input type="text" id="inputEmail" placeholder="ej : XL Express">
+						    
 						    </div>
 						  </div>						 
 						  <div class="control-group">
-						    <label class="control-label" for="inputEmail">Direccion</label>
+						    <label class="control-label" for="inputEmail">Dirección</label>
 						    <div class="controls">
 						      <input type="text" id="inputEmail" placeholder="ej : direccion #111">
 						    </div>
@@ -123,13 +115,13 @@
 			</div>
 	    </div> <!-- agregar local -->
 
-		<!-- sectores de locales -->
-		<div class="span6">
+	     <!-- sectores de locales -->
+		<div class="span2">
 	    	<div class="widget stacked">
 					
 				<div class="widget-header">
 				<i class="icon-th-list"></i>
-					<h3>Por sector</h3>
+					<h3>Sector de reparto de local</h3>
 				</div>
 				<div class="widget-content">
 					<label class="checkbox inline">
@@ -167,13 +159,12 @@
 				</div> 
 			</div>
 		</div> <!--sectores de locales -->
-	</div> <!-- row2 -->
 
-	<div class="span6">      	<!-- editar local -->
+		<div class="span5">      	<!-- editar local -->
 	    	<div class="widget stacked">					
 				<div class="widget-header">
 				<i class="icon-th-list"></i>
-					<h3>Agregar Local</h3>
+					<h3>Editar Local</h3>
 				</div>				
 				<div class="widget-content">
 					<fieldset>					
@@ -182,41 +173,44 @@
 						<div class="control-group">
 						    <label class="control-label" for="inputEmail">Nombre</label>
 						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej : XL Express">
-						    
+							<select>
+  								<option>MetPizza</option>
+ 								<option>Xl</option>
+ 								<option>etc...</option>  <!-- ASOCIAR A LA BD!! -->
+							</select>
 						    </div>
-						  </div>						 
+						 </div>						 
 						  <div class="control-group">
-						    <label class="control-label" for="inputEmail">Direccion</label>
+						    <label class="control-label" for="inputEmail">Dirección</label>
 						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej : direccion #111">
+						      <input type="text" id="inputEmail" value="asociar a bd" name="direccion">
 						    </div>
 						  </div>						 
 
 						  <div class="control-group">
 						    <label class="control-label" for="inputEmail">Ciudad</label>
 						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej: Valparaiso">
+						      <input type="text" id="inputEmail" value="asociar a bd" name="ciudad">
 						    </div>
 						  </div>
 						  
 						  <div class="control-group">
 						    <label class="control-label" for="inputEmail">Teléfono</label>
 						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej:032 8657983">						    
+						      <input type="text" id="inputEmail" value="asociar a bd" name="telefono">						    
 						    </div>
 						  </div>
 
 						   <div class="control-group">
 						    <label class="control-label" for="inputEmail">Email</label>
 						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej: ejemplo@ejemplo.cl">
+						      <input type="text" id="inputEmail" value="asociar a bd" name="email">
 						    </div>
 						  </div>
 
 						  <div class="control-group" style="margin-right: 60px;">
 						    <div class="controls">
-						      <button type="submit" class="btn btn-small btn-block btn-warning" style="width:100px">Agregar</button>
+						      <button type="submit" class="btn btn-small btn-block btn-success" style="width:200px">Guardar Cambios</button>
 						    </div>
 						  </div>
 					</form>				
@@ -224,10 +218,7 @@
 				</div> 
 			</div>
 	    </div> <!-- editar local -->
-
+		</div> <!-- row2 -->
     </div> <!-- /row -->
 	</div> <!-- /container -->   
 </div> <!-- /main -->
-    
-<br> <br> <br>
-

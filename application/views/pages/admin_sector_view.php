@@ -1,7 +1,7 @@
 <div class="main">
     <div class="container">
       <div class="row">     	
-      	<div class="offset1 span5">    <!-- Lista sectores -->
+      	<div class="span4">    <!-- Lista sectores -->
 			<div class="widget stacked widget-table action-table">				
 				<div class="widget-header">
 					<i class="icon-th-list"></i>
@@ -54,8 +54,40 @@
 			</div> <!-- /widget -->	
 	    </div> <!-- /Lista sectores -->
 
-<div class="row">	<!-- row2 -->
-		<div class="span5">      	<!-- agregar local -->
+				<div class="span3">    <!-- Lista locales por sector -->
+			<div class="widget stacked widget-table action-table">				
+				<div class="widget-header">
+					<i class="icon-th-list"></i>
+					<h3>Lista Locales por sector</h3>
+				</div>				
+				<div class="widget-content">					
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr>
+								<th><select>
+  									<option>Placeres</option>
+ 									<option>Viña del Mar</option>
+ 									<option>etc...</option>  <!-- ASOCIAR A LA BD!! -->
+ 									</select>
+								</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>XL</td>										
+							</tr>
+							<tr>
+								<td>Met</td>										
+							</tr>
+							<tr>
+								<td>MetPizza</td>										
+							</tr>
+						</tbody>
+					</table>					
+				</div> <!-- /widget-content -->
+			</div> <!-- /widget -->	
+	    </div> <!-- /Lista sectores -->
+
+		<div class="span5">      	<!-- agregar sector -->
 	    	<div class="widget stacked">					
 				<div class="widget-header">
 				<i class="icon-th-list"></i>
@@ -109,10 +141,8 @@
 				</fieldset>					
 				</div> 
 			</div>
-	    </div> <!-- agregar local -->
-	</div> <!-- row2 -->
+	    </div> <!-- /agregar sector -->
     </div> <!-- /row -->
+
 	</div> <!-- /container -->   
 </div> <!-- /main -->
-    
-<br> <br> <br>
