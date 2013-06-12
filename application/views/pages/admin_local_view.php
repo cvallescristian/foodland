@@ -160,7 +160,7 @@
 			</div>
 		</div> <!--sectores de locales -->
 
-		<div class="span5">      	<!-- editar local -->
+		<div class="span5">      <!-- editar local -->
 	    	<div class="widget stacked">					
 				<div class="widget-header">
 				<i class="icon-th-list"></i>

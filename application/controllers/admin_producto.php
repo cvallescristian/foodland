@@ -9,7 +9,6 @@ class Admin_producto extends CI_Controller {
 		
 		$this->load->view('templades/header_admin');
 		$this->load->view('pages/admin_producto_view');
-		$this->load->view('templades/footer_admin');
 	}
 }
 
