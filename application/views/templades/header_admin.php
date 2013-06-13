@@ -29,7 +29,7 @@
 			</a>
 			
 			<a class="span4" href="<?= base_url();?>admin_local">
-				<img src="./img/logo2.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
+				<img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
 			</a>		
 			<div class="nav-collapse collapse">
 				<ul class="nav pull-right">

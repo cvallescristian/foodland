@@ -19,5 +19,18 @@ class Admin_local extends CI_Controller {
 		}
 		
 	}
+	public function nuevo_local(){
+		if($this->session->userdata('id')==""){
+			$root= base_url()."admin";
+			header("Location: $root");
+		}else{
+			
+			$this->load->view('templades/header_admin');
+			$this->load->view('pages/admin_nuevo_local_view');
+		}
+	}
+	public function nuevo_local_agregar(){
+		
+	}
 }
 

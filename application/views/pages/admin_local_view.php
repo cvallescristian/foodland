@@ -4,7 +4,7 @@
       	
       	<div class="span9 offset1">     	<!-- lista locales -->
       		<h1>Local</h1>
-      		<a class="btn btn-success">Agregar nuevo Local</a>  		
+      		<a class="btn btn-success" href="<?= base_url();?>admin_local/nuevo_local">Agregar nuevo Local</a>  		
 			<div class="widget stacked widget-table action-table">				
 				<div class="widget-header">
 					<i class="icon-th-list"></i>
@@ -44,7 +44,7 @@
    
       	<div class="span9 offset1">     	<!-- lista sectores -->  		
       		<h1>Sectores</h1>
-      			<a class="btn btn-success">Agregar nuevo Sector</a>
+      			<a href="<?= base_url();?>admin_local/nuevo_local"class="btn btn-success">Agregar nuevo Sector</a>
       		<div class="widget stacked widget-table action-table">				
 				<div class="widget-header">
 					<i class="icon-th-list"></i>
@@ -77,61 +77,7 @@
 			</div> <!-- /widget -->	
 	    </div> <!-- Termino lista sectores-->
 
-	    <div class="span5">      	<!-- agregar local -->
-	    	<div class="widget stacked">					
-				<div class="widget-header">
-				<i class="icon-th-list"></i>
-					<h3>Agregar Local</h3>
-				</div>				
-				<div class="widget-content">
-					<fieldset>					
-					<form class="form-horizontal">
-						
-						<div class="control-group">
-						    <label class="control-label" for="inputEmail">Nombre</label>
-						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej : XL Express">
-						    
-						    </div>
-						  </div>						 
-						  <div class="control-group">
-						    <label class="control-label" for="inputEmail">Dirección</label>
-						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej : direccion #111">
-						    </div>
-						  </div>						 
-
-						  <div class="control-group">
-						    <label class="control-label" for="inputEmail">Ciudad</label>
-						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej: Valparaiso">
-						    </div>
-						  </div>
-						  
-						  <div class="control-group">
-						    <label class="control-label" for="inputEmail">Teléfono</label>
-						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej:032 8657983">						    
-						    </div>
-						  </div>
-
-						   <div class="control-group">
-						    <label class="control-label" for="inputEmail">Email</label>
-						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej: ejemplo@ejemplo.cl">
-						    </div>
-						  </div>
-
-						  <div class="control-group" style="margin-right: 60px;">
-						    <div class="controls">
-						      <button type="submit" class="btn btn-small btn-block btn-warning" style="width:100px">Agregar</button>
-						    </div>
-						  </div>
-					</form>				
-				</fieldset>					
-				</div> 
-			</div>
-	    </div> <!-- agregar local -->
+	  
 	<div class="row">
 		
 
