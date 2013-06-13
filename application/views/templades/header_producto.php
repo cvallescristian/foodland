@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0059)http://uexel.us/themes/purity/multipage/wide/portfolio.html -->
-<html lang="en" style="overflow-y: hidden;">
+<html >
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -13,8 +13,8 @@
        
        <!-- styles Producto-->
 
-        <link href="https://gathercontent.com/assets/css/global/_dynamic.php?v=1370983940" rel="stylesheet" media="screen">
-        <link href="https://gathercontent.com/assets/css/homepage/_dynamic.php?v=1370983940" rel="stylesheet" media="screen">
+        <link href="<?= base_url();?>css/css_productos/productos_global.css" rel="stylesheet" media="screen">
+        <link href="<?= base_url();?>css/css_productos/productos2.css" rel="stylesheet" media="screen">
         <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
         <link href="<?= base_url();?>css/social-buttons.css" rel="stylesheet">
         <link rel="stylesheet" id="prettyphoto-css" href="<?= base_url();?>css/css_productos/prettyPhoto.css" type="text/css" media="all">

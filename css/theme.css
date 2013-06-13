@@ -36,7 +36,7 @@ body.pull_top {
     border-bottom: 1px solid #280308;
 }
 .navbar.transparent.navbar-inverse .navbar-inner .container {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     -webkit-transition: margin .2s ease-in-out;
     -moz-transition: margin .2s ease-in-out;
@@ -60,7 +60,7 @@ body.pull_top {
 }
 .navbar-inverse .nav > li > a {
     /*color: rgb(177, 177, 177);*/
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     color: #fff;
     text-shadow: 0 1px 0 rgba(0,0,0,.5);

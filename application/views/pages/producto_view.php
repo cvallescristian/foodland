@@ -12,13 +12,13 @@
 
 
 
-  <div class="container" style="position:relative; top:30px;">
+  <div id="caja"class="container" style="position:relative; top:30px;">
     
     <div class="row">
         <div class="span12 white-panel no-padding">
             <ul class="nav nav-tabs">
-                <li class="active"><a href="#home" data-toggle="tab" class="gc-icon agency-icon"><font><font>Producto</font></font></a></li>
-                <li><a href="#profile" data-toggle="tab" class="gc-icon enterprise-icon"><font><font>Detalle</font></font></a></li>
+                <li class="active"><a href="#home" data-toggle="tab"> <img src="<?= base_url();?>img/producto/pizza.png" width="40" ><font><font>Producto</font></font></a></li>
+                <li><a href="#profile" data-toggle="tab"> <img src="<?= base_url();?>img/producto/local.png" ><font><font>Detalles del Local</font></font></a></li>
                             </ul> <!-- End tabs -->
 
             <div class="tab-content">
@@ -27,13 +27,13 @@
                         <h2><font><font>Pizza Española</font><font></font></font></h2>
 
                         <ul class="green-checks">
-                            <li><font><font>Colabore con su equipo y clientes</font></font></li>
-                            <li><font><font>Mantenga contenido estructurado, en un lugar centralizado</font></font></li>
-                            <li><font><font>Control de cambios, y ver quién ha hecho qué</font></font></li>
+                            <li><font><font>Ingredientes: </font></font></li>
+                            <li><font><font>Precio:</font></font></li>
+                             <li><font><font>Sectores de entrega:</font></font></li>
                            
                         </ul>
 
-                        <a href="#test_modal" data-toggle="modal" class="btn btn-warning btn-large"><font><font>Ver Telefono</font></font></a>
+                        <a href="#test_modal" data-toggle="modal" class="btn btn-warning btn-large offset1"><font><font>Ver Telefono</font></font></a>
 
                     
                     </div>
@@ -49,17 +49,17 @@
 
                     </div>
                     <div class="span5 pull-right">
-                        <h2><font><font>Detalles del Local</font></font></h2>
+                        <h2><font><font>Nombre de Local</font></font></h2>
 
                         <ul class="green-checks">
-                            <li><font><font>Colaborar y brindar orientación</font></font></li>
-                            <li><font><font>Mantenga contenido estructurado, en un lugar centralizado</font></font></li>
-                            <li><font><font>Control de cambios, y ver quién ha hecho qué</font></font></li>
-                            <li><font><font>Enviar automáticamente recordatorios de plazos</font></font></li>
-                            <li><font><font>Ahorrar enormes cantidades de tiempo y dinero</font></font></li>
+                        
+                            <li><font><font>Direccion:</font></font></li>
+                            <li><font><font>E-mail:</font></font></li>
+                            <li><font><font>Sectores de Entrega:</font></font></li>
+                            
                         </ul>
 
-                        <a href="#test_modal"  data-toggle="modal" class="btn btn-warning btn-large"><font><font>Ver Telefono</font></font></a>
+                        <a href="#test_modal"  data-toggle="modal" class="btn btn-warning btn-large offset1"><font><font>Ver Telefono</font></font></a>
 
                      </div>
                 </div>
@@ -85,7 +85,7 @@
   <div class="modal-body">
      <div class="span3 offset1" style="font-size: 15px;">Para Ver el Telefono debes compartir en facebook para que tus amigos sepan que as pedido que 
       as pedido pizza</div>
-      <div class="span2"> 
+      <div class="span2 offset1"> 
         <img src="<?= base_url();?>img/megusta.jpg" >
       </div>
   </div>

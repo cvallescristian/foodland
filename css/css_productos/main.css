@@ -483,7 +483,7 @@ hr {
 
 body .modal-admin {
     //new custom width
-    width: 750px;
+    width: 600px;
     top:300px;
     //must be half of the width, minus scrollbar on the left (30px)
     margin: -345px 0 0 -375px;

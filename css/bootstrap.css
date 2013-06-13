@@ -69,6 +69,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+
 }
 
 a:focus {
@@ -227,7 +228,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #ffffff;
+  background-color: rgb(241, 241, 241);
 }
 
 a {
@@ -4756,6 +4757,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > .dropdown-menu.pull-right {
   right: 0;
   left: auto;
+  opacity: 0.95;
 }
 
 .navbar .pull-right > li > .dropdown-menu:before,
