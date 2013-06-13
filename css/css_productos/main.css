@@ -202,7 +202,7 @@ hr {
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;;
-    height: 180px;
+    height: 300px;
     text-align:center;
     color:black;
 }
@@ -478,4 +478,12 @@ hr {
     margin-top: -20px;
     padding-top:160px;
 }
+}
+
+
+body .modal-admin {
+    //new custom width
+    width: 750px;
+    //must be half of the width, minus scrollbar on the left (30px)
+    margin: -345px 0 0 -375px;
 }
