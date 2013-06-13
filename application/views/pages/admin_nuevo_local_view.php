@@ -26,7 +26,7 @@
  						  <div class="control-group">
 						    <label class="control-label" for="inputFono">Teléfono</label>
 						    <div class="controls">
-						      <input type="text" id="inputFono" name="inputFono" placeholder="ej : 032 8657983" required>						    
+						      <input type="number" id="inputFono" name="inputFono" placeholder="ej : 032 8657983" required>						    
 						    </div>
 						  </div>
 

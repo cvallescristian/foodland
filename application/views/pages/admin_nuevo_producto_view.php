@@ -29,7 +29,7 @@
  						  <div class="control-group">
 						    <label class="control-label" for="inputFono">Precio</label>
 						    <div class="controls">
-						      <input type="text" id="inputPrecio" name="inputPrecio" placeholder="$$$$" autocomplete="off" required>						    
+						      <input type="number" id="inputPrecio" name="inputPrecio" placeholder="$$$$" autocomplete="off" required>						    
 						    </div>
 						  </div>
 
