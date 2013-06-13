@@ -68,6 +68,13 @@
 							
 						</a>				
 					</li>
+					<li class="">					
+						<a href="<?= base_url();?>admin_member">
+							<i class="icon-user"></i>
+							<span>Miembros</span>
+							
+						</a>				
+					</li>
 				</ul>
 			</div> <!-- /.subnav-collapse -->
 
