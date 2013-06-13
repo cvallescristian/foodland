@@ -1,18 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0059)http://uexel.us/themes/purity/multipage/wide/portfolio.html -->
-<html lang="en" >
+<html lang="es" >
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-
-        <!--Le HTML5 shim, for IE6-8 support of HTML5 elements--> 
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <!-- Le styles -->
+     <!-- Le styles -->
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/theme.css">
-        <link rel="stylesheet" href="<?= base_url();?>css/index.css" type="text/css" media="screen">
+       
         <link href="<?= base_url();?>css/css.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="http://responsivewebinc.com/premium/metroman/style/font-awesome.css">
 
@@ -67,9 +60,8 @@
                             <div class="span3">
                                 <div >
                                     <font><font>Iniciar con:</font></font>
-                                        <h4> <a href=""> <i class="icon-twitter"></i></a>
-                                            <a href=""><i class="icon-facebook"></i></a> 
-                                           <a href=""><i class="icon-google-plus"></i> </a></h4>
+                                        <a href=""><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a> 
+                                    <!---    <a href=""><img src="<?= base_url();?>img/icono-twitter.png" width="40px"></a> !-->
                                     
                                 </div>
                             </div>
