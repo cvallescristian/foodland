@@ -1,7 +1,10 @@
 <div class="main">
     <div class="container">
-      <div class="row">   
-      	<div class="span9">     	<!-- lista locales -->  		
+      <div class="row">
+      	
+      	<div class="span9 offset1">     	<!-- lista locales -->
+      		<h1>Local</h1>
+      		<a class="btn btn-success">Agregar nuevo Local</a>  		
 			<div class="widget stacked widget-table action-table">				
 				<div class="widget-header">
 					<i class="icon-th-list"></i>
@@ -13,52 +16,68 @@
 							<tr>
 								<th>Nombre</th>
 								<th>Dirección</th>
-								<th>Ciudad</th>
 								<th>Teléfono</th>
 								<th>Email</th>
 								<th>Borrar</th>
+								<th>Editar</th>
 							</tr>
 						</thead>
 						<tbody>
+						<?php foreach ($locales as $l) {
+						?>
 							<tr>
-								<td>Metpizza Placeres</td>
-								<td>Av Placeres 396</td>	
-								<td>Valparaíso</td>										
-								<td>11111111</td>
-								<td>contacto@metpizza.cl</td>
-								<td> <a href class="btn btn-danger">Borrar</a></td>
+								<td><?= $l->nombre_local  ?></td>
+								<td><?= $l->direccion_local?></td>	
+								<td><?= $l->telefono_local ?></td>
+								<td><?= $l->email  ?></td>
+								<td> <a href="" class="btn btn-danger">Borrar</a></td>
+								<td><a href="" class="btn btn-info">Editar</a></td>
 							</tr>
-							<tr>
-								<td>Met</td>
-								<td>Av San martin 233</td>
-								<td>Valparaíso</td>										
-								<td>11111111</td>
-								<td>contacto@met.cl</td>
-								<td> <a href class="btn btn-danger">Borrar</a></td>
-							</tr>
-							<tr>
-								<td>Xl Express</td>
-								<td>Av matta 232</td>
-								<td>Valparaíso</td>
-								<td>11111111</td>
-								<td>contacto@xl.cl</td>
-								<td> <a href class="btn btn-danger">Borrar</a></td>
-							</tr>
-							<tr>
-								<td>Met-Valpo</td>
-								<td>Av Pedro Montt 4332</td>
-								<td>Valparaíso</td>
-								<td>11111111</td>
-								<td>contacto@met-valpo.cl</td>
-								<td> <a href class="btn btn-danger">Borrar</a></td>
-							</tr>
-							</tbody>
-						</table>					
+						<?php	
+						} ?>
+						
+						</tbody>
+					</table>					
 				</div> <!-- /widget-content -->
 			</div> <!-- /widget -->	
-	    </div> <!-- /span8 -->
-	<div class="row">
-		<div class="span5">      	<!-- agregar local -->
+	    </div> <!-- Termino lista locales -->
+   
+      	<div class="span9 offset1">     	<!-- lista sectores -->  		
+      		<h1>Sectores</h1>
+      			<a class="btn btn-success">Agregar nuevo Sector</a>
+      		<div class="widget stacked widget-table action-table">				
+				<div class="widget-header">
+					<i class="icon-th-list"></i>
+					<h3>Sectores</h3>
+				</div>				
+				<div class="widget-content">					
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr>
+								<th>Nombre</th>
+								
+								<th>Borrar</th>
+								<th>Editar</th>
+							</tr>
+						</thead>
+						<tbody>
+						<?php foreach ($locales as $l) {
+						?>
+							<tr>
+								<td><?= $l->nombre_local  ?></td>
+								<td> <a href="" class="btn btn-danger">Borrar</a></td>
+								<td><a href="" class="btn btn-info">Editar</a></td>
+							</tr>
+						<?php	
+						} ?>
+						
+						</tbody>
+					</table>					
+				</div> <!-- /widget-content -->
+			</div> <!-- /widget -->	
+	    </div> <!-- Termino lista sectores-->
+
+	    <div class="span5">      	<!-- agregar local -->
 	    	<div class="widget stacked">					
 				<div class="widget-header">
 				<i class="icon-th-list"></i>
@@ -113,6 +132,8 @@
 				</div> 
 			</div>
 	    </div> <!-- agregar local -->
+	<div class="row">
+		
 
 	     <!-- sectores de locales -->
 		<div class="span2">
