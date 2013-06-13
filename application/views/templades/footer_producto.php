@@ -59,7 +59,9 @@
     <script src="<?= base_url();?>js/jquery-latest.js"></script>
     <script src="<?= base_url();?>js/bootstrap.js"></script>
         
- <!-- Scripts producto -->
+ <!-- Scripts producto Pop - -->
+
+
 
 
 </body></html>

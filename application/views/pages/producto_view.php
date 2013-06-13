@@ -33,7 +33,7 @@
                            
                         </ul>
 
-                        <a href="" class="btn btn-warning btn-large"><font><font>Ver Telefono</font></font></a>
+                        <a href="#test_modal" data-toggle="modal" class="btn btn-warning btn-large"><font><font>Ver Telefono</font></font></a>
 
                     
                     </div>
@@ -59,7 +59,7 @@
                             <li><font><font>Ahorrar enormes cantidades de tiempo y dinero</font></font></li>
                         </ul>
 
-                        <a href="" class="btn btn-warning btn-large"><font><font>Ver Telefono</font></font></a>
+                        <a href="#test_modal"  data-toggle="modal" class="btn btn-warning btn-large"><font><font>Ver Telefono</font></font></a>
 
                      </div>
                 </div>
@@ -74,4 +74,55 @@
 
 
 </div>
+
+
+<div class="modal fade" id="test_modal">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">&times;</a>
+    <h3>Comparte en Facebook para ver el Telefono</h3>
+  </div>
+  <br><br>
+  <div class="modal-body">
+     <div class="span3 offset1" style="font-size: 15px;">Para Ver el Telefono debes compartir en facebook para que tus amigos sepan que as pedido que 
+      as pedido pizza</div>
+      <div class="span2"> 
+        <img src="<?= base_url();?>img/megusta.jpg" >
+      </div>
+  </div>
+  <br><br>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Cancelar</a>
+    <a href="#" class="btn btn-facebook"><i class="icon-facebook"></i> | Conectar con Facebook</a>
+  </div>
+</div>
+
+
+
+ <!-- Scripts producto Pop - -->
+
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#test_modal').modal('show');
+    });
+</script>
+
+<script type="text/javascript">
+$('#test_modal').modal('hide')
+</script>
+
+<script type="text/javascript">
+   $('#test_modal').modal({
+        backdrop: true,
+        keyboard: true,
+        show: false \\remove this if you dont want it to show straight away
+    }).css({
+        width: 'auto',
+        'margin-left': function () {
+            return -($(this).width() / 2);
+        }
+    });
+
+</script>
 
