@@ -61,10 +61,10 @@
 							</tr>
 						</thead>
 						<tbody>
-						<?php foreach ($locales as $l) {
+						<?php foreach ($sectores as $s) {
 						?>
 							<tr>
-								<td><?= $l->nombre_local  ?></td>
+								<td><?= $s->nombre_sector_entrega  ?></td>
 								<td> <a href="" class="btn btn-danger">Borrar</a></td>
 								<td><a href="" class="btn btn-info">Editar</a></td>
 							</tr>
@@ -76,56 +76,3 @@
 				</div> <!-- /widget-content -->
 			</div> <!-- /widget -->	
 	    </div> <!-- Termino lista sectores-->
-
-	  
-	<div class="row">
-		
-
-	     <!-- sectores de locales -->
-		<div class="span2">
-	    	<div class="widget stacked">
-					
-				<div class="widget-header">
-				<i class="icon-th-list"></i>
-					<h3>Sector de reparto de local</h3>
-				</div>
-				<div class="widget-content">
-					<label class="checkbox inline">
-  					<input type="checkbox">
-  					Placeres
-					</label>	<br>
-					<label class="checkbox inline">
-  					<input type="checkbox">
-  					Plan 
-					</label>	<br>
-					<label class="checkbox inline">
-  					<input type="checkbox">
-  					Viña del mar
-					</label>	<br>
-					<label class="checkbox inline">
-  					<input type="checkbox">
-  					Reñaca
-					</label>	<br>
-					<label class="checkbox inline">
-  					<input type="checkbox">
-  					Con Con
-					</label>	<br>
-					<label class="checkbox inline">
-  					<input type="checkbox">
-  					Quilpué
-  					</label>	<br>
-					<label class="checkbox inline">
-  					<input type="checkbox">
-  					El Belloto
-					</label>  	<br>	
-					<label class="checkbox inline">
-  					<input type="checkbox">
-  					Villa Alemana
-  					</label>	<br>								
-				</div> 
-			</div>
-		</div> <!--sectores de locales -->
-	</div> <!--row2 -->
-    </div> <!-- /row -->
-	</div> <!-- /container -->   
-</div> <!-- /main -->

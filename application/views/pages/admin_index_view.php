@@ -7,7 +7,7 @@
 				<i class="icon-cog"></i>
 			</a>
 			
-			<a class="span4" href="http://foodland.cl/foodland2/implementacion/admin/admin_inicio.php">
+			<a class="span4" href="<?= base_url(); ?>">
 				<img src="./img/logo2.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
 			</a>		
 		</div> <!-- /container -->		
