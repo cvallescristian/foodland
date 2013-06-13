@@ -6,8 +6,6 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$sector=$this->input->get('sector', TRUE);
-
 		$this->load ->model('home_model','uum');
 		$productos= $this->uum->get_producto($sector);
 		$tipo_productos = $this->uum->get_categoria();

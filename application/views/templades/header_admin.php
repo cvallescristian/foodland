@@ -34,14 +34,12 @@
 			<div class="nav-collapse collapse">
 				<ul class="nav pull-right">
 					<li class="dropdown">
-						<a href="http://jumpstartuidemo.com/themes/base/index.html#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="<?= base_url();?>admin/logout" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="icon-user"></i> 
-							USUARIO
-							<b class="caret"></b>
+							LOGOUT
+							
 						</a>
-						<ul class="dropdown-menu">
-							<li><a href="javascript:;">Logout</a></li>
-						</ul>						
+												
 					</li>
 				</ul>				
 			</div><!--/.nav-collapse -->	

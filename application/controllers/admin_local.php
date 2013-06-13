@@ -6,9 +6,18 @@ class Admin_local extends CI_Controller {
 
 	public function index()
 	{
+		if($this->session->userdata('id')==""){
+			$root= base_url()."admin";
+			header("Location: $root");
+		}else{
+			$this->load->model('admin_model','uum');
+			$locales= $this->uum->get_local();
+
+			$data['locales']=$locales;
+			$this->load->view('templades/header_admin',$data);
+			$this->load->view('pages/admin_local_view',$data);
+		}
 		
-		$this->load->view('templades/header_admin');
-		$this->load->view('pages/admin_local_view');
 	}
 }
 

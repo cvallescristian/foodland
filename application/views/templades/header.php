@@ -33,7 +33,7 @@
     
 </head>
 
-    <body style="background:#c1c1c1">
+    <body style="background:#c9c9c9">
 
     <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px;">
       <div class="navbar-inner" style="height:45px;">
