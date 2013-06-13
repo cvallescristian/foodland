@@ -82,7 +82,7 @@
     <h3>Comparte en Facebook para ver el Telefono</h3>
   </div>
   <div class="modal-body">
-   <button class="btn btn-facebook"><i class="icon-facebook"></i> | Connect with Facebook</button> 
+     <button class="btn btn-facebook"><i class="icon-facebook"></i> | Connect with Facebook</button> 
   </div>
   <div class="modal-footer">
     <a href="#" class="btn" data-dismiss="modal">Close</a>

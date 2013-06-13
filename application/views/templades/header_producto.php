@@ -16,7 +16,7 @@
         <link href="https://gathercontent.com/assets/css/global/_dynamic.php?v=1370983940" rel="stylesheet" media="screen">
         <link href="https://gathercontent.com/assets/css/homepage/_dynamic.php?v=1370983940" rel="stylesheet" media="screen">
         <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
-        <link href="<?= base_url();?>css/css_productos/social-buttons.css" rel="stylesheet">
+        <link href="<?= base_url();?>css/social-buttons.css" rel="stylesheet">
         <link rel="stylesheet" id="prettyphoto-css" href="<?= base_url();?>css/css_productos/prettyPhoto.css" type="text/css" media="all">
 </head>
 
