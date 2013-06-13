@@ -81,12 +81,18 @@
     <a class="close" data-dismiss="modal">&times;</a>
     <h3>Comparte en Facebook para ver el Telefono</h3>
   </div>
+  <br><br>
   <div class="modal-body">
-     <button class="btn btn-facebook"><i class="icon-facebook"></i> | Connect with Facebook</button> 
+     <div class="span3 offset1" style="font-size: 15px;">Para Ver el Telefono debes compartir en facebook para que tus amigos sepan que as pedido que 
+      as pedido pizza</div>
+      <div class="span2"> 
+        <img src="<?= base_url();?>img/megusta.jpg" >
+      </div>
   </div>
+  <br><br>
   <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Close</a>
-    <a href="#" class="btn btn-primary">Save Changes</a>
+    <a href="#" class="btn" data-dismiss="modal">Cancelar</a>
+    <a href="#" class="btn btn-facebook"><i class="icon-facebook"></i> | Conectar con Facebook</a>
   </div>
 </div>
 
