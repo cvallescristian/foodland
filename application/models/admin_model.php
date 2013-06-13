@@ -32,7 +32,13 @@ class admin_model extends CI_Model{
      
 
   }
-    
+   function agregar_sector_local($id_sector,$id_local){
+        $data = array( //datos del local
+             'id_sector_entrega' => $id_sector,
+             'id_local' => $id_local
+        );
+         $this->db->insert('Local_sector_entrega', $data);
+    }   
 }
 
  ?>

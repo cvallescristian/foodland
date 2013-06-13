@@ -48,7 +48,7 @@
 						    <?php foreach ($sector_repartos as $s) {
 						    	?>
 						    	 <label class="checkbox inline">
-				  					<input type="checkbox" value="<?= $s->id_sector_entrega?>" >
+				  					<input type="checkbox" name="check[]" value="<?= $s->id_sector_entrega?>" >
 				  					<?= $s->nombre_sector_entrega  ?>
 								</label>	<br>
 						    	<?php 

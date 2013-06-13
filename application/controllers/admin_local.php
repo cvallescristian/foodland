@@ -41,28 +41,43 @@ class Admin_local extends CI_Controller {
 	}
 	public function nuevo_local_agregar(){
 		
-		$data = array(
-           'nombre_local' => $this->input->post('inputNombre'),
-           'direccion_local' =>$this->input->post('inputDireccion'),
-           'telefono_local' =>$this->input->post('inputFono'),
-           'email' => $this->input->post('inputEmail')
-    	);
-    	$config['upload_path'] = base_url()."img/locales/"; 
-    	$config['allowed_types'] = 'gif|jpg|png'; 
-    	$config['max_size'] = '100'; 
-    	
-    	
-    	  echo 'Nombre: ' . $_FILES['userfile']['name'] . '<br/>';
-		  echo 'Tipo: ' . $_FILES['userfile']['type'] . '<br/>';
-		  echo 'Tamaño: ' . ($_FILES['userfile']['size'] / 1024) . ' Kb<br/>';
-		  echo 'Guardado en: ' . $_FILES['userfile']['tmp_name'];
+		$checkbox = $this->input->post('check'); //datos del checkbox
+		if($checkbox==""){
+			echo "<script>alert('Debes seleccionar al menos un sector')</script>";
+			$root= base_url()."admin_local/nuevo_local";
+			echo "<script>location.href='$root';</script>";	
+		}else{
+			$data = array( //datos del local
+	           'nombre_local' => $this->input->post('inputNombre'),
+	           'direccion_local' =>$this->input->post('inputDireccion'),
+	           'telefono_local' =>$this->input->post('inputFono'),
+	           'email' => $this->input->post('inputEmail')
+	    	);
+	    	//datos de la foto
+	    	$config['upload_path'] = base_url()."img/locales/";  
+	    	$config['allowed_types'] = 'gif|jpg|png'; 
+	    	$config['max_size'] = '100'; 
+	    	
+	    	
+	    /*	  echo 'Nombre: ' . $_FILES['userfile']['name'] . '<br/>';
+			  echo 'Tipo: ' . $_FILES['userfile']['type'] . '<br/>';
+			  echo 'Tamaño: ' . ($_FILES['userfile']['size'] / 1024) . ' Kb<br/>';
+			  echo 'Guardado en: ' . $_FILES['userfile']['tmp_name'];
+		*/
+			//guardamos la base de datos 
+			$this->load->model('admin_model','uum');
+			$id_local_nuevo= $this->uum->agregar_local($data);
+	  	//	move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_nuevo _logo.png");
+		 	//	$root= base_url()."admin_local?al=1";
+  			//	echo "<script>location.href='$root';</script>";	
 
-		$this->load->model('admin_model','uum');
-		$id_local_nuevo= $this->uum->agregar_local($data);
-  		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_nuevo _logo.png");
+  			foreach ($checkbox as $s ) {
+  				$this->uum->agregar_sector_local($id_local_nuevo,$s);
+  			}
+		}
+		
 
-  		$root= base_url()."admin_local?al=1";
-  		echo "<script>location.href='$root';</script>";
+ 
     }
 }
 
