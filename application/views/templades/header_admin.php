@@ -58,7 +58,7 @@
 					<li class="">					
 						<a href="<?= base_url();?>admin_local">
 							<i class="icon-map-marker"></i>
-							<span>Local</span>
+							<span>Home</span>
 						</a>	    
 					</li>					
 					<li class="">					
@@ -67,12 +67,6 @@
 							<span>Productos</span>
 							
 						</a>				
-					</li>
-					<li class="">					
-						<a href="<?= base_url();?>admin_sector">
-							<i class="icon-globe"></i>
-							<span>Sectores</span>							
-						</a>	
 					</li>
 				</ul>
 			</div> <!-- /.subnav-collapse -->

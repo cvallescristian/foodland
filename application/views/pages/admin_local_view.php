@@ -61,10 +61,10 @@
 							</tr>
 						</thead>
 						<tbody>
-						<?php foreach ($locales as $l) {
+						<?php foreach ($sectores as $s) {
 						?>
 							<tr>
-								<td><?= $l->nombre_local  ?></td>
+								<td><?= $s->nombre_sector_entrega  ?></td>
 								<td> <a href="" class="btn btn-danger">Borrar</a></td>
 								<td><a href="" class="btn btn-info">Editar</a></td>
 							</tr>

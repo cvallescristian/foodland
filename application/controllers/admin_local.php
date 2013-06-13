@@ -12,12 +12,15 @@ class Admin_local extends CI_Controller {
 			header("Location: $root");
 		}else{
 			$this->load->model('admin_model','uum');
+			$this->load->model('home_model','uum2');
 			$locales= $this->uum->get_local();
+			$sectores=$this->uum2->get_sector_entrega();
 			$añadir_producto=$this->input->get('al');
 			if($añadir_producto==1){
 				echo "<script>alert('Local agregado satisfactoriamente')</script>";
 			}
 			$data['locales']=$locales;
+			$data['sectores']=$sectores;
 			$this->load->view('templades/header_admin',$data);
 			$this->load->view('pages/admin_local_view',$data);
 		}
