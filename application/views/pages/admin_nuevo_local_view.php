@@ -8,7 +8,7 @@
 				</div>				
 				<div class="widget-content">
 					<fieldset>					
-					<form class="form-horizontal">
+					<form class="form-horizontal" method="post" action="<?= base_url()?>admin_local/nuevo_local_agregar"  enctype="multipart/form-data" >
 						
 						<div class="control-group">
 						    <label class="control-label" for="inputNombre">Nombre</label>
@@ -20,7 +20,7 @@
 						  <div class="control-group">
 						    <label class="control-label" for="inputDireccion">Dirección</label>
 						    <div class="controls">
-						      <input type="text" id="inputdireccion" name="inputdireccion" placeholder="ej : direccion #111">
+						      <input type="text" id="inputdireccion" name="inputDireccion" placeholder="ej : direccion #111">
 						    </div>
 						  </div>						 
  						  <div class="control-group">
@@ -33,50 +33,27 @@
 						   <div class="control-group">
 						    <label class="control-label" for="inputEmail">Email</label>
 						    <div class="controls">
-						      <input type="text" id="inputEmail" placeholder="ej: ejemplo@ejemplo.cl">
+						      <input type="email" id="inputEmail" name="inputEmail" placeholder="ej: ejemplo@ejemplo.cl" required>
 						    </div>
 						  </div>
 						  <div class="control-group">
 						    <label class="control-label" for="inputLogo">Logo</label>
 						    <div class="controls">
-						      <input type="file" id="inputLogo" name="inputLogo" style="width:250px;"required>
+						      <input type="file" id="inputLogo" name="userfile" style="width:250px;"required>
 						    </div>
 						  </div>
 						  <div class="control-group">
 						    <label class="control-label" for="inputLogo">Sectores de Reparto</label>
 						    <div class="controls">
-						      <label class="checkbox inline">
-			  					<input type="checkbox">
-			  					Placeres
+						    <?php foreach ($sector_repartos as $s) {
+						    	?>
+						    	 <label class="checkbox inline">
+				  					<input type="checkbox" value="<?= $s->id_sector_entrega?>" >
+				  					<?= $s->nombre_sector_entrega  ?>
 								</label>	<br>
-								<label class="checkbox inline">
-			  					<input type="checkbox">
-			  					Plan 
-								</label>	<br>
-								<label class="checkbox inline">
-			  					<input type="checkbox">
-			  					Viña del mar
-								</label>	<br>
-								<label class="checkbox inline">
-			  					<input type="checkbox">
-			  					Reñaca
-								</label>	<br>
-								<label class="checkbox inline">
-			  					<input type="checkbox">
-			  					Con Con
-								</label>	<br>
-								<label class="checkbox inline">
-			  					<input type="checkbox">
-			  					Quilpué
-			  					</label>	<br>
-								<label class="checkbox inline">
-			  					<input type="checkbox">
-			  					El Belloto
-								</label>  	<br>	
-								<label class="checkbox inline">
-			  					<input type="checkbox">
-			  					Villa Alemana
-			  					</label>	<br>		
+						    	<?php 
+						    		} 
+						    	?>
 						    </div>
 						  </div>
 

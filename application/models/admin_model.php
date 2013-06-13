@@ -20,6 +20,18 @@ class admin_model extends CI_Model{
      $result = $this->db->query($query);
      return $result->result();   
   }
+  function agregar_local($data){
+   
+     $this->db->insert('Local', $data);
+     $query="select id_local from Local where nombre_local='$data[nombre_local]'";
+     $result = $this->db->query($query);
+     $res=$result->result();
+     foreach ($res as $r) {
+        return $r->id_local;   
+     }
+     
+
+  }
     
 }
 
