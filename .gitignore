@@ -1,2 +1,8 @@
 
 application/controllers/admin_index.php
+
+application/.DS_Store
+
+application/views/.DS_Store
+
+.DS_Store

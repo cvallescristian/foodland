@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0059)http://uexel.us/themes/purity/multipage/wide/portfolio.html -->
-<html >
+<html lang="es" >
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -10,6 +9,8 @@
         <link href="<?= base_url();?>css/css.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="http://responsivewebinc.com/premium/metroman/style/font-awesome.css">
+
        
        <!-- styles Producto-->
 
@@ -20,30 +21,32 @@
         <link rel="stylesheet" id="prettyphoto-css" href="<?= base_url();?>css/css_productos/prettyPhoto.css" type="text/css" media="all">
 </head>
 
-    <body>
+     <body >
 
-    <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:70px;">
-      <div class="navbar-inner" style="height:70px;">
-         <a class="span3 offset2" href="admin_inicio.html" style="position:relative; left:20px;">
+    <div class="navbar transparent navbar-inverse navbar-fixed-top" >
+      <div class="navbar-inner" style="height:65px;">
+         <a class="span3 offset2" href="<?= base_url();?>home" style="position:relative; left:20px;">
                 <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">2.0</sup>
             </a>     
         <div class="container">
           <div class="nav-collapse">
                 <ul class="nav pull-right" style="position:relavite; top:-10px;">
                         
-                        <li><a href="" class="active">INICIO</a></li>
+                        <li><a href="<?= base_url();?>" class="active">Inicio</a></li>
+                        <li><a href="#portfolio">Categoria Productos</a></li>
                         <li class="dropdown">
-                            <a href="http://cleancanvas.herokuapp.com/#" class="dropdown-toggle" data-toggle="dropdown">
-                                PRODUCTOS
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                Sector reparto
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="">Pizza</a></li>
-                                <li><a href="">Sushi</a></li>
-                                <li><a href="">China</a></li>
-                            
+                                <?php foreach ($sector_entregas as $s) {
+                                ?>    
+                                <li><a href="<?= base_url();?>home?sector=<?= $s->id_sector_entrega  ?>"><?= $s->nombre_sector_entrega ?></a></li>
+                                <?php }?>
                             </ul>
                         </li>
+                        
                         
                     
             
@@ -53,9 +56,8 @@
                             <div class="span3">
                                 <div >
                                     <font><font>Iniciar con:</font></font>
-                                        <h4> <a href=""> <i class="icon-twitter"></i></a>
-                                            <a href=""><i class="icon-facebook"></i></a> 
-                                           <a href=""><i class="icon-google-plus"></i> </a></h4>
+                                        <a href=""><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a> 
+                                    <!---    <a href=""><img src="<?= base_url();?>img/icono-twitter.png" width="40px"></a> !-->
                                     
                                 </div>
                             </div>
@@ -75,3 +77,5 @@
         </div>
       </div>
     </div>
+
+
