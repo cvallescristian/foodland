@@ -30,10 +30,8 @@
                             <li><a href="" class="flink"><font><font>Contacto</font></font></a></li>
                             <li><a href="" class="flink"><font><font>Política de privacidad</font></font></a></li>
                             <li><a href="" class="flink"><font><font>Términos de uso</font></font></a></li>
-<<<<<<< HEAD
-=======
                             <li><a href="<?= base_url()?>admin" class="flink"><font><font>Foodland admin</font></font></a></li>
->>>>>>> eb2dd6fc5f114f01677118765269bfaf5bf1d107
+
                             
                             </h4>
                             
