@@ -44,7 +44,7 @@
    
       	<div class="span9 offset1">     	<!-- lista sectores -->  		
       		<h1>Sectores</h1>
-      			<a href="<?= base_url();?>admin_local/nuevo_local"class="btn btn-success">Agregar nuevo Sector</a>
+      			<a href="<?= base_url();?>admin_local/nuevo_sector"class="btn btn-success">Agregar nuevo Sector</a>
       		<div class="widget stacked widget-table action-table">				
 				<div class="widget-header">
 					<i class="icon-th-list"></i>
