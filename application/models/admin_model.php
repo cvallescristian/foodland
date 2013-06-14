@@ -38,7 +38,17 @@ class admin_model extends CI_Model{
              'id_local' => $id_local
         );
          $this->db->insert('Local_sector_entrega', $data);
-    }   
+    }
+  function get_producto(){
+     $query="select * from Producto";
+     $result = $this->db->query($query);
+     return $result->result(); 
+  }
+  function agregar_producto($data){
+
+    $this->db->insert('Producto',$data);
+    
+  }   
 }
 
  ?>
