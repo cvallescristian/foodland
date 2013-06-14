@@ -120,7 +120,7 @@
                                 <!-- Precio producto -->
                                 <h5><font><font>$ <?=$producto->precio?> </font></font></h5>
                                 </div> 
-                                <a href="producto.php" class="btn btn-warning"><font><font>Ver detalles</font></font></a>
+                                <a href="<?= base_url() ?>producto?id=<?= $id ?>" class="btn btn-warning"><font><font>Ver detalles</font></font></a>
                                 
                             </div>
                         </div>

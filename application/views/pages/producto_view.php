@@ -29,7 +29,12 @@
                         <ul class="green-checks">
                             <li><font><font>Descripci&oacuten: <?= $productos->descrip_producto?></font></font></li>
                             <li><font><font>Precio: <?= $productos->precio ?></font></font></li>
-                             <li><font><font>Sectores de entrega:</font></font></li>
+                             <li><font><font>Sectores de entrega: <?php 
+                                foreach ($sector_entregas_particular as $s) {
+                                 echo   $s->nombre_sector_entrega." " ; 
+                                }
+                              
+                              ?></font></font></li>
                            
                         </ul>
 
@@ -49,13 +54,15 @@
 
                     </div>
                     <div class="span5 pull-right">
-                        <h2><font><font>Nombre de Local</font></font></h2>
+                        <h2><font><font><?= $detalle_locales->nombre_local;  ?></font></font></h2>
 
                         <ul class="green-checks">
                         
-                            <li><font><font>Direccion:</font></font></li>
-                            <li><font><font>E-mail:</font></font></li>
-                            <li><font><font>Sectores de Entrega:</font></font></li>
+                            <li><font><font>Direccion: <?= $detalle_locales->direccion_local;?></font></font></li>
+                            <li><font><font>E-mail: <?= $detalle_locales->email  ?></font></font></li>
+                            <li><font><font>Sectores de Entrega: <?php foreach ($sector_entregas_particular as $s) {
+                                 echo   $s->nombre_sector_entrega." " ; 
+                                } ?></font></font></li>
                             
                         </ul>
 
