@@ -75,9 +75,11 @@ class Admin_local extends CI_Controller {
   				$this->uum->agregar_sector_local($id_local_nuevo,$s);
   			}
 		}
-		
-
- 
     }
+	public function nuevo_sector(){
+			$this->load->view('templades/header_admin');
+			$this->load->view('pages/admin_nuevo_sector_view');
+		
+	}
 }
 
