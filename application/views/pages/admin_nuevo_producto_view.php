@@ -8,7 +8,7 @@
 				</div>				
 				<div class="widget-content">
 					<fieldset>					
-					<form class="form-horizontal" method="post" action="<?= base_url()?>admin_producto/nuevo_producto_agregar" >
+					<form class="form-horizontal" method="post" action="<?= base_url()?>admin_producto/nuevo_producto_agregar" enctype="multipart/form-data" >
 						
 						<div class="control-group">
 						    <label class="control-label" for="inputNombre">Título</label>
@@ -33,7 +33,7 @@
 						      <select name='inputProducto'>
   								<?php foreach ($producto as $pro){ 	
   								?>
-  								<option value="<?= $pro->id_producto ?>"><?= $pro->titulo_producto ?> </option>
+  								<option value="<?= $pro->id_tipo_producto ?>"><?= $pro->nombre_tipo_producto ?> </option>
   								<?php } ?>
 							</select>
 						    </div>

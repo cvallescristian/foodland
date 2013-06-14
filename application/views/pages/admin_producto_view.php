@@ -21,30 +21,28 @@
 							</tr>
 						</thead>
 						<tbody>
+						<?php foreach ($producto as $l) {
+						?>
 							<tr>
-								<td>3 Completos</td>
-								<td>XL</td>
-								<td>1000</td>										
-								<td>bla bla bla bla bla</td>
-								<td> <a href class="btn btn-danger">Borrar</a></td>
-								<td> <a href class="btn btn-info">Editar</a></td>
+								<td><?= $l->titulo_producto  ?></td>
+								<?php foreach ($locales as $lo) {
+									if($lo->id_local == $l->id_local)
+									{
+										?>
+											<td><?= $lo->nombre_local?></td>
+											<?php
+									}
+								}
+								?>
+								
+								<td><?= $l->precio ?></td>
+								<td><?= $l->descrip_producto  ?></td>
+								<td> <a href="" class="btn btn-danger">Borrar</a></td>
+								<td><a href="" class="btn btn-info">Editar</a></td>
 							</tr>
-							<tr>
-								<td>Pizza Napolitana Grande</td>
-								<td>MetPizza</td>
-								<td>8000</td>										
-								<td>bla bla bla bla bla bla</td>
-								<td> <a href class="btn btn-danger">Borrar</a></td>
-								<td> <a href class="btn btn-info">Editar</a></td>
-							</tr>
-							<tr>
-								<td>Sushi</td>
-								<td>....</td>
-								<td>6000</td>										
-								<td>bla bla bla bla bla</td>
-								<td> <a href class="btn btn-danger">Borrar</a></td>
-								<td> <a href class="btn btn-info">Editar</a></td>
-							</tr>
+						<?php	
+						} ?>
+						
 							</tbody>
 						</table>					
 				</div> <!-- /widget-content -->

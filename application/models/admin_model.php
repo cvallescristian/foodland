@@ -44,6 +44,11 @@ class admin_model extends CI_Model{
      $result = $this->db->query($query);
      return $result->result(); 
   }
+  function get_tipo_producto(){
+     $query="select * from Tipo_Producto";
+     $result = $this->db->query($query);
+     return $result->result(); 
+  }
   function agregar_producto($data){
 
     $this->db->insert('Producto',$data);

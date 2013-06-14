@@ -4,10 +4,14 @@ class Admin_producto extends CI_Controller {
 
 	public function index()	{
 
-	
-		
-			$this->load->view('templades/header_admin');
-			$this->load->view('pages/admin_producto_view');
+			$this->load->model('admin_model','uum');
+
+			$producto = $this->uum->get_producto();
+			$locales = $this->uum->get_local();
+			$data['producto'] = $producto;
+			$data['locales'] = $locales; 
+			$this->load->view('templades/header_admin',$data);
+			$this->load->view('pages/admin_producto_view',$data);
 		
 	}
 	public function nuevo_producto(){
@@ -17,7 +21,7 @@ class Admin_producto extends CI_Controller {
 		}else{
 			$this->load->model('admin_model','uum');
 			$locales = $this->uum->get_local();
-			$producto = $this->uum->get_producto();
+			$producto = $this->uum->get_tipo_producto();
 
 			$data['locales'] = $locales; 
 			$data['producto'] = $producto;		
