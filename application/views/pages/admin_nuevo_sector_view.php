@@ -25,6 +25,6 @@
 				</fieldset>					
 				</div> 
 			</div>
-	    </div> <!-- agregar local -->
+	    </div> <!-- agregar nuevo sector -->
 	</div>
 </div>
