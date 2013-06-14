@@ -46,7 +46,7 @@ class admin_model extends CI_Model{
      return $result->result(); 
   }
   function get_tipo_producto(){
-     $query="select * from Tipo_Producto";
+     $query="select * from Tipo_producto";
      $result = $this->db->query($query);
      return $result->result(); 
   }
@@ -66,9 +66,45 @@ class admin_model extends CI_Model{
   {
     $this->db->where('id_producto',$id);
     $this->db->delete('Producto');
+    $dir= base_url().'img/locales/'.$id.'.png';
+    echo $dir;
+    if(file_exists($dir)) 
+    { 
+      if(unlink($dir)){
+          print "El archivo fue borrado"; 
+       } 
+    } 
+    else{
+      print "Este archivo no existe"; 
+    }
+  }
+  function borrar_local($id){
+    //borramos los productos del local
+    $query = "delete from Producto where id_local='$id' ";
+    $this->db->query($query);
+    //borramos sus sectores de reparto
+    $query = "delete from Local_sector_entrega where id_local='$id'";
+    $this->db->query($query);
+    //borramos el local
+    $query ="delete from Local where id_local='$id' ";
+    $this->db->query($query);
+  }
+  function agregar_sector($data){
+    $this->db->insert('Sector_entrega',$data);
+  }
+  function borrar_sector($id){
+     $this->db->where('id_sector_entrega',$id);
 
-    $this->ftp->delete_file(base_url().'img/locales/'.$id.'.png');
-
+     $this->db->delete('Sector_entrega');
+  }
+  function get_sector_entrega_particular($id){
+    $query ="select * from Sector_entrega where id_sector_entrega='$id'";
+    $result=$this->db->query($query);
+    $re= $result->result();
+    foreach ($re as $r) {
+      return $r;
+      break;
+    }
   } 
 }
 

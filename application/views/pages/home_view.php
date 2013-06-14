@@ -11,13 +11,13 @@
                 <div class="container" >
                     <div class="row" style="margin-top:160px; background:rgba(7, 7, 7, 0.68)">
                         <div class="span10">
-                             <div class="span5 offset3" style="padding:30px;">
+                            <!-- <div class="span5 offset3" style="padding:30px;">
                                 <form class="form-search" style="margin-bottom: 0px;">
                                   <input type="text" class="input-xlarge search-query" style="height: 35px; font-size: 24px;" placeholder="¿Qu&eacute quieres comer?" required>
                                   <button type="submit" class="btn btn-danger" style="height: 44px;">Buscar</button>
                                 </form>
                             </div>
-
+                            -->
                             <div class="span10 offset1" style="text-align:left;padding: 20px;">
                                 <h2><?php 
                                     if($sector==""){
@@ -78,7 +78,7 @@
                         <!-- Inicio Bloque Grande-->
                         <div class="span12  project" style="height:400px;">
                             <!-- Imagen de fondo-->
-                            <img src="<?= base_url();?>img/locales/<?=$id_local?>_<?=$id?>.jpg"  class="project-img"> 
+                            <img src="<?= base_url();?>img/locales/<?=$id?>.png"  class="project-img"> 
                             <!-- Logo del local-->
                             <span class="overlay"> 
                                 <img src="<?= base_url();?>img/locales/<?=$id_local?>_logo.png" alt="" style="width:120px; height:120px; position:relative; left:790px; top:20px;">
@@ -105,7 +105,7 @@
                                                  <!-- Inicio bloque chico-->
                         <div class="span6 project" style="height: 280px;">
                             <!-- imagen de fondo -->
-                            <img src="<?= base_url();?>img/locales/<?=$id_local."_".$id?>.jpg" alt="" class="project-img">
+                            <img src="<?= base_url();?>img/locales/<?=$id?>.png" alt="" class="project-img">
                             <!-- logo del producto -->
                             <span class="overlay">
                                 <img src="<?= base_url();?>img/locales/<?=$id_local?>_logo.png" alt="" style="width:70px; height:70px; position:relative; left:350px; top:20px;">
@@ -183,7 +183,7 @@
                                 if($producto->id_tipo_producto == $tproducto->id_tipo_producto){
                             ?>
                             <div class="span3 project <?= $tproducto->nombre_tipo_producto; ?> isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(<?= $tamaño;?>px, 0px, 0px);">
-                                <img src="<?= base_url();?>img/locales/<?= $producto->id_local?>_<?= $producto->id_producto;?>.jpg" alt="" class="project-img">
+                                <img src="<?= base_url();?>img/locales/<?= $producto->id_producto;?>.png" alt="" class="project-img">
                                 <span class="overlay"></span>
                                 <div class="cnt">
                                     <h5><font><font><?= $producto->titulo_producto; ?></font></font></h5>

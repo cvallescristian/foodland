@@ -67,19 +67,81 @@ class Admin_local extends CI_Controller {
 			//guardamos la base de datos 
 			$this->load->model('admin_model','uum');
 			$id_local_nuevo= $this->uum->agregar_local($data);
-	  	//	move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_nuevo _logo.png");
-		 	//	$root= base_url()."admin_local?al=1";
-  			//	echo "<script>location.href='$root';</script>";	
+	  		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_nuevo _logo.png");
+		 		$root= base_url()."admin_local?al=1";
+  				echo "<script>location.href='$root';</script>";	
 
   			foreach ($checkbox as $s ) {
-  				$this->uum->agregar_sector_local($id_local_nuevo,$s);
+  				$this->uum->agregar_sector_local($s,$id_local_nuevo);
   			}
+  	
+		}
+		
+    }
+    public function borrar_local(){
+    	if($this->session->userdata('id')==""){
+			$root= base_url()."admin";
+			header("Location: $root");
+		}else{
+			$id=$this->input->get('id');
+			$this->load->model('admin_model','uum');
+			$this->uum->borrar_local($id);
+			$root= base_url()."admin_local";
+    		echo "<script>location.href='$root';</script>";
 		}
     }
 	public function nuevo_sector(){
+		if($this->session->userdata('id')==""){
+			$root= base_url()."admin";
+			header("Location: $root");
+		}else{
+			$data['sector']="";
 			$this->load->view('templades/header_admin');
-			$this->load->view('pages/admin_nuevo_sector_view');
-		
+			$this->load->view('pages/admin_nuevo_sector_view',$data);
+		}
+	}
+	public function nuevo_sector_agregar(){
+		if($this->session->userdata('id')==""){
+			$root= base_url()."admin";
+			header("Location: $root");
+		}else{
+			$data = array( 
+	           'nombre_sector_entrega' => $this->input->post('inputNombre'),
+	        );
+			$this->load->model('admin_model','uum');
+			$this->uum->agregar_sector($data);
+
+			$root= base_url()."admin_local";
+    		echo "<script>location.href='$root';</script>";
+		}
+	}
+	 public function borrar_sector()
+	{
+		if($this->session->userdata('id')==""){
+			$root= base_url()."admin";
+			header("Location: $root");
+		}else{
+			$id= $this->input->get('id');
+			$this->load->model('admin_model','uum');
+			$this->uum->borrar_sector($id);
+
+			$root= base_url()."admin_local";
+    		echo "<script>location.href='$root';</script>";
+		}
+	}
+	public function editar_sector(){
+
+		if($this->session->userdata('id')==""){
+			$root= base_url()."admin";
+			header("Location: $root");
+		}else{
+			$id= $this->input->get('id');
+			$this->load->model('admin_model','uum');
+			$sectores= $this->uum->get_sector_entrega_particular($id);
+			$data['sector']=$sectores;
+			$this->load->view('templades/header_admin',$data);
+			$this->load->view('pages/admin_nuevo_sector_view',$data);
+		}
 	}
 }
 
