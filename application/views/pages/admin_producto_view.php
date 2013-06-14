@@ -21,8 +21,31 @@
 							</tr>
 						</thead>
 						<tbody>
-
-						</tbody>
+							<tr>
+								<td>3 Completos</td>
+								<td>XL</td>
+								<td>1000</td>										
+								<td>bla bla bla bla bla</td>
+								<td> <a href class="btn btn-danger">Borrar</a></td>
+								<td> <a href class="btn btn-info">Editar</a></td>
+							</tr>
+							<tr>
+								<td>Pizza Napolitana Grande</td>
+								<td>MetPizza</td>
+								<td>8000</td>										
+								<td>bla bla bla bla bla bla</td>
+								<td> <a href class="btn btn-danger">Borrar</a></td>
+								<td> <a href class="btn btn-info">Editar</a></td>
+							</tr>
+							<tr>
+								<td>Sushi</td>
+								<td>....</td>
+								<td>6000</td>										
+								<td>bla bla bla bla bla</td>
+								<td> <a href class="btn btn-danger">Borrar</a></td>
+								<td> <a href class="btn btn-info">Editar</a></td>
+							</tr>
+							</tbody>
 						</table>					
 				</div> <!-- /widget-content -->
 			</div> <!-- /widget -->	

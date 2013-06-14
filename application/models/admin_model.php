@@ -32,7 +32,6 @@ class admin_model extends CI_Model{
      
 
   }
-<<<<<<< HEAD
    function agregar_sector_local($id_sector,$id_local){
         $data = array( //datos del local
              'id_sector_entrega' => $id_sector,
@@ -40,19 +39,6 @@ class admin_model extends CI_Model{
         );
          $this->db->insert('Local_sector_entrega', $data);
     }   
-=======
-  function get_producto(){
-     $query="select * from Producto";
-     $result = $this->db->query($query);
-     return $result->result(); 
-  }
-  function agregar_producto($data){
-
-    $this->db->insert('Producto',$data);
-    
-  }
-    
->>>>>>> Agregar producto listo
 }
 
  ?>

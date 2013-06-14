@@ -8,7 +8,7 @@
 				</div>				
 				<div class="widget-content">
 					<fieldset>					
-					<form class="form-horizontal" method="post" action="<?= base_url()?>admin_producto/nuevo_producto_agregar" >
+					<form class="form-horizontal" method="post" action="<?= base_url()?>admin_local/nuevo_local_agregar"  enctype="multipart/form-data" >
 						
 						<div class="control-group">
 						    <label class="control-label" for="inputNombre">Título</label>
@@ -17,38 +17,26 @@
 						    </div>
 						</div>						 
 						  <div class="control-group">
-						    <label class="control-label" for="inputLocal">Local Asociado</label>
+						    <label class="control-label" for="inputDireccion">Local Asociado</label>
 						    <div class="controls">
-						      <select name='inputLocal'>
-  								<?php foreach ($locales as $pro){ 	
-  								?>
-  								<option value="<?= $pro->id_local ?>"><?= $pro->nombre_local ?> </option>
-  								<?php } ?>
-							</select>
-						    </div>
-						  </div>
-						  <div class="control-group">
-						    <label class="control-label" for="inputLocal">Tipo Producto</label>
-						    <div class="controls">
-						      <select name='inputProducto'>
-  								<?php foreach ($producto as $pro){ 	
-  								?>
-  								<option value="<?= $pro->id_producto ?>"><?= $pro->titulo_producto ?> </option>
-  								<?php } ?>
+						      <select>
+  								<option>MetPizza</option>
+  								<option>XL</option>
+  								<option>etc...</option>
 							</select>
 						    </div>
 						  </div>						 
  						  <div class="control-group">
-						    <label class="control-label" for="inputPrecio">Precio</label>
+						    <label class="control-label" for="inputFono">Precio</label>
 						    <div class="controls">
 						      <input type="number" id="inputPrecio" name="inputPrecio" placeholder="$$$$" autocomplete="off" required>						    
 						    </div>
 						  </div>
 
 						  <div class="control-group">
-						    <label class="control-label" for="inputDescripcion">Descripción</label>
+						    <label class="control-label" for="inputEmail">Descripción</label>
 						    <div class="controls">
-						      <textarea name='inputDescripcion' rows="3" required></textarea>					    
+						      <textarea rows="3" required></textarea>					    
 						    </div>
 						  </div> 
 
