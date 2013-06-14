@@ -182,7 +182,7 @@
                                 foreach ($productos as $producto) { 
                                 if($producto->id_tipo_producto == $tproducto->id_tipo_producto){
                             ?>
-                            <div class="span3 project <?= $tproducto->nombre_tipo_producto; ?> isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(<?= $tamaño;?>px, 0px, 0px);">
+                            <div class="span3 project <?= $tproducto->nombre_tipo_producto; ?> isotope-item" style="height:147px; position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(<?= $tamaño;?>px, 0px, 0px);">
                                 <img src="<?= base_url();?>img/locales/<?= $producto->id_producto;?>.png" alt="" class="project-img">
                                 <span class="overlay"></span>
                                 <div class="cnt">

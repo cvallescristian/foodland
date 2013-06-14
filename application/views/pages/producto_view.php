@@ -86,20 +86,20 @@
 <div class="modal fade" id="test_modal">
   <div class="modal-header">
     <a class="close" data-dismiss="modal">&times;</a>
-    <h3>Comparte en Facebook para ver el Telefono</h3>
+    <h3>Muchas gracias por visitar Foodland</h3>
   </div>
   <br><br>
   <div class="modal-body">
-     <div class="span3 offset1" style="font-size: 15px;">Para Ver el Telefono debes compartir en facebook para que tus amigos sepan que as pedido que 
-      as pedido pizza</div>
-      <div class="span2 offset1"> 
-        <img src="<?= base_url();?>img/megusta.jpg" >
+     <div class="span3 offset1" style="font-size: 15px;">Puedes decirle al local que vienes de parte de FOODLAND, así nos ayudarás a difundir mejor este servicio</div>
+      <div class="span2 offset1">
+        <h3>El teléfono es:  </h3> 
+        <h2><?= $detalle_locales->telefono_local;  ?></h2>
       </div>
   </div>
   <br><br>
   <div class="modal-footer">
     <a href="#" class="btn" data-dismiss="modal">Cancelar</a>
-    <a href="#" class="btn btn-facebook"><i class="icon-facebook"></i> | Conectar con Facebook</a>
+    <a href="#" class="btn btn-warning" data-dismiss="modal"> Aceptar</a>
   </div>
 </div>
 

@@ -49,7 +49,7 @@
                         
                         
                     
-            
+            <!--
                    <li class="dropdown">
                         <a href="" class="dropdown-toggle" data-toggle="dropdown"><font><font>Iniciar Sesión</font></font><b class="caret"></b></a>
                         <div class="dropdown-menu" style="padding: 15px; color:white;" >
@@ -57,7 +57,6 @@
                                 <div >
                                     <font><font>Iniciar con:</font></font>
                                         <a href=""><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a> 
-                                    <!---    <a href=""><img src="<?= base_url();?>img/icono-twitter.png" width="40px"></a> !-->
                                     
                                 </div>
                             </div>
@@ -71,7 +70,7 @@
 
                         </div>
                   </li>
-                   
+                -->   
                 </ul>
             </div>
         </div>

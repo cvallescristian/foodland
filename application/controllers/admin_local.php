@@ -67,7 +67,7 @@ class Admin_local extends CI_Controller {
 			//guardamos la base de datos 
 			$this->load->model('admin_model','uum');
 			$id_local_nuevo= $this->uum->agregar_local($data);
-	  		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_nuevo _logo.png");
+	  		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_nuevo.'_logo.png'");
 		 		$root= base_url()."admin_local?al=1";
   				echo "<script>location.href='$root';</script>";	
 
