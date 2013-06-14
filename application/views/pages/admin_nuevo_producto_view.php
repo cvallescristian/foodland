@@ -24,7 +24,7 @@
   								?>
   								<option value="<?= $pro->id_local ?>"><?= $pro->nombre_local ?> </option>
   								<?php } ?>
-							</select>
+							</select> 
 						    </div>
 						  </div>
 						  <div class="control-group">

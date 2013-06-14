@@ -22,7 +22,7 @@
 						</thead>
 						<tbody>
 
-						</tbody>
+						</tbody> 
 						</table>					
 				</div> <!-- /widget-content -->
 			</div> <!-- /widget -->	

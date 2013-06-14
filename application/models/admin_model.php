@@ -32,7 +32,7 @@ class admin_model extends CI_Model{
      
 
   }
-<<<<<<< HEAD
+<<<<<<< HEAD 
    function agregar_sector_local($id_sector,$id_local){
         $data = array( //datos del local
              'id_sector_entrega' => $id_sector,

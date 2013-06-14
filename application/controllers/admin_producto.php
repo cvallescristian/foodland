@@ -7,7 +7,7 @@ class Admin_producto extends CI_Controller {
 	
 		
 			$this->load->view('templades/header_admin');
-			$this->load->view('pages/admin_producto_view');
+			$this->load->view('pages/admin_producto_view'); 
 		
 	}
 	public function nuevo_producto(){
@@ -16,7 +16,7 @@ class Admin_producto extends CI_Controller {
 			header("Location: $root");
 		}else{
 			$this->load->model('admin_model','uum');
-			$locales = $this->uum->get_local();
+			$locales = $this->uum->get_local(); 
 			$producto = $this->uum->get_producto();
 
 			$data['locales'] = $locales; 
