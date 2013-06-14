@@ -23,6 +23,7 @@ class admin_model extends CI_Model{
   function agregar_local($data){
    
      $this->db->insert('Local', $data);
+
      $query="select id_local from Local where nombre_local='$data[nombre_local]'";
      $result = $this->db->query($query);
      $res=$result->result();
@@ -52,12 +53,21 @@ class admin_model extends CI_Model{
   function agregar_producto($data){
 
     $this->db->insert('Producto',$data);
+     $query="select id_producto from Producto where titulo_producto='$data[titulo_producto]'";
+     $result = $this->db->query($query);
+     $res=$result->result();
+     foreach ($res as $r) {
+        return $r->id_producto;   
+     }
+     
     
   }  
   function borrar_producto($id)
   {
     $this->db->where('id_producto',$id);
     $this->db->delete('Producto');
+
+    $this->ftp->delete_file(base_url().'img/locales/'.$id.'.png');
 
   } 
 }

@@ -44,7 +44,12 @@
 						      <input type="number" id="inputPrecio" name="inputPrecio" placeholder="$$$$" autocomplete="off" required>						    
 						    </div>
 						  </div>
-
+						  <div class="control-group">
+						    <label class="control-label" for="inputFoto">Logo</label>
+						    <div class="controls">
+						      <input type="file" id="inputFoto" name="userfile" style="width:250px;"required>
+						    </div>
+						  </div>
 						  <div class="control-group">
 						    <label class="control-label" for="inputDescripcion">Descripción</label>
 						    <div class="controls">

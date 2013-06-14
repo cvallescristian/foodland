@@ -40,9 +40,15 @@ class Admin_producto extends CI_Controller {
            'id_tipo_producto' => $this->input->post('inputProducto')
     	);
 
+    	$config['upload_path'] = base_url()."img/locales/";  
+    	$config['allowed_types'] = 'gif|jpg|png'; 
+    	$config['max_size'] = '100'; 
 
 		$this->load->model('admin_model','uum');
 		$id_producto_nuevo= $this->uum->agregar_producto($data);
+
+		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/".$id_producto_nuevo.".png");
+
 		 $root= base_url()."admin_producto";
   		echo "<script>location.href='$root';</script>";
     }
