@@ -92,7 +92,7 @@
                                  <!-- Precio Del producto-->
                                  <h1><font><font> $<?=  $producto->precio  ?></font></font></h1>
                                 <br><br>
-                                <a href="productos.php" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
+                                <a href="<?= base_url() ?>producto?id=<?= $id ?>" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
                             </div>
                         </div>
                         <!-- Termino Bloque Grande-->

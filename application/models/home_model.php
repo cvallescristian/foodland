@@ -3,7 +3,7 @@ class home_model extends CI_Model{
 
   
 
-    function get_producto($sector_entrega){
+    function get_producto($sector_entrega){ //exclusivamente para el index
 
         $query = "select * from Producto,Local_sector_entrega";
         if($sector_entrega!=""){
@@ -14,6 +14,15 @@ class home_model extends CI_Model{
         }
         $result = $this->db->query($query);
         return $result->result();      
+    }
+    function get_producto_particular($id){
+        $query="select * from Producto where id_producto='$id' ";
+        $result= $this->db->query($query);
+        $re= $result->result();
+        foreach ($re as $r) {
+            return $r;
+            break;
+        }
     }
 
     function get_categoria(){
@@ -26,6 +35,10 @@ class home_model extends CI_Model{
         $query="select * from Sector_entrega";
          $result = $this->db->query($query);
          return $result->result();    
+    }
+    function get_sector_entrega_particular($id){
+
+        
     }
     
     function get_usuario(){

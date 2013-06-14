@@ -54,7 +54,7 @@
 
                 <div class="span1">
                    <br> <br> <br>
-                    <h3><font>Siguinos</font></h3>
+                    <h3><font>Siguenos</font></h3>
                     <br><br>
                             <h2 class="center"><i class="icon-twitter"></i></h2>
                             <h2 class="center"><i class="icon-envelope"></i></h2>

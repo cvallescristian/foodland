@@ -24,11 +24,11 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="home">
                     <div class="span5">
-                        <h2><font><font>Pizza Española</font><font></font></font></h2>
+                        <h2><font><font><?= $productos->titulo_producto; ?></font><font></font></font></h2>
 
                         <ul class="green-checks">
-                            <li><font><font>Ingredientes: </font></font></li>
-                            <li><font><font>Precio:</font></font></li>
+                            <li><font><font>Descripci&oacuten: <?= $productos->descrip_producto?></font></font></li>
+                            <li><font><font>Precio: <?= $productos->precio ?></font></font></li>
                              <li><font><font>Sectores de entrega:</font></font></li>
                            
                         </ul>
