@@ -37,7 +37,7 @@
 								
 								<td><?= $l->precio ?></td>
 								<td><?= $l->descrip_producto  ?></td>
-								<td> <a href="" class="btn btn-danger">Borrar</a></td>
+								<td> <a href="<?= base_url();?>admin_producto/borrar_producto?id=<?= $l->id_producto; ?>" class="btn btn-danger">Borrar</a></td>
 								<td><a href="" class="btn btn-info">Editar</a></td>
 							</tr>
 						<?php	

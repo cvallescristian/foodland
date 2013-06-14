@@ -46,6 +46,13 @@ class Admin_producto extends CI_Controller {
 		 $root= base_url()."admin_producto";
   		echo "<script>location.href='$root';</script>";
     }
+    public function borrar_producto(){
+    	$id = $this->input->get('id');
+    	$this->load->model('admin_model','uum');
+    	$this->uum->borrar_producto($id);
+    	$root= base_url()."admin_producto";
+    	echo "<script>location.href='$root';</script>";
+    }
 
 }
 	

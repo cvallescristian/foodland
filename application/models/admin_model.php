@@ -53,7 +53,13 @@ class admin_model extends CI_Model{
 
     $this->db->insert('Producto',$data);
     
-  }   
+  }  
+  function borrar_producto($id)
+  {
+    $this->db->where('id_producto',$id);
+    $this->db->delete('Producto');
+
+  } 
 }
 
  ?>
