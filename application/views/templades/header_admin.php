@@ -29,42 +29,17 @@
 			</a>
 			
 			<a class="span4" href="<?= base_url();?>admin_local">
-				<img src="./img/logo2.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
+				<img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
 			</a>		
-			
 			<div class="nav-collapse collapse">
 				<ul class="nav pull-right">
 					<li class="dropdown">
-						
-						<a href="http://jumpstartuidemo.com/themes/base/index.html#" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="icon-cog"></i>
-							Configuracion
-							<b class="caret"></b>
-						</a>
-						
-						<ul class="dropdown-menu">
-							<li><a href="javascript:;">Cunfiguracion de Cuenta</a></li>
-							<li><a href="javascript:;">Cambiar mis datos</a></li>
-							<li class="divider"></li>
-							<li><a href="javascript:;">Ayuda</a></li>
-						</ul>
-						
-					</li>
-			
-					<li class="dropdown">
-						
-						<a href="http://jumpstartuidemo.com/themes/base/index.html#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="<?= base_url();?>admin/logout" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="icon-user"></i> 
-							Diego Reyes
-							<b class="caret"></b>
-						</a>
-						
-						<ul class="dropdown-menu">
-							<li><a href="javascript:;">Mi Perfil</a></li>
+							LOGOUT
 							
-							<li class="divider"></li>
-							<li><a href="javascript:;">Salir</a></li>
-						</ul>						
+						</a>
+												
 					</li>
 				</ul>				
 			</div><!--/.nav-collapse -->	
@@ -78,16 +53,14 @@
 			<a class="btn-subnavbar collapsed" data-toggle="collapse" data-target=".subnav-collapse">
 				<i class="icon-reorder"></i>
 			</a>
-
 			<div class="subnav-collapse collapse">
 				<ul class="mainnav">					
 					<li class="">					
 						<a href="<?= base_url();?>admin_local">
 							<i class="icon-map-marker"></i>
-							<span>Local</span>
+							<span>Home</span>
 						</a>	    
-					</li>
-					
+					</li>					
 					<li class="">					
 						<a href="<?= base_url();?>admin_producto">
 							<i class="icon-barcode"></i>
@@ -96,10 +69,11 @@
 						</a>				
 					</li>
 					<li class="">					
-						<a href="http://foodland.cl/foodland2/implementacion/admin/admin_soporte.php">
-							<i class="icon-globe"></i>
-							<span>Sectores</span>							
-						</a>	
+						<a href="<?= base_url();?>admin_member">
+							<i class="icon-user"></i>
+							<span>Miembros</span>
+							
+						</a>				
 					</li>
 				</ul>
 			</div> <!-- /.subnav-collapse -->

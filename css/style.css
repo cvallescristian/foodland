@@ -20,7 +20,7 @@ html,body {
     height:100%;
     /* The html and body elements cannot have any padding or margin. */
     font-family:'Open Sans', sans-serif;
-    background-color:#f4f5f6;
+    background-color:white;
 }
 
 /*#features,#support,#testimonials,#news, #bottom{background-color: #f4f5f6;}*/
@@ -1620,8 +1620,8 @@ input[type="color"]:focus,
 /* --------------------------------------------------------	*/
 .btn {
     color:#fff;
-    background:#8AB833;
-    height:48px;
+    background:rgb(209, 26, 26);
+    
     line-height:48px;
     padding:0 22px;
     text-shadow:none;
@@ -1640,7 +1640,7 @@ input[type="color"]:focus,
 
 .btn:hover {
     color:#FFF;
-    background:#82AD38;
+    background:rgb(209, 136, 26);
     text-shadow:1px 1px 1px #48611C;
 }
 .navbar .btn-navbar{

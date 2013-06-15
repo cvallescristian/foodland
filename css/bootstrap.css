@@ -69,6 +69,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+
 }
 
 a:focus {
@@ -227,17 +228,17 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #ffffff;
+  background-color: rgb(241, 241, 241);
 }
 
 a {
-  color: #0088cc;
+  color: white;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #005580;
+  color: #c1c1c1;
   text-decoration: underline;
 }
 
@@ -2306,7 +2307,7 @@ table th[class*="span"],
 .dropdown-submenu:focus > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"],
 .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url("../img/glyphicons-halflings-white.png");
+  background-image: url("/img/glyphicons-halflings-white.png");
 }
 
 .icon-glass {
@@ -4756,6 +4757,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > .dropdown-menu.pull-right {
   right: 0;
   left: auto;
+  opacity: 0.95;
 }
 
 .navbar .pull-right > li > .dropdown-menu:before,

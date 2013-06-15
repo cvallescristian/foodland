@@ -7,6 +7,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-family: 'Lato', sans-serif !important;
 	padding-top: 107px;
+	background-color: #f5f5f5;
 }
 @media (max-width: 979px) {
 	body { padding-top: 0 !important; }
@@ -26,9 +27,7 @@ textarea {
 body.pull_top {
     padding-top: 0px !important;
 }
-header {
-    background: rgba(0,0,0,.8) !important;
-}
+
 .navbar.navbar-static-top {
     margin-bottom: 35px;
 }
@@ -37,7 +36,7 @@ header {
     border-bottom: 1px solid #280308;
 }
 .navbar.transparent.navbar-inverse .navbar-inner .container {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     -webkit-transition: margin .2s ease-in-out;
     -moz-transition: margin .2s ease-in-out;
@@ -61,7 +60,7 @@ header {
 }
 .navbar-inverse .nav > li > a {
     /*color: rgb(177, 177, 177);*/
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     color: #fff;
     text-shadow: 0 1px 0 rgba(0,0,0,.5);
