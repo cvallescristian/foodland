@@ -21,6 +21,7 @@ class Admin_local extends CI_Controller {
 			}
 			$data['locales']=$locales;
 			$data['sectores']=$sectores;
+	
 			$this->load->view('templades/header_admin',$data);
 			$this->load->view('pages/admin_local_view',$data);
 		}
