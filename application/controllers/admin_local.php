@@ -112,10 +112,12 @@ class Admin_local extends CI_Controller {
 			$this->load->model('admin_model','uum');
 			$this->uum->agregar_sector($data);
 
-			$root= base_url()."admin_local";
-    		echo "<script>location.href='$root';</script>";
+			$root= base_url()."admin_local/sector_agregado";
+			header("Location: $root");
+    		
 		}
 	}
+
 	 public function borrar_sector()
 	{
 		if($this->session->userdata('id')==""){

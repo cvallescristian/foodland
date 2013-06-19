@@ -1,7 +1,28 @@
+
 <div class="main">
     <div class="container">
       <div class="row">
-      	
+		<div class="span9 offset1" style="margin-top: 50px;">
+			<?php
+			    if($this->uri->segment(1)=="admin_local" && $this->uri->segment(2)=="sector_agregado")
+			    {
+			?>
+			<div class="alert alert-success mensaje_enviado_inf" style="">
+			    <!-- <a class="close">×</a> -->
+			    <div class="containter" align="center">
+			        <div class="row">
+			            <div class="span12">
+			                <strong><i class="icon-ok"></i> Subida Exitosa</strong> 
+			            </div>
+			        </div>
+			    </div>
+			    
+			</div>
+
+			<?php
+			    }
+			?>
+		</div>
       	<div class="span9 offset1">     	<!-- lista locales -->
       		<h1>Local</h1>
       		<a class="btn btn-success" href="<?= base_url();?>admin_local/nuevo_local">Agregar nuevo Local</a>  		

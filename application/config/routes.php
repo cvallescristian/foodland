@@ -41,6 +41,7 @@
 $route['default_controller'] = "home";
 $route['bienvenidos'] = "welcome";
 $route['404_override'] = '';
+$route['admin_local/sector_agregado'] = 'admin_local';
 
 
 /* End of file routes.php */

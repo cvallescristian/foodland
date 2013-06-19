@@ -10,7 +10,7 @@ class home_model extends CI_Model{
 
             $query.=" where Local_sector_entrega.id_sector_entrega=$sector_entrega and Producto.id_local=Local_sector_entrega.id_local";
         }else{
-            $query.=" where Producto.id_local=Local_sector_entrega.id_local";
+            $query.=" where Producto.id_local=Local_sector_entrega.id_local order by rand() limit 9";
         }
         $result = $this->db->query($query);
         return $result->result();      

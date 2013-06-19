@@ -1,4 +1,4 @@
-        
+   
         <div id="myCarousel" class="carousel slide" style="top:-100px; height:600px; ">
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -18,8 +18,12 @@
                                 </form>
                             </div>
                             -->
+                           <div class="span10 offset1" style="text-align:left;padding: 20px;">
+                           	<h1>Foodland(beta) te mostrar&aacute muchos productos de comida del&iacutevery de la V regi&oacuten</h1>                            	
+                            </div>
+                            <br>
                             <div class="span10 offset1" style="text-align:left;padding: 20px;">
-                                <h2><?php 
+                            	<h2><?php 
                                     if($sector==""){
                                     ?>¿D&oacutende est&aacutes? <?php 
                                     }else{ 
@@ -69,6 +73,7 @@
 
                      <?php 
                         $cont= 0;
+                       
                         foreach ($productos as $producto) {
                             $id= $producto->id_producto;
                             $id_local=$producto->id_local;
@@ -76,7 +81,7 @@
                         if($cont==0){
                       ?>
                         <!-- Inicio Bloque Grande-->
-                        <div class="span12  project" style="height:400px;">
+                        <div class="span12 project" style="height:400px;">
                             <!-- Imagen de fondo-->
                             <img src="<?= base_url();?>img/locales/<?=$id?>.png"  class="project-img"> 
                             <!-- Logo del local-->
@@ -103,7 +108,7 @@
 
                             ?>
                                                  <!-- Inicio bloque chico-->
-                        <div class="span6 project" style="height: 280px;">
+                        <div class="span4  project" style="height: 280px;">
                             <!-- imagen de fondo -->
                             <img src="<?= base_url();?>img/locales/<?=$id?>.png" alt="" class="project-img">
                             <!-- logo del producto -->
@@ -130,7 +135,7 @@
 
                         }
                         $cont++;
-                        if($cont==3){
+                        if($cont==4){
                             $cont=0;
                         }
 
