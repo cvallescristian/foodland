@@ -3,14 +3,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <!-- Le styles -->
+     <title>Foodland</title>
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/theme.css">
-       
         <link href="<?= base_url();?>css/css.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="http://responsivewebinc.com/premium/metroman/style/font-awesome.css">
-
-        <link rel="stylesheet" href="<?= base_url();?>css/slider-main.css">
-       
+        <link rel="stylesheet" href="<?= base_url();?>css/slider-main.css">       
         <link href="<?= base_url();?>css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/jquery.fancybox.css" media="all">
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/jquery.fancybox-thumbs.css">
@@ -18,25 +15,18 @@
         <link href="<?= base_url();?>css/isotope.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/style.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/style-responsive.css" rel="stylesheet" type="text/css">
-         <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
-       
-
-    
-   
-    
+        <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">     
 </head>
 
-    <body style="background:#c9c9c9">
-
+<body style="background:#c9c9c9">
     <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px;">
       <div class="navbar-inner" style="height:45px;">
-         <a class="span3 offset2" href="<?= base_url();?>" style="position:relative; left:20px;">
+         <a class="span3 offset2" style="position:relative; left:20px;">
                 <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">2.0</sup>
             </a>     
         <div class="container">
           <div class="nav-collapse">
-                <ul class="nav pull-right" style="position:relavite; top:-10px;">
-                        
+                <ul class="nav pull-right" style="position:relavite; top:-10px;">                        
                         <li><a href="<?= base_url();?>" class="active">Inicio</a></li>
                         <li><a href="#portfolio">Categoria Productos</a></li>
                         <li class="dropdown">
@@ -50,8 +40,7 @@
                                 <li><a href="<?= base_url();?>home?sector=<?= $s->id_sector_entrega  ?>"><?= $s->nombre_sector_entrega ?></a></li>
                                 <?php }?>
                             </ul>
-                        </li>
-                        
+                        </li>                        
                     
                 <!--
                    <li class="dropdown">
@@ -60,9 +49,7 @@
                             <div class="span3">
                                 <div >
                                     <font><font>Iniciar con:</font></font>
-                                        <a href=""><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a> 
-                                 
-                                    
+                                        <a href=""><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a>                                                                     
                                 </div>
                             </div>
                             <form action="" method="post" accept-charset="UTF-8" class="form-menu">

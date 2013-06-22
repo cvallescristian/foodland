@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="es" >
 <head>
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-        <!-- styles de Menu-->
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/theme.css">
         <link href="<?= base_url();?>css/css.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="http://responsivewebinc.com/premium/metroman/style/font-awesome.css">
-
-       
-       <!-- styles Producto-->
-
         <link href="<?= base_url();?>css/css_productos/productos_global.css" rel="stylesheet" media="screen">
         <link href="<?= base_url();?>css/css_productos/productos2.css" rel="stylesheet" media="screen">
         <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
@@ -21,17 +14,15 @@
         <link rel="stylesheet" id="prettyphoto-css" href="<?= base_url();?>css/css_productos/prettyPhoto.css" type="text/css" media="all">
 </head>
 
-     <body >
-
+<body >
     <div class="navbar transparent navbar-inverse navbar-fixed-top" >
       <div class="navbar-inner" style="height:65px;">
          <a class="span3 offset2" href="<?= base_url();?>home" style="position:relative; left:20px;">
-                <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
+                <img src="img/logo_header.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
             </a>     
         <div class="container">
           <div class="nav-collapse">
-                <ul class="nav pull-right" style="position:relavite; top:-10px;">
-                        
+                <ul class="nav pull-right" style="position:relavite; top:-10px;">                        
                         <li><a href="<?= base_url();?>" class="active">Inicio</a></li>
                         <li><a href="#portfolio">Categoria Productos</a></li>
                         <li class="dropdown">
@@ -76,5 +67,3 @@
         </div>
       </div>
     </div>
-
-

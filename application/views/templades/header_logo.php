@@ -30,7 +30,7 @@
 				<i class="icon-cog"></i>
 			</a>			
 			<a class="span4">
-				<img src="img/logo_header.png"> <sup style="color:white;">Beta</sup>
+				<img src="img/logo_header.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
 			</a>
 			<div class="nav-collapse collapse">
 				<ul class="nav pull-right">			
@@ -45,38 +45,5 @@
 		</div> 
 	</div>
 </div> <!--/Parte 1 Header -->		
-        
-<div class="subnavbar"><!--Parte 2 Header -->		
-	<div class="subnavbar-inner">	
-		<div class="container">			
-			<a class="btn-subnavbar collapsed" data-toggle="collapse" data-target=".subnav-collapse">
-				<i class="icon-reorder"></i>
-			</a>
-			<div class="subnav-collapse collapse">
-				<ul class="mainnav">				
-					<li class="">					
-						<a href="<?= base_url();?>admin_local">
-							<i class="icon-map-marker"></i>
-							<span>Locales-Sectores</span>
-						</a>	    
-					</li>					
-					<li class="">					
-						<a href="<?= base_url();?>admin_producto">
-							<i class="icon-barcode"></i>
-							<span>Productos</span>							
-						</a>				
-					</li>
-					<li class="">					
-						<a href="<?= base_url();?>admin_member">
-							<i class="icon-user"></i>
-							<span>Members</span>
-						</a>				
-					</li>			
-				</ul>
-			</div> <!-- /.subnav-collapse -->
-		</div> <!-- /container -->	
-	</div> <!-- /subnavbar-inner -->
-</div> <!--/Parte 2 Header -->		
-
 </body>
 </html>
