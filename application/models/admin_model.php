@@ -45,6 +45,7 @@ class admin_model extends CI_Model{
      $result = $this->db->query($query);
      return $result->result(); 
   }
+ 
   function get_tipo_producto(){
      $query="select * from Tipo_producto";
      $result = $this->db->query($query);
@@ -59,7 +60,6 @@ class admin_model extends CI_Model{
      foreach ($res as $r) {
         return $r->id_producto;   
      }
-     
     
   }  
   function borrar_producto($id)

@@ -20,12 +20,14 @@
                             -->
                             <div class="span10 offset1" style="text-align:left;padding: 20px;">
                                 <h2><?php 
+                                $nombre_sector="";
                                     if($sector==""){
                                     ?>¿D&oacutende est&aacutes? <?php 
                                     }else{ 
                                     ?> Estas en <?php foreach ($sector_entregas as $s ) {
                                                         if($s->id_sector_entrega==$sector){
                                                             echo "$s->nombre_sector_entrega,  ¿Deseas cambiar de sector?";
+                                                            $nombre_sector=$s->nombre_sector_entrega;
                                                             break;
                                                         }
                                                     }
@@ -33,7 +35,7 @@
                                <?php foreach ($sector_entregas as $sector_entrega) {
                                    
                                 ?>
-                                <div class="span2"><h4><a href="<?= base_url();?>home?sector=<?= $sector_entrega->id_sector_entrega?>"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
+                                <div class="span2"><h4><a href="<?= base_url();?>home?sector=<?= $sector_entrega->id_sector_entrega?>#prod"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
                                 <?php } ?>
                             </div>
                         </div>
@@ -57,28 +59,30 @@
 
             <!--################ HEADER START ################-->
          
-            <section class="portfolio" style="position:relative; top:-120px;">
+            <section class="portfolio" id="prod" style="position:relative; top:-120px;">
 
                 <div class="container">
 
                     <div class="row">
                         <div class="span12 center">
                             <h1 class="big-heading"><font><font>Productos por llamado Telefonico</font></font></h1>
+                            <h1 class="big-heading"><?= $nombre_sector;?></h1>
                             <h4 class="sub-heading"><font><font>Te mostramos lo mejor de nuestra linea telefonica...</font></font></h4>
                         </div>
 
                      <?php 
-                        $cont= 0;
-                        foreach ($productos as $producto) {
+
+                       
+                        foreach ($productos_random as $producto) {
                             $id= $producto->id_producto;
                             $id_local=$producto->id_local;
                         
-                        if($cont==0){
+                       
                       ?>
                         <!-- Inicio Bloque Grande-->
-                        <div class="span12  project" style="height:400px;">
+                        <div class="span4 project bloque_producto" >
                             <!-- Imagen de fondo-->
-                            <img src="<?= base_url();?>img/locales/<?=$id?>.png"  class="project-img"> 
+                            <img src="<?= base_url();?>img/locales/<?=$id?>.png"  class="img-rounded"> 
                             <!-- Logo del local-->
                             <span class="overlay"> 
                                 <img src="<?= base_url();?>img/locales/<?=$id_local?>_logo.png" alt="" style="width:120px; height:120px; position:relative; left:790px; top:20px;">
@@ -86,60 +90,18 @@
 
                             <div class="cnt">
                                 <!-- Titulo Del producto-->
-                                <h1><font><font><?= $producto->titulo_producto ?></font></font></h1>
+                                <h3><font><font><?= $producto->titulo_producto ?></font></font></h3>
                                 <!-- Descripcion del producto -->
                                 <strong><font><font><?= $producto->descrip_producto?></font></font></strong>
                                  <!-- Precio Del producto-->
-                                 <h1><font><font> $<?=  $producto->precio  ?></font></font></h1>
+                                 <h3><font><font> $<?=  $producto->precio  ?></font></font></h3>
                                 <br><br>
                                 <a href="<?= base_url() ?>producto?id=<?= $id ?>" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
                             </div>
                         </div>
                         <!-- Termino Bloque Grande-->
-                        
-                        <?php 
-                          
-                         }else{
-
-                            ?>
-                                                 <!-- Inicio bloque chico-->
-                        <div class="span6 project" style="height: 280px;">
-                            <!-- imagen de fondo -->
-                            <img src="<?= base_url();?>img/locales/<?=$id?>.png" alt="" class="project-img">
-                            <!-- logo del producto -->
-                            <span class="overlay">
-                                <img src="<?= base_url();?>img/locales/<?=$id_local?>_logo.png" alt="" style="width:70px; height:70px; position:relative; left:350px; top:20px;">
-                            </span>
-
-                            <div class="cnt">
-                                <!-- Titulo producto -->
-                                <h5><font><font><?=$producto->titulo_producto?></font></font></h5>
-
-                                <!-- Descripcion Producto -->
-                               <div class="span4 offset1"><strong><font><font><?= $producto->descrip_producto; ?></font></font></strong>
-                                <!-- Precio producto -->
-                                <h5><font><font>$ <?=$producto->precio?> </font></font></h5>
-                                </div> 
-                                <a href="<?= base_url() ?>producto?id=<?= $id ?>" class="btn btn-warning"><font><font>Ver detalles</font></font></a>
-                                
-                            </div>
-                        </div>
-                        <!-- Termino bloque chico -->
-
-                            <?php
-
-                        }
-                        $cont++;
-                        if($cont==3){
-                            $cont=0;
-                        }
-
-                            }
-                         ?>
+                        <?php } ?>
                     </div>
-        
-                
-
             </section>
             <!--INICIO PRODUCTOS POR CATEGORIA-->
             <section class="portfolio rev" style=" position:relative; top:-120px;" >
@@ -203,10 +165,4 @@
 
 
             </section>
-            <!--INICIO PRODUCTOS POR CATEGORIA-->
-
-        
-
-        <!--################ PUSH WILL KEEP THE FOOTER AT BOTTOM IF YOU WANT TO CREATE OTHER PAGES ################-->
-
-        <div id="push"></div>
+            <!--TERMINO PRODUCTOS POR CATEGORIA-->

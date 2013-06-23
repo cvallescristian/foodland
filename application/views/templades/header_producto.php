@@ -18,7 +18,7 @@
     <div class="navbar transparent navbar-inverse navbar-fixed-top" >
       <div class="navbar-inner" style="height:65px;">
          <a class="span3 offset2" href="<?= base_url();?>home" style="position:relative; left:20px;">
-                <img src="img/logo_header.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
+                <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
             </a>     
         <div class="container">
           <div class="nav-collapse">
