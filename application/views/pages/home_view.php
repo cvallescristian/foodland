@@ -19,7 +19,10 @@
                             </div>
                             -->
                             <div class="span10 offset1" style="text-align:left;padding: 20px;">
-                                <h2><?php 
+                                <p><h1>Foodland(beta) te mostrará muchos productos de comida delívery de la V región</h1></p>
+                                <h2>
+                                <br>
+                                <?php 
                                 $nombre_sector="";
                                     if($sector==""){
                                     ?>¿D&oacutende est&aacutes? <?php 

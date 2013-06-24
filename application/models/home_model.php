@@ -63,6 +63,21 @@ class home_model extends CI_Model{
 
         }
 
+    }
+    function agregar_contador($id_producto){
+        //primero sacamos el valor de la cantidad de visitas y se la pasamos a la variable cant
+        $query="select cant_visitas from Producto where id_producto='$id_producto'";
+        $result= $this->db->query($query);
+        $re = $result->result(); 
+        $cant; //variable con la cantidad de visistas actual
+        foreach ($re as $r) {
+            $cant=$r->cant_visitas;
+        }
+        $cant=$cant+1; //le aumentamos 1 al contador de visitas
+
+        //luego lo guardamos a la base de datos la cantidad final de visitas
+        $query="update Producto set cant_visitas='$cant' where id_producto='$id_producto'";
+        $this->db->query($query);
     }   
 }
 

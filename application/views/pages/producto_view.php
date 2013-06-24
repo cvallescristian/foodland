@@ -3,7 +3,7 @@
                 <div class="container">
                     <div class="span12">
                         <div class="boxcolor">
-                        <h1><font><font></font></font></h1>
+                        <h1><font><font><?=$productos->titulo_producto; ?></font></font></h1>
                         </div>
                     </div><!-- span12 -->
                 </div><!-- container -->
@@ -28,7 +28,7 @@
 
                         <ul class="green-checks">
                             <li><font><font>Descripci&oacuten: <?= $productos->descrip_producto?></font></font></li>
-                            <li><font><font>Precio: <?= $productos->precio ?></font></font></li>
+                            <li><font><font>Precio: $<?= $productos->precio ?></font></font></li>
                              <li><font><font>Sectores de entrega: <?php 
                                 foreach ($sector_entregas_particular as $s) {
                                  echo   $s->nombre_sector_entrega." " ; 
@@ -98,7 +98,6 @@
   </div>
   <br><br>
   <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Cancelar</a>
     <a href="#" class="btn btn-warning" data-dismiss="modal"> Aceptar</a>
   </div>
 </div>
