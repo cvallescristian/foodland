@@ -16,6 +16,7 @@
     <link href="http://jumpstartuidemo.com/themes/base/css/base-admin-2-responsive.css" rel="stylesheet">    
     <link href="http://jumpstartuidemo.com/themes/base/css/pages/dashboard.css" rel="stylesheet">   
     <link href="http://jumpstartuidemo.com/themes/base/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?= base_url();?>css/bootstrap-responsive.min.css">
   	<style type="text/css"></style>
   	<script type="text/javascript" id="fsd3r2778frdsr3" src="./js/1022.js"></script>
   	<script type="text/javascript" src="./js/fs.js"></script>

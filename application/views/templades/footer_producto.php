@@ -1,6 +1,6 @@
 <!--################ FOOTER START ################-->
 
-     <footer id="footer" >
+     <footer id="footer" style="margin-top:120px;">
             <div class="container">
                 <div class="row" style="color:white;">
                     <div class="span3">
