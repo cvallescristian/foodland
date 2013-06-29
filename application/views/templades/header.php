@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="es" >
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
      <title>Bienvenido a Foodland</title>
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/theme.css">
         <link href="<?= base_url();?>css/css.css" rel="stylesheet" type="text/css">
@@ -18,10 +16,10 @@
         <link href="<?= base_url();?>css/style.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/style-responsive.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="<?= base_url();?>css/home.css"> 
+        <link rel="stylesheet" href="<?= base_url();?>css/home.css">     
 </head>
 
-<body style="background:#c9c9c9" cz-shortcut-listen="true">
+<body style="background:#c9c9c9">
     <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px;">
       <div class="navbar-inner" style="height:45px;">
          <a class="span3 offset2" style="position:relative; left:20px;" href="<?= base_url();?>">
