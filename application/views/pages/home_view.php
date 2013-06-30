@@ -108,7 +108,7 @@
                                         foreach ($tipo_productos as $tproducto ) {
                                             ?>
                                             <li class="separator"><font><font>/</font></font></li>
-                                            <li><a href="index#" data-filter=".<?= $tproducto->nombre_tipo_producto;?>"><font><font><?= $tproducto->nombre_tipo_producto;?></font></font></a></li>
+                                            <li><a href="" data-filter=".<?= $tproducto->nombre_tipo_producto;?>"><font><font><?= $tproducto->nombre_tipo_producto;?></font></font></a></li>
                                             <?php
                                         }
                                      ?>
@@ -134,7 +134,7 @@
                                 <div class="cnt">
                                     <h5><font><font><?= $producto->titulo_producto; ?></font></font></h5>
 
-                                    <a href="" class="btn btn-warning"><font><font>Ver más detalles</font></font></a>
+                                    <a href="<?= base_url().'producto?id='.$producto->id_producto ?>" class="btn btn-warning"><font><font>Ver más detalles</font></font></a>
                                 </div>
                             </div>
                             <?php 
