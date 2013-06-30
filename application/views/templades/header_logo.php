@@ -30,18 +30,9 @@
 				<i class="icon-cog"></i>
 			</a>			
 			<a class="span4">
-				<img src="img/logo_header.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
+				<img src="img/logo2.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
 			</a>
-			<div class="nav-collapse collapse">
-				<ul class="nav pull-right">			
-					<li class="dropdown">						
-						<a href="<?= base_url();?>admin/logout" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="icon-user"></i> 
-							LOGOUT
-						</a>						
-					</li>
-				</ul>			
-			</div>
+			
 		</div> 
 	</div>
 </div> <!--/Parte 1 Header -->		

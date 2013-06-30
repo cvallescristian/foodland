@@ -30,8 +30,8 @@
 			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 				<i class="icon-cog"></i>
 			</a>			
-			<a class="span4">
-				<img src="img/logo_header.png"> <sup style="color:white;">Beta</sup>
+			<a class="span2" href="<?= base_url();?>admin">
+				<img src="<?= base_url();?>img/logo2.png"> <sup style="color:white;">Beta</sup>
 			</a>
 			<div class="nav-collapse collapse">
 				<ul class="nav pull-right">			
