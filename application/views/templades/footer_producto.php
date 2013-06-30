@@ -21,26 +21,31 @@
                         </font></font></p>
                         </div>
                     </div>
-                    <div class="span2 offset1">
+                     <div class="span3 offset1">
 
                         <br><br><br>
                         <h2><font><font>Enlaces </font></font></h2>
                         <ul class="unstyled footer-links">
-                            <h4>
+                            <h5>
+                            <li><a href="<?= base_url();?>" class="flink">Inicio</a></li>
+                                <!--
                             <li><a href="" class="flink"><font><font>Quiénes somos</font></font></a></li>
                             <li><a href="" class="flink"><font><font>El equipo</font></font></a></li>
                             <li><a href="" class="flink"><font><font>Contacto</font></font></a></li>
                             <li><a href="" class="flink"><font><font>Política de privacidad</font></font></a></li>
                             <li><a href="" class="flink"><font><font>Términos de uso</font></font></a></li>
+                                -->
+                            <li><a href="<?= base_url()?>admin" class="flink"><font><font>Foodland admin</font></font></a></li>
+
                             
-                            </h4>
+                            </h5>
                             
                         </ul>
                     </div>
 
                   <div class="span3 contact ">
                     <br><br><br>
-                    <h3 class="center"><font>Contacto</font></h3>
+                    <h3><font>Contacto</font></h3>
                     <br> 
                     <form action="" method="post">
                         <input type="text" placeholder="Tu nombre">
@@ -58,7 +63,7 @@
                     <h3><font>Siguinos</font></h3>
                     <br><br>
                             <h2 class="center"><i class="icon-twitter"></i></h2>
-                            <h2 class="center"><i class="icon-envelope"></i></h2>
+                            
                             <h2 class="center"><i class="icon-facebook"></i></h2>
 
                 </div>  

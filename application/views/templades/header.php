@@ -43,27 +43,40 @@
                             </ul>
                         </li>                        
                     
-                <!--
+                
                    <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown"><font><font>Iniciar Sesión</font></font><b class="caret"></b></a>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                            <font><font>
+                                 <?php if($this->session->userdata('user_profile')) : 
+                                        $usuario= $this->session->userdata('user_profile');
+                                        echo $usuario['first_name'];
+                                    ?>
+
+                                    <?php else : ?>
+                                    Iniciar Session
+                                    <?php endif; ?>
+                            </font></font><b class="caret"></b>
+                        </a>
                         <div class="dropdown-menu" style="padding: 15px; color:white;" >
                             <div class="span3">
                                 <div >
+                                    <?php if($this->session->userdata('user_profile')) : 
+                                        $usuario= $this->session->userdata('user_profile');
+                                        
+                                    ?>
+                                     <div class="logout">
+                                        <p><a href="<?php echo $logout_url; ?>">Cerrar Session</a></p>
+                                    </div>
+                                    <?php else : ?>
                                     <font><font>Iniciar con:</font></font>
-                                        <a href=""><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a>                                                                     
+                                        <a href="<?php echo $login_url; ?>"><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a>                                                                     
+                                    <?php endif; ?>
+                                    
                                 </div>
                             </div>
-                            <form action="" method="post" accept-charset="UTF-8" class="form-menu">
-                                <input id="user_username" type="text" name="user[username]" size="33" placeholder="Username">
-                                <input id="user_password" type="password" name="user[password]" size="33" placeholder="Password">
-                                <label class="checkbox muted hidden-tablet">
-                                <font> Registrarce<font></font></font></label>
-                                <font><font><input class="btn btn-success span3" type="submit" name="commit" value="Entrar"></font></font>
-                            </form>
-
                         </div>
                   </li>
-                -->
+                
                 </ul>
             </div>
         </div>

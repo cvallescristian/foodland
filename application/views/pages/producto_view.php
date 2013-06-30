@@ -1,9 +1,9 @@
   <div id="projectwrap">
             <header class="clearfix">
                 <div class="container">
-                    <div class="span12">
+                    <div class="span5 offset3">
                         <div class="boxcolor">
-                        <h1><font><font><?=$productos->titulo_producto; ?></font></font></h1>
+                        <h1><font><font><?=$productos->titulo_producto;?></font></font></h1>
                         </div>
                     </div><!-- span12 -->
                 </div><!-- container -->
@@ -16,7 +16,7 @@
     
     <div class="row">
         <div class="span12 white-panel no-padding">
-            <ul class="nav nav-tabs">
+            <ul class="nav nav-tabs" style="height:25px;">
                 <li class="active"><a href="#home" data-toggle="tab"> <img src="<?= base_url();?>img/producto/pizza.png" width="40" ><font><font>Producto</font></font></a></li>
                 <li><a href="#profile" data-toggle="tab"> <img src="<?= base_url();?>img/producto/local.png" ><font><font>Detalles del Local</font></font></a></li>
                             </ul> <!-- End tabs -->
@@ -24,8 +24,9 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="home">
                     <div class="span5">
-                        <h2><font><font><?= $productos->titulo_producto; ?></font><font></font></font></h2>
-
+                        <div class="span5 offset1">
+                          <h2><font><font><font><?= $productos->titulo_producto; ?></font></font></font></h2>
+                        </div>
                         <ul class="green-checks">
                             <li><font><font>Descripci&oacuten: <?= $productos->descrip_producto?></font></font></li>
                             <li><font><font>Precio: $<?= $productos->precio ?></font></font></li>
@@ -50,11 +51,11 @@
 
                 <div class="tab-pane" id="profile">
                     <div class="span5">
-                        <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.cl/maps?hl=es&amp;ie=UTF8&amp;ll=-33.037306,-71.590862&amp;spn=0.087639,0.154324&amp;t=m&amp;z=13&amp;output=embed"></iframe>
+                         <img src="<?= base_url();?>img/locales/34.'_logo.png'" class="img-tilt">
 
                     </div>
                     <div class="span5 pull-right">
-                        <h2><font><font><?= $detalle_locales->nombre_local;  ?></font></font></h2>
+                        <h2><font><font><?= $detalle_locales->nombre_local;?></font></font></h2>
 
                         <ul class="green-checks">
                         
@@ -92,8 +93,8 @@
   <div class="modal-body">
      <div class="span3 offset1" style="font-size: 15px;">Puedes decirle al local que vienes de parte de FOODLAND, así nos ayudarás a difundir mejor este servicio</div>
       <div class="span2 offset1">
-        <h3>El teléfono es:  </h3> 
-        <h2><?= $detalle_locales->telefono_local;  ?></h2>
+        <h4>El teléfono es:  </h4> 
+        <h3><?= $detalle_locales->telefono_local;  ?></h3>
       </div>
   </div>
   <br><br>
