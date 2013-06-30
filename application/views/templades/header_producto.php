@@ -11,12 +11,13 @@
         <link href="<?= base_url();?>css/css_productos/productos2.css" rel="stylesheet" media="screen">
         <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
         <link href="<?= base_url();?>css/social-buttons.css" rel="stylesheet">
+
         <link rel="stylesheet" id="prettyphoto-css" href="<?= base_url();?>css/css_productos/prettyPhoto.css" type="text/css" media="all">
 </head>
 
 <body >
     <div class="navbar transparent navbar-inverse navbar-fixed-top" >
-      <div class="navbar-inner" style="height:65px;">
+      <div class="navbar-inner" style="height:45px;">
          <a class="span3 offset2" href="<?= base_url();?>home" style="position:relative; left:20px;">
                 <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
             </a>     
