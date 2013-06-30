@@ -20,10 +20,11 @@ class Producto extends CI_Controller {
 			$data['sector_entregas_particular']=$sector_entregas_particular;
 			$data['sector_entregas']=$sector_entregas;
 			$data['detalle_locales']=$detalle_local;
+
 			$this->load->view('templades/header_producto',$data);
 			$this->load->view('pages/producto_view',$data);
 			$this->load->view('templades/footer_producto',$data);
-
+			
 		}else{
 			echo "Error en la consulta SQL <br>";
 		
