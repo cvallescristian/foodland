@@ -76,6 +76,13 @@
         <script src="<?= base_url();?>js/jquery.isotope.min.js"></script>
         <script src="<?= base_url();?>js/retina.js"></script>
         <script src="<?= base_url();?>js/portfolio.js"></script>
+
+        <!-- Scripts de carousel index-->
+        
+        <script src="<?= base_url();?>js/contenido/supersized.3.2.7.min.js"></script>
+        <script src="<?= base_url();?>js/contenido/supersized-init.js"></script>
+
+
 <body>
     <html>
 

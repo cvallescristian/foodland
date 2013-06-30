@@ -16,7 +16,9 @@
         <link href="<?= base_url();?>css/style.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/style-responsive.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="<?= base_url();?>css/home.css">     
+        <link rel="stylesheet" href="<?= base_url();?>css/home.css"> 
+
+         <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css">    
 </head>
 
 <body style="background:#c9c9c9">

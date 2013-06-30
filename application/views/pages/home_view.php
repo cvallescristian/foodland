@@ -1,23 +1,12 @@
         
-        <div id="myCarousel" class="carousel slide" style="top:-100px; height:600px; ">
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-            <div class="active item" style="background: url(<?= base_url();?>img/slider/1.jpg);background-size: 100%;">
-                <div class="container" >
-                    <div class="row" style="margin-top:160px; background:rgba(7, 7, 7, 0.68)">
-                        <div class="span10">
-                            <!-- <div class="span5 offset3" style="padding:30px;">
-                                <form class="form-search" style="margin-bottom: 0px;">
-                                  <input type="text" class="input-xlarge search-query" style="height: 35px; font-size: 24px;" placeholder="¿Qu&eacute quieres comer?" required>
-                                  <button type="submit" class="btn btn-danger" style="height: 44px;">Buscar</button>
-                                </form>
-                            </div>
-                            -->
+     
+        <div id="fondo">
+            
+        <div class="container offset1" >
+                    <div class="row" style="margin-top:0px; background:rgba(7, 7, 7, 0.75); position:absolute; z-index:2000;
+                        margin-left: 20px;">
+                        
+                            
                             <div class="span10 offset1" style="text-align:left;padding: 20px;">
                                 <p><h1>Foodland(beta) te mostrará muchos productos de comida delívery de la V región</h1></p>
                                 <h2>
@@ -41,35 +30,27 @@
                                 <div class="span2"><h4><a href="<?= base_url();?>home?sector=<?= $sector_entrega->id_sector_entrega?>#prod"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
                                 <?php } ?>
                             </div>
-                        </div>
+                    
                        
                     </div>
                 </div>
-            </div>
-            <div class="item" style="background: url(<?= base_url();?>img/slider/2.jpg);background-size: 100%;" >
-                
-            </div>
-            <div class="item" style="background: url(<?= base_url();?>img/slider/3.jpg);background-size: 100%;">
-            </div>
-          </div>
-          <!-- Carousel nav -->
-          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-        </div>
-       
+              
+       </div>
         <!--################ WRAP START ################-->
 
 
             <!--################ HEADER START ################-->
          
-            <section class="portfolio" id="prod" style="position:relative; top:-120px;">
+            <section class="portfolio" id="prod" style="position:relative; top:-155px;">
 
                 <div class="container">
 
                     <div class="row">
+
                         <div class="span12 center">
+
                             <h1 class="big-heading"><font><font>Productos por llamado Telefonico</font></font></h1>
-                            <h1 class="big-heading"><?= $nombre_sector;?></h1>
+                            
                             <h4 class="sub-heading"><font><font>Te mostramos lo mejor de nuestra linea telefonica...</font></font></h4>
                         </div>
 
@@ -107,7 +88,7 @@
                     </div>
             </section>
             <!--INICIO PRODUCTOS POR CATEGORIA-->
-            <section class="portfolio rev" style=" position:relative; top:-120px;" >
+            <section class="portfolio rev" style=" position:relative; top:-155px;" >
                 
                 
                 <div class="container" id="portfolio" >
@@ -121,13 +102,13 @@
                        <div class="span12">
                             <div id="filters_container">
                                 <ul id="filters">
-                                      <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter="*" class="active"><font><font>TODOS</font></font></a></li>
+                                      <li><a href="index#" data-filter="*" class="active"><font><font>TODOS</font></font></a></li>
                                     
                                     <?php 
                                         foreach ($tipo_productos as $tproducto ) {
                                             ?>
                                             <li class="separator"><font><font>/</font></font></li>
-                                            <li><a href="http://uexel.us/themes/purity/multipage/wide/portfolio.html#" data-filter=".<?= $tproducto->nombre_tipo_producto;?>"><font><font><?= $tproducto->nombre_tipo_producto;?></font></font></a></li>
+                                            <li><a href="index#" data-filter=".<?= $tproducto->nombre_tipo_producto;?>"><font><font><?= $tproducto->nombre_tipo_producto;?></font></font></a></li>
                                             <?php
                                         }
                                      ?>
@@ -169,3 +150,8 @@
 
             </section>
             <!--TERMINO PRODUCTOS POR CATEGORIA-->
+
+
+
+
+
