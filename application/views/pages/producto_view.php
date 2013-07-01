@@ -1,4 +1,4 @@
-  <div id="projectwrap">
+  <div id="projectwrap" style="background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>); background-size:100% 100%;">
             <header class="clearfix">
                 <div class="container">
                     <div class="span5 offset3">

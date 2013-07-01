@@ -78,6 +78,16 @@ class home_model extends CI_Model{
         //luego lo guardamos a la base de datos la cantidad final de visitas
         $query="update Producto set cant_visitas='$cant' where id_producto='$id_producto'";
         $this->db->query($query);
+    }
+    function get_tipo_producto_particular($id){ //esto es solamente para los productos para saber su tipo de producto
+
+        $query="select id_tipo_producto from Producto where id_producto='$id'";
+        $result = $this->db->query($query);
+         $re=$result->result();
+         foreach ($re as $r) {
+            return $r->id_tipo_producto;
+            break;
+         }
     }   
 }
 
