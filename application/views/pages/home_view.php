@@ -3,11 +3,11 @@
         <div id="fondo">
             
         <div class="container offset1" >
-                    <div class="row" style="margin-top:0px; background:rgba(7, 7, 7, 0.75); position:absolute; z-index:2000;
+                    <div class="row" style="margin-top:30px; background:rgba(7, 7, 7, 0.55); position:absolute; z-index:1000;
                         margin-left: 20px;">
                         
                             
-                            <div class="span10 offset1" style="text-align:left;padding: 20px;">
+                            <div class="span10" style="text-align:left;padding: 20px; margin-left: 39px;">
                                 <p><h1>Foodland(beta) te mostrará muchos productos de comida delívery de la V región</h1></p>
                                 <h2>
                                 <br>

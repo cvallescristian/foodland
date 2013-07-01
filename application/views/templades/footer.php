@@ -7,7 +7,7 @@
                         <img src="<?= base_url();?>img/logo2.png" width="250" height="40"> <sup style="color:white;">2.0</sup>
 
                         <div class="span3" style="font-size:12px; margin-left:0px;">
-                        <p ><br><font><font>Foodland es nuestra empresa emprendedora e innovadora, 
+                        <p ><br><font><font>Foodland es una empresa emprendedora e innovadora, 
                             formada por un grupo de jóvenes universitarios el año 2012, cuya misión es 
                             mostrar, a través de esta plataforma, una gran gama de locales delivery de 
                             la quinta región (y próximamente en todo Chile) bajo nuestro catálogo, con 
@@ -15,7 +15,7 @@
                             los productos que ofrecen nuestros asociados, facilitando de esta forma, la 
                             conexión entre las personas y los locales.</font></font></p>
                         <p class="copyright"><font><font>
-                            FoodLand © 2013 
+                            FoodLand.cl © 2013 
                         </font></font></p>
                         </div>
                     </div>

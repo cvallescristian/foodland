@@ -2730,7 +2730,7 @@ a,a:hover {
     border-top:1px solid #FFFDFD;
     top:-120px;
     border-bottom:0;
-    background:#F7F7F7;
+    background:rgb(224, 224, 224);
     box-shadow:none;
     border-bottom:1px solid #FFFDFD;
 }
