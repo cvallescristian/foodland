@@ -1,7 +1,7 @@
  <footer id="footer" >
             <div class="container">
                 <div class="row" style="color:white;">
-                    <div class="span3">
+                    <div class="span3 offset1">
                         <br><br>
                         
                         <img src="<?= base_url();?>img/logo2.png" width="250" height="40"> <sup style="color:white;">2.0</sup>
@@ -52,16 +52,34 @@
                         </form>
                     </div>
 
-                    <div class="span1 offset1">
-                        <br> <br> <br>
-                        <h3><font>Siguenos</font></h3>
-                        <br><br>
-                        <a href="https://twitter.com/FoodLand_Valpo"><h2 class="center"><i class="icon-twitter"></i></h2></a>
-                        <a href="https://www.facebook.com/FoodLandValparaiso"> <h2 class="center"><i class="icon-facebook"></i></h2></a>
-                        
-                       
-                    </div>  
+                   
                 </div>
+                <div class="row credits">
+                <div class="span12">
+                    <div class="row social">
+                        <div class="span12">
+                            <a href="https://www.facebook.com/FoodLandValparaiso" class="facebook">
+                                <span class="socialicons ico1"></span>
+                                <span class="socialicons_h ico1h"></span>
+                            </a>
+                            <a href="https://twitter.com/FoodLand_Valpo" class="twitter">
+                                <span class="socialicons ico2"></span>
+                                <span class="socialicons_h ico2h"></span>
+                            </a>
+                            <a href="" class="gplus">
+                                <span class="socialicons ico3"></span>
+                                <span class="socialicons_h ico3h"></span>
+                            </a>
+                          
+                        </div>
+                    </div>
+                    <div class="row copyright">
+                        <div class="span12">
+                            © 2013 Foodland.cl Todos los derechos reservados.
+                        </div>
+                    </div>
+                </div>            
+            </div>
             </div>
 </footer>
 
