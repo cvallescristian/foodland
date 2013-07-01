@@ -15,6 +15,11 @@ FREELANCING : info@uexel.com
 
 */
 /* FancyBox Styles */
+@media (max-width: 767px) {
+    #partner-slider,
+    #feature_slider {
+        display: none;
+    }
 html,body {
     -webkit-font-smoothing:antialiased;
     height:100%;

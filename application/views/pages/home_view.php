@@ -1,7 +1,6 @@
         
      <section id="feature_slider" class="">
-        <div class="container">
-            <div class="row">
+        
             <div id="fondo">
                 
                 <div class="container offset1" >
@@ -37,8 +36,7 @@
                             </div>
                 </div>
                   </div>
-            </div>
-        </div>
+        
     </section>   
         <!--################ WRAP START ################-->
 
