@@ -22,17 +22,22 @@
          <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css">    
 </head>
 
+
 <body style="background:#c9c9c9">
+
     <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px;">
-      <div class="navbar-inner" style="height:45px;">
-         <a class="span3 offset2" style="position:relative; left:20px;" href="<?= base_url();?>">
+      <div class="navbar-inner" >
+         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+         </a>  
+         <a style="position:relative; margin-left:20px;" id="menu" href="<?= base_url();?>">
                 <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">BETA</sup>
-            </a>     
 
-
-        <div class="container">
-          <div class="nav-collapse">
-                <ul class="nav pull-right" style="position:relavite; top:-10px;"> 
+         </a>   
+          <div class="nav-collapse collapse" cz-shortcut-listen="true" style="background:#252528">
+                <ul class="nav pull-right" style="position:relavite; top:-37px;" > 
 
                                                 
                         <li><a href="<?= base_url();?>" class="active">Inicio</a></li>
@@ -49,8 +54,6 @@
                                 <?php }?>
                             </ul>
                         </li>                        
-                    
-                
                    <li class="dropdown">
                         <a href="" class="dropdown-toggle" data-toggle="dropdown">
                             <font><font>
@@ -82,23 +85,15 @@
                                 </div>
                             </div>
                         </div>
-                  </li>
-                  
+                    </li>
                     <li>
-                         <a href="https://www.facebook.com/FoodLandValparaiso"> <i class="icon-facebook"></i></a>
-                      
-                     </li>
+                        <a href="https://www.facebook.com/FoodLandValparaiso"> <i class="icon-facebook"></i></a>
+                    </li>
 
-                     <li> 
+                    <li> 
                        <a href="https://twitter.com/FoodLand_Valpo"><i class="icon-twitter"></i></a>
-                     </li>
+                    </li>
                 </ul>
-
-
             </div>
-
-                                  
-                           
-        </div>
-      </div>
+       </div>
     </div>
