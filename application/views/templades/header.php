@@ -36,7 +36,7 @@
                 <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">BETA</sup>
 
          </a>   
-          <div class="nav-collapse collapse" cz-shortcut-listen="true" style="background:#252528">
+          <div class="nav-collapse collapse" cz-shortcut-listen="true" style="background:#252528; z-index:1;">
                 <ul class="nav pull-right" style="position:relavite; top:-37px;" > 
 
                                                 

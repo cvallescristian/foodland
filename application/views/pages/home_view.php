@@ -90,7 +90,7 @@
                     </div>
             </section>
             <!--INICIO PRODUCTOS POR CATEGORIA-->
-            <section class="portfolio rev" style=" position:relative; top:-155px;" >
+            <section class="portfolio rev" style=" position:relative; top:120px;" >
                 
                 
                 <div class="container" id="portfolio" >
