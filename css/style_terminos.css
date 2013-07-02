@@ -1,0 +1,15 @@
+.form { 
+		background: url('../img/fondo_terminos.png') no-repeat fixed center; 
+		background-size: 404px; 
+		position: relative;
+		top: 20px;
+}
+body{
+
+  background: url('../img/fondo_admin.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#280308;
+}
