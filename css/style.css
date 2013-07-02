@@ -3323,12 +3323,3 @@ section.typography{
     height: 24px !important;
     background-image: url(../images/fancy-loading.gif) !important;
 }
-.bloque_blanco{
-    background: #f1f1f1;
-      position:relative;      
-      -webkit-box-shadow:0 0px 4px #777, 0 0 20px #CCC inset;
-      -moz-box-shadow:0 0px 4px #777, 0 0 20px #CCC inset;
-      box-shadow:0 0px 4px #777, 0 0 20px #CCC inset;
-
-    margin-top: 30px; margin-left: auto;margin-right: auto;float: none;padding: 7px 14px
-}

@@ -9,7 +9,7 @@
         <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
 
         <link rel="stylesheet" href="<?= base_url();?>css/style.css" type="text/css">
-        <link rel="stylesheet" href="<?= base_url();?>css/style_terminos.css">
+        <link rel="stylesheet" href="<?= base_url();?>css/style_footer.css">
 </head>
 
 <body style="background:#c9c9c9">
