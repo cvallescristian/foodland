@@ -1,10 +1,20 @@
  <footer id="footer" >
             <div class="container">
                 <div class="row" style="color:white;">
+<<<<<<< HEAD
                     <div class="span3">
+=======
+                    <div class="span3 offset1">
+                        <br><br>
+                        
+>>>>>>> 9c23e6711f933e67640d16b935ce8445c83071a0
                         <img src="<?= base_url();?>img/logo2.png" width="250" height="40"> <sup style="color:white;">2.0</sup>
                         <div class="span3" style="font-size:12px; margin-left:0px;">
+<<<<<<< HEAD
                         <h5><font><font>Foodland es nuestra empresa emprendedora e innovadora, 
+=======
+                        <p ><br><font><font>Foodland es una empresa emprendedora e innovadora, 
+>>>>>>> 9c23e6711f933e67640d16b935ce8445c83071a0
                             formada por un grupo de jóvenes universitarios el año 2012, cuya misión es 
                             mostrar, a través de esta plataforma, una gran gama de locales delivery de 
                             la quinta región (y próximamente en todo Chile) bajo nuestro catálogo, con 
@@ -12,7 +22,7 @@
                             los productos que ofrecen nuestros asociados, facilitando de esta forma, la 
                             conexión entre las personas y los locales.</font></font></h5>
                         <p class="copyright"><font><font>
-                            FoodLand © 2013 
+                            FoodLand.cl © 2013 
                         </font></font></p>
                         </div>
                     </div>
@@ -39,6 +49,7 @@
                             <input type="submit" value="Enviar">
                         </form>
                     </div>
+<<<<<<< HEAD
                     <br><br>
                     <div class="span1 offset1">
                         <br>
@@ -47,7 +58,37 @@
                         <a href="https://twitter.com/FoodLand_Valpo"><h2 class="center"><i class="icon-twitter"></i></h2></a>
                         <a href="https://www.facebook.com/FoodLandValparaiso"> <h2 class="center"><i class="icon-facebook"></i></h2></a>                                            
                     </div>  
+=======
+
+                   
+>>>>>>> 9c23e6711f933e67640d16b935ce8445c83071a0
                 </div>
+                <div class="row credits">
+                <div class="span12">
+                    <div class="row social">
+                        <div class="span12">
+                            <a href="https://www.facebook.com/FoodLandValparaiso" class="facebook">
+                                <span class="socialicons ico1"></span>
+                                <span class="socialicons_h ico1h"></span>
+                            </a>
+                            <a href="https://twitter.com/FoodLand_Valpo" class="twitter">
+                                <span class="socialicons ico2"></span>
+                                <span class="socialicons_h ico2h"></span>
+                            </a>
+                            <a href="" class="gplus">
+                                <span class="socialicons ico3"></span>
+                                <span class="socialicons_h ico3h"></span>
+                            </a>
+                          
+                        </div>
+                    </div>
+                    <div class="row copyright">
+                        <div class="span12">
+                            © 2013 Foodland.cl Todos los derechos reservados.
+                        </div>
+                    </div>
+                </div>            
+            </div>
             </div>
 </footer>
 

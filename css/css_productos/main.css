@@ -211,24 +211,23 @@ hr {
 /********** PROJECT WRAP **********/
 #projectwrap {
     
-    background: url(../../img/slider/2.jpg) no-repeat center center fixed; 
+   background-size: 100% 100%;
     width: 100%;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
-    height: 180px;
+    height: 211px;
     text-align:center;
     color:black;
 }
 
 #projectwrap .boxcolor{
-	background: rgba(0,0,0,0.8);
-	margin-top:80px;
+	
+	background: rgba(0, 0, 0, 0.65);
+	margin-top: 101px;
 	clear: both;
 	opacity: 1;
-
-
 }
 
 #projectwrap h1 {

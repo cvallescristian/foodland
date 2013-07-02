@@ -1,4 +1,4 @@
-  <div id="projectwrap">
+  <div id="projectwrap" style="background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>); background-size:100% 100%;">
             <header class="clearfix">
                 <div class="container">
                     <div class="span5 offset3">
@@ -92,7 +92,12 @@
   </div>
   <br><br>
   <div class="modal-body">
-     <div class="span3 offset1" style="font-size: 15px;">Puedes decirle al local que vienes de parte de FOODLAND, así nos ayudarás a difundir mejor este servicio</div>
+     <div class="span3 offset1" style="font-size: 15px;">
+        Puedes decirle al local que vienes de parte de FOODLAND, así nos ayudarás a difundir mejor este servicio
+        <br>
+        <br>
+        Comparte este producto con tus amigos para que sepan lo que estas pidiendo
+      </div>
       <div class="span2 offset1">
         <h4>El teléfono es:  </h4> 
         <h3><?= $detalle_locales->telefono_local;  ?></h3>
@@ -100,7 +105,10 @@
   </div>
   <br><br>
   <div class="modal-footer">
-    <a href="#" class="btn btn-warning" data-dismiss="modal"> Aceptar</a>
+    <a class="btn btn-facebook"href="https://www.facebook.com/sharer/sharer.php?u=<?= base_url().'Producto?id='.$productos->id_producto ?>" target="_blank">
+  <i class="icon-facebook"></i> Compartir en Facebook 
+</a>
+   <!-- <a href="#" class="btn btn-warning" data-dismiss="modal"> Ce</a> -->
   </div>
 </div>
 

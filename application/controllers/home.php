@@ -51,6 +51,7 @@ Class Home extends CI_Controller
     	);
 	$this->load->library('facebook', $config);
 	$user = $this->facebook->getUser();
+    
 	$loginParams = array('scope' => 'email','redirect_uri' => base_url().'fb/fb_auth');
 	$this->data['login_url'] = $this->facebook->getLoginUrl($loginParams);
 	$logoutParams = array( 'next' => site_url().'/fb/logout');
