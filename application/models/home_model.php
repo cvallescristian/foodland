@@ -13,7 +13,32 @@ class home_model extends CI_Model{
             $query.=" where Producto.id_local=Local_sector_entrega.id_local";
         }
         $result = $this->db->query($query);
-        return $result->result();      
+        $arreglo=$result->result();
+        $cont=0;
+        foreach ($arreglo as $a) {
+            if($cont==0){ //primer elemento
+                $arre[$cont]=$a;
+                $cont++;
+
+            }else{
+                $band=0;
+                foreach ($arre as $b ) {
+                    
+                    if($a->id_producto==$b->id_producto){
+                        $band=1;
+                        continue;
+                    }
+                }
+                if($band==0){
+                    $arre[]=$a;
+                }
+            }
+        }
+        return $arre;      
+    }
+    function ordenar($arreglo){
+        
+              
     }
     function get_producto_particular($id){
         $query="select * from Producto where id_producto='$id' ";
@@ -27,7 +52,6 @@ class home_model extends CI_Model{
     function get_producto_random($sector_entrega){ //exclusivamente para el index
         $query = "select * from Producto,Local_sector_entrega";
         if($sector_entrega!=""){
-
             $query.=" where Local_sector_entrega.id_sector_entrega=$sector_entrega and Producto.id_local=Local_sector_entrega.id_local";
         }else{
             $query.=" where Producto.id_local=Local_sector_entrega.id_local";

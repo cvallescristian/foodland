@@ -57,19 +57,19 @@
                         </div>
 
                      <?php 
-
-                       
                         foreach ($productos_random as $producto) {
                             $id= $producto->id_producto;
                             $id_local=$producto->id_local;
-                        
                        
                       ?>
                         <!-- Inicio Bloque Grande-->
                         <div class="span4 project bloque_producto" >
                             <!-- Imagen de fondo-->
                             <img src="<?= base_url();?>img/locales/<?=$id?>.png"  class="img-rounded"> 
-                            
+                            <!-- Logo del local-->
+                            <span class="overlay"> 
+                            </span>
+
                             <div class="cnt">
                                 <!-- Titulo Del producto-->
                                 <h3><font><font><?= $producto->titulo_producto ?></font></font></h3>
@@ -101,10 +101,11 @@
                                       <li><a href="index#" data-filter="*" class="active"><font><font>TODOS</font></font></a></li>
                                     
                                     <?php 
+
                                         foreach ($tipo_productos as $tproducto ) {
                                             ?>
                                             <li class="separator"><font><font>/</font></font></li>
-                                            <li><a href="" data-filter=".<?= $tproducto->nombre_tipo_producto;?>"><font><font><?= $tproducto->nombre_tipo_producto;?></font></font></a></li>
+                                            <li><a href="" data-filter=".<?= $tproducto->id_tipo_producto;?>"><font><font><?= $tproducto->nombre_tipo_producto;?></font></font></a></li>
                                             <?php
                                         }
                                      ?>
@@ -114,33 +115,34 @@
                     </div>
 
                     <div class="row isotope" id="portfolio-container" style="position: relative; overflow: hidden; height: 704px;">
-                    <?php 
-                         foreach ($tipo_productos as $tproducto ) {
-                        
+                    <?php
+                        foreach ($productos as $producto) { 
+                         
+                            
                      ?>
                            
                             <?php  
                                 $tamaño=0;
-                                foreach ($productos as $producto) { 
-                                if($producto->id_tipo_producto == $tproducto->id_tipo_producto){
+                                foreach ($tipo_productos as $tproducto ) {
+                                    if($producto->id_tipo_producto == $tproducto->id_tipo_producto){
                             ?>
-                            <div class="span3 project <?= $tproducto->nombre_tipo_producto; ?> isotope-item" style="height:147px; position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(<?= $tamaño;?>px, 0px, 0px);">
-                                <img src="<?= base_url();?>img/locales/<?= $producto->id_producto;?>.png" alt="" class="project-img">
-                                <span class="overlay"></span>
-                                <div class="cnt">
-                                    <h5><font><font><?= $producto->titulo_producto; ?></font></font></h5>
-
-                                    <a href="<?= base_url().'producto?id='.$producto->id_producto ?>" class="btn btn-warning"><font><font>Ver más detalles</font></font></a>
-                                </div>
-                            </div>
+                                        <div class="span3 project <?= $tproducto->id_tipo_producto; ?> isotope-item" style="height:147px; position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                                            <img src="<?= base_url();?>img/locales/<?= $producto->id_producto;?>.png" alt="" class="project-img">
+                                            <span class="overlay"></span>
+                                            <div class="cnt">
+                                                <h5><font><font><?= $producto->titulo_producto; ?></font></font></h5>
+                                                <a href="<?= base_url().'producto?id='.$producto->id_producto ?>" class="btn btn-warning"><font><font>Ver más detalles</font></font></a>
+                                            </div>
+                                        </div>
                             <?php 
-                                $tamaño=$tamaño+300;
+                                    
+                                    }
+
                                 }
-                            }
                              ?>
-                    <?php 
-                    } 
-                    ?>
+                        <?php 
+                        } 
+                        ?>
                 </div>
 
 
