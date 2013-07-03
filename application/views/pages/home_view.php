@@ -69,16 +69,10 @@
                         <div class="span4 project bloque_producto" >
                             <!-- Imagen de fondo-->
                             <img src="<?= base_url();?>img/locales/<?=$id?>.png"  class="img-rounded"> 
-                            <!-- Logo del local-->
-                            <span class="overlay"> 
-                                <img src="<?= base_url();?>img/locales/<?=$id_local?>_logo.png" alt="" style="width:120px; height:120px; position:relative; left:790px; top:20px;">
-                            </span>
-
+                            
                             <div class="cnt">
                                 <!-- Titulo Del producto-->
                                 <h3><font><font><?= $producto->titulo_producto ?></font></font></h3>
-                                <!-- Descripcion del producto -->
-                                <strong><font><font><?= $producto->descrip_producto?></font></font></strong>
                                  <!-- Precio Del producto-->
                                  <h3><font><font> $<?=  $producto->precio  ?></font></font></h3>
                                 <br><br>
