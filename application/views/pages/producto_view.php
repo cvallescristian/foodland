@@ -52,7 +52,7 @@
 
                 <div class="tab-pane" id="profile">
                     <div class="span5">
-                         <img src="<?= base_url();?>img/locales/34.'_logo.png'" class="img-tilt">
+                         <img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" class="img-tilt">
 
                     </div>
                     <div class="span5 pull-right">
@@ -92,7 +92,7 @@
   </div>
   <br><br>
   <div class="modal-body">
-     <div class="span3 offset1" style="font-size: 15px;">
+     <div class="span3 " style="font-size: 15px;">
         Puedes decirle al local que vienes de parte de FOODLAND, así nos ayudarás a difundir mejor este servicio
         <br>
         <br>
