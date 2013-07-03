@@ -32,12 +32,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
          </a>  
-         <a style="position:relative; margin-left:20px;" id="menu" href="<?= base_url();?>">
-                <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">BETA</sup>
+    
+        <div class="span3 offset1">
+             <a  id="menu" href="<?= base_url();?>">
+                    <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">BETA</sup>
 
-         </a>   
-          <div class="nav-collapse collapse" cz-shortcut-listen="true" style="background:#252528; z-index:1;">
-                <ul class="nav pull-right" style="position:relavite; top:-37px;" > 
+             </a>   
+         </div>
+          <div class="nav-collapse collapse" cz-shortcut-listen="true">
+                <ul class="nav pull-right"> 
 
                                                 
                         <li><a href="<?= base_url();?>" class="active">Inicio</a></li>
@@ -86,13 +89,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <a href="https://www.facebook.com/FoodLandValparaiso"> <i class="icon-facebook"></i></a>
-                    </li>
-
-                    <li> 
-                       <a href="https://twitter.com/FoodLand_Valpo"><i class="icon-twitter"></i></a>
-                    </li>
+                    
                 </ul>
             </div>
        </div>
