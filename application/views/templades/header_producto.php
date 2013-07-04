@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="es" >
 <head>
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-        <!-- styles de Menu-->
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/theme.css">
         <link href="<?= base_url();?>css/css.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="http://responsivewebinc.com/premium/metroman/style/font-awesome.css">
-
-       
-       <!-- styles Producto-->
-
         <link href="<?= base_url();?>css/css_productos/productos_global.css" rel="stylesheet" media="screen">
         <link href="<?= base_url();?>css/css_productos/productos2.css" rel="stylesheet" media="screen">
         <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
         <link href="<?= base_url();?>css/social-buttons.css" rel="stylesheet">
-        <link rel="stylesheet" id="prettyphoto-css" href="<?= base_url();?>css/css_productos/prettyPhoto.css" type="text/css" media="all">
-</head>
 
-     <body >
+        <link href="<?= base_url();?>css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
 
+        </head>
+
+<body >
     <div class="navbar transparent navbar-inverse navbar-fixed-top" >
-      <div class="navbar-inner" style="height:65px;">
+      <div class="navbar-inner" style="height:45px;">
+
          <a class="span3 offset2" href="<?= base_url();?>home" style="position:relative; left:20px;">
-                <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">Beta</sup>
-            </a>     
+                <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">BETA</sup>
+            </a>    
+
         <div class="container">
           <div class="nav-collapse">
-                <ul class="nav pull-right" style="position:relavite; top:-10px;">
-                        
+                <ul class="nav pull-right" style="position:relavite; top:-10px;">  
+
                         <li><a href="<?= base_url();?>" class="active">Inicio</a></li>
                         <li><a href="#portfolio">Categoria Productos</a></li>
+                        
                         <li class="dropdown">
                             <a href="" class="dropdown-toggle" data-toggle="dropdown">
                                 Sector reparto
@@ -46,35 +43,52 @@
                                 <?php }?>
                             </ul>
                         </li>
+                       
                         
-                        
-                    
-            <!--
-                   <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown"><font><font>Iniciar Sesión</font></font><b class="caret"></b></a>
-                        <div class="dropdown-menu" style="padding: 15px; color:white;" >
-                            <div class="span3">
-                                <div >
-                                    <font><font>Iniciar con:</font></font>
-                                        <a href=""><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a> 
-                                    
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                <font><font>
+                                     <?php if($this->session->userdata('user_profile')) : 
+                                            $usuario= $this->session->userdata('user_profile');
+                                            echo $usuario['first_name'];
+                                        ?>
+
+                                        <?php else : ?>
+                                        Iniciar Session
+                                        <?php endif; ?>
+                                </font></font><b class="caret"></b>
+                            </a>
+                            <div class="dropdown-menu" style="padding: 15px; color:white;" >
+                                <div class="span2">
+                                    <div >
+                                        <?php if($this->session->userdata('user_profile')) : 
+                                            $usuario= $this->session->userdata('user_profile');
+                                            
+                                        ?>
+                                         <div class="logout">
+                                            <p><a href="<?php echo $logout_url; ?>">Cerrar Session</a></p>
+                                        </div>
+                                        <?php else : ?>
+                                        <font><font>Iniciar con:</font></font>
+                                            <a href="<?php echo $login_url; ?>"><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a>                                                                     
+                                        <?php endif; ?>
+                                        
+                                    </div>
                                 </div>
                             </div>
-                            <form action="" method="post" accept-charset="UTF-8" class="form-menu">
-                                <input id="user_username" type="text" name="user[username]" size="33" placeholder="Username">
-                                <input id="user_password" type="password" name="user[password]" size="33" placeholder="Password">
-                                <label class="checkbox muted hidden-tablet">
-                                <font> Registrarce<font></font></font></label>
-                                <font><font><input class="btn btn-success span3" type="submit" name="commit" value="Entrar"></font></font>
-                            </form>
+                      </li>
+                    <li>
+                         <a href="https://www.facebook.com/FoodLandValparaiso"><i class="icon-facebook"></i></a>
+                      
+                     </li>
 
-                        </div>
-                  </li>
-                -->   
+                     <li> 
+                       <a href="https://twitter.com/FoodLand_Valpo"><i class="icon-twitter"></i></a>
+                     </li>
+                      
+                    
                 </ul>
             </div>
         </div>
       </div>
     </div>
-
-

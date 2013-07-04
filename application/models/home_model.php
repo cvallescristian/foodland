@@ -13,7 +13,32 @@ class home_model extends CI_Model{
             $query.=" where Producto.id_local=Local_sector_entrega.id_local order by rand() limit 9";
         }
         $result = $this->db->query($query);
-        return $result->result();      
+        $arreglo=$result->result();
+        $cont=0;
+        foreach ($arreglo as $a) {
+            if($cont==0){ //primer elemento
+                $arre[$cont]=$a;
+                $cont++;
+
+            }else{
+                $band=0;
+                foreach ($arre as $b ) {
+                    
+                    if($a->id_producto==$b->id_producto){
+                        $band=1;
+                        continue;
+                    }
+                }
+                if($band==0){
+                    $arre[]=$a;
+                }
+            }
+        }
+        return $arre;      
+    }
+    function ordenar($arreglo){
+        
+              
     }
     function get_producto_particular($id){
         $query="select * from Producto where id_producto='$id' ";
@@ -23,6 +48,17 @@ class home_model extends CI_Model{
             return $r;
             break;
         }
+    }
+    function get_producto_random($sector_entrega){ //exclusivamente para el index
+        $query = "select * from Producto,Local_sector_entrega";
+        if($sector_entrega!=""){
+            $query.=" where Local_sector_entrega.id_sector_entrega=$sector_entrega and Producto.id_local=Local_sector_entrega.id_local";
+        }else{
+            $query.=" where Producto.id_local=Local_sector_entrega.id_local";
+        }
+        $query.=" order by rand() limit 12";
+        $result = $this->db->query($query);
+        return $result->result();      
     }
 
     function get_categoria(){
@@ -51,6 +87,31 @@ class home_model extends CI_Model{
 
         }
 
+    }
+    function agregar_contador($id_producto){
+        //primero sacamos el valor de la cantidad de visitas y se la pasamos a la variable cant
+        $query="select cant_visitas from Producto where id_producto='$id_producto'";
+        $result= $this->db->query($query);
+        $re = $result->result(); 
+        $cant; //variable con la cantidad de visistas actual
+        foreach ($re as $r) {
+            $cant=$r->cant_visitas;
+        }
+        $cant=$cant+1; //le aumentamos 1 al contador de visitas
+
+        //luego lo guardamos a la base de datos la cantidad final de visitas
+        $query="update Producto set cant_visitas='$cant' where id_producto='$id_producto'";
+        $this->db->query($query);
+    }
+    function get_tipo_producto_particular($id){ //esto es solamente para los productos para saber su tipo de producto
+
+        $query="select id_tipo_producto from Producto where id_producto='$id'";
+        $result = $this->db->query($query);
+         $re=$result->result();
+         foreach ($re as $r) {
+            return $r->id_tipo_producto;
+            break;
+         }
     }   
 }
 

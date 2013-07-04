@@ -8,17 +8,18 @@
 				</div>				
 				<div class="widget-content">
 					<fieldset>					
-					<form class="form-horizontal" method="post" action="<?= base_url()?>admin_member/nuevo_miembro_agregar"  enctype="multipart/form-data" >
+					<form class="form-horizontal" method="post" action="<?= base_url()?>admin_member/nuevo_member_agregar"  enctype="multipart/form-data" >
 										 
 						  <div class="control-group">
 						    <label class="control-label" for="inputDireccion">Email</label>
 						    <div class="controls">
 						      <input type="text" id="inputEmail" name="inputEmail"placeholder="ej : Juanito Pérez" autocomplete="off" required>
 						    </div>
+						    <br>
  						  <div class="control-group">
 						    <label class="control-label" for="inputFono">Pass</label>
 						    <div class="controls">
-						      <input type="text" id="inputPass" name="inputPass" autocomplete="off" required>						    
+						      <input type="password" id="inputPass" name="inputPass" autocomplete="off" placeholder="minimo 6 caracteres" required >						    
 						    </div>
 						  </div>
 

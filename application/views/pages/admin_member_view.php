@@ -18,16 +18,16 @@
 							</tr>
 						</thead>
 						<tbody>
+							<?php foreach ($members as $m ) {
+							?>
 							<tr>										
-								<td>david@foodland.cl</td>
-								<td> <a href class="btn btn-danger">Borrar</a></td>
-								<td> <a href class="btn btn-info">Editar</a></td>
+								<td><?= $m->email?></td>
+								<td> <a href="<?= base_url()."admin_member/borrar_miembro?id=$m->id_members"?>" class="btn btn-danger">Borrar</a></td>
+								<td> <a href="" class="btn btn-info">Editar</a></td>
 							</tr>
-							<tr>									
-								<td>cristian@foodland.cl</td>
-								<td> <a href class="btn btn-danger">Borrar</a></td>
-								<td> <a href class="btn btn-info">Editar</a></td>
-							</tr>
+							<?php
+							} 
+							?>
 							</tbody>
 						</table>					
 				</div> <!-- /widget-content -->

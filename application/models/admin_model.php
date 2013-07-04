@@ -45,10 +45,35 @@ class admin_model extends CI_Model{
      $result = $this->db->query($query);
      return $result->result(); 
   }
+ 
   function get_tipo_producto(){
      $query="select * from Tipo_producto";
      $result = $this->db->query($query);
      return $result->result(); 
+  }
+  function agregar_tipo_producto($data){
+    $this->db->insert('Tipo_producto',$data);
+     $query="select id_tipo_producto from Tipo_producto where nombre_tipo_producto='$data[nombre_tipo_producto]'";
+     $result = $this->db->query($query);
+     $res=$result->result();
+     foreach ($res as $r) {
+        return $r->id_tipo_producto;   
+     }
+  }
+  function borrar_tipo_producto($id){
+    $this->db->where('id_tipo_producto',$id);
+    $this->db->delete('Tipo_producto');
+    $dir= base_url()."img/tipo_producto/$id.png";
+    echo $dir;
+    if(file_exists($dir)) 
+    { 
+      if(unlink($dir)){
+          print "El archivo fue borrado"; 
+       } 
+    } 
+    else{
+      print "Este archivo no existe"; 
+    }
   }
   function agregar_producto($data){
 
@@ -59,14 +84,13 @@ class admin_model extends CI_Model{
      foreach ($res as $r) {
         return $r->id_producto;   
      }
-     
     
   }  
   function borrar_producto($id)
   {
     $this->db->where('id_producto',$id);
     $this->db->delete('Producto');
-    $dir= base_url().'img/locales/'.$id.'.png';
+    $dir= base_url()."img/locales/$id.png";
     echo $dir;
     if(file_exists($dir)) 
     { 
@@ -88,6 +112,18 @@ class admin_model extends CI_Model{
     //borramos el local
     $query ="delete from Local where id_local='$id' ";
     $this->db->query($query);
+    $dir= base_url()."img/locales/$id"."_logo.png";
+    echo $dir;
+    if(file_exists($dir)) 
+    { 
+      if(unlink($dir)){
+          print "El archivo fue borrado"; 
+       } 
+    } 
+    else{
+      print "Este archivo no existe"; 
+    }
+
   }
   function agregar_sector($data){
     $this->db->insert('Sector_entrega',$data);
@@ -105,8 +141,20 @@ class admin_model extends CI_Model{
       return $r;
       break;
     }
-  } 
+  }
+  function get_miembros(){
+     $query="select * from Members";
+     $result = $this->db->query($query);
+     return $result->result(); 
+  }
+  function agregar_miembro($data){
+     $this->db->insert('Members',$data);
+  }
+  function borrar_miembro($id){
+    $this->db->where('id_members',$id);
 
+     $this->db->delete('Members');
+  }
 }
 
  ?>

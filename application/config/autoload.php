@@ -27,7 +27,6 @@
 |
 */
 
-
 /*
 | -------------------------------------------------------------------
 |  Auto-load Packges
@@ -53,8 +52,12 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
+<<<<<<< HEAD
 //$autoload['libraries'] = array();
 	$autoload['libraries'] = array('database','session','form_validation');
+=======
+$autoload['libraries'] = array('session','database','form_validation');
+>>>>>>> tester
 
 
 /*
@@ -66,8 +69,8 @@ $autoload['packages'] = array();
 |	$autoload['helper'] = array('url', 'file');
 */
 
-//$autoload['helper'] = array();
 $autoload['helper'] = array('url','date','file');
+
 
 /*
 | -------------------------------------------------------------------

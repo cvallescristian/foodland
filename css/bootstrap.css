@@ -169,6 +169,91 @@ textarea {
   overflow: auto;
   vertical-align: top;
 }
+@media (max-width: 767px) {
+    #partner-slider,
+    #feature_slider {
+        display: none;
+    }
+    #prod{
+     margin-top: 30px;
+    }
+    #showcase .features_op1_row .feature {
+        margin-bottom: 60px;
+    }
+    #showcase .features_op1_row .last{
+        margin-bottom: 0;
+    }
+    #showcase .features_op1_row .feature .img_box{
+        text-align: center;
+    }
+    #showcase .features_op1_row .feature .text h6{
+        text-align: center;
+    }
+    #showcase .features_op1_row .feature .img_box span.circle{
+        top: 38%;
+        left: 48%;
+    }
+    #showcase .features_op1_row .feature:hover .img_box{
+        box-shadow:none;
+    }
+    #in_pricing .charts_wrapp{
+        margin-left: 0;
+    }
+    #in_pricing .charts_wrapp .plan{
+        margin: 0 auto 30px;
+        width: 95%;
+    }
+    #in_pricing .plan .wrapper{
+        margin: 0 auto;
+        text-align: center;
+    }
+    #in_pricing .pro .plan{
+        top: 0;
+        width:95%;
+    }
+    #in_pricing .standar .plan{
+        float: none;
+    }
+    #in_pricing .start p{
+        margin-bottom: 20px;
+    }
+    #in_pricing .start a{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    #clients .row{
+        text-align: center;
+    }
+    #clients .client{
+        text-align: center;
+        margin-bottom: 15px;
+        display: inline-block;
+        margin-right: 10px;
+        width: auto;
+    }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    #showcase .features_op1_row .feature {
+        margin-bottom: 60px;
+    }
+    #showcase .features_op1_row .last{
+        margin-bottom: 0;
+    }
+    #showcase .features_op1_row .feature .img_box{
+        text-align: center;
+    }
+    #showcase .features_op1_row .feature .text h6{
+        text-align: left;
+    }
+    #showcase .features_op1_row .feature .img_box span.circle{
+        left: 44%;
+    }
+    #showcase .features_op1_row .feature:hover .img_box{
+        box-shadow:none;
+    }
+}
 
 @media print {
   * {
@@ -4595,7 +4680,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav.pull-right {
   float: right;
-  margin-right: 0;
+  margin-right: 80px;
 }
 
 .navbar .nav > li {
@@ -4797,8 +4882,8 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
-  color: #999999;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.9);
 }
 
 .navbar-inverse .brand:hover,

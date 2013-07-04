@@ -15,7 +15,7 @@ class Admin extends CI_Controller {
 			echo "<script>alert('Usuario deslogeado satisfactoriamente')</script>";
 		}
 		if($this->session->userdata('id')==""){
-			$this->load->view('templades/header');
+			$this->load->view('templades/header_logo');
 			$this->load->view('pages/admin_index_view');
 		}else{
 			$root= base_url()."admin_local";

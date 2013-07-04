@@ -1,43 +1,49 @@
 
 <!DOCTYPE html>
-<html lang="es" >
+<html lang="en" >
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <!-- Le styles -->
+     <title>Bienvenido a Foodland</title>
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/theme.css">
-       
         <link href="<?= base_url();?>css/css.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="http://responsivewebinc.com/premium/metroman/style/font-awesome.css">
-
-        <link rel="stylesheet" href="<?= base_url();?>css/slider-main.css">
-       
+        <link rel="stylesheet" href="<?= base_url();?>css/slider-main.css">       
         <link href="<?= base_url();?>css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/jquery.fancybox.css" media="all">
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/jquery.fancybox-thumbs.css">
         <link href="<?= base_url();?>css/animate.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/isotope.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/style.css" rel="stylesheet" type="text/css">
-        <link href="<?= base_url();?>css/style-responsive.css" rel="stylesheet" type="text/css">
-         <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
-       
+        
+        <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="<?= base_url();?>css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="<?= base_url();?>css/home.css"> 
 
-    
-   
-    
+         <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css">    
 </head>
 
-    <body style="background:#c9c9c9">
+
+<body style="background:#c9c9c9">
 
     <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px;">
-      <div class="navbar-inner" style="height:45px;">
-         <a class="span3 offset2" href="<?= base_url();?>" style="position:relative; left:20px;">
-                <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">2.0</sup>
-            </a>     
-        <div class="container">
-          <div class="nav-collapse">
-                <ul class="nav pull-right" style="position:relavite; top:-10px;">
-                        
+      <div class="navbar-inner" >
+         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+         </a>  
+    
+        <div class="span3 offset1">
+             <a  id="menu" href="<?= base_url();?>">
+                    <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">BETA</sup>
+
+             </a>   
+         </div>
+          <div class="nav-collapse collapse" cz-shortcut-listen="true">
+                <ul class="nav pull-right"> 
+
+                                                
                         <li><a href="<?= base_url();?>" class="active">Inicio</a></li>
                         <li><a href="#portfolio">Categoria Productos</a></li>
                         <li class="dropdown">
@@ -51,34 +57,58 @@
                                 <li><a href="<?= base_url();?>home?sector=<?= $s->id_sector_entrega  ?>"><?= $s->nombre_sector_entrega ?></a></li>
                                 <?php }?>
                             </ul>
+<<<<<<< HEAD
                         </li>
                         
                     
                 
+=======
+                        </li>                        
+>>>>>>> tester
                    <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown"><font><font>Iniciar Sesión</font></font><b class="caret"></b></a>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                            <font><font>
+                                 <?php if($this->session->userdata('user_profile')) : 
+                                        $usuario= $this->session->userdata('user_profile');
+                                        echo $usuario['first_name'];
+                                    ?>
+
+                                    <?php else : ?>
+                                    Iniciar Session
+                                    <?php endif; ?>
+                            </font></font><b class="caret"></b>
+                        </a>
                         <div class="dropdown-menu" style="padding: 15px; color:white;" >
                             <div class="span3">
                                 <div >
+                                    <?php if($this->session->userdata('user_profile')) : 
+                                        $usuario= $this->session->userdata('user_profile');
+                                        
+                                    ?>
+                                     <div class="logout">
+                                        <p><a href="<?php echo $logout_url; ?>">Cerrar Session</a></p>
+                                    </div>
+                                    <?php else : ?>
                                     <font><font>Iniciar con:</font></font>
+<<<<<<< HEAD
                                         <a href="<?= base_url()?>login_facebook"><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a> 
                                  
+=======
+                                        <a href="<?php echo $login_url; ?>"><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a>                                                                     
+                                    <?php endif; ?>
+>>>>>>> tester
                                     
                                 </div>
                             </div>
-                            <form action="" method="post" accept-charset="UTF-8" class="form-menu">
-                                <input id="user_username" type="text" name="user[username]" size="33" placeholder="Username">
-                                <input id="user_password" type="password" name="user[password]" size="33" placeholder="Password">
-                                <label class="checkbox muted hidden-tablet">
-                                <font> Registrarce<font></font></font></label>
-                                <font><font><input class="btn btn-success span3" type="submit" name="commit" value="Entrar"></font></font>
-                            </form>
-
                         </div>
+<<<<<<< HEAD
                   </li>
             
+=======
+                    </li>
+                    
+>>>>>>> tester
                 </ul>
             </div>
-        </div>
-      </div>
+       </div>
     </div>
