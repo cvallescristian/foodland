@@ -22,6 +22,42 @@ textarea {
 	font-family: 'Lato', Helvetica;
 }
 
+
+
+
+#portada1{
+
+	text-align:left;
+	padding:10px;
+
+	top:-505px;
+	background:rgba(7, 7, 7, 0.55);
+	position:relative;
+	z-index:1000;
+}
+#portada2{
+
+	text-align:left;
+	padding:10px;
+	
+	top:-505px;
+	background:rgba(7, 7, 7, 0.55);
+	position:relative;
+	z-index:1000;
+}
+
+#portada3{
+
+	text-align:left;
+	padding:10px;
+	top:-490px;
+	background:rgba(7, 7, 7, 0.55);
+	position:relative;
+	z-index:1000;
+}
+
+
+
 /* Navbar
 -------------------------------------------------- */
 body.pull_top {
@@ -109,7 +145,7 @@ body.pull_top {
 /* Footer
 -------------------------------------------------- */
 #footer {
-	margin-top: 80px;
+	margin-top: 450px;
 	min-height: 260px;
 	background-color: #252528;
 	color: #fff;

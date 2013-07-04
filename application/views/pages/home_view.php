@@ -1,17 +1,30 @@
         
-     <section id="feature_slider" class="">
+     <section id="feature_slider">
         
             <div id="fondo">
+
                 
-                <div class="container offset1" >
-                            <div class="row" style="margin-top:30px; background:rgba(7, 7, 7, 0.55); position:absolute; z-index:1000;
+                
+             
+            </div>
+        
+    </section> 
+
+
+<div class="container offset1" >
+                            <div class="row" style="
                                 margin-left: 20px;">
                                 
                                     
-                                    <div class="span10" style="text-align:left;padding: 20px; margin-left: 39px;">
-                                        <p><h1>Foodland(beta) te mostrará muchos productos de comida delívery de la V región</h1></p>
+                                    <div id="portada1" class="span8" style="">
+                                        <p><h1>Foodland (beta) te mostrará muchos productos de comida delívery de la V región</h1></p>
+                                        
+                                    </div>
+
+                                    <div  id="portada2"class="span4">
+                                        
                                         <h2>
-                                        <br>
+                                     
                                         <?php 
                                         $nombre_sector="";
                                             if($sector==""){
@@ -25,19 +38,24 @@
                                                                 }
                                                             }
                                             } ?></h2>
+
+                                    </div>
+                                        
+
+                                     <div id="portada3" class="span8" >    
                                        <?php foreach ($sector_entregas as $sector_entrega) {
                                            
                                         ?>
                                         <div class="span2"><h4><a href="<?= base_url();?>home?sector=<?= $sector_entrega->id_sector_entrega?>#prod"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
                                         <?php } ?>
                                     </div>
+
+                                </div>
                             
                                
                             </div>
-                </div>
-                  </div>
-        
-    </section>   
+        </div>  
+       
         <!--################ WRAP START ################-->
 
 
@@ -84,7 +102,7 @@
                     </div>
             </section>
             <!--INICIO PRODUCTOS POR CATEGORIA-->
-            <section class="portfolio rev" style=" position:relative; top:120px;" >
+            <section class="portfolio rev" style=" position:relative; top:450px;" >
                 
                 
                 <div class="container" id="portfolio" >

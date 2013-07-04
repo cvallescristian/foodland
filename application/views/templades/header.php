@@ -23,7 +23,7 @@
 </head>
 
 
-<body style="background:#c9c9c9">
+<body>
 
     <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px;">
       <div class="navbar-inner" >
