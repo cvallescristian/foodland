@@ -68,6 +68,7 @@
             </div>
             </div>
 </footer>
+
         <script src="<?= base_url();?>js/jquery-latest.js"></script>       
         <script type="text/javascript" src="<?= base_url();?>js/index-slider.js"></script>  
         <script src="<?= base_url();?>js/modernizr.js"></script>
@@ -78,5 +79,7 @@
         <script src="<?= base_url();?>js/portfolio.js"></script>
         <script src="<?= base_url();?>js/contenido/supersized.3.2.7.min.js"></script>
         <script src="<?= base_url();?>js/contenido/supersized-init.js"></script>
+        
+
 <body>
 <html>
