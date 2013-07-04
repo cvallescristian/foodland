@@ -7,6 +7,7 @@ Class Home extends CI_Controller
     {
     	parent::__construct();
     	$this->load->helper('url');
+        $this->load->library('email');
     	
     }
     
@@ -36,10 +37,23 @@ Class Home extends CI_Controller
 		
 			echo "<a href='".base_url()."'>Volver el home</a>";
 		}
-	
+    }
 
-     
+    public function contacto(){
         
+        $nombre= $this->input->post('nombre');
+        $email= $this->input->post('email');
+        $mensaje= $this->input->post('mensaje');
+        
+        $this->load->library('email');
+        $this->email->from($email,$nombre);
+        $this->email->to('contacto@foodland.cl');
+        $this->email->cc('cristian@foodland.cl');
+        $this->email->subject('te llego un mensaje desde el contacto del sitio');
+        $this->email->message($mensaje);
+        $this->email->send();
+
+        redirect(base_url(), 'refresh');
     }
 
     private function fb()
