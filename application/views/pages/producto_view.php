@@ -85,6 +85,15 @@
 </div>
 
 
+
+
+ <div id="projectwrap" style="background-size:100% 100%; ">
+              <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+      src="https://maps.google.cl/maps?hl=es&amp;ie=UTF8&amp;ll=-33.04004,-71.577301&amp;spn=0.09037,0.154324&amp;t=m&amp;z=13&amp;output=embed"></iframe>
+     
+</div><!-- projectwrap -->
+
+
 <div class="modal fade" id="test_modal">
   <div class="modal-header">
     <a class="close" data-dismiss="modal">&times;</a>
