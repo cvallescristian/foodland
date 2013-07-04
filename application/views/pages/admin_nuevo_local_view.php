@@ -9,7 +9,7 @@
 				<div class="widget-content">
 					<fieldset>					
 					<form class="form-horizontal" method="post" action="<?= base_url()?>admin_local/nuevo_local_agregar"  enctype="multipart/form-data" >
-						
+						<legend>Datos del local</legend>
 						<div class="control-group">
 						    <label class="control-label" for="inputNombre">Nombre</label>
 						    <div class="controls">
@@ -37,11 +37,18 @@
 						    </div>
 						  </div>
 						  <div class="control-group">
+						    <label class="control-label" for="inputEmail">Sitio referencia</label>
+						    <div class="controls">
+						      <input type="text"  name="inputSitio" placeholder="ej: http://sitio.com" >
+						    </div>
+						  </div>
+						  <div class="control-group">
 						    <label class="control-label" for="inputLogo">Logo</label>
 						    <div class="controls">
 						      <input type="file" id="inputLogo" name="userfile" style="width:250px;"required>
 						    </div>
 						  </div>
+
 						  <div class="control-group">
 						    <label class="control-label" for="inputLogo">Sectores de Reparto</label>
 						    <div class="controls">
@@ -52,10 +59,68 @@
 				  					<?= $s->nombre_sector_entrega  ?>
 								</label>	<br>
 						    	<?php 
-						    		} 
+						    	} 
 						    	?>
 						    </div>
 						  </div>
+							<div class="control-group">
+							  	<legend>Horarios de Atencion</legend>
+							    <label class="control-label" for="">Hora de semana de </label>
+							    <div class="controls">
+							    	<select name="hora_de" id="">
+							    		<option value="">--hora--</option>
+							    		<?php for ($i=0; $i <24 ; $i++) { 
+							    		?>
+							    		<option value="<?= $i;?>:00"><?= $i; ?>:00</option>
+							    		<?php 
+							    		} ?>
+							    	</select>
+							    </div>
+							</div>
+
+							<div class="control-group">
+							  	
+							    <label class="control-label" for="">Hasta </label>
+							    <div class="controls">
+							    	<select name="hora_hasta" id="">
+							    		<option value="">--hora--</option>
+							    		<?php for ($i=0; $i <24 ; $i++) { 
+							    		?>
+							    		<option value="<?= $i;?>:00"><?= $i; ?>:00</option>
+							    		<?php 
+							    		} ?>
+							    	</select>
+							    </div>
+							</div>
+						  <br><br>
+
+						  <div class="control-group">
+							  	<label class="control-label" for="">Hora fin de semana de </label>
+							    <div class="controls">
+							    	<select name="hora_de_fds" id="">
+							    		<option value="">--hora--</option>
+							    		<?php for ($i=0; $i <24 ; $i++) { 
+							    		?>
+							    		<option value="<?= $i;?>:00"><?= $i; ?>:00</option>
+							    		<?php 
+							    		} ?>
+							    	</select>
+							    </div>
+							</div>
+
+							<div class="control-group">
+							  	<label class="control-label" for="">Hasta </label>
+							    <div class="controls">
+							    	<select name="hora_hasta_fds" id="">
+							    		<option value="">--hora--</option>
+							    		<?php for ($i=0; $i <24 ; $i++) { 
+							    		?>
+							    		<option value="<?= $i;?>:00"><?= $i; ?>:00</option>
+							    		<?php 
+							    		} ?>
+							    	</select>
+							    </div>
+							</div>
 
 						  <div class="control-group" style="margin-right: 60px;">
 						    <div class="controls">
