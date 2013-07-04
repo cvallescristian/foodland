@@ -45,12 +45,11 @@
 
                     <div class="span3 contact ">
                         <br><br><br>
-                        <h3 class="center"><font>Contacto</font></h3>
-                        <form action="" method="post">
-                            <input type="text" placeholder="Tu nombre">
-                            <input type="text" placeholder="Tu Mail">
-                            <textarea rows="3" placeholder="Mensaje"></textarea>
-                            <input type="submit" value="Send">
+                       <form action="<?= base_url() ?>home/contacto" method="post">
+                            <input type="text" name="nombre" placeholder="Tu nombre" required>
+                            <input type="email" name="email" placeholder="Tu Mail" required>
+                            <textarea rows="3" name="mensaje" placeholder="Mensaje" required></textarea>
+                            <input type="submit" value="Enviar">
                         </form>
                     </div>
 

@@ -29,6 +29,7 @@ class Admin_local extends CI_Controller {
 	}
 	public function nuevo_local(){
 		if($this->session->userdata('id')==""){
+
 			$root= base_url()."admin";
 			header("Location: $root");
 		}else{
@@ -52,7 +53,15 @@ class Admin_local extends CI_Controller {
 	           'nombre_local' => $this->input->post('inputNombre'),
 	           'direccion_local' =>$this->input->post('inputDireccion'),
 	           'telefono_local' =>$this->input->post('inputFono'),
-	           'email' => $this->input->post('inputEmail')
+	           'email' => $this->input->post('inputEmail'),
+	           'sitio_referencia' => $this->input->post('inputSitio'),
+	           'horario_entrada' => $this->input->post('hora_de'),
+	           'horario_salida' => $this->input->post('hora_hasta'),
+	           'horario_entrada_fds' => $this->input->post('hora_de_fds'),
+	           'horario_salida_fds' => $this->input->post('hora_hasta_fds'),
+	           
+	           
+	            
 	    	);
 	    	//datos de la foto
 	    	$config['upload_path'] = base_url()."img/locales/";  
