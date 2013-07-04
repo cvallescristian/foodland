@@ -1,10 +1,10 @@
 	<div class="container margen">
 		<div class="row">
-			<div class="bloque_blanco offset1 span10 form">
+			<div class="bloque_blanco offset1 span12">
 				<form class="form-horizontal form" name="form">					
 					<fieldset>
 						<h2 style="text-align: center">Términos y condiciones</h2>
-						<div class="span7 offset1">
+						<div class="span9 offset1">
 							<form class="form-horizontal">
 							<h5 align="justify">Este contrato describe los términos y condiciones generales (los Términos y Condiciones Generales) aplicables al uso de los servicios ofrecidos por foodland.cl, (los Servicios) dentro del sitio www.foodland.cl  o el sitio). Cualquier persona (en adelante Usuario o en plural Usuarios) que desee acceder y/o usar el sitio o los servicios podrá hacerlo sujetándose a los Términos y Condiciones Generales, junto con todas las demás políticas y principios que rigen Foodland y que son incorporados al presente por referencia. <BR><BR>
 
