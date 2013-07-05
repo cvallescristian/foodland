@@ -7,7 +7,6 @@ Class Home extends CI_Controller
     {
     	parent::__construct();
     	$this->load->helper('url');
-        $this->load->library('email');
     	
     }
     
@@ -22,9 +21,8 @@ Class Home extends CI_Controller
 			$productos_random= $this->uum->get_producto_random($sector);
 			$tipo_productos = $this->uum->get_categoria();
 			$sector_entregas = $this->uum->get_sector_entrega();
-		
-            $this->session->set_userdata('prod',$productos);
-
+		//	echo "<pre>".print_r($productos,true)."</pre>";
+			
 			$this->data['productos']=$productos;
 			$this->data['productos_random']=$productos_random;
 			$this->data['tipo_productos']=$tipo_productos;
@@ -38,23 +36,10 @@ Class Home extends CI_Controller
 		
 			echo "<a href='".base_url()."'>Volver el home</a>";
 		}
-    }
+	
 
-    public function contacto(){
+     
         
-        $nombre= $this->input->post('nombre');
-        $email= $this->input->post('email');
-        $mensaje= $this->input->post('mensaje');
-        
-        $this->load->library('email');
-        $this->email->from($email,$nombre);
-        $this->email->to('contacto@foodland.cl');
-        $this->email->cc('cristian@foodland.cl');
-        $this->email->subject('te llego un mensaje desde el contacto del sitio');
-        $this->email->message($mensaje);
-        $this->email->send();
-
-        redirect(base_url(), 'refresh');
     }
 
     private function fb()
@@ -102,14 +87,6 @@ Class Home extends CI_Controller
     public function logout(){
         $this->session->unset_userdata('user_profile');
         redirect(site_url());
-    }
-
-    public function categoria(){
-
-        $this->load ->model('home_model','uum');
-        $productos= $this->uum->get_producto($sector);
-        $this->data['productos']=$productos;
-        $this->load->view('ajax/_categoria',$this->data);
     }
 }
 	

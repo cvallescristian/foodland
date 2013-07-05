@@ -44,7 +44,7 @@
 
                                                 
                         <li><a href="<?= base_url();?>" class="active">Inicio</a></li>
-                        <li><a href="#cat">Categoria Productos</a></li>
+                        <li><a href="#portfolio">Categoria Productos</a></li>
                         <li class="dropdown">
                             <a href="" class="dropdown-toggle" data-toggle="dropdown">
                                 Sector reparto
