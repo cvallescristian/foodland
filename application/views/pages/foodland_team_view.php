@@ -29,7 +29,7 @@
 				<p class="text" style="text-align:center">DESCRIPCIÓN DESCRIPCIÓN DESCRIPCIÓN DESCRIPCIÓN DESCRIPCIÓN DESCRIPCIÓN.</p>
 		   </div>
 			<div class="span2 bloque_blanco">
-				<h3 style="text-align:center">Pablo Herrera</h3>
+				<h3 style="text-align:center">NN</h3>
 				<img src="img/temp.jpg" class="img-circle">
 				<p class="text" style="text-align:center">DESCRIPCIÓN DESCRIPCIÓN DESCRIPCIÓN DESCRIPCIÓN DESCRIPCIÓN DESCRIPCIÓN.</p>
 			</div>
