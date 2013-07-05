@@ -33,10 +33,10 @@
                     <div class="span3 contact ">
                         <br><br><br>
                         <h3 class="center"><font>Contacto</font></h3>
-                        <form action="<?= base_url() ?>home/contacto" method="post">
-                            <input type="text" name="nombre" placeholder="Tu nombre" required>
-                            <input type="email" name="email" placeholder="Tu Mail" required>
-                            <textarea rows="3" name="mensaje" placeholder="Mensaje" required></textarea>
+                        <form action="" method="post">
+                            <input type="text" placeholder="Tu nombre">
+                            <input type="text" placeholder="Tu Mail">
+                            <textarea rows="3" placeholder="Mensaje"></textarea>
                             <input type="submit" value="Enviar">
                         </form>
                     </div>
@@ -68,7 +68,6 @@
             </div>
             </div>
 </footer>
-
         <script src="<?= base_url();?>js/jquery-latest.js"></script>       
         <script type="text/javascript" src="<?= base_url();?>js/index-slider.js"></script>  
         <script src="<?= base_url();?>js/modernizr.js"></script>
@@ -79,7 +78,5 @@
         <script src="<?= base_url();?>js/portfolio.js"></script>
         <script src="<?= base_url();?>js/contenido/supersized.3.2.7.min.js"></script>
         <script src="<?= base_url();?>js/contenido/supersized-init.js"></script>
-        
-
 <body>
 <html>
