@@ -1,5 +1,5 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-+<script>
+<script>
     // using JQUERY's ready method to know when all dom elements are rendered
     $( document ).ready(function () {
       // set an on click on the button
@@ -14,63 +14,58 @@
         });
     });
 </script>
+<!-- inicio portasda -->
     <section id="feature_slider">
         <div id="fondo">
         </div>
+        <div class="container">
+            <div class="row">
+               <div id="portada1" class="span9 offset1" style="">
+                   <p><h1>Hambre? ¡FoodLand (Beta) te da la solución!
+                    </h1>
+                    <h2>
+                    Lo mejor del delivery en la V región en un sólo catálogo online
+                    </h2>
+                    </p>
+                </div> 
+            </div>
+        </div>
+        
     </section> 
 
+    <div class="container" style="margin-top:30px;">
+        <div class="row">
+            <div  id="portada2" class="span4 offset1">
+                <h2>
+                    <?php 
+                        $nombre_sector="";
+                        if($sector==""){
+                            ?>¿D&oacutende est&aacutes? <?php 
+                        }else{ 
+                            ?> Estas en 
+                            <?php foreach ($sector_entregas as $s ) {
+                                if($s->id_sector_entrega==$sector){
+                                    echo "$s->nombre_sector_entrega,  ¿Deseas cambiar de sector?";
+                                    $nombre_sector=$s->nombre_sector_entrega;
+                                    break;
+                                }
+                            }
+                        } ?></h2>
+            </div>
+            <div id="portada3" class="span9 offset1">
+                <div class="row">
+                    <?php foreach ($sector_entregas as $sector_entrega) {
+                    ?>
+                        <div class="span2"><h4><a href="<?= base_url();?>home?sector=<?= $sector_entrega->id_sector_entrega?>#prod"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
+                    <?php } ?>
+                </div>    
+            </div>
+        </div>
+    </div>
+<!-- fin portada -->       
 
-<div class="container offset1" >
-                            <div class="row" style="
-                                margin-left: 20px;">
-                                
-                                    
-                                    <div id="portada1" class="span8" style="">
-                                        <p><h1>Foodland (beta) te mostrará muchos productos de comida delívery de la V región</h1></p>
-                                        
-                                    </div>
-
-                                    <div  id="portada2"class="span4">
-                                        
-                                        <h2>
-                                     
-                                        <?php 
-                                        $nombre_sector="";
-                                            if($sector==""){
-                                            ?>¿D&oacutende est&aacutes? <?php 
-                                            }else{ 
-                                            ?> Estas en <?php foreach ($sector_entregas as $s ) {
-                                                                if($s->id_sector_entrega==$sector){
-                                                                    echo "$s->nombre_sector_entrega,  ¿Deseas cambiar de sector?";
-                                                                    $nombre_sector=$s->nombre_sector_entrega;
-                                                                    break;
-                                                                }
-                                                            }
-                                            } ?></h2>
-
-                                    </div>
-                                        
-
-                                     <div id="portada3" class="span8" >    
-                                       <?php foreach ($sector_entregas as $sector_entrega) {
-                                           
-                                        ?>
-                                        <div class="span2"><h4><a href="<?= base_url();?>home?sector=<?= $sector_entrega->id_sector_entrega?>#prod"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
-                                        <?php } ?>
-                                    </div>
-
-                                </div>
-                            
-                               
-                            </div>
-        </div>  
-       
-        <!--################ WRAP START ################-->
-
-
-            <!--################ HEADER START ################-->
-         
-            <section class="portfolio" id="prod" style="position:relative; ">
+<!-- Inicio Productos-->    
+    <section class="portfolio" id="prod" style="position:relative; ">
 
                 <div class="container">
 
@@ -110,11 +105,15 @@
                         <?php } ?>
                     </div>
                     <section id="cat">
-+                   </section> 
-            </section>
-            <section id="categoria">
-+                <div class="span6 offset4">
-+                      <button class="btn btn-danger btn-large" id="button">Cargar Todos los productos por categoria</button>
-                </div>
-            </section>
+                   </section> 
+    </section>
+<!-- Termino Productos-->
+
+<!-- Inicio Categoria-->
+    <section id="categoria">
+        <div class="span6 offset4">
+                <button class="btn btn-danger btn-large" id="button">Cargar Todos los productos por categoria</button>
+        </div>
+    </section>
+<!-- Fin categoria-->
  

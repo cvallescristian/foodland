@@ -4,7 +4,8 @@
                     <div class="span3 offset1">
                         <br><br>
                         <img src="<?= base_url();?>img/logo2.png" width="250" height="40"> <sup style="color:white;">2.0</sup>
-                        <div class="span3" style="font-size:12px; margin-left:0px;">
+                        <div class="span3">
+                        <br>
                         <h5><font><font>Foodland es nuestra empresa emprendedora e innovadora, 
                             formada por un grupo de jóvenes universitarios el año 2012, cuya misión es 
                             mostrar, a través de esta plataforma, una gran gama de locales delivery de 

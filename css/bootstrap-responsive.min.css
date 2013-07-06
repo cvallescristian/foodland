@@ -800,6 +800,10 @@
 }
 
 @media (max-width: 767px) {
+#productos3{
+  width: 100px;
+}
+
   body {
     padding-right: 20px;
     padding-left: 20px;
@@ -823,8 +827,8 @@
     margin-left: 0;
   }
   .container {
-    width: auto;
-   margin-top: 533px;
+    width: 100%;
+   
 
 margin-right: 30px;
   }
@@ -844,7 +848,7 @@ margin-right: 30px;
   .row-fluid [class*="span"] {
     display: block;
     float: none;
-    width: 100%;
+    width: 345px;
     margin-left: 0;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;

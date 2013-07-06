@@ -22,15 +22,11 @@ textarea {
 	font-family: 'Lato', Helvetica;
 }
 
-
-
-
 #portada1{
 
 	text-align:left;
 	padding:10px;
-
-	top:-505px;
+	
 	background:rgba(7, 7, 7, 0.55);
 	position:relative;
 	z-index:1000;
@@ -40,7 +36,7 @@ textarea {
 	text-align:left;
 	padding:10px;
 	
-	top:-505px;
+	
 	background:rgba(7, 7, 7, 0.55);
 	position:relative;
 	z-index:1000;
@@ -49,8 +45,8 @@ textarea {
 #portada3{
 
 	text-align:left;
-	padding:10px;
-	top:-490px;
+	padding:16px;
+	
 	background:rgba(7, 7, 7, 0.55);
 	position:relative;
 	z-index:1000;
@@ -145,7 +141,7 @@ body.pull_top {
 /* Footer
 -------------------------------------------------- */
 #footer {
-	margin-top: 238px;
+	margin-top: 100px;
 	min-height: 260px;
 	background-color: #252528;
 	color: #fff;
