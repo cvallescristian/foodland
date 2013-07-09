@@ -1,4 +1,4 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="<?= base_url()?>js/ajax.js"></script>
 <script>
     // using JQUERY's ready method to know when all dom elements are rendered
     $( document ).ready(function () {
@@ -7,7 +7,7 @@
         // get the time if clicked via an ajax get queury
         // see the code in the controller time.php
          
-        $.get('<?= base_url(); ?>home/categoria' ,function (time) {
+        $.get('<?= base_url(); ?>home/categoria?sector=<?= $sector?>' ,function (time) {
         })
         .done(function(time) { $("#categoria").html(time); })
         .fail(function() { alert("error"); });
