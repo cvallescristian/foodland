@@ -223,7 +223,8 @@ body.pull_top {
 	margin-left: 35px;
 }
 #footer .contact input[type="text"],
-#footer .contact textarea {
+#footer .contact textarea,
+#footer .contact input[type="email"] {
 	border: none;
 	background-color: #1f1f21;
 	padding: 8px 20px;

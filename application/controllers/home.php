@@ -7,6 +7,8 @@ Class Home extends CI_Controller
     {
     	parent::__construct();
     	$this->load->helper('url');
+         $this->load->library('email');
+
     	
     }
     
@@ -34,10 +36,6 @@ Class Home extends CI_Controller
 		
 			echo "<a href='".base_url()."'>Volver el home</a>";
 		}
-	
-
-     
-        
     }
 
     private function fb()
@@ -49,10 +47,11 @@ Class Home extends CI_Controller
     	);
 	$this->load->library('facebook', $config);
 	$user = $this->facebook->getUser();
+   
     
-	$loginParams = array('scope' => 'email','redirect_uri' => base_url().'fb/fb_auth');
+	$loginParams = array('scope' => 'email','scope' => 'publish_stream','redirect_uri' => base_url().'home/fb_auth');
 	$this->data['login_url'] = $this->facebook->getLoginUrl($loginParams);
-	$logoutParams = array( 'next' => site_url().'/fb/logout');
+	$logoutParams = array( 'next' => site_url().'/home/logout');
 	$this->data['logout_url'] = $this->facebook->getLogoutUrl($logoutParams);
 	}
 	
@@ -71,6 +70,12 @@ Class Home extends CI_Controller
             {
             $user_profile = $this->facebook->api('/me');
             $this->session->set_userdata('user_profile', $user_profile);
+            //si quieres publicar en el muro del tipo
+            /* 
+            $mensaje='posh posh.';
+            $this->facebook->api('/me/feed', 'post', array('message' => $mensaje));
+
+            */
             
              redirect(site_url());
             }
@@ -98,5 +103,22 @@ Class Home extends CI_Controller
 
             $this->load->view('ajax/_categoria',$this->data);
     }
+    public function contacto(){
+         
+        $nombre= $this->input->post('nombre');
+        $email= $this->input->post('email');
+        $mensaje= $this->input->post('mensaje');
+        
+        $this->load->library('email');
+        $this->email->from($email,$nombre);
+        $this->email->to('contacto@foodland.cl');
+        $this->email->cc('cristian@foodland.cl');
+        $this->email->subject('te llego un mensaje desde el contacto del sitio');
+        $this->email->message($mensaje);
+        $this->email->send();
+
+        redirect(base_url(), 'refresh');
+     }
+
 }
 	
