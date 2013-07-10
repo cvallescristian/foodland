@@ -1,4 +1,5 @@
-  <div id="projectwrap" style="background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>); background-size:100% 100%;">
+<!-- Imagen de inicio-->
+<div id="projectwrap" style="background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>); background-size:100% 100%;">
             <header class="clearfix">
                 <div class="container">
                     <div class="span5 offset3">
@@ -9,8 +10,10 @@
                 </div><!-- container -->
             </header>
 </div><!-- projectwrap -->
+<!--termino de imagen de inicio-->
 
 
+<!-- inicio del contenido-->
 
   <div id="caja"class="container" style="position:relative; top:30px;">
     
@@ -31,13 +34,13 @@
                         <ul class="green-checks">
                             <li><font><font>Descripci&oacuten: <?= $productos->descrip_producto?></font></font></li>
                             <li><font><font>Precio: $<?= $productos->precio ?></font></font></li>
-                             <li><font><font>Sectores de entrega: <?php 
+                            <li><font><font>Sectores de entrega: <?php 
                                 foreach ($sector_entregas_particular as $s) {
                                  echo   $s->nombre_sector_entrega." " ; 
                                 }
                               
                               ?></font></font></li>
-                           
+                             
                         </ul>
 
                         <a href="#test_modal" data-toggle="modal" class="btn btn-warning btn-large offset1"><font><font>Ver Telefono</font></font></a>
@@ -61,11 +64,19 @@
                         <ul class="green-checks">
                         
                             <li><font><font>Direccion: <?= $detalle_locales->direccion_local;?></font></font></li>
-                            <li><font><font>E-mail: <?= $detalle_locales->email  ?></font></font></li>
+                            <?php if($detalle_locales->email!="test@test.cl" && $detalle_locales->email!=""){ ?>
+                              <li><font><font>E-mail: <?= $detalle_locales->email  ?></font></font></li>
+                            <?php } ?>
                             <li><font><font>Sectores de Entrega: <?php foreach ($sector_entregas_particular as $s) {
                                  echo   $s->nombre_sector_entrega." " ; 
                                 } ?></font></font></li>
-                            
+                            <?php if($detalle_locales->horario_entrada!="" && $detalle_locales->horario_salida!="" ){ ?>
+                                <li><font><font>Lunes a Viernes: de <?= $detalle_locales->horario_entrada?> hasta <?= $detalle_locales->horario_salida?></font></font></li>
+                                <li><font><font>S&aacutebado y Domingo: de <?= $detalle_locales->horario_entrada_fds?> hasta <?= $detalle_locales->horario_salida_fds?></font></font></li>
+                            <?php } ?>
+                            <?php if($detalle_locales->sitio_referencia!=""){ ?>
+                                <li><font><font>Sitio de Referencia: <?= $detalle_locales->sitio_referencia?></font></font></li>
+                            <?php } ?>       
                         </ul>
 
                         <a href="#test_modal"  data-toggle="modal" class="btn btn-warning btn-large offset1"><font><font>Ver Telefono</font></font></a>
@@ -75,42 +86,48 @@
 
             </div> <!-- End .tab-content -->
         </div>
-
-
-
-
     </div>
-
-
 </div>
+<!--Termino del contenido-->
 
 
+
+
+<!-- El mapa del sitio lo dejamos para despues
+ <div >
+              <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+      src="https://maps.google.cl/maps?hl=es&amp;ie=UTF8&amp;ll=-33.04004,-71.577301&amp;spn=0.09037,0.154324&amp;t=m&amp;z=13&amp;output=embed"></iframe>
+     
+</div>
+-->
+<!-- Inicio del pup-pop -->
 <div class="modal fade" id="test_modal">
-  <div class="modal-header">
-    <a class="close" data-dismiss="modal">&times;</a>
-    <h3>Muchas gracias por visitar Foodland</h3>
-  </div>
-  <br><br>
-  <div class="modal-body">
-     <div class="span3 " style="font-size: 15px;">
-        Puedes decirle al local que vienes de parte de FOODLAND, así nos ayudarás a difundir mejor este servicio
-        <br>
-        <br>
-        Comparte este producto con tus amigos para que sepan lo que estas pidiendo
-      </div>
-      <div class="span2 offset1">
-        <h4>El teléfono es:  </h4> 
-        <h3><?= $detalle_locales->telefono_local;  ?></h3>
-      </div>
-  </div>
-  <br><br>
-  <div class="modal-footer">
-    <a class="btn btn-facebook"href="https://www.facebook.com/sharer/sharer.php?u=<?= base_url().'Producto?id='.$productos->id_producto ?>" target="_blank">
-  <i class="icon-facebook"></i> Compartir en Facebook 
-</a>
-   <!-- <a href="#" class="btn btn-warning" data-dismiss="modal"> Ce</a> -->
-  </div>
+    <div class="modal-header">
+      <a class="close" data-dismiss="modal">&times;</a>
+      <h3>Muchas gracias por visitar Foodland</h3>
+    </div>
+    <br><br>
+    <div class="modal-body">
+       <div class="span3 " style="font-size: 15px;">
+          Puedes decirle al local que vienes de parte de FOODLAND, así nos ayudarás a difundir mejor este servicio
+          <br>
+          <br>
+          Comparte este producto con tus amigos para que sepan lo que estas pidiendo
+        </div>
+        <div class="span2 offset1">
+          <h4>El teléfono es:  </h4> 
+          <h3><?= $detalle_locales->telefono_local;  ?></h3>
+        </div>
+    </div>
+    <br><br>
+    <div class="modal-footer">
+      <a class="btn btn-facebook"href="https://www.facebook.com/sharer/sharer.php?u=<?= base_url().'Producto?id='.$productos->id_producto ?>" target="_blank">
+      <i class="icon-facebook"></i> Compartir en Facebook 
+      </a>
+     <!-- <a href="#" class="btn btn-warning" data-dismiss="modal"> Ce</a> -->
+    </div>
 </div>
+<!-- Termino pup-pop -->
 
 
 

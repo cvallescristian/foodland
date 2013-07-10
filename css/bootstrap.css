@@ -175,7 +175,7 @@ textarea {
         display: none;
     }
     #prod{
-     margin-top: 30px;
+     
     }
     #showcase .features_op1_row .feature {
         margin-bottom: 60px;
@@ -313,7 +313,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
-  background-color: rgb(241, 241, 241);
+  background-color: #ffffff;
 }
 
 a {

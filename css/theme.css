@@ -22,6 +22,38 @@ textarea {
 	font-family: 'Lato', Helvetica;
 }
 
+#portada1{
+
+	text-align:left;
+	padding:10px;
+	
+	background:rgba(7, 7, 7, 0.55);
+	position:relative;
+	z-index:1000;
+}
+#portada2{
+
+	text-align:left;
+	padding:10px;
+	
+	
+	background:rgba(7, 7, 7, 0.55);
+	position:relative;
+	z-index:1000;
+}
+
+#portada3{
+
+	text-align:left;
+	padding:16px;
+	
+	background:rgba(7, 7, 7, 0.55);
+	position:relative;
+	z-index:1000;
+}
+
+
+
 /* Navbar
 -------------------------------------------------- */
 body.pull_top {
@@ -109,8 +141,8 @@ body.pull_top {
 /* Footer
 -------------------------------------------------- */
 #footer {
-	margin-top: 80px;
 	min-height: 260px;
+	margin-top: 90px;
 	background-color: #252528;
 	color: #fff;
 	padding-top: 35px;
@@ -191,7 +223,8 @@ body.pull_top {
 	margin-left: 35px;
 }
 #footer .contact input[type="text"],
-#footer .contact textarea {
+#footer .contact textarea,
+#footer .contact input[type="email"] {
 	border: none;
 	background-color: #1f1f21;
 	padding: 8px 20px;
