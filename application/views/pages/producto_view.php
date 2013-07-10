@@ -34,13 +34,13 @@
                         <ul class="green-checks">
                             <li><font><font>Descripci&oacuten: <?= $productos->descrip_producto?></font></font></li>
                             <li><font><font>Precio: $<?= $productos->precio ?></font></font></li>
-                             <li><font><font>Sectores de entrega: <?php 
+                            <li><font><font>Sectores de entrega: <?php 
                                 foreach ($sector_entregas_particular as $s) {
                                  echo   $s->nombre_sector_entrega." " ; 
                                 }
                               
                               ?></font></font></li>
-                           
+                             
                         </ul>
 
                         <a href="#test_modal" data-toggle="modal" class="btn btn-warning btn-large offset1"><font><font>Ver Telefono</font></font></a>
@@ -64,11 +64,19 @@
                         <ul class="green-checks">
                         
                             <li><font><font>Direccion: <?= $detalle_locales->direccion_local;?></font></font></li>
-                            <li><font><font>E-mail: <?= $detalle_locales->email  ?></font></font></li>
+                            <?php if($detalle_locales->email!="test@test.cl" && $detalle_locales->email!=""){ ?>
+                              <li><font><font>E-mail: <?= $detalle_locales->email  ?></font></font></li>
+                            <?php } ?>
                             <li><font><font>Sectores de Entrega: <?php foreach ($sector_entregas_particular as $s) {
                                  echo   $s->nombre_sector_entrega." " ; 
                                 } ?></font></font></li>
-                            
+                            <?php if($detalle_locales->horario_entrada!="" && $detalle_locales->horario_salida!="" ){ ?>
+                                <li><font><font>Lunes a Viernes: de <?= $detalle_locales->horario_entrada?> hasta <?= $detalle_locales->horario_salida?></font></font></li>
+                                <li><font><font>S&aacutebado y Domingo: de <?= $detalle_locales->horario_entrada_fds?> hasta <?= $detalle_locales->horario_salida_fds?></font></font></li>
+                            <?php } ?>
+                            <?php if($detalle_locales->sitio_referencia!=""){ ?>
+                                <li><font><font>Sitio de Referencia: <?= $detalle_locales->sitio_referencia?></font></font></li>
+                            <?php } ?>       
                         </ul>
 
                         <a href="#test_modal"  data-toggle="modal" class="btn btn-warning btn-large offset1"><font><font>Ver Telefono</font></font></a>
