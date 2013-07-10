@@ -1,9 +1,7 @@
 
 #fondo {
 	background:#fffff; 
-	position: absolute;
-	width: 100%;
-	margin-top: -22px
+	z-index: 10000;
 	 }
 	
 img { 

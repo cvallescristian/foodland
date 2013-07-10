@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
    
         <div id="myCarousel" class="carousel slide" style="top:-100px; height:600px; ">
           <ol class="carousel-indicators">
@@ -87,76 +86,8 @@
 
 
             <!--################ HEADER START ################-->
-=======
-<script src="<?= base_url()?>js/ajax.js"></script>
-<script>
-    // using JQUERY's ready method to know when all dom elements are rendered
-    $( document ).ready(function () {
-      // set an on click on the button
-      $("#button").click(function () {
-        // get the time if clicked via an ajax get queury
-        // see the code in the controller time.php
->>>>>>> tester
          
-        $.get('<?= base_url(); ?>home/categoria?sector=<?= $sector?>' ,function (time) {
-        })
-        .done(function(time) { $("#categoria").html(time); })
-        .fail(function() { alert("error"); });
-        });
-    });
-</script>
-<!-- inicio portasda -->
-    <section id="feature_slider">
-        <div id="fondo">
-        </div>
-        <div class="container">
-            <div class="row">
-               <div id="portada1" class="span9 offset1" style="">
-                   <p><h1>Hambre? ¡FoodLand (Beta) te da la solución!
-                    </h1>
-                    <h2>
-                    Lo mejor del delivery en la V región en un sólo catálogo online
-                    </h2>
-                    </p>
-                </div> 
-            </div>
-        </div>
-        
-    </section> 
-
-    <div class="container" style="margin-top:30px;">
-        <div class="row">
-            <div  id="portada2" class="span4 offset1">
-                <h2>
-                    <?php 
-                        $nombre_sector="";
-                        if($sector==""){
-                            ?>¿D&oacutende est&aacutes? <?php 
-                        }else{ 
-                            ?> Estas en 
-                            <?php foreach ($sector_entregas as $s ) {
-                                if($s->id_sector_entrega==$sector){
-                                    echo "$s->nombre_sector_entrega,  ¿Deseas cambiar de sector?";
-                                    $nombre_sector=$s->nombre_sector_entrega;
-                                    break;
-                                }
-                            }
-                        } ?></h2>
-            </div>
-            <div id="portada3" class="span9 offset1">
-                <div class="row">
-                    <?php foreach ($sector_entregas as $sector_entrega) {
-                    ?>
-                        <div class="span2"><h4><a href="<?= base_url();?>home?sector=<?= $sector_entrega->id_sector_entrega?>#prod"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
-                    <?php } ?>
-                </div>    
-            </div>
-        </div>
-    </div>
-<!-- fin portada -->       
-
-<!-- Inicio Productos-->    
-    <section class="portfolio" id="prod" style="position:relative; ">
+            <section class="portfolio" id="prod" style="position:relative; ">
 
                 <div class="container">
 
@@ -248,16 +179,74 @@
                         <?php } ?>
 >>>>>>> tester
                     </div>
-                    <section id="cat">
-                   </section> 
-    </section>
-<!-- Termino Productos-->
+            </section>
+            <!--INICIO PRODUCTOS POR CATEGORIA-->
+            <section class="portfolio rev" style=" position:relative; top:120px;" >
+                
+                
+                <div class="container" id="portfolio" >
+                    
+                    <div class="row">
 
-<!-- Inicio Categoria-->
-    <section id="categoria">
-        <div class="span6 offset4">
-                <button class="btn btn-danger btn-large" id="button">Cargar Todos los productos por categoria</button>
-        </div>
-    </section>
-<!-- Fin categoria-->
- 
+                        <div class="span12 center" style=" position:relative; top:-50px;">
+                            <h1 class="big-heading"><font><font>Productos por Categoria</font></font></h1>
+                        </div>
+
+                       <div class="span12">
+                            <div id="filters_container">
+                                <ul id="filters">
+                                      <li><a href="index#" data-filter="*" class="active"><font><font>TODOS</font></font></a></li>
+                                    
+                                    <?php 
+
+                                        foreach ($tipo_productos as $tproducto ) {
+                                            ?>
+                                            <li class="separator"><font><font>/</font></font></li>
+                                            <li><a href="" data-filter=".<?= $tproducto->id_tipo_producto;?>"><font><font><?= $tproducto->nombre_tipo_producto;?></font></font></a></li>
+                                            <?php
+                                        }
+                                     ?>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row isotope" id="portfolio-container" style="position: relative; overflow: hidden; height: 704px;">
+                    <?php
+                        foreach ($productos as $producto) { 
+                         
+                            
+                     ?>
+                           
+                            <?php  
+                                $tamaño=0;
+                                foreach ($tipo_productos as $tproducto ) {
+                                    if($producto->id_tipo_producto == $tproducto->id_tipo_producto){
+                            ?>
+                                        <div class="span3 project <?= $tproducto->id_tipo_producto; ?> isotope-item" style="height:147px; position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                                            <img src="<?= base_url();?>img/locales/<?= $producto->id_producto;?>.png" alt="" class="project-img">
+                                            <span class="overlay"></span>
+                                            <div class="cnt">
+                                                <h5><font><font><?= $producto->titulo_producto; ?></font></font></h5>
+                                                <a href="<?= base_url().'producto?id='.$producto->id_producto ?>" class="btn btn-warning"><font><font>Ver más detalles</font></font></a>
+                                            </div>
+                                        </div>
+                            <?php 
+                                    
+                                    }
+
+                                }
+                             ?>
+                        <?php 
+                        } 
+                        ?>
+                </div>
+
+
+            </section>
+            <!--TERMINO PRODUCTOS POR CATEGORIA-->
+
+
+
+
+
