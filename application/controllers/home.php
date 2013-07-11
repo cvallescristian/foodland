@@ -93,13 +93,16 @@ Class Home extends CI_Controller
     }
     public function categoria(){
         $sector=$this->input->get('sector');
+
         $this->load ->model('home_model','uum');
             $productos= $this->uum->get_producto($sector);
             $tipo_productos = $this->uum->get_categoria();
             
             $this->data['tipo_productos']=$tipo_productos;
             $this->data['productos']=$productos;
+        if($sector!=""){    
             $this->data['sector']=$sector;
+        }
 
             $this->load->view('ajax/_categoria',$this->data);
     }
