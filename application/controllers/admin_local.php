@@ -166,7 +166,8 @@ class Admin_local extends CI_Controller {
 
     public function editar_local_agregar(){
 		$checkbox = $this->input->post('check'); //datos del checkbox
-		if($checkbox!=""){
+
+		if($checkbox==""){
 			echo "<script>alert('Debes seleccionar al menos un sector')</script>";
 			$id = $_GET['id'];
 			$root= base_url()."admin_local/editar_local?id=$id";
@@ -198,10 +199,10 @@ class Admin_local extends CI_Controller {
 	  	//	move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_nuevo _logo.png");
 		 	//	$root= base_url()."admin_local?al=1";
   			//	echo "<script>location.href='$root';</script>";	
-
-  			//foreach ($checkbox as $s ) {
-  			//	$this->uum->agregar_sector_local($id_local_nuevo,$s);
-  			//}
+			$this->uum->eliminar_sector_local($_GET['id']);
+  			foreach ($checkbox as $s ) {
+  				$this->uum->agregar_sector_local($s,$_GET['id']);
+  			}
 		}
     }
 }

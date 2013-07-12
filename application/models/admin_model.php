@@ -40,6 +40,11 @@ class admin_model extends CI_Model{
         );
          $this->db->insert('Local_sector_entrega', $data);
     }
+  function eliminar_sector_local($id){
+
+            $this->db->where('id_local', $id);
+             $this->db->delete('local_sector_entrega', $data);
+  }
   function get_producto(){
      $query="select * from Producto";
      $result = $this->db->query($query);
