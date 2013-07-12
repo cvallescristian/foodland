@@ -54,6 +54,46 @@ class Admin_producto extends CI_Controller {
 		 $root= base_url()."admin_producto";
   		echo "<script>location.href='$root';</script>";
     }
+	public function editar_producto(){
+		if($this->session->userdata('id')==""){
+			$root= base_url()."admin";
+			header("Location: $root");
+		}else{
+			$this->load->model('admin_model','uum');
+			$locales = $this->uum->get_local();
+			$productos = $this->uum->get_producto();
+			$producto = $this->uum->get_tipo_producto();
+
+			$data['locales'] = $locales;
+			$data['productos'] = $productos; 
+			$data['producto'] = $producto;		
+			$this->load->view('templades/header_admin',$data);
+			$this->load->view('pages/admin_editar_producto_view',$data);
+		}
+		
+	}
+	public function editar_producto_agregar(){
+		
+		$data = array(
+           'titulo_producto' => $this->input->post('inputTitulo'),
+           'precio' =>$this->input->post('inputPrecio'),
+           'descrip_producto' =>$this->input->post('inputDescripcion'),
+           'id_local' => $this->input->post('inputLocal'),
+           'id_tipo_producto' => $this->input->post('inputProducto')
+    	);
+
+    	$config['upload_path'] = base_url()."img/locales/";  
+    	$config['allowed_types'] = 'gif|jpg|png'; 
+    	$config['max_size'] = '100'; 
+
+		$this->load->model('admin_model','uum');
+		$id_producto_nuevo= $this->uum->editar_producto($data,$_GET['id']);
+
+		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/".$_GET['id'].".png");
+
+		 $root= base_url()."admin_producto";
+  		echo "<script>location.href='$root';</script>";
+    }
     public function borrar_producto(){
     	$id = $this->input->get('id');
     	$this->load->model('admin_model','uum');

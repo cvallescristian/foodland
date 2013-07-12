@@ -176,6 +176,11 @@ class admin_model extends CI_Model{
              $this->db->update('Local', $data);
 
   }
+    function editar_producto($data,$id){
+            $this->db->where('id_producto', $id);
+             $this->db->update('Producto', $data);
+
+  }
 }
 
  ?>
