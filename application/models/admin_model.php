@@ -142,6 +142,17 @@ class admin_model extends CI_Model{
       break;
     }
   }
+  function get_sector_entrega_edicion($id){
+    $query ="select * from local_sector_entrega where id_local='$id'";
+    $result=$this->db->query($query);
+    $re= $result->result();
+    return $re;
+  }
+  function get_sector_entrega(){
+        $query="select * from Sector_entrega";
+         $result = $this->db->query($query);
+         return $result->result();    
+    }
   function get_miembros(){
      $query="select * from Members";
      $result = $this->db->query($query);
@@ -154,6 +165,11 @@ class admin_model extends CI_Model{
     $this->db->where('id_members',$id);
 
      $this->db->delete('Members');
+  }
+  function editar_local($data,$id){
+            $this->db->where('id_local', $id);
+             $this->db->update('Local', $data);
+
   }
 }
 

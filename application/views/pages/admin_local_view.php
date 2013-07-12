@@ -30,8 +30,8 @@
 								<td><?= $l->direccion_local?></td>	
 								<td><?= $l->telefono_local ?></td>
 								<td><?= $l->email  ?></td>
-								<td> <a href="<?= base_url()."admin_local/borrar_local?id=".$l->id_local?>" class="btn btn-danger">Borrar</a></td>
-								<td><a href="" class="btn btn-info">Editar</a></td>
+								<td> <a href="" class="btn btn-danger">Borrar</a></td>
+								<td><a href="<?= base_url();?>admin_local/editar_local?id=<?= $l->id_local; ?>" class="btn btn-info">Editar</a></td>
 							</tr>
 						<?php	
 						} ?>
@@ -65,8 +65,8 @@
 						?>
 							<tr>
 								<td><?= $s->nombre_sector_entrega  ?></td>
-								<td> <a href="<?= base_url()."admin_local/borrar_sector?id=".$s->id_sector_entrega  ?>" class="btn btn-danger">Borrar</a></td>
-								<td><a href="<?= base_url()."admin_local/editar_sector?id=".$s->id_sector_entrega  ?>" class="btn btn-info">Editar</a></td>
+								<td> <a href="" class="btn btn-danger">Borrar</a></td>
+								<td><a href="" class="btn btn-info">Editar</a></td>
 							</tr>
 						<?php	
 						} ?>
