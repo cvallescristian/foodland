@@ -43,7 +43,7 @@ class admin_model extends CI_Model{
   function eliminar_sector_local($id){
 
             $this->db->where('id_local', $id);
-             $this->db->delete('local_sector_entrega', $data);
+             $this->db->delete('Local_sector_entrega', $data);
   }
   function get_producto(){
      $query="select * from Producto";
@@ -148,7 +148,7 @@ class admin_model extends CI_Model{
     }
   }
   function get_sector_entrega_edicion($id){
-    $query ="select * from local_sector_entrega where id_local='$id'";
+    $query ="select * from Local_sector_entrega where id_local='$id'";
     $result=$this->db->query($query);
     $re= $result->result();
     return $re;
