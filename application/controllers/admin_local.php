@@ -155,7 +155,7 @@ class Admin_local extends CI_Controller {
 			$locales= $this->uum->get_local();
 			$sector_reparto= $this->uum->get_sector_entrega();
 			$sector_entrega= $this->uum->get_sector_entrega_edicion($id);
-			var_dump($sector_entrega);
+		
 			$data['locales']=$locales;
 			$data['sector_repartos']=$sector_reparto;
 			$data['sector_entrega']=$sector_entrega;
