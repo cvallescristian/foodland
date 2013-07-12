@@ -195,8 +195,8 @@ class Admin_local extends CI_Controller {
 			$id_local_nuevo= $this->uum->editar_local($data,$_GET['id']);
 			$root= base_url()."admin_local";
 			echo "<script>location.href='$root';</script>";	 
-
-	  	//	move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_nuevo _logo.png");
+			$id_local_editar = $_GET['id'];
+	  	move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_editar _logo.png");
 		 	//	$root= base_url()."admin_local?al=1";
   			//	echo "<script>location.href='$root';</script>";	
 			$this->uum->eliminar_sector_local($_GET['id']);
