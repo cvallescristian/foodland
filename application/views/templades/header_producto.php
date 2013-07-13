@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es" >
 <head>
+    <link rel="shortcut icon" href="img/logo.ico">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/theme.css">
         <link href="<?= base_url();?>css/css.css" rel="stylesheet" type="text/css">
@@ -28,7 +29,7 @@
           <div class="nav-collapse">
                 <ul class="nav pull-right" style="position:relavite; top:-10px;">  
 
-                        <li><a href="<?= base_url();?>" class="active">Inicio</a></li>
+                        <li><a href="<?= base_url();?>">Inicio</a></li>
                         <li><a href="#portfolio">Categoria Productos</a></li>
                         
                         <li class="dropdown">

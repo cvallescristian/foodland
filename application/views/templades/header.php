@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
+    <link rel="shortcut icon" href="img/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
      <title>Bienvenido a Foodland</title>
@@ -43,7 +44,7 @@
                 <ul class="nav pull-right"> 
 
                                                 
-                        <li><a href="<?= base_url();?>" class="active">Inicio</a></li>
+                        <li><a href="<?= base_url();?>">Inicio</a></li>
                         <li><a href="#cat">Categoria Productos</a></li>
                         <li class="dropdown">
                             <a href="" class="dropdown-toggle" data-toggle="dropdown">

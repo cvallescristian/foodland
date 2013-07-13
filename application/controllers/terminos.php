@@ -6,6 +6,6 @@ class Terminos extends CI_Controller {
 
 			$this->load->view('templades/header_pag_footer');
 			$this->load->view('pages/terminos_cond_view');
-			$this->load->view('templades/footer');		
+			$this->load->view('templades/footer_pags');		
 	}
 }

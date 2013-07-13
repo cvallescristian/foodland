@@ -1,24 +1,27 @@
- <footer id="footer" >
+    <footer id="footer">
             <div class="container">
                 <div class="row" style="color:white;">
-                    <div class="span3 offset1">
-                        <br><br>
-                        <img src="<?= base_url();?>img/logo2.png" width="250" height="40"> <sup style="color:white;">2.0</sup>
-                        <div class="span3">
-                        <br>
-                        <h5><font><font>Foodland es nuestra empresa emprendedora e innovadora, 
-                            formada por un grupo de jóvenes universitarios el año 2012, cuya misión es 
-                            mostrar, a través de esta plataforma, una gran gama de locales delivery de 
-                            la quinta región (y próximamente en todo Chile) bajo nuestro catálogo, con 
-                            el fin de conseguir que nuestros usuarios, de forma práctica y fácil, pidan 
-                            los productos que ofrecen nuestros asociados, facilitando de esta forma, la 
-                            conexión entre las personas y los locales.</font></font></h5>
-                        <p class="copyright"><font><font>
-                            FoodLand.cl © 2013 
-                        </font></font></p>
+                    <div class="row span4 offset1">
+                        <div style="margin-left:30px">
+                            <img src="<?= base_url();?>img/logo2.png" width="250" height="40"> <sup style="color:white;">BETA</sup>
+                        </div>
+                        <div class="">
+                            <div class="span3">
+                            <br>
+                            <h5><font><font>Foodland es nuestra empresa emprendedora e innovadora, 
+                                formada por un grupo de jóvenes universitarios el año 2012, cuya misión es 
+                                mostrar, a través de esta plataforma, una gran gama de locales delivery de 
+                                la quinta región (y próximamente en todo Chile) bajo nuestro catálogo, con 
+                                el fin de conseguir que nuestros usuarios, de forma práctica y fácil, pidan 
+                                los productos que ofrecen nuestros asociados, facilitando de esta forma, la 
+                                conexión entre las personas y los locales.</font></font></h5>
+                            <p class="copyright"><font><font>
+                                FoodLand.cl © 2013 
+                            </font></font></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="span3 offset1">
+                    <div class="span3">
                         <br><br><br>
                         <h2><font><font>Enlaces </font></font></h2>
                         <ul class="unstyled footer-links">

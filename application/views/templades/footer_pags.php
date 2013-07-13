@@ -1,12 +1,12 @@
-    <footer id="footer">
+ <footer id="footer" >
             <div class="container">
                 <div class="row" style="color:white;">
-                    <div class="row span4 offset1">
+                    <div class="row span5">
                         <div style="margin-left:30px">
                             <img src="<?= base_url();?>img/logo2.png" width="250" height="40"> <sup style="color:white;">BETA</sup>
                         </div>
                         <div class="">
-                            <div class="span3">
+                            <div class="span4">
                             <br>
                             <h5><font><font>Foodland es nuestra empresa emprendedora e innovadora, 
                                 formada por un grupo de jóvenes universitarios el año 2012, cuya misión es 
@@ -37,13 +37,13 @@
                     <div class="span3 contact ">
                         <br><br><br>
                         <h3 class="center"><font>Contacto</font></h3>
-                         <form action="<?= base_url() ?>home/contacto" method="post">
+                        <form action="<?= base_url() ?>home/contacto" method="post">
                             <input type="text" name="nombre" placeholder="Tu nombre" required>
                             <input type="email" name="email" placeholder="Tu Mail" required>
                             <textarea rows="3" name="mensaje" placeholder="Mensaje" required></textarea>
                              <input type="submit" value="Enviar">
                          </form>
-                    </div>       
+                    </div>
                 </div>
                 <div class="row credits">
                 <div class="span12">
@@ -82,5 +82,5 @@
         <script src="<?= base_url();?>js/portfolio.js"></script>
         <script src="<?= base_url();?>js/contenido/supersized.3.2.7.min.js"></script>
         <script src="<?= base_url();?>js/contenido/supersized-init.js"></script>
-</body>
-</html>
+<body>
+<html>

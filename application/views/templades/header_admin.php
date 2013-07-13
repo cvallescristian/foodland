@@ -2,6 +2,7 @@
 <!-- saved from url=(0049)http://jumpstartuidemo.com/themes/base/index.html -->
 <html lang="en">
 <head>
+	<link rel="shortcut icon" href="img/logo.ico">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>Foodland Admin</title>    
