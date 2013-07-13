@@ -12,7 +12,12 @@
         <link rel="stylesheet" href="<?= base_url();?>css/style_footer.css">
 </head>
 
-<body style="background:#c9c9c9">
+<body style="background: url('../img/fondo_admin.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#280308;">
     <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px;">
       <div class="navbar-inner" style="height:45px;">
          <a class="span3 offset2" style="position:relative; left:20px;" href="<?= base_url();?>">
@@ -20,7 +25,7 @@
             </a>     
         <div class="container">
           <div class="nav-collapse">
-                <ul class="nav pull-right" style="position:relavite; top:-10px;">                        
+                <ul class="nav pull-right" style="position:relavite; top:-22px;">                        
                         <li><a href="<?= base_url();?>" class="active">Inicio</a></li>
                         <li><a href="#portfolio">Categoria Productos</a></li>
                         <li class="dropdown">
@@ -72,3 +77,4 @@
         </div>
       </div>
     </div>
+</body>
