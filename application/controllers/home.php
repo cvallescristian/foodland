@@ -148,7 +148,7 @@ Class Home extends CI_Controller
 
             
             $p=$this->facebook->api('/me/feed', 'post', $param);
-                    redirect(site_url());
+            redirect(site_url()."producto?id=".$this->input->post('id'));
              }
             catch (FacebookApiException $e)
             {
