@@ -12,7 +12,6 @@
         <link href="<?= base_url();?>css/css_productos/productos2.css" rel="stylesheet" media="screen">
         <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
         <link href="<?= base_url();?>css/social-buttons.css" rel="stylesheet">
-
         <link href="<?= base_url();?>css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
 
         </head>
