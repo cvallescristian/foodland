@@ -20,7 +20,6 @@
         <link href="<?= base_url();?>css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="<?= base_url();?>css/home.css"> 
         <link rel="stylesheet" href="<?= base_url();?>css/style_footer.css">
-        <link rel="stylesheet" href="<?= base_url();?>css/nosotros.css">
          <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css">    
 </head>
 <body>

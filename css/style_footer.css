@@ -25,3 +25,11 @@
     margin-right: auto;
     padding: 7px 14px;
 }
+.text{
+text-align: justify;
+color:black;
+}
+.title{
+  text-align: center;
+color:black;
+}

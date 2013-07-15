@@ -13,9 +13,7 @@
         <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
         <link href="<?= base_url();?>css/social-buttons.css" rel="stylesheet">
         <link href="<?= base_url();?>css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
-
-        </head>
-
+</head>
 <body >
     <div class="navbar transparent navbar-inverse navbar-fixed-top" >
       <div class="navbar-inner" style="height:45px;">
@@ -23,7 +21,6 @@
          <a class="span3 offset2" href="<?= base_url();?>home" style="position:relative; left:20px;">
                 <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">BETA</sup>
             </a>    
-
         <div class="container">
           <div class="nav-collapse">
                 <ul class="nav pull-right" style="position:relavite; top:-10px;">  
@@ -43,8 +40,6 @@
                                 <?php }?>
                             </ul>
                         </li>
-                       
-                        
                         <li class="dropdown">
                             <a href="" class="dropdown-toggle" data-toggle="dropdown">
                                 <font><font>
@@ -71,22 +66,17 @@
                                         <?php else : ?>
                                         <font><font>Iniciar con:</font></font>
                                             <a href="<?php echo $login_url; ?>"><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a>                                                                     
-                                        <?php endif; ?>
-                                        
+                                        <?php endif; ?>                                        
                                     </div>
                                 </div>
                             </div>
                       </li>
                     <li>
-                         <a href="https://www.facebook.com/FoodLandValparaiso"><i class="icon-facebook"></i></a>
-                      
+                         <a href="https://www.facebook.com/FoodLandValparaiso"><i class="icon-facebook"></i></a>                      
                      </li>
-
                      <li> 
                        <a href="https://twitter.com/FoodLand_Valpo"><i class="icon-twitter"></i></a>
-                     </li>
-                      
-                    
+                     </li>                                          
                 </ul>
             </div>
         </div>
