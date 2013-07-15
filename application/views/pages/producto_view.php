@@ -121,9 +121,14 @@
     </div>
     <br><br>
     <div class="modal-footer">
-      <a class="btn btn-facebook"href="https://www.facebook.com/sharer/sharer.php?u=<?= base_url().'Producto?id='.$productos->id_producto ?>" target="_blank">
-      <i class="icon-facebook"></i> Compartir en Facebook 
-      </a>
+      <form action="<?= base_url()?>home/publicar_muro" method="post">
+        <input type="hidden"  name="id" value="<?= $productos->id_producto ?>">
+        <input type="hidden" name="nombre" value="<?= $productos->titulo_producto ?>">
+        <input type="hidden" name="descripcion" value="<?= $productos->descrip_producto?>">
+        <input type="hidden" name="id_local" value="<?= $detalle_locales->id_local?>">
+        <input type="hidden" name="nombre_local" value="<?= $detalle_locales->nombre_local?>">
+        <input type="submit" class="btn btn-facebook" value="Compartir en Facebook" target="_blank">
+      </form> 
      <!-- <a href="#" class="btn btn-warning" data-dismiss="modal"> Ce</a> -->
     </div>
 </div>

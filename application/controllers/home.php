@@ -122,6 +122,40 @@ Class Home extends CI_Controller
 
         redirect(base_url(), 'refresh');
      }
+         public function publicar_muro(){
+            $config = array
+        (
+            'appId'  => '653293238018732',
+            'secret' => '42c5fe5758df035ac317ea8e8841a780'
+        );
+    $this->load->library('facebook', $config);
+    $user = $this->facebook->getUser();
+    if($user)
+        {
+            try 
+            {
+            $user_profile = $this->facebook->api('/me');
+            $this->session->set_userdata('user_profile', $user_profile);
+            //si quieres publicar en el muro del tipo
+            $param = array(
+                'message' => 'Acabo de pedir '.$this->input->post('nombre').' de #'.$this->input->post('nombre_local').' por #Foodland ﻿',
+                'link' => 'http://foodland.cl/foodland/producto?id='.$this->input->post('id'),
+                'picture'=> 'http://foodland.cl/foodland/img/locales/'.$this->input->post('id').'.png',
+                'name'=>$this->input->post('nombre'),
+                'caption'=>'Este es un producto de nuestro local '.$this->input->post('nombre_local'),
+                'description'=>$this->input->post('descripcion')
+            );
+
+            
+            $p=$this->facebook->api('/me/feed', 'post', $param);
+                    redirect(site_url());
+             }
+            catch (FacebookApiException $e)
+            {
+                $user = null;
+            }
+        }
+    }
 
 }
 	
