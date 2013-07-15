@@ -4,8 +4,8 @@ class Nosotros extends CI_Controller {
 
 	public function index()	{
 
-			$this->load->view('templades/header_pag_footer');
+			$this->load->view('templades/header');
 			$this->load->view('pages/sobre_nosotros_view');
-			$this->load->view('templades/footer_pags');		
+			$this->load->view('templades/footer');		
 	}
 }

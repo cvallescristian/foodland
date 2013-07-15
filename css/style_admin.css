@@ -1,8 +1,11 @@
-.form { 
-		background: url('../img/fondo_terminos.png') no-repeat center; 
-		background-size: 700px; 
-		position: relative;
-		top: 20px;
+body{
+
+  background: url('../img/fondo_admin.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#280308;
 }
 .box{
   width:272px;

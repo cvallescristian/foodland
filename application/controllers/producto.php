@@ -28,7 +28,7 @@ class Producto extends CI_Controller {
 			//var_dump($this->session->all_userdata());
 			$this->load->view('templades/header_producto',$this->data);
 			$this->load->view('pages/producto_view',$this->data);
-			$this->load->view('templades/footer_producto',$this->data);
+			$this->load->view('templades/footer',$this->data);
 			
 		}else{
 			echo "Error en la consulta SQL <br>";
