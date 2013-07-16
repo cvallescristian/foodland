@@ -1,3 +1,4 @@
+
 <!-- Imagen de inicio-->
 <div id="projectwrap" style="background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>); background-size:100% 100%;">
             <header class="clearfix">
@@ -87,19 +88,16 @@
             </div> <!-- End .tab-content -->
         </div>
     </div>
+
 </div>
 <!--Termino del contenido-->
 
 
 
 
-<!-- El mapa del sitio lo dejamos para despues
- <div >
-              <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-      src="https://maps.google.cl/maps?hl=es&amp;ie=UTF8&amp;ll=-33.04004,-71.577301&amp;spn=0.09037,0.154324&amp;t=m&amp;z=13&amp;output=embed"></iframe>
-     
-</div>
--->
+<!-- El mapa del sitio -->
+<div id="map-canvas" style="width:100%; height:450px; frameborder:0; scrolling:no; marginheight:0; marginwidth:0;"></div>
+
 <!-- Inicio del pup-pop -->
 <div class="modal fade" id="test_modal">
     <div class="modal-header">
@@ -144,30 +142,27 @@
 
 
  <!-- Scripts producto Pop - -->
-
-
-
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#test_modal').modal('show');
-    });
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaxkGlTnG8sZ2BHZ4Wf63959--Yfy1b-0&sensor=false">
 </script>
-
 <script type="text/javascript">
-$('#test_modal').modal('hide')
-</script>
-
-<script type="text/javascript">
-   $('#test_modal').modal({
-        backdrop: true,
-        keyboard: true,
-        show: false \\remove this if you dont want it to show straight away
-    }).css({
-        width: 'auto',
-        'margin-left': function () {
-            return -($(this).width() / 2);
-        }
-    });
+  function initialize() {
+    var latlng = new google.maps.LatLng(<?= $detalle_locales->lat_local;?>, <?= $detalle_locales->long_local;?>);
+    var mapOptions = {
+      center: new google.maps.LatLng(<?= $detalle_locales->lat_local;?>, <?= $detalle_locales->long_local;?>),
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map-canvas"),
+        mapOptions);
+    var marker = new google.maps.Marker({
+            position: latlng, 
+            map: map, 
+            title:'<?= $detalle_locales->nombre_local;?>'
+            });
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
 
 </script>
 
+<script type="text/javascript" src='../js/scriptsproductos.js'> </script>
