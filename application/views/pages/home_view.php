@@ -87,7 +87,7 @@
                         <!-- Inicio Bloque Grande-->
                         <div class="span4 project bloque_producto" >
                             <!-- Imagen de fondo-->
-                            <img src="<?= base_url();?>img/locales/<?=$id?>.png"  class="img-rounded"> 
+                            <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
                             <!-- Logo del local-->
                             <span class="overlay"> 
                             </span>

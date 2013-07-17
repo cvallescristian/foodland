@@ -88,6 +88,11 @@ class home_model extends CI_Model{
         }
 
     }
+    function get_locales(){
+        $query="select * from Local";
+        $result= $this->db->query($query);
+        return $result->result();
+    }
     function agregar_contador($id_producto){
         //primero sacamos el valor de la cantidad de visitas y se la pasamos a la variable cant
         $query="select cant_visitas from Producto where id_producto='$id_producto'";

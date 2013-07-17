@@ -49,7 +49,7 @@
                     
                     </div>
                     <div class="span5  pull-right">
-                        <img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.png" class="img-tilt">
+                        <img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.jpeg" class="img-tilt">
                         <p class="small-text pull-right"><font><font>Imagen Real del local</font></font></p>
                     </div>
                 </div>
