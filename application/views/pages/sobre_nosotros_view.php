@@ -13,13 +13,13 @@
 								incluidos en este mercado en expansión.</h4>
 						</div>	
 						<div class="offset2 span4">
-							<img src="img/slider/pastel.jpg" class="img-polaroid">
+							<img src="img/slider/3.jpg" class="img-polaroid">
 							<br><br><br><br>
 						</div>	
 				</div>
 				<div class="row">
 					<div class="span4">
-						<img src="img/slider/sandwich.jpg" class="img-polaroid">
+						<img src="img/slider/1.jpg" class="img-polaroid">
 					</div>	
 					<div class="offset2 span5">
 						<h4 class="text">   Foodland es nuestra empresa emprendedora e innovadora, 
@@ -40,7 +40,7 @@
 						 grata para ti, estaremos trabajando para ofrecerte el mejor servicio.</h3>
 					</div>	
 					<div class="offset2 span4">
-						<img src="img/locales/48.png" class="img-polaroid">
+						<img src="img/locales/48.jpeg" class="img-polaroid">
 					</div>	
 				</div>
 			</div>
