@@ -69,7 +69,6 @@ class Admin_local extends CI_Controller {
 			$this->load->model('admin_model','uum');
 			$id_local_nuevo= $this->uum->agregar_local($data);
 	  		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_nuevo"."_logo.png");
-	  		reducir_imagen_logo_local($id_local_nuevo);
 		 		$root= base_url()."admin_local?al=1";
   				echo "<script>location.href='$root';</script>";	
 
@@ -88,7 +87,6 @@ class Admin_local extends CI_Controller {
 			$id=$this->input->get('id');
 			$this->load->model('admin_model','uum');
 			$this->uum->borrar_local($id);
-			imagedestroy(base_url().'img/locales/'.$id.'logo.png');
 			$root= base_url()."admin_local";
     		echo "<script>location.href='$root';</script>";
 		}
@@ -198,10 +196,7 @@ class Admin_local extends CI_Controller {
 			$root= base_url()."admin_local";
 			echo "<script>location.href='$root';</script>";	 
 			$id_local_editar = $_GET['id'];
-	  		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_editar _logo.png");
-	  		if($_FILES['userfile']['tmp_name']!=""){
-	  			reducir_imagen_logo_local($id_local_editar);
-	  		}
+	  	move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_editar _logo.png");
 		 	//	$root= base_url()."admin_local?al=1";
   			//	echo "<script>location.href='$root';</script>";	
 			$this->uum->eliminar_sector_local($_GET['id']);

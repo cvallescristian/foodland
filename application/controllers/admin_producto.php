@@ -49,8 +49,7 @@ class Admin_producto extends CI_Controller {
 		$this->load->model('admin_model','uum');
 		$id_producto_nuevo= $this->uum->agregar_producto($data);
 
-		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/".$id_producto_nuevo.".jpeg");
-		reducir_imagen_producto($id_producto_nuevo);
+		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/".$id_producto_nuevo.".png");
 
 		 $root= base_url()."admin_producto";
   		echo "<script>location.href='$root';</script>";
@@ -90,10 +89,8 @@ class Admin_producto extends CI_Controller {
 		$this->load->model('admin_model','uum');
 		$id_producto_nuevo= $this->uum->editar_producto($data,$_GET['id']);
 
-		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/".$_GET['id'].".jpeg");
-		if($_FILES['userfile']['tmp_name']!=""){
-			reducir_imagen_producto($_GET['id']);
-		}
+		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/".$_GET['id'].".png");
+
 		 $root= base_url()."admin_producto";
   		echo "<script>location.href='$root';</script>";
     }
@@ -133,7 +130,6 @@ class Admin_producto extends CI_Controller {
 	    	$this->load->model('admin_model','uum');
 			$id_tipo_producto_nuevo= $this->uum->agregar_tipo_producto($data);
 	  		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/tipo_producto/$id_tipo_producto_nuevo.png");
-	  		reducir_imagen_tipo_producto($id);
 		 		$root= base_url()."admin_producto?al=1";
   				echo "<script>location.href='$root';</script>";	
 		}
