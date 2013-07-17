@@ -30,7 +30,7 @@
 								<td><?= $l->direccion_local?></td>	
 								<td><?= $l->telefono_local ?></td>
 								<td><?= $l->email  ?></td>
-								<td> <a href="" class="btn btn-danger">Borrar</a></td>
+								<td> <a href="<?= base_url();?>admin_local/borrar_local?id=<?= $l->id_local; ?>" class="btn btn-danger">Borrar</a></td>
 								<td><a href="<?= base_url();?>admin_local/editar_local?id=<?= $l->id_local; ?>" class="btn btn-info">Editar</a></td>
 							</tr>
 						<?php	
