@@ -24,12 +24,33 @@ textarea {
 
 #portada1{
 
-	text-align:left;
-	padding:10px;
-	
-	background:rgba(7, 7, 7, 0.55);
+	text-align:center;
+	padding:20px;
+	background:#c61618;
 	position:relative;
-	z-index:1000;
+	z-index:2;
+}
+#redes_sociales{
+	text-align: center;
+	padding:10px;
+	color:white;
+	background:black;
+	z-index:2;
+	position:relative;
+	margin-top:26px;
+}
+#sector_reparto{
+	padding:10px;
+
+}
+#categoria{
+	padding:0px;
+}
+#buttom_categoria{
+	padding:20px;
+}
+#sector_reparto a{
+	color:black;
 }
 #portada2{
 
@@ -142,7 +163,6 @@ body.pull_top {
 -------------------------------------------------- */
 #footer {
 	min-height: 260px;
-	margin-top: 90px;
 	background-color: #252528;
 	color: #fff;
 	padding-top: 35px;

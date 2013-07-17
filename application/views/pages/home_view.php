@@ -20,24 +20,43 @@
         </div>
         <div class="container">
             <div class="row">
-               <div id="portada1" class="span9 offset1" style="">
-                   <p><h1>Hambre? ¡FoodLand (Beta) te da la solución!
-                    </h1>
-                    <h2>
-                    Lo mejor del delivery en la V región en un sólo catálogo online
-                    </h2>
+               <div id="portada1" class="span3 " style="" >
+                   <p><h1>¿Hambre?</h1>
+                    
+                    <h2>Eso que imaginas lo pides <a href="#sector_reparto" style="color:rgb(210, 226, 26)">aquí</a> en Foodland</h2>
                     </p>
-                </div> 
+                </div>
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=281140838696478";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+                
+                    <div class="span3 offset9" id="redes_sociales">
+                        <h4>Redes Sociales</h4>
+                            <div class="fb-like span1"  style="z-index: 999" data-href="https://www.facebook.com/FoodLandValparaiso" data-send="false" data-layout="box_count" data-width="200" data-show-faces="true" data-font="tahoma"></div>
+                            <div class="span1 ">
+                               <a href="https://twitter.com/FoodLand_Valpo" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large" data-show-screen-name="false">Seguir a @FoodLand_Valpo</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                            </div>
+                             </div>
+                
             </div>
         </div>
         
     </section> 
+<!-- fin portada -->       
 
-    <div class="container" style="margin-top:30px;">
+<!-- Inicio Sector Reparto -->
+<section class="portfolio rev" id="sector_reparto">
+    <div class="container">
         <div class="row">
-            <div  id="portada2" class="span4 offset1">
-                <h2>
-                    <?php 
+            <div class="span12 center">
+                <h1 class="big-heading"><font><font>
+                     <?php 
                         $nombre_sector="";
                         if($sector==""){
                             ?>¿D&oacutende est&aacutes? <?php 
@@ -50,9 +69,12 @@
                                     break;
                                 }
                             }
-                        } ?></h2>
+                        } ?>
+                </font></font></h1>
+                <h4 class="sub-heading"><font><font>Así podrás encontrar mas facilmente productos a tu domicilio</font></font></h4>
+                        
             </div>
-            <div id="portada3" class="span9 offset1">
+            <div class="span11  offset1 center">
                 <div class="row">
                     <?php foreach ($sector_entregas as $sector_entrega) {
                     ?>
@@ -60,10 +82,11 @@
                     <?php } ?>
                 </div>    
             </div>
+ 
         </div>
     </div>
-<!-- fin portada -->       
-
+</section>
+<!-- Fin sector reparto -->
 <!-- Inicio Productos-->    
     <section class="portfolio" id="prod" style="position:relative; ">
 
@@ -85,7 +108,7 @@
                        
                       ?>
                         <!-- Inicio Bloque Grande-->
-                        <div class="span4 project bloque_producto" >
+                        <div class="span3 project bloque_producto" >
                             <!-- Imagen de fondo-->
                             <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
                             <!-- Logo del local-->
@@ -110,10 +133,19 @@
 <!-- Termino Productos-->
 
 <!-- Inicio Categoria-->
-    <section id="categoria">
-        <div class="span6 offset4">
-                <button class="btn btn-danger btn-large" id="button">Cargar Todos los productos por categoria</button>
+    <section id="categoria" class="portfolio rev">
+        <div class="container" id="buttom_categoria">
+            <div class="row">
+                <div class="span12 center">
+                    <h1 class="big-heading"><font><font>Productos por categoría</font></font></h1>
+                    <h4 class="sub-heading"><font><font>Todos nuetros productos diferenciados por tipo de producto</font></font></h4>
+                </div>
+                <div class="span12 center">
+                    <button class="btn btn-danger btn-large" id="button">Cargar Todos los productos por categoria</button>
+                </div> 
+            </div>
         </div>
+        
     </section>
 <!-- Fin categoria-->
  

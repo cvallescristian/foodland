@@ -1,9 +1,8 @@
 
 #fondo {
-	background:#fffff; 
 	position: absolute;
 	width: 100%;
-	margin-top: -22px
+	
 	 }
 	
 img { 
@@ -16,9 +15,8 @@ img {
   position:relative;
   left:-25px;
   top:-104px; 
-  
-  z-index:100; 
-  height:550px; 
+  z-index:0; 
+  height: 500px;
   width:100%;
 
   }

@@ -800,6 +800,9 @@
 }
 
 @media (max-width: 767px) {
+  #sector_reparto{
+    margin-top:30px;
+  }
   body {
     padding-right: 20px;
     padding-left: 20px;

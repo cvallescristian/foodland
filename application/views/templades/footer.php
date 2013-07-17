@@ -1,7 +1,7 @@
     <footer id="footer">
             <div class="container">
                 <div class="row" style="color:white;">
-                    <div class="row span4 offset1">
+                    <div class="span4 offset1">
                         <div style="margin-left:30px">
                             <img src="<?= base_url();?>img/logo2.png" width="250" height="40"> <sup style="color:white;">BETA</sup>
                         </div>
@@ -57,10 +57,7 @@
                                 <span class="socialicons ico2"></span>
                                 <span class="socialicons_h ico2h"></span>
                             </a>
-                            <a href="" class="gplus">
-                                <span class="socialicons ico3"></span>
-                                <span class="socialicons_h ico3h"></span>
-                            </a>                          
+                                             
                         </div>
                     </div>
                     <div class="row copyright">
@@ -70,8 +67,8 @@
                     </div>
                 </div>            
             </div>
-            </div>
-</footer>
+        </div>
+    </footer>
         <script src="<?= base_url();?>js/jquery-latest.js"></script>       
         <script type="text/javascript" src="<?= base_url();?>js/index-slider.js"></script>  
         <script src="<?= base_url();?>js/modernizr.js"></script>
