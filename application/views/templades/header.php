@@ -60,7 +60,7 @@
                                     ?>
 
                                     <?php else : ?>
-                                    Iniciar Session
+                                    Iniciar Sesion
                                     <?php endif; ?>
                             </font></font><b class="caret"></b>
                         </a>
@@ -72,7 +72,7 @@
                                         
                                     ?>
                                      <div class="logout">
-                                        <p><a href="<?php echo $logout_url; ?>">Cerrar Session</a></p>
+                                        <p><a href="<?php echo $logout_url; ?>">Cerrar Sesion</a></p>
                                     </div>
                                     <?php else : ?>
                                     <font><font>Iniciar con:</font></font>

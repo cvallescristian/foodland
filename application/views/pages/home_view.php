@@ -23,7 +23,7 @@
                <div id="portada1" class="span3 " style="" >
                    <p><h1>¿Hambre?</h1>
                     
-                    <h2>Eso que imaginas lo pides <a href="#sector_reparto" style="color:rgb(210, 226, 26)">aquí</a> en Foodland</h2>
+                    <h2>Eso que imaginas lo puedes encontrar <a href="#sector_reparto" style="color:rgb(210, 226, 26)">aquí</a> en Foodland </h2>
                     </p>
                 </div>
                 <div id="fb-root"></div>
@@ -71,7 +71,7 @@
                             }
                         } ?>
                 </font></font></h1>
-                <h4 class="sub-heading"><font><font>Así podrás encontrar mas facilmente productos a tu domicilio</font></font></h4>
+                <h4 class="sub-heading"><font><font>Así podrás encontrar más fácilmente productos a tu domicilio</font></font></h4>
                         
             </div>
             <div class="span11  offset1 center">
@@ -108,7 +108,7 @@
                        
                       ?>
                         <!-- Inicio Bloque Grande-->
-                        <div class="span3 project bloque_producto" >
+                        <div class="span4 project bloque_producto" >
                             <!-- Imagen de fondo-->
                             <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
                             <!-- Logo del local-->
