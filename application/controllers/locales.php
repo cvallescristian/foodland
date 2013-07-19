@@ -5,7 +5,7 @@ class Locales extends CI_Controller {
 	public function index()	{
 
 			$this->load->view('templades/header_local');
-			$this->load->view('pages/locales');
+			$this->load->view('pages/locales_view');
 					
 	}
 }
