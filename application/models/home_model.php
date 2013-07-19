@@ -117,6 +117,20 @@ class home_model extends CI_Model{
             return $r->id_tipo_producto;
             break;
          }
+    }
+    function get_producto_buscador(){ //busca cada producto y le agrega su categoria
+        $query="select * from Tipo_producto";
+        $result= $this->db->query($query);
+        $re= $result->result();
+        foreach ($re as $r ) {
+            $query2="select * from Producto where id_tipo_producto=".$r->id_tipo_producto;
+            $result= $this->db->query($query2);
+            $re2= $result->result();
+            foreach ($re2 as $r2 ) {
+                $buscar[]=$r2->id_producto."/".$r->nombre_tipo_producto."/".$r2->titulo_producto;
+            }
+        }
+        return $buscar;
     }   
 }
 

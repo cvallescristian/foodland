@@ -21,12 +21,14 @@ Class Home extends CI_Controller
 			$this->load ->model('home_model','uum');
 			$productos_random= $this->uum->get_producto_random($sector);
             $sector_entregas = $this->uum->get_sector_entrega();
+            $buscar=$this->uum->get_producto_buscador();
 		//	echo "<pre>".print_r($productos,true)."</pre>";
 			
 			
 			$this->data['productos_random']=$productos_random;
 			$this->data['sector_entregas']=$sector_entregas;
 			$this->data['sector']=$sector;
+            $this->data['buscar']=$buscar;
 			
             $this->load->view('templades/header',$this->data);
 			$this->load->view('pages/home_view',$this->data);

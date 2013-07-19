@@ -40,7 +40,7 @@
          <div class="span2">
             <form class="form-search">
               <div class="input-append" id="buscador">
-                <input type="text" id="search" class="search-query" placeholder="¿Qué quieres comer?">
+                <input type="text" name="search" id="search" class="search-query" placeholder="¿Qué quieres comer?" autocomplete="off">
                 <button type="submit"  class="btn"><i class="icon icon-search"></i></button>
               </div>
               

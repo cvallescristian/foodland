@@ -71,7 +71,10 @@
     </footer>
     <script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
 <script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-typeahead.js"></script><script>  
- var subjects = ['PHP', 'MySQL', 'SQL', 'PostgreSQL', 'HTML', 'CSS', 'HTML5', 'CSS3', 'JSON'];   
+ var subjects = [<?php foreach ($buscar as $b ) {
+    $var= explode("/", $b);
+     echo "'$var[1]/$var[2]',";
+ } ?>];   
 $('#search').typeahead({source: subjects})  
 </script>  
         <script src="<?= base_url();?>js/jquery-latest.js"></script>
