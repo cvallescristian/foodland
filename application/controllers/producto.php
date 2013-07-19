@@ -46,12 +46,13 @@ class Producto extends CI_Controller {
         }else{ //si no lo escribio con el autocompletar entrará ahí
            $producto=$var[0];
         }
-        $producto= "/".$producto."/i";
+        $producto2= "/".$producto."/i";
             $contador=0;
             $this->load->model('admin_model','uum');
             $productos= $this->uum->get_producto();
+
             foreach ($productos as $p) {
-                if(preg_match($producto, $p->titulo_producto)){
+                if(preg_match($producto2, $p->titulo_producto)){
                     $id=$p->id_producto;
                     $lista[]=$p;
                      //echo $p->id_producto.", ";
@@ -60,16 +61,32 @@ class Producto extends CI_Controller {
                
             }
         if($contador==0){
-            echo "no se han encontrado resutados en la busqueda";
+            $lista="";
+             $this->fb();
+            $this->load ->model('home_model','uum');
+            $sector_entregas= $this->uum->get_sector_entrega();
+            //$buscar= $this->uum->get_producto_buscador();
+            $this->data['sector_entregas']=$sector_entregas;
+            $this->data['productos']=$lista;
+            $this->data['busqueda']=$producto;
+            //$this->data['buscar']=$buscar;
+            
+            $this->load->view('templades/header',$this->data);
+            $this->load->view('pages/producto/buscar_view',$this->data);
+            $this->load->view('templades/footer',$this->data);
+
         }else if($contador==1){
             redirect(base_url()."producto?id=".$id);
         }else{
             $this->fb();
             $this->load ->model('home_model','uum');
             $sector_entregas= $this->uum->get_sector_entrega();
+            //$buscar= $this->uum->get_producto_buscador();
             $this->data['sector_entregas']=$sector_entregas;
             $this->data['productos']=$lista;
-
+            $this->data['busqueda']=$producto;
+            //$this->data['buscar']=$buscar;
+            
             $this->load->view('templades/header',$this->data);
             $this->load->view('pages/producto/buscar_view',$this->data);
             $this->load->view('templades/footer',$this->data);

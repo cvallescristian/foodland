@@ -70,7 +70,8 @@
         </div>
     </footer>
     <script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
-<script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-typeahead.js"></script><script>  
+<script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-typeahead.js"></script>
+<script>  
  var subjects = [<?php foreach ($buscar as $b ) {
     $var= explode("/", $b);
      echo "'$var[1]/$var[2]',";
