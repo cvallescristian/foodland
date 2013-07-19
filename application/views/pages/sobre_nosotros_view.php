@@ -1,11 +1,16 @@
-	<!--bloque 1 -->
-	<div class="margen bloque_blanco">
-		<form class="form-horizontal form" name="form">
-			<div class="container">
+		<section id="categoria" class="portfolio rev">
+	        <div class="container" id="buttom_categoria">
+	            <div class="row">
+	                <div class="span12 center">
+	                    <h1 class="big-heading"><font><font>Sobre Nosotros</font></font></h1>
+	                </div>
+	            </div>
+	        </div>        
+	    </section>	    
+	    <br>
 				<div class="row">
-					<h1 style="text-align: center; color:black">Sobre nosotros</h1>
-					<br>
-						<div class="span5">
+						<div class="offset1 span5">
+							<br>
 							<h4 class="text">En los últimos años, en nuestro país hemos visto el gran 
 								aumento de los locales de comida con entrega a domicilio o delivery, 
 								teniendo gran éxito de ventas. Dichos locales ofrecen de lo más variado en 
@@ -14,11 +19,14 @@
 						</div>	
 						<div class="offset2 span4">
 							<img src="img/slider/3.jpg" class="img-polaroid">
-							<br><br><br><br>
+							<br><br>
 						</div>	
 				</div>
-				<div class="row">
-					<div class="span4">
+				<section id="categoria" class="portfolio rev">
+					<br>
+			        <div class="container" id="buttom_categoria">
+			            <div class="row">
+			                <div class="offset1 span4">
 						<img src="img/slider/1.jpg" class="img-polaroid">
 					</div>	
 					<div class="offset2 span5">
@@ -30,20 +38,19 @@
 							los productos que ofrecen nuestros asociados, facilitando de esta forma, la 
 							conexión entre las personas y los locales. Además, cabe destacar que nuestro 
 							sistema de geolocalización facilita al usuario encontrar deliveries cercanos 
-							a su hogar ¡tan sólo con un click!<br></h4>
-							<br><br><br><br>
+							a su hogar ¡tan sólo con un click!<br></h4>							
 					</div>	
-				</div>
+			            </div>
+			        </div>        
+			    </section>	    
+			    <br><br>
 				<div class="row">
-					<div class="span5">
+					<div class="offset1 span5">
 						<h3 class="text">Esperamos que tu experiencia en Foodland.cl sea
 						 grata para ti, estaremos trabajando para ofrecerte el mejor servicio.</h3>
 					</div>	
 					<div class="offset2 span4">
 						<img src="img/locales/48.jpeg" class="img-polaroid">
 					</div>	
-				</div>
-			</div>
-		</form>
-		<br>
-	</div>
+				</div>				
+		<br><br>
