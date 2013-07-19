@@ -21,7 +21,8 @@
         <link rel="stylesheet" href="<?= base_url()?>css/header/header.css">
         <link rel="stylesheet" href="<?= base_url();?>css/home.css"> 
         <link rel="stylesheet" href="<?= base_url();?>css/style_footer.css">
-         <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css">    
+         <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css">  
+
 </head>
 <body>
     <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px;">
@@ -39,8 +40,8 @@
          <div class="span2">
             <form class="form-search">
               <div class="input-append" id="buscador">
-                <input type="text" class="search-query" placeholder="¿Qué quieres comer?">
-                <button type="submit" class="btn"><i class="icon icon-search"></i></button>
+                <input type="text" id="search" class="search-query" placeholder="¿Qué quieres comer?">
+                <button type="submit"  class="btn"><i class="icon icon-search"></i></button>
               </div>
               
             </form>

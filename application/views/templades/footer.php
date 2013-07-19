@@ -69,8 +69,12 @@
             </div>
         </div>
     </footer>
+    <script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
+<script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-typeahead.js"></script><script>  
+ var subjects = ['PHP', 'MySQL', 'SQL', 'PostgreSQL', 'HTML', 'CSS', 'HTML5', 'CSS3', 'JSON'];   
+$('#search').typeahead({source: subjects})  
+</script>  
         <script src="<?= base_url();?>js/jquery-latest.js"></script>
-        <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-typeahead.js"></script>    
         <script type="text/javascript" src="<?= base_url();?>js/index-slider.js"></script>  
         <script src="<?= base_url();?>js/modernizr.js"></script>
         <script src="<?= base_url();?>js/bootstrap.js"></script>
