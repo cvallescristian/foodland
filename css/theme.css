@@ -26,7 +26,7 @@ textarea {
 
 	text-align:center;
 	padding:20px;
-	background:#c61618;
+	background:rgba(198, 22, 24, 0.7);
 	position:relative;
 	z-index:2;
 }
@@ -34,7 +34,7 @@ textarea {
 	text-align: center;
 	padding:10px;
 	color:white;
-	background:black;
+	background:rgba(0, 0, 0, 0.7);
 	z-index:2;
 	position:relative;
 	margin-top:26px;
@@ -50,7 +50,7 @@ textarea {
 	padding:20px;
 }
 #sector_reparto a{
-	color:black;
+	color: rgb(95, 95, 95);
 }
 #portada2{
 
