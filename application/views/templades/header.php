@@ -38,10 +38,10 @@
              </a>   
          </div>
          <div class="span2">
-            <form class="form-search">
+            <form class="form-search" action="<?= base_url()?>producto/buscar" method="post">
               <div class="input-append" id="buscador">
-                <input type="text" name="search" id="search" class="search-query" placeholder="¿Qué quieres comer?" autocomplete="off">
-                <button type="submit"  class="btn"><i class="icon icon-search"></i></button>
+                <input type="text" name="search" id="search" class="search-query" placeholder="¿Qué quieres comer?" autocomplete="off" required>
+                <button type="submit"  class="btn btn-warning"><i class="icon icon-search"></i></button>
               </div>
               
             </form>

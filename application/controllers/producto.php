@@ -36,6 +36,46 @@ class Producto extends CI_Controller {
 			echo "<a href='".base_url()."'>Volver el home</a>";
 		}
 	}
+    public function buscar(){
+        $texto=$this->input->post('search'); //obtengo el valor del texto
+        $var= explode("/", $texto); //los separo por slash
+        $tamaño=count($var); //obtengo el tamaño del arreblo var
+
+        if($tamaño>1){ //si lo escribio con el autocompletar entrará ahi 
+            $producto= $var[1];
+        }else{ //si no lo escribio con el autocompletar entrará ahí
+           $producto=$var[0];
+        }
+        $producto= "/".$producto."/i";
+            $contador=0;
+            $this->load->model('admin_model','uum');
+            $productos= $this->uum->get_producto();
+            foreach ($productos as $p) {
+                if(preg_match($producto, $p->titulo_producto)){
+                    $id=$p->id_producto;
+                    $lista[]=$p;
+                     //echo $p->id_producto.", ";
+                    $contador++;
+                }
+               
+            }
+        if($contador==0){
+            echo "no se han encontrado resutados en la busqueda";
+        }else if($contador==1){
+            redirect(base_url()."producto?id=".$id);
+        }else{
+            $this->fb();
+            $this->load ->model('home_model','uum');
+            $sector_entregas= $this->uum->get_sector_entrega();
+            $this->data['sector_entregas']=$sector_entregas;
+            $this->data['productos']=$lista;
+
+            $this->load->view('templades/header',$this->data);
+            $this->load->view('pages/producto/buscar_view',$this->data);
+            $this->load->view('templades/footer',$this->data);
+        }
+        
+    }
 
     private function fb()
     {
