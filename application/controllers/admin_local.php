@@ -48,12 +48,19 @@ class Admin_local extends CI_Controller {
 			$root= base_url()."admin_local/nuevo_local";
 			echo "<script>location.href='$root';</script>";	
 		}else{
+			$sitio = $this->input->post('inputSitioWeb');
 			$data = array( //datos del local
 	           'nombre_local' => $this->input->post('inputNombre'),
 	           'direccion_local' =>$this->input->post('inputDireccion'),
 	           'telefono_local' =>$this->input->post('inputFono'),
-	           'email' => $this->input->post('inputEmail')
+	           'email' => $this->input->post('inputEmail'),
+	           'sitio_referencia' => "http://".$sitio,
+	           'horario_entrada' => $this->input->post('inputHorarioEntrada'),
+	           'horario_salida' => $this->input->post('inputHorarioSalida'),
+	           'horario_entrada_fds' => $this->input->post('inputHorarioEntradaFds'),
+	           'horario_salida_fds' => $this->input->post('inputHorarioSalidaFds')
 	    	);
+	    	
 	    	//datos de la foto
 	    	$config['upload_path'] = base_url()."img/locales/";  
 	    	$config['allowed_types'] = 'gif|jpg|png'; 
@@ -173,11 +180,17 @@ class Admin_local extends CI_Controller {
 			$root= base_url()."admin_local/editar_local?id=$id";
 			echo "<script>location.href='$root';</script>";	
 		}else{
+			$sitio = $this->input->post('inputSitioWeb');
 			$data = array( //datos del local
 	           'nombre_local' => $this->input->post('inputNombre'),
 	           'direccion_local' =>$this->input->post('inputDireccion'),
 	           'telefono_local' =>$this->input->post('inputFono'),
-	           'email' => $this->input->post('inputEmail')
+	           'email' => $this->input->post('inputEmail'),
+	       	   'sitio_referencia' => "http://".$sitio,
+	           'horario_entrada' => $this->input->post('inputHorarioEntrada'),
+	           'horario_salida' => $this->input->post('inputHorarioSalida'),
+	           'horario_entrada_fds' => $this->input->post('inputHorarioEntradaFds'),
+	           'horario_salida_fds' => $this->input->post('inputHorarioSalidaFds')
 	    	);
 	    	//datos de la foto
 	    	$config['upload_path'] = base_url()."img/locales/";  

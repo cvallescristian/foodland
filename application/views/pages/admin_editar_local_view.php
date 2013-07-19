@@ -42,6 +42,12 @@
 						      <input type="email" id="inputEmail" name="inputEmail" value="<?= $l->email  ?>" required>
 						    </div>
 						  </div>
+						   <div class="control-group">
+						    <label class="control-label" for="inputSitioWeb">Sitio Web</label>
+						    <div class="controls">
+						      <input type="text" id="inputSitioWeb" name="inputSitioWeb" value="<?= substr($l->sitio_referencia, 7);  ?>" required>
+						    </div>
+						  </div>
 						  <div class="control-group">
 						    <label class="control-label" for="inputLogo">Logo</label>
 						    <div class="controls">
@@ -70,7 +76,160 @@
 						    	?>
 						    </div>
 						  </div>
+						  <div class="control-group">
+							    <label class="control-label" for="inputHorarioEntrada">Horario de Atención Entrada</label>
+							    <div class="controls">
+							    	<select name="inputHorarioEntrada">
+							    	<?php 
 
+								    	for($a=0;$a<=23;$a++){
+								    		$cero = Null;
+								    	if($a<10)
+								    	{
+								    		$cero = 0;
+								    	}	
+							    		$option1 = '';
+							    		$option2='';
+							        	if($cero.$a.':00:00' == strval($l->horario_entrada) ){
+									    		$option1 = 'selected';
+									    		
+									    	}
+									    	if($cero.$a.':30:00' == strval($l->horario_entrada)){
+									    		
+									    		$option2 = 'selected';
+									    		
+									   		}
+								   		
+
+							    	?>
+										<option value="<?= $a.':00:00'?>"
+										<?php echo set_select('inputHorarioEntrada', '$a'.':00:00'); ?> <?= $option1 ?>><?= $a ?>:00:00
+										</option>
+										<option value="<?= $a.':30:00'?>"
+										<?php echo set_select('inputHorarioEntrada', '$a'.':30:00'); ?> <?= $option2 ?>><?= $a ?>:30:00
+										</option>
+															    	<?php 
+							    		} 
+							    	?>
+							    	</select>
+							    </div>
+							  </div>
+						  <div class="control-group">
+							    <label class="control-label" for="inputHorarioSalida">Horario de Atención Salida</label>
+							    <div class="controls">
+							    	<select name="inputHorarioSalida">
+							    	<?php 
+
+
+								    	for($a=0;$a<=23;$a++){
+								    		$cero = Null;
+								    	if($a<10)
+								    	{
+								    		$cero = 0;
+								    	}	
+							    		$option1 = '';
+							    		$option2='';
+							        	if($cero.$a.':00:00' == strval($l->horario_salida) ){
+									    		$option1 = 'selected';
+									    		
+									    	}
+									    	if($cero.$a.':30:00' == strval($l->horario_salida)){
+									    		
+									    		$option2 = 'selected';
+									    		
+									   		}
+								   		
+
+							    	?>
+										<option value="<?= $a.':00:00'?>"
+										<?php echo set_select('inputHorarioSalida', '$a'.':00:00'); ?> <?= $option1 ?>><?= $a ?>:00:00
+										</option>
+										<option value="<?= $a.':30:00'?>"
+										<?php echo set_select('inputHorarioSalida', '$a'.':30:00'); ?> <?= $option2 ?>><?= $a ?>:30:00
+										</option>
+															    	<?php 
+							    		} 
+							    	?>
+							    	</select>
+							    </div>
+							  </div>
+						  <div class="control-group">
+							    <label class="control-label" for="inputHorarioEntradaFds">Horario de Atención Entrada Fin De Semana</label>
+							    <div class="controls">
+							    	<select name="inputHorarioEntradaFds">
+							    	<?php 
+
+
+								    	for($a=0;$a<=23;$a++){
+								    		$cero = Null;
+								    	if($a<10)
+								    	{
+								    		$cero = 0;
+								    	}	
+							    		$option1 = '';
+							    		$option2='';
+							        	if($cero.$a.':00:00' == strval($l->horario_entrada_fds) ){
+									    		$option1 = 'selected';
+									    		
+									    	}
+									    	if($cero.$a.':30:00' == strval($l->horario_entrada_fds)){
+									    		
+									    		$option2 = 'selected';
+									    		
+									   		}
+
+							    	?>
+										<option value="<?= $a.':00:00'?>"
+										<?php echo set_select('inputHorarioEntradaFds', '$a'.':00:00'); ?> <?= $option1 ?>><?= $a ?>:00:00
+										</option>
+										<option value="<?= $a.':30:00'?>"
+										<?php echo set_select('inputHorarioEntradaFds', '$a'.':30:00'); ?> <?= $option2 ?>><?= $a ?>:30:00
+										</option>
+															    	<?php 
+							    		} 
+							    	?>
+							    	</select>
+							    </div>
+							  </div>
+						  <div class="control-group">
+							    <label class="control-label" for="inputHorarioSalidaFds">Horario de Atención Salida Fin de Semana</label>
+							    <div class="controls">
+							    	<select name="inputHorarioSalidaFds">
+							    	<?php 
+
+
+								    	for($a=0;$a<=23;$a++){
+								    		$cero = Null;
+								    	if($a<10)
+								    	{
+								    		$cero = 0;
+								    	}	
+							    		$option1 = '';
+							    		$option2='';
+							        	if($cero.$a.':00:00' == strval($l->horario_salida_fds) ){
+									    		$option1 = 'selected';
+									    		
+									    	}
+									    	if($cero.$a.':30:00' == strval($l->horario_salida_fds)){
+									    		
+									    		$option2 = 'selected';
+									    		
+									   		}
+								   		
+
+							    	?>
+										<option value="<?= $a.':00:00'?>"
+										<?php echo set_select('inputHorarioSalidaFds', '$a'.':00:00'); ?> <?= $option1 ?>><?= $a ?>:00:00
+										</option>
+										<option value="<?= $a.':30:00'?>"
+										<?php echo set_select('inputHorarioSalidaFds', '$a'.':30:00'); ?> <?= $option2 ?>><?= $a ?>:30:00
+										</option>
+															    	<?php 
+							    		} 
+							    	?>
+							    	</select>
+							    </div>
+							  </div>
 						  <div class="control-group" style="margin-right: 60px;">
 						    <div class="controls">
 						      <button type="submit" class="btn btn-small btn-block btn-warning" style="width:100px">Aceptar</button>
