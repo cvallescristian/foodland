@@ -248,29 +248,7 @@
     background: #fff;
 }
 
-.footer{
-    margin-bottom: 20px;
-}
 
-.footer ul{
-    list-style-type: none;
-    text-align:right;
-    float:right;
-}
-
-.footer ul li{
-    float:left;
-}
-
-.footer ul li a{
-    margin-left: 15px;
-    color: #222;
-    text-decoration:underline;
-}
-
-.footer ul li a:hover{
-    text-decoration:none;
-}
 
 
 /* .: TYPHOGRAPHY :. */

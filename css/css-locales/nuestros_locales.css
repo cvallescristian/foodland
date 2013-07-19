@@ -2,6 +2,7 @@ body {
 	background: #EEE;
 	color: #424242;
 	font-family: 'Lato', sans-serif !important;
+	background: url(../../img/body-bg.png) repeat;
 
 }
 
@@ -245,7 +246,7 @@ ol.comments li.comment .meta {
 	background: #FFF;
 	border: 20px solid #FFF;
 	border-radius: 2px;
-	margin-top: -300px;
+	margin-top: -400px;
 	position: relative;
 	z-index: 2;
 }

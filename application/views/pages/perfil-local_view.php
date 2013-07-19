@@ -101,15 +101,7 @@
         </div>
     </div>
             
-    
-    <div class="container footer">
-        <hr class="alt">
-        <div class="row">
-            <div class="span6">© 2013 FoodLand.cl, Todos los derechos reservados</div>
-            
-        </div>
-    </div>
-
+    <br><br><br><br>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -121,4 +113,3 @@
 
   
 
-</body></html>

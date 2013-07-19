@@ -6,6 +6,7 @@ class Locales extends CI_Controller {
 
 			$this->load->view('templades/header_local');
 			$this->load->view('pages/locales_view');
+			$this->load->view('templades/footer');
 					
 	}
 }

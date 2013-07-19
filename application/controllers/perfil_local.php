@@ -6,6 +6,7 @@ class Perfil_local extends CI_Controller {
 
 			$this->load->view('templades/header-perfil-local');
 			$this->load->view('pages/perfil-local_view');
+			$this->load->view('templades/footer');
 					
 	}
 }
