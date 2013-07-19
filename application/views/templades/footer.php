@@ -69,7 +69,8 @@
             </div>
         </div>
     </footer>
-        <script src="<?= base_url();?>js/jquery-latest.js"></script>       
+        <script src="<?= base_url();?>js/jquery-latest.js"></script>
+        <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-typeahead.js"></script>    
         <script type="text/javascript" src="<?= base_url();?>js/index-slider.js"></script>  
         <script src="<?= base_url();?>js/modernizr.js"></script>
         <script src="<?= base_url();?>js/bootstrap.js"></script>

@@ -18,6 +18,7 @@
         <link href="<?= base_url();?>css/style.css" rel="stylesheet" type="text/css">        
         <link href="<?= base_url();?>css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url();?>css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="<?= base_url()?>css/header/header.css">
         <link rel="stylesheet" href="<?= base_url();?>css/home.css"> 
         <link rel="stylesheet" href="<?= base_url();?>css/style_footer.css">
          <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css">    
@@ -30,11 +31,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
          </a>      
-        <div class="span3 offset1">
+        <div class="span3">
              <a  id="menu" href="<?= base_url();?>">
                     <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">BETA</sup>
              </a>   
          </div>
+         <div class="span2">
+            <form class="form-search">
+              <div class="input-append" id="buscador">
+                <input type="text" class="search-query" placeholder="¿Qué quieres comer?">
+                <button type="submit" class="btn"><i class="icon icon-search"></i></button>
+              </div>
+              
+            </form>
+         </div>
+          
+            
           <div class="nav-collapse collapse" cz-shortcut-listen="true">
                 <ul class="nav pull-right"> 
                         <li><a href="<?= base_url();?>">Inicio</a></li>
