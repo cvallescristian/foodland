@@ -152,11 +152,11 @@ body {
 margin-top: 400px;
 }
 a {
-  color: #007AFF;
+  color: #E91010;
   text-decoration: none;
 }
 a:hover {
-  color: #12b0ff;
+  color: black;
   text-decoration: underline;
 }
 .img-rounded {

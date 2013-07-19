@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="<?= base_url()?>css/header/header.css">
         <link rel="stylesheet" href="<?= base_url();?>css/home.css"> 
         <link rel="stylesheet" href="<?= base_url();?>css/style_footer.css">
-         <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css">  
+        <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css">  
 
 </head>
 <body>
@@ -51,7 +51,7 @@
           <div class="nav-collapse collapse" cz-shortcut-listen="true">
                 <ul class="nav pull-right"> 
                         <li><a href="<?= base_url();?>">Inicio</a></li>
-                        <li><a href="#cat">Categoria Productos</a></li>
+                        <li><a href="<?= base_url()?>nuestros_locales">Nuestros Locales</a></li>
                         <li class="dropdown">
                             <a href="" class="dropdown-toggle" data-toggle="dropdown">
                                 Sector reparto
