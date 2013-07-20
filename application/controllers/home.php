@@ -141,7 +141,7 @@ Class Home extends CI_Controller
             $param = array(
                 'message' => 'Acabo de pedir '.$this->input->post('nombre').' de #'.$this->input->post('nombre_local').' por #Foodland ﻿',
                 'link' => 'http://foodland.cl/foodland/producto?id='.$this->input->post('id'),
-                'picture'=> 'http://foodland.cl/foodland/img/locales/'.$this->input->post('id').'.png',
+                'picture'=> 'http://foodland.cl/foodland/img/locales/'.$this->input->post('id').'.jpeg',
                 'name'=>$this->input->post('nombre'),
                 'caption'=>'Este es un producto de nuestro local '.$this->input->post('nombre_local'),
                 'description'=>$this->input->post('descripcion')
