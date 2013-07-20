@@ -18,7 +18,7 @@ FREELANCING : info@uexel.com
 
 html,body {
     -webkit-font-smoothing:antialiased;
-    height:100%;
+    
     /* The html and body elements cannot have any padding or margin. */
     font-family:'Open Sans', sans-serif;
     background-color:white;
@@ -2696,7 +2696,6 @@ a,a:hover {
 
 .sidebar {
     background:#F7F7F7;
-    border:1px solid #E1E1E1;
     padding:8px;
     margin-top:10px;
     border-radius:4px;

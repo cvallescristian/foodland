@@ -1,20 +1,29 @@
 body {
 	background: #EEE;
-	color: #424242;
-	font-family: 'Lato', sans-serif !important;
+	color: #8E959C;
 	background: url(../../img/body-bg.png) repeat;
 
 }
 
-h1 {
-	color: #5ecaff;
-	font-size: 28px;
-	text-transform: uppercase;
-	font-weight: 400;
-	padding: 0;
-	margin: 0 0 20px 0;
+a {
+	color:#c51517;
 }
-
+a:hover {
+	color:red;
+}
+.bloque_chico{
+	height: 323px;
+}
+.bloque_chico img{
+	width: 300px;
+	height: 200px;
+	margin-left: 25px;
+}
+.bloque_carrousel img{
+	width: 290px;
+	height: 300px;
+	margin-bottom: 90px;
+}
 /* Header */
 
 .header-bar {
@@ -65,7 +74,7 @@ h1 {
 }
 
 .header-bar ul.main-nav li a:hover {
-	color: #AAA;
+	color: red;
 	background: rgba(0,0,0,0.4);
 	text-decoration: none;
 }
@@ -225,11 +234,10 @@ ol.comments li.comment .meta {
 .strapline {
 	position: absolute;
 	bottom: 0;
-	left: 0;
-	width: 800px;
+	left: 12px;
 	background: rgba(0,0,0,0.6);
 	padding: 20px;
-
+	width:87%;
 	font-weight: 400;
 	font-size: 24px;
 	color: #FFF;
@@ -246,7 +254,7 @@ ol.comments li.comment .meta {
 	background: #FFF;
 	border: 20px solid #FFF;
 	border-radius: 2px;
-	margin-top: -400px;
+	margin-bottom:50px;
 	position: relative;
 	z-index: 2;
 }

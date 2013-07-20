@@ -29,9 +29,8 @@ Class Home extends CI_Controller
 			$this->data['sector_entregas']=$sector_entregas;
 			$this->data['sector']=$sector;
             $this->data['buscar']=$buscar;
-			
-            $this->load->view('templades/header',$this->data);
-			$this->load->view('pages/home_view',$this->data);
+			$this->load->view('templades/header',$this->data);
+            $this->load->view('pages/home_view',$this->data);
 			$this->load->view('templades/footer',$this->data);
 		}else{
 			echo "Error en la consulta SQL o esta intentando modificar el metodo get <br>";
