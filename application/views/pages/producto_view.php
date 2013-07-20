@@ -1,4 +1,10 @@
-
+        <link rel="stylesheet" href="http://responsivewebinc.com/premium/metroman/style/font-awesome.css">
+        <link href="<?= base_url();?>css/css_productos/productos_global.css" rel="stylesheet" media="screen">
+        <link href="<?= base_url();?>css/css_productos/productos2.css" rel="stylesheet" media="screen">
+        <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
+        <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
+        <link href="<?= base_url();?>css/social-buttons.css" rel="stylesheet">
+        <link href="<?= base_url();?>css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
 <!-- Imagen de inicio-->
 <div id="projectwrap" style="background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>); background-size:100% 100%;">
             <header class="clearfix">
@@ -87,8 +93,10 @@
 
             </div> <!-- End .tab-content -->
         </div>
+    <div class="span12" style="margin-bottom:50px" >
+  <div id="map-canvas" style="width:100%; height:450px; frameborder:0; scrolling:no; marginheight:0; marginwidth:0;"></div>
+</div>
     </div>
-
 </div>
 <!--Termino del contenido-->
 
@@ -96,7 +104,7 @@
 
 
 <!-- El mapa del sitio -->
-<div id="map-canvas" style="width:100%; height:450px; frameborder:0; scrolling:no; marginheight:0; marginwidth:0;"></div>
+
 
 <!-- Inicio del pup-pop -->
 <div class="modal fade" id="test_modal">
@@ -104,9 +112,10 @@
       <a class="close" data-dismiss="modal">&times;</a>
       <h3>Muchas gracias por visitar Foodland</h3>
     </div>
-    <br><br>
+    
     <div class="modal-body">
-       <div class="span3 " style="font-size: 15px;">
+        <br><br>º
+         <div class="span3 " style="font-size: 15px;">
           Puedes decirle al local que vienes de parte de FOODLAND, así nos ayudarás a difundir mejor este servicio
           <br>
           <br>

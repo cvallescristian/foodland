@@ -20,13 +20,16 @@ class Producto extends CI_Controller {
 			$detalle_local=$this->uum->get_local_particular($id);
 			$tipo_producto=$this->uum->get_tipo_producto_particular($id);
 			$this->uum->agregar_contador($id);
+            $buscar=$this->uum->get_producto_buscador();
+
 			$this->data['productos']= $productos;
 			$this->data['sector_entregas_particular']=$sector_entregas_particular;
 			$this->data['sector_entregas']=$sector_entregas;
 			$this->data['detalle_locales']=$detalle_local;
 			$this->data['id_tipo_producto']=$tipo_producto;
+            $this->data['buscar']=$buscar;
 			//var_dump($this->session->all_userdata());
-			$this->load->view('templades/header_producto',$this->data);
+			$this->load->view('templades/header',$this->data);
 			$this->load->view('pages/producto_view',$this->data);
 			$this->load->view('templades/footer',$this->data);
 			
