@@ -4,6 +4,7 @@ body {
 	background: url(../../img/body-bg.png) repeat;
 
 }
+
 a {
 	color:#c51517;
 }
@@ -13,7 +14,16 @@ a:hover {
 .bloque_chico{
 	height: 323px;
 }
-
+.bloque_chico img{
+	width: 300px;
+	height: 200px;
+	margin-left: 25px;
+}
+.bloque_carrousel img{
+	width: 290px;
+	height: 300px;
+	margin-bottom: 90px;
+}
 /* Header */
 
 .header-bar {
@@ -224,11 +234,10 @@ ol.comments li.comment .meta {
 .strapline {
 	position: absolute;
 	bottom: 0;
-	left: 0;
-	width: 800px;
+	left: 12px;
 	background: rgba(0,0,0,0.6);
 	padding: 20px;
-
+	width:87%;
 	font-weight: 400;
 	font-size: 24px;
 	color: #FFF;

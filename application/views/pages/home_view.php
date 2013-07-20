@@ -148,4 +148,5 @@
         
     </section>
 <!-- Fin categoria-->
+ <script type="text/javascript" src="<?= base_url();?>js/index-slider.js"></script>  
  
