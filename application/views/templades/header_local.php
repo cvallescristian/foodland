@@ -10,9 +10,8 @@
     
     <!-- Styles -->
     <link href="<?= base_url();?>css/css-locales/bootstrap.css" rel="stylesheet">
-    <link href="<?= base_url();?>css/css-locales/font-awesome.min.css" rel="stylesheet">
     <link href="<?= base_url();?>css/css-locales/nuestros_locales.css" rel="stylesheet">
-
+    
 
     <link rel="stylesheet" type="text/css" href="<?=base_url();?>css/theme.css">
     
@@ -43,11 +42,10 @@
          </div>
          <div class="span3">
             <form class="form-search">
-              <div class="input-append" id="buscador">
-                <input type="text" id="search" class="search-query" placeholder="¿Qué quieres comer?">
-                <button type="submit"  class="btn"><i class="icon icon-search"></i></button>
-              </div>
-              
+            <div class="input-append" id="buscador">
+                <input type="text" name="search" id="search" class="search-query" placeholder="¿Qué quieres comer?" autocomplete="off" required>
+                <button type="submit"  class="btn btn-warning"><i class="icon icon-search"></i></button>
+            </div>
             </form>
          </div>
           

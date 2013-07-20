@@ -79,7 +79,6 @@
 $('#search').typeahead({source: subjects})  
 </script>  
         <script src="<?= base_url();?>js/jquery-latest.js"></script>
-        <script type="text/javascript" src="<?= base_url();?>js/index-slider.js"></script>  
         <script src="<?= base_url();?>js/modernizr.js"></script>
         <script src="<?= base_url();?>js/bootstrap.js"></script>
         <script src="<?= base_url();?>js/stellar.js"></script>

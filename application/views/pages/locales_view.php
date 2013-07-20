@@ -1,3 +1,4 @@
+ 
 
 <!-- Main Area -->
 <div class="main-area">
@@ -155,7 +156,7 @@
 			<div class="span4 sidebar">
 				<form class="form-inline well">
 					<div class="input-append">
-						<input class="span3" size="16" type="text" placeholder="Buscar Local"><button class="btn btn-primary" type="button">Ir</button>
+						<input class="span3" size="16" type="text" placeholder="Buscar Local"><button class="btn btn-warning" type="button">Ir</button>
 					</div>
 				</form>
 				
@@ -184,49 +185,6 @@
 						</ul>
 					</div>
 				</div>
-
-				<div class="row">
-					<div class="span2">
-						<div class="ad">
-							<a href=""><img src="<?= base_url();?>img/logo-locales/1.png" alt="Placeholder"></a>
-						</div>
-					</div>
-					<div class="span2">
-						<div class="ad">
-							<a href=""><img src="<?= base_url();?>img/logo-locales/4.png" alt="Placeholder"></a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="span2">
-						<div class="ad">
-							<a href=""><img src="<?= base_url();?>img/logo-locales/4.png" alt="Placeholder"></a>
-						</div>
-					</div>
-					<div class="span2">
-						<div class="ad">
-							<a href=""><img src="<?= base_url();?>img/logo-locales/1.png" alt="Placeholder"></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="span4">
-						<div class="ad">
-							<a href=""><img src="<?= base_url();?>img/logo-locales/5.png" alt="Placeholder"></a>
-						</div>
-					</div>
-				</div>
-				
-				
-				
-				<div class="row">
-					<div class="span4">
-						<h2>Twitter Feed</h2>
-						<div class="twitter-feed"><p class="loading">loading tweets...</p></div>
-					</div>
-				</div>
-				
 			</div>
 			
 		</div>
