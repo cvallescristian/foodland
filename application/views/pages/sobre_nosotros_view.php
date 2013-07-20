@@ -27,7 +27,7 @@
 			    	<br>
 					<img src="img/slider/1.jpg" class="img-polaroid">
 				</div>	
-				<div class="offset2 span5">
+				<div class="offset1 span5">
 					<h4 class="text">   Foodland es nuestra empresa emprendedora e innovadora, 
 					formada por un grupo de jóvenes universitarios el año 2012, cuya misión es 
 					mostrar, a través de esta plataforma, una gran gama de locales delivery de 
