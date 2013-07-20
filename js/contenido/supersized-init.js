@@ -20,10 +20,14 @@ jQuery(function($){
         // Components
         slide_links        : 'blank',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
         slides             : [    // Slideshow Images
+<<<<<<< HEAD
                                  {image : 'http://localhost:8888/foodland/img/slider/sushi.jpg'},
+=======
+                                 {image : 'http://localhost:8888/foodland/img/slider/3.jpg'},
+>>>>>>> tester
                                  {image : 'http://localhost:8888/foodland/img/slider/1.jpg'},
-                                 {image : 'http://localhost:8888/foodland/img/slider/sandwich.jpg'},
-                                 {image : 'http://localhost:8888/foodland/img/slider/pastel.jpg'},
+                                 {image : 'http://localhost:8888/foodland/img/slider/4.jpg'},
+                                 {image : 'http://localhost:8888/foodland/img/slider/5.jpg'},
                                  {image : 'http://localhost:8888/foodland/img/slider/2.jpg'},
                              
                              ]

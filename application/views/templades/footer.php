@@ -1,6 +1,7 @@
- <footer id="footer" >
+    <footer id="footer">
             <div class="container">
                 <div class="row" style="color:white;">
+<<<<<<< HEAD
                     <div class="span3 offset1">
                         <br><br>
                         <img src="<?= base_url();?>img/logo2.png" width="250" height="40"> <sup style="color:white;">2.0</sup>
@@ -15,9 +16,29 @@
                         <p class="copyright"><font><font>
                             FoodLand.cl © 2013 
                         </font></font></p>
+=======
+                    <div class="span4 offset1">
+                        <div style="margin-left:30px">
+                            <img src="<?= base_url();?>img/logo2.png" width="250" height="40"> <sup style="color:white;">BETA</sup>
+                        </div>
+                        <div class="">
+                            <div class="span3">
+                            <br>
+                            <h5><font><font>Foodland es nuestra empresa emprendedora e innovadora, 
+                                formada por un grupo de jóvenes universitarios el año 2012, cuya misión es 
+                                mostrar, a través de esta plataforma, una gran gama de locales delivery de 
+                                la quinta región (y próximamente en todo Chile) bajo nuestro catálogo, con 
+                                el fin de conseguir que nuestros usuarios, de forma práctica y fácil, pidan 
+                                los productos que ofrecen nuestros asociados, facilitando de esta forma, la 
+                                conexión entre las personas y los locales.</font></font></h5>
+                            <p class="copyright"><font><font>
+                                FoodLand.cl © 2013 
+                            </font></font></p>
+                            </div>
+>>>>>>> tester
                         </div>
                     </div>
-                    <div class="span3 offset1">
+                    <div class="span3">
                         <br><br><br>
                         <h2><font><font>Enlaces </font></font></h2>
                         <ul class="unstyled footer-links">
@@ -53,10 +74,7 @@
                                 <span class="socialicons ico2"></span>
                                 <span class="socialicons_h ico2h"></span>
                             </a>
-                            <a href="" class="gplus">
-                                <span class="socialicons ico3"></span>
-                                <span class="socialicons_h ico3h"></span>
-                            </a>                          
+                                             
                         </div>
                     </div>
                     <div class="row copyright">
@@ -66,10 +84,18 @@
                     </div>
                 </div>            
             </div>
-            </div>
-</footer>
-        <script src="<?= base_url();?>js/jquery-latest.js"></script>       
-        <script type="text/javascript" src="<?= base_url();?>js/index-slider.js"></script>  
+        </div>
+    </footer>
+    <script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
+<script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-typeahead.js"></script>
+<script>  
+ var subjects = [<?php foreach ($buscar as $b ) {
+    $var= explode("/", $b);
+     echo "'$var[1]/$var[2]',";
+ } ?>];   
+$('#search').typeahead({source: subjects})  
+</script>  
+        <script src="<?= base_url();?>js/jquery-latest.js"></script>
         <script src="<?= base_url();?>js/modernizr.js"></script>
         <script src="<?= base_url();?>js/bootstrap.js"></script>
         <script src="<?= base_url();?>js/stellar.js"></script>

@@ -1,12 +1,21 @@
-	<div class="container margen">
+	<div class="container">
 		<div class="row">
+<<<<<<< HEAD
 			<div class="bloque_blanco offset1 span10 form">
 				<form class="form-horizontal form" name="form">					
 					<fieldset>
 						<h2 style="text-align: center">Términos y condiciones</h2>
 						<div class="span7 offset1">
+=======
+			<div class="offset1">
+			<div class="bloque_blanco span10">
+				<form class="form-horizontal form" name="form">					
+					<fieldset>
+						<h2 style="text-align: center; color: black">Términos y condiciones</h2>
+						<div class="span9">
+>>>>>>> tester
 							<form class="form-horizontal">
-							<h5 align="justify">Este contrato describe los términos y condiciones generales (los Términos y Condiciones Generales) aplicables al uso de los servicios ofrecidos por foodland.cl, (los Servicios) dentro del sitio www.foodland.cl  o el sitio). Cualquier persona (en adelante Usuario o en plural Usuarios) que desee acceder y/o usar el sitio o los servicios podrá hacerlo sujetándose a los Términos y Condiciones Generales, junto con todas las demás políticas y principios que rigen Foodland y que son incorporados al presente por referencia. <BR><BR>
+							<h5 class="text">Este contrato describe los términos y condiciones generales (los Términos y Condiciones Generales) aplicables al uso de los servicios ofrecidos por foodland.cl, (los Servicios) dentro del sitio www.foodland.cl  o el sitio). Cualquier persona (en adelante Usuario o en plural Usuarios) que desee acceder y/o usar el sitio o los servicios podrá hacerlo sujetándose a los Términos y Condiciones Generales, junto con todas las demás políticas y principios que rigen Foodland y que son incorporados al presente por referencia. <BR><BR>
 
 							CUALQUIER PERSONA QUE NO ACEPTE ESTOS TÉRMINOS Y CONDICIONES GENERALES, LOS CUALES TIENEN UN CARÁCTER OBLIGATORIO Y VINCULANTE, DEBERÁ ABSTENERSE DE UTILIZAR EL SITIO Y/O LOS SERVICIOS.<BR><BR>
 
@@ -83,6 +92,7 @@
 						</form>				
 						</div>							
 					</fieldset>
+					</div>
 					</div>
 				</form>
 			</div> 

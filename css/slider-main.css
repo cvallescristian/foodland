@@ -1,6 +1,6 @@
 .carousel {
   margin-bottom: 0px;
-  background: #31363a;
+  background: white;
 }
 
 .carousel .container {
@@ -27,7 +27,7 @@
 }
 
 .carousel .item {
-  height: 650px;
+  
 }
 
 

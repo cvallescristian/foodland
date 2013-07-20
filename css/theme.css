@@ -3,7 +3,7 @@ html {
 }
 body {
 	position: relative;
-	background: #DDDCE2 url(../img/body_bg.jpg) repeat left top;
+	background: #DDDCE2 url(../img/body-bg.png) repeat left top;
 	-webkit-font-smoothing: antialiased;
 	font-family: 'Lato', sans-serif !important;
 	padding-top: 107px;
@@ -22,6 +22,62 @@ textarea {
 	font-family: 'Lato', Helvetica;
 }
 
+<<<<<<< HEAD
+=======
+#portada1{
+
+	text-align:center;
+	padding:20px;
+	background:rgba(198, 22, 24, 0.7);
+	position:relative;
+	z-index:2;
+}
+#redes_sociales{
+	text-align: center;
+	padding:10px;
+	color:white;
+	background:rgba(0, 0, 0, 0.7);
+	z-index:2;
+	position:relative;
+	margin-top:26px;
+}
+#sector_reparto{
+	padding:10px;
+
+}
+#categoria{
+	padding:0px;
+}
+#buttom_categoria{
+	padding:20px;
+}
+#sector_reparto a{
+	color: rgb(95, 95, 95);
+}
+#portada2{
+
+	text-align:left;
+	padding:10px;
+	
+	
+	background:rgba(7, 7, 7, 0.55);
+	position:relative;
+	z-index:1000;
+}
+
+#portada3{
+
+	text-align:left;
+	padding:16px;
+	
+	background:rgba(7, 7, 7, 0.55);
+	position:relative;
+	z-index:1000;
+}
+
+
+
+>>>>>>> tester
 /* Navbar
 -------------------------------------------------- */
 body.pull_top {

@@ -56,7 +56,7 @@ class home_model extends CI_Model{
         }else{
             $query.=" where Producto.id_local=Local_sector_entrega.id_local";
         }
-        $query.=" order by rand() limit 12";
+        $query.=" order by rand() limit 18";
         $result = $this->db->query($query);
         return $result->result();      
     }
@@ -88,6 +88,11 @@ class home_model extends CI_Model{
         }
 
     }
+    function get_locales(){
+        $query="select * from Local";
+        $result= $this->db->query($query);
+        return $result->result();
+    }
     function agregar_contador($id_producto){
         //primero sacamos el valor de la cantidad de visitas y se la pasamos a la variable cant
         $query="select cant_visitas from Producto where id_producto='$id_producto'";
@@ -112,6 +117,20 @@ class home_model extends CI_Model{
             return $r->id_tipo_producto;
             break;
          }
+    }
+    function get_producto_buscador(){ //busca cada producto y le agrega su categoria
+        $query="select * from Tipo_producto";
+        $result= $this->db->query($query);
+        $re= $result->result();
+        foreach ($re as $r ) {
+            $query2="select * from Producto where id_tipo_producto=".$r->id_tipo_producto;
+            $result= $this->db->query($query2);
+            $re2= $result->result();
+            foreach ($re2 as $r2 ) {
+                $buscar[]=$r2->id_producto."/".$r->nombre_tipo_producto."/".$r2->titulo_producto;
+            }
+        }
+        return $buscar;
     }   
 }
 

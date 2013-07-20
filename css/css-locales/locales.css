@@ -1,0 +1,28 @@
+.bloque_grande{
+	background: white;
+	margin-bottom:70px;
+	padding:10px;
+}
+.post{
+	padding: 8px;
+border-radius: 2px;
+background: #FFF;
+margin-bottom: 20px;
+box-shadow: 0px 0px 27px 0 #EEE;
+border: 2px solid #DDD;
+}
+.carrousel{
+	background:white;
+}
+.strapline {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 800px;
+background: rgba(0,0,0,0.6);
+padding: 20px;
+font-weight: 400;
+font-size: 24px;
+color: #FFF;
+display: block;
+}
