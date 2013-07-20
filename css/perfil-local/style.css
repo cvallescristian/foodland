@@ -4,159 +4,23 @@
  * Afriq Yasin Ramadhan
  */
  
- @font-face {
-			font-family: segoeuil;
-			src: url('../fonts/segoeuil.ttf');
-		}
- @font-face {
-			font-family: segoeui;
-			src: url('../fonts/segoeui.ttf');
-		}
- @font-face {
-			font-family: segoeuib;
-			src: url('../fonts/segoeuib.ttf');
-		}
- 
+
  body {
     padding-top: 70px;
 	background:#fafafa;
-    font-family: 'Lato', sans-serif !important;
     background: url(../../img/body-bg.png) repeat;
+    font-family: 'Lato', sans-serif important!;
+    color:#8e959c;
 	}    
-
-	
-/* .: NAVIGASI :. */
-    
-.navbar-inner {
-  min-height: 55px;
-  padding-right: 20px;
-  padding-left: 20px;
- border-top:1px solid #ccc;
+a {
+    color:#c51517;
 }
-
-.navbar .divider-vertical {
-  width: 1px;
-  height: 40px;
-  margin: 0 9px;
-  overflow: hidden;
-  background-color: #fafafa !important;
-  border-right: 1px solid #ccc !important;
+a:hover {
+    color:red;
 }
-
-.navbar .nav > li > a {
-  float: none;
-  padding: 9px 10px 11px;
-  line-height: 19px;
-  color: #CACACA;
-  text-decoration: none;
-  background:none;
-  transition:color 0.5s;
-  -moz-transition:color 0.5s;
-  -webkit-transition:color 0.5s;
-  -o-transition:color 0.5s;
-  text-shadow : none !important;
+.producto{
+    height: 140px;
 }
-
-.navbar .nav > li > a:hover {
-  color: #000;
-  text-decoration: none;
-  background-color: none;
-  background:none;
-}
-
-.navbar .nav .active > a,
-.navbar .nav .active > a:hover {
-  color: #FFF;
-  text-decoration: none;
-  background:none;
-  /*background-color: #222222;*/
-}
-
-.navbar-search .search-query {
-  padding: 3px 9px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1;
-  color: #ffffff;
-  background-color: #eee !important;
-  border: 1px solid #ccc !important;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
-  -webkit-transition: none;
-     -moz-transition: none;
-      -ms-transition: none;
-       -o-transition: none;
-          transition: none;
-}
-
-.navbar-search .search-query:-moz-placeholder {
-  color: #888;
-  font-style:italic;
-}
-
-.navbar-search .search-query::-webkit-input-placeholder {
-  color: #888;
-  font-style: italic;
-}
-
-.navbar-search .search-query:focus,
-.navbar-search .search-query.focused {
-  padding: 4px 10px;
-  color: #333333;
-  text-shadow: 0 1px 0 #ffffff;
-  background-color: #ffffff;
-  border: 0;
-  outline: 0;
-  -webkit-box-shadow: 0 0 1px 1px #ccc !important;
-     -moz-box-shadow: 0 0 1px 1px #ccc !important;
-          box-shadow: 0 0 1px 1px #ccc !important;
-}
-
-.navbar .brand {
-  padding: 6px 20px 8px;
-  margin-left: -20px;
-}
-
-.brand img{
-    max-width:155px;
-    height:22px;
-}
-
-/* .: SIDEBAR MENU :. */
-
-.nav-tabs.nav-stacked > li > a {
-  background:#fff;
-}
-
-.nav-tabs.nav-stacked > li > a:hover {
-  background: #f6f6f6;
-}
-
-.nav-tabs > .active > a,
-.nav-tabs > .active > a:hover {
-  background-color: #f6f6f6 !important;
-}
-
-.nav-tabs.nav-stacked > li:first-child > a {
-  -webkit-border-radius: 0 !important;
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
-}
-
-.nav-headers{
-    background:#fff;
-    border:1px solid #ccc;
-    border-bottom: none;
-    height:105px;
-    padding:15px;
-}
-
-.nav-headers h3{
-    font-weight:lighter;
-}
-
 /* .: GALERI :. */
 
 .galery{
@@ -358,7 +222,7 @@ img.centered{
 
 .post-comment{
     margin-left: 20px;
-    font-family:segoeui;
+   
 }
 
 .inp-btm{
@@ -456,7 +320,7 @@ img.centered{
     -webkit-box-shadow:0 0 1px 1px #ccc;
     margin-bottom:10px;
     height:50px;
-    font-family:segoeui;
+   
 }
 
 .sidebar-detail-menu ul{
@@ -498,7 +362,7 @@ div[class*=sidebar-detail-] h4{
 }
 
 div[class*=sidebar-detail-]{
-    font-family:segoeui;
+   
     font-size:14px;
 }
 
@@ -870,7 +734,8 @@ span.login-checkbox > input[type='checkbox']:checked + label {
     box-shadow:0 0 1px 1px #ccc;
     background:#fff;
     min-height:150px;
-    font-family:segoeui;
+    margin-bottom:50px;
+   
 }
 
 .content-settings{

@@ -1,107 +1,65 @@
+<link href="<?= base_url();?>css/perfil-local/style.css" rel="stylesheet">
+<link rel="stylesheet" href="<?= base_url()?>css/perfil-local/perfil-local.css">
  <div class="container" style="margin-top:30px;">
         <div class="row">
             <div class="span3 left-sidebar">
                 <div class="account-settings">
-                    <img src="<?=base_url();?>img/logo-locales/5.png">
+                    <img src="<?=base_url();?>img/locales/<?= $local->id_local?>_logo.png">
                 </div>
                 <div class="account-detail">
-                    <p></p><h1 class="t-center">Akipe</h1><p></p>
+                    <p></p><h1 class="t-center"><?= $local->nombre_local ?></h1><p></p>
                     <p><strong>Direccion  :</strong></p>
-                    <p>AV. España 355</p>
+                    <p><?= $local->direccion_local  ?></p>
                     <p><strong>Telefono: </strong></p>
-                    <p>062-298444</p>
+                    <p><?= $local->telefono_local  ?></p>
+                    <?php if($local->horario_entrada!=""){ ?>
+                      <p><strong>horario Atencion: </strong></p>
+                      <p>Lunes a viernes de <?= $local->horario_entrada?> hrs a <?= $local->horario_salida?> hrs</p>
+                      <p>Sabados y domingos de <?= $local->horario_entrada_fds?> hrs a <?= $local->horario_salida_fds?> hrs</p>
+                    <?php }if($local->sitio_referencia!=""){ ?>
+                      <p><strong>Sitio Web: </strong></p>
+                      <p><a href="<?= $local->sitio_referencia?>"><?= $local->sitio_referencia?></a></p>
+                    <?php } if($local->email!="" && $local->email!="test@test.cl"){?>
                     <p><strong>E-mail: </strong></p>
-                    <p><a href="">posh@posh.cl</a></p>
+                    <p><a href=""><?= $local->email?></a></p>
+                    <?php } ?>
                 </div>
             </div>
             <div class="span9 content-setting">
-                <div class="row">
-                    <div class="span9">
-                        <div class="public-profile">
-                           <h2 style="margin-left:50px;">Datos de Akipe</h2>
-                            <br><br>
-                           <table class="table table-hover span6 offset1" style="font-size:17px;" >
-                  
-                              <tbody>
-                                  <tr>
-                                    <td>Dirección:</td>
-                                    <td>Av. España 4567</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Telefono:</td>
-                                    <td>0987654</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Horario:</td>
-                                    <td>Lunes a viernes de 9:00 a 23:00 hrs</td>
-                                  </tr>
+                  <div class="span9 center">
 
-                                   <tr>
-                                    <td>Pagina Web:</td>
-                                    <td><a href=""> www.foodland.cl</a></td>
-                                  </tr>
-                              </tbody>
-                             
-                        </table>
-                           
-                        </div>
+                            <h1 class="big-heading"><font><font><?= $local->nombre_local?></font></font></h1>
+                            
+                            <h4 class="sub-heading"><font><font>Los mejores productos de <?= $local->nombre_local?> al mejor precio</font></font></h4>
+                   </div>
+                   <?php foreach ($productos_local as $pl) {
+                  ?>
+                    <!-- Inicio Producto -->
+                      <div class="span4 project bloque_producto " >
+                            <!-- Imagen de fondo-->
+                            <img src="<?=base_url();?>img/locales/<?= $pl->id_producto ?>.jpeg"  class="img-rounded"> 
+                            <!-- Logo del local-->
+                            <span class="overlay"> 
+                            </span>
+                            <div class="cnt">
+                                <!-- Titulo Del producto-->
+                                <h5><font><font><?= $pl->titulo_producto ?></font></font></h5>
+                                 <!-- Precio Del producto-->
+                                 <h5><font><font> $<?= $pl->precio?></font></font></h5>
+                                <br><br>
+                                <a href="<?= base_url() ?>producto?id=<?= $pl->id_producto?>" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
+                            </div>
+                        </div> 
+                      <!-- termino producto -->
 
-                        
-                    </div>
-                    <div class="span9 portfolio-images">
-                        <h2 style="margin-left:70px;"> Productos del local</h2>
-                        <br><br>
-                        <div class="row">
-                            <div class="span9 list-images">
-                                <div class="span2">
-                                    <a href="" class="thumbnail"><img src="<?=base_url();?>img/1.png" alt=""></a>
-                                </div>
-                                <div class="span2">
-                                    <a href="" class="thumbnail"><img src="<?=base_url();?>img/1.png" alt=""></a>
-                                </div>
-                                <div class="span2">
-                                    <a href="" class="thumbnail"><img src="<?=base_url();?>img/1.png" alt=""></a>
-                                </div>
-                                <div class="span2">
-                                    <a href="" class="thumbnail"><img src="<?=base_url();?>img/1.png" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="span9 list-images">
-                                <div class="span2">
-                                    <a href="" class="thumbnail"><img src="<?=base_url();?>img/1.png" alt=""></a>
-                                </div>
-                                <div class="span2">
-                                    <a href="" class="thumbnail"><img src="<?=base_url();?>img/1.png" alt=""></a>
-                                </div>
-                                <div class="span2">
-                                    <a href="" class="thumbnail"><img src="<?=base_url();?>img/1.png" alt=""></a>
-                                </div>
-                                <div class="span2">
-                                    <a href="" class="thumbnail"><img src="<?=base_url();?>img/1.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pagination paging-portfolio">
-                            <ul>
-                              <li class="disabled"><a href="" title="Ir a la primera pagina">« Primero</a></li>
-                              <li><a href="" title="Ir a la ultima pagina">←</a></li>
-                              <li class="active"><a href="">1</a></li>
-                              <li><a href="">2</a></li>
-                              <li><a href="">..</a></li>
-                              <li><a href="">8</a></li>
-                              <li><a href="">9</a></li>
-                              <li><a href="" title="Ir a la primera pagina">→</a></li>
-                              <li><a href="" title="Ir a la ultima pagina">Ultima »</a></li>
-                            </ul>
-                      </div>
-                    </div><!-- end portfolio images -->
-                </div>
+                  <?php 
+                   } ?>
             </div>
-            
         </div>
-    </div>
+  </div>
+    
             
-    <br><br><br><br>
+   
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
