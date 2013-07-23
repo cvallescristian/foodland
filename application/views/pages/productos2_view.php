@@ -36,9 +36,11 @@
 							</div>
 						</div>
 						<div class="span7">
-							<h3>Sushi mix 24 Piezas</h3>
+							<h3>Sushi mix 24 Piezas</h3> <br>
 							<p>1 Futomaki Sake Maki, 1 Avocado Tako, 1 Sake kani, 3 Nigiri, 2 Gyosas.</p>
-							<p>Item Code : <span class="label label-warning">#2120</span></p>
+							<br>
+							<p>HashTag : <span class="label label-warning">#sushi</span></p>
+							<br>
 							<h4>$12.000</h4>
 							<p><a href="#test_modal"  class="btn btn-warning btn-large"><i class="icon-shopping-cart"></i> Ver Telefono</a></p>
 						</div>
