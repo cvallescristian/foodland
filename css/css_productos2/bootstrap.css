@@ -329,7 +329,7 @@ a:focus {
 }
 
 .span3 {
-  width: 260px;
+  width: 270px;
 }
 
 .span2 {
@@ -4804,7 +4804,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
-  color: #999999;
+  color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -5227,9 +5227,6 @@ input[type="submit"].btn.btn-mini {
           transition: opacity 0.3s linear, top 0.3s ease-out;
 }
 
-.modal.fade.in {
-  top: 10%;
-}
 
 .modal-header {
   padding: 9px 15px;
@@ -5294,7 +5291,6 @@ input[type="submit"].btn.btn-mini {
 .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
-
 .tooltip {
   position: absolute;
   z-index: 1030;

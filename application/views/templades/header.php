@@ -9,7 +9,6 @@
         <link href="<?= base_url();?>css/css.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="<?= base_url();?>css/home.css"> 
         <link rel="stylesheet" href="<?= base_url();?>css/font-awesome.min.css" rel="stylesheet">   
-        <link rel="stylesheet" href="<?= base_url();?>css/slider-main.css">       
         <link href="<?= base_url();?>css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/jquery.fancybox.css" media="all">
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/jquery.fancybox-thumbs.css">
@@ -21,7 +20,8 @@
         <link rel="stylesheet" href="<?= base_url()?>css/header/header.css">
         <link rel="stylesheet" href="<?= base_url();?>css/home.css"> 
         <link rel="stylesheet" href="<?= base_url();?>css/style_footer.css">
-        <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css">  
+        <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css"> 
+
         <script type="text/javascript">
         
           var _gaq = _gaq || [];

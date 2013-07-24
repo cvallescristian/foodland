@@ -1,111 +1,183 @@
-        <link rel="stylesheet" href="http://responsivewebinc.com/premium/metroman/style/font-awesome.css">
-        <link href="<?= base_url();?>css/css_productos/productos_global.css" rel="stylesheet" media="screen">
-        <link href="<?= base_url();?>css/css_productos/productos2.css" rel="stylesheet" media="screen">
-        <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
-        <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
-        <link href="<?= base_url();?>css/social-buttons.css" rel="stylesheet">
-        <link href="<?= base_url();?>css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
-<!-- Imagen de inicio-->
-<div id="projectwrap" style="background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>); background-size:100% 100%;">
-            <header class="clearfix">
-                <div class="container">
-                    <div class="span5 offset3">
-                        <div class="boxcolor">
-                        <h1><font><font><?=$productos->titulo_producto;?></font></font></h1>
-                        </div>
-                    </div><!-- span12 -->
-                </div><!-- container -->
-            </header>
-</div><!-- projectwrap -->
-<!--termino de imagen de inicio-->
-
-
-<!-- inicio del contenido-->
-
-  <div id="caja"class="container" style="position:relative; top:30px;">
+	<link rel="stylesheet" href="<?= base_url();?>css/css_productos2/bootstrap.css"> 
+     <link rel="stylesheet" href="<?= base_url();?>css/css_productos2/style.css"> 
+       <link href="<?= base_url();?>css/css_productos/productos_global.css" rel="stylesheet" media="screen">
+       <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
     
-    
-    <div class="row">
-        <div class="span12 white-panel no-padding">
-            <ul class="nav nav-tabs" style="height:25px;">
-                <li class="active"><a href="#home" data-toggle="tab"> <img src="<?= base_url();?>img/producto/pizza.png" width="40" ><font><font>Producto</font></font></a></li>
-                <li><a href="#profile" data-toggle="tab"> <img src="<?= base_url();?>img/producto/local.png" ><font><font>Detalles del Local</font></font></a></li>
-                            </ul> <!-- End tabs -->
+       <link href="<?= base_url();?>css/social-buttons.css" rel="stylesheet">
 
-            <div class="tab-content">
-                <div class="tab-pane active" id="home">
-                    <div class="span5">
-                        <div class="span5 offset1">
-                          <h2><font><font><font><?= $productos->titulo_producto; ?></font></font></font></h2>
-                        </div>
-                        <ul class="green-checks">
-                            <li><font><font>Descripci&oacuten: <?= $productos->descrip_producto?></font></font></li>
-                            <li><font><font>Precio: $<?= $productos->precio ?></font></font></li>
-                            <li><font><font>Sectores de entrega: <?php 
-                                foreach ($sector_entregas_particular as $s) {
-                                 echo   $s->nombre_sector_entrega." " ; 
-                                }
-                              
-                              ?></font></font></li>
-                             
-                        </ul>
+	    
+	<div class="heads">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12">
+					<h2><span>//</span> Sushi Mix 24 Piezas</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="page-content">
+		<div class="container">
+			
+			
+			<div class="row-fluid">
+				<div class="span10 single-item">
+					<div class="row-fluid">
+						<div class="span6">
+							<div id="itemsingle" class="carousel slide clearfix">
+							
+								<div class="carousel-inner">
+								  <div class="item active">
+									<img src="<?= base_url();?>img/1.png" alt="slider detail dodolan manuk">
+								  </div>
+								  <div class="item">
+									<img src="<?= base_url();?>img/logo-locales/1.png" alt="slider detail dodolan manuk">
+								  </div>
+								  
+								</div>
+								
+								<ol class="carousel-indicators">
+								  <li data-target="#itemsingle" data-slide-to="0" class="active"><img src="<?= base_url();?>img/1.png" alt="slider detail dodolan manuk"></li>
+								  <li data-target="#itemsingle" data-slide-to="1" class=""><img src="<?= base_url();?>img/logo-locales/1.png" alt="slider detail dodolan manuk"></li>
+								</ol>
+							
+							</div>
+						</div>
+						<div class="span6">
+							<h3>Sushi mix 24 Piezas</h3> <br>
+							<p>1 Futomaki Sake Maki, 1 Avocado Tako, 1 Sake kani, 3 Nigiri, 2 Gyosas.</p>
+							<br>
+							<p>HashTag : <span class="label label-warning">#sushi</span></p>
+							<br>
+							<h4>$12.000</h4>
+							<p><a href="#test_modal" data-toggle="modal" class="btn btn-warning btn-large"><i class="icon-shopping-cart"></i> Ver Telefono</a></p>
+						</div>
+					</div>
+					
+					<div class="row-fluid">
+						<div class="span12">
+							<div class="tabbable">
+							  <ul class="nav nav-tabs">
+								<li class="active"><a href="detail.html#tab1" data-toggle="tab">Mapa local</a></li>
+								<li class=""><a href="detail.html#tab2" data-toggle="tab">Sobre el local</a></li>
+								<li class=""><a href="detail.html#tab3" data-toggle="tab">Comidas relacionadas</a></li>
+							  </ul>
+							  <div class="tab-content">
+								<div class="tab-pane active" id="tab1">
+									<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?client=safari&amp;q=valparaiso&amp;oe=UTF-8&amp;ie=UTF8&amp;hl=es&amp;hq=&amp;hnear=Valpara%C3%ADso,+Provincia+de+Valpara%C3%ADso,+Regi%C3%B3n+de+Valpara%C3%ADso,+Chile&amp;ll=-33.046371,-71.59481&amp;spn=0.090363,0.154324&amp;t=m&amp;z=13&amp;output=embed"></iframe>
 
-                        <a href="#test_modal" data-toggle="modal" class="btn btn-warning btn-large offset1"><font><font>Ver Telefono</font></font></a>
+								</div>
+								<div class="tab-pane" id="tab2">
+								 
+								 	<table class="table table-hover">
+									
+									  <tbody>
+									    <tr>
+									      <td>Nombre del local:</td>
+									      <td>Metpizza</td>
+									    </tr>
+									    <tr>
+									      <td>Dirección:</td>
+									      <td>Av. España 2345</td>
+									    </tr>
+									    <tr>
+									      <td>Horario de atención:</td>
+									      <td>lunes a domingo de 9:00 a 23:00 hrs</td>
+									    </tr>
+									    <tr>
+									      <td>Sitio Web:</td>
+									      <td>www.foodland.cl</td>
+									    </tr>
 
-                    
-                    </div>
-                    <div class="span5  pull-right">
-                        <img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.jpeg" class="img-tilt">
-                        <p class="small-text pull-right"><font><font>Imagen Real del local</font></font></p>
-                    </div>
-                </div>
+									  </tbody>
+									</table>
 
-                <div class="tab-pane" id="profile">
-                    <div class="span5">
-                         <img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" class="img-tilt">
-
-                    </div>
-                    <div class="span5 pull-right">
-                        <h2><font><font><?= $detalle_locales->nombre_local;?></font></font></h2>
-
-                        <ul class="green-checks">
-                        
-                            <li><font><font>Direccion: <?= $detalle_locales->direccion_local;?></font></font></li>
-                            <?php if($detalle_locales->email!="test@test.cl" && $detalle_locales->email!=""){ ?>
-                              <li><font><font>E-mail: <?= $detalle_locales->email  ?></font></font></li>
-                            <?php } ?>
-                            <li><font><font>Sectores de Entrega: <?php foreach ($sector_entregas_particular as $s) {
-                                 echo   $s->nombre_sector_entrega." " ; 
-                                } ?></font></font></li>
-                            <?php if($detalle_locales->horario_entrada!="" && $detalle_locales->horario_salida!="" ){ ?>
-                                <li><font><font>Lunes a Viernes: de <?= $detalle_locales->horario_entrada?> hasta <?= $detalle_locales->horario_salida?></font></font></li>
-                                <li><font><font>S&aacutebado y Domingo: de <?= $detalle_locales->horario_entrada_fds?> hasta <?= $detalle_locales->horario_salida_fds?></font></font></li>
-                            <?php } ?>
-                            <?php if($detalle_locales->sitio_referencia!=""){ ?>
-                                <li><font><font>Sitio de Referencia: <?= $detalle_locales->sitio_referencia?></font></font></li>
-                            <?php } ?>       
-                        </ul>
-
-                        <a href="#test_modal"  data-toggle="modal" class="btn btn-warning btn-large offset1"><font><font>Ver Telefono</font></font></a>
-
-                     </div>
-                </div>
-
-            </div> <!-- End .tab-content -->
-        </div>
-    <div class="span12" style="margin-bottom:50px" >
-  <div id="map-canvas" style="width:100%; height:450px; frameborder:0; scrolling:no; marginheight:0; marginwidth:0;"></div>
-</div>
-    </div>
-</div>
-<!--Termino del contenido-->
-
-
-
-
-<!-- El mapa del sitio -->
-
-
+								</div>
+								<div class="tab-pane" id="tab3">
+									<div class="row-fluid">
+										<ul class="thumbnails">
+										  <div class="span4 project bloque_producto " >
+				                            <!-- Imagen de fondo-->
+				                            <img src=""  class="img-rounded"> 
+				                            <!-- Logo del local-->
+				                            <span class="overlay"> 
+				                            </span>
+				                            <div class="cnt">
+				                                <!-- Titulo Del producto-->
+				                                <h5><font><font>sbghjkmhn</font></font></h5>
+				                                 <!-- Precio Del producto-->
+				                                 <h5><font><font> 678654</font></font></h5>
+				                                <br><br>
+				                                <a href="" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
+				                            </div>
+				                        </div> 
+										 <div class="span4 project bloque_producto " >
+				                            <!-- Imagen de fondo-->
+				                            <img src=""  class="img-rounded"> 
+				                            <!-- Logo del local-->
+				                            <span class="overlay"> 
+				                            </span>
+				                            <div class="cnt">
+				                                <!-- Titulo Del producto-->
+				                                <h5><font><font>sbghjkmhn</font></font></h5>
+				                                 <!-- Precio Del producto-->
+				                                 <h5><font><font> 678654</font></font></h5>
+				                                <br><br>
+				                                <a href="" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
+				                            </div>
+				                        </div> 
+										  <div class="span4 project bloque_producto " >
+				                            <!-- Imagen de fondo-->
+				                            <img src=""  class="img-rounded"> 
+				                            <!-- Logo del local-->
+				                            <span class="overlay"> 
+				                            </span>
+				                            <div class="cnt">
+				                                <!-- Titulo Del producto-->
+				                                <h5><font><font>sbghjkmhn</font></font></h5>
+				                                 <!-- Precio Del producto-->
+				                                 <h5><font><font> 678654</font></font></h5>
+				                                <br><br>
+				                                <a href="" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
+				                            </div>
+				                        </div> 
+										</ul>
+									</div>
+								</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--break-->
+				
+				<div class="span2">
+					<div class="row-fluid sidebar">
+						<div class="span12">
+							<h3>Categorias</h3>
+							<ul class="nav nav-tabs nav-stacked">
+							  <li class="active"><a href="">Sushi</a></li>
+							  <li><a href="">Pizza</a></li>
+							  <li><a href="">Comida China</a></li>
+							  <li><a href="">Sandwich</a></li>
+							  <li><a href="">Vegetariana</a></li>
+							  <li><a href="">Pasteles</a></li>
+							  <li><a href="">Mexicana</a></li>
+							  <li><a href="">Comida Casera</a></li>
+							  
+							</ul>
+							
+						
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	
+	<!-- Inicio del pup-pop -->
 <!-- Inicio del pup-pop -->
 <div class="modal fade" id="test_modal">
     <div class="modal-header">
@@ -114,7 +186,7 @@
     </div>
     
     <div class="modal-body">
-        <br><br>º
+        <br><br>
          <div class="span3 " style="font-size: 15px;">
           Puedes decirle al local que vienes de parte de FOODLAND, así nos ayudarás a difundir mejor este servicio
           <br>
@@ -148,30 +220,13 @@
 </div>
 <!-- Termino pup-pop -->
 
-
-
- <!-- Scripts producto Pop - -->
-<script type="text/javascript"
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaxkGlTnG8sZ2BHZ4Wf63959--Yfy1b-0&sensor=false">
-</script>
-<script type="text/javascript">
-  function initialize() {
-    var latlng = new google.maps.LatLng(<?= $detalle_locales->lat_local;?>, <?= $detalle_locales->long_local;?>);
-    var mapOptions = {
-      center: new google.maps.LatLng(<?= $detalle_locales->lat_local;?>, <?= $detalle_locales->long_local;?>),
-      zoom: 16,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById("map-canvas"),
-        mapOptions);
-    var marker = new google.maps.Marker({
-            position: latlng, 
-            map: map, 
-            title:'<?= $detalle_locales->nombre_local;?>'
-            });
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
-
-</script>
-
+<!-- Termino pup-pop -->
 <script type="text/javascript" src='../js/scriptsproductos.js'> </script>
+
+
+
+
+
+
+
+

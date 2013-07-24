@@ -1,4 +1,6 @@
+ <link rel="stylesheet" href="<?= base_url();?>css/slider-main.css">     
 <script src="<?= base_url()?>js/ajax.js"></script>
+
 <script>
     // using JQUERY's ready method to know when all dom elements are rendered
     $( document ).ready(function () {

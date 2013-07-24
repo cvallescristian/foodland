@@ -1,6 +1,5 @@
 
-@import url('font-awesome.min.css');
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+
 
 
 
@@ -680,7 +679,7 @@ border-bottom: 1px dotted #E2E2E2;
 
 /* head single */
 .heads{
-	margin-top: -60px;
+	margin-top: -10px;
 	max-width: 100%;
 	background: url(../../img/tipo_producto/sandwich.png) no-repeat fixed center center transparent;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/tipo_producto/2.png',sizingMethod='scale');
@@ -716,7 +715,7 @@ border-bottom: 1px dotted #E2E2E2;
 }
 
 .page-content h3{
-	font-size: 22px;
+	font-size: 25px;
 	line-height: 26px;
 	color: #444444;
 	text-transform: uppercase;
@@ -870,16 +869,16 @@ border-bottom: 1px dotted #E2E2E2;
 .single-item  .nav-tabs > li > a:hover {
   border-color: #ddd #ddd #ccc;
   background-color: #fff;
-  color: #FFD600;
+  color: #FF0000;
 }
 
 .single-item  .nav-tabs > .active > a,
 .single-item  .nav-tabs > .active > a:hover {
   background-color: #fff;
-  border-top-color: #FFD600;
+  border-top-color: #FF0000;
   border-bottom-color: transparent;
   border-left: none;
-  color: #FFD600;
+  color: #FF0000;
   cursor: default;
 }
 
@@ -889,7 +888,7 @@ border-bottom: 1px dotted #E2E2E2;
 	text-align: center;
 	font-weight: 600;
 	line-height: 18px;
-	color: #747474;
+	color: #ffffff;
 }
 
 #theteam .thumbnails{
@@ -1634,7 +1633,7 @@ border-bottom: 1px dotted #E2E2E2;
         width: 300px;
     }
     .span3 {
-        width: 220px;
+        width: 270px;
     }
     .span2 {
         width: 140px;
