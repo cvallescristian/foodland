@@ -25,6 +25,7 @@ class Perfil_local extends CI_Controller {
 				$this->data['buscar']=$buscar;
 				$this->data['local']=$local;
 				$this->data['productos_local']=$productos_local;
+				$this->data['title']=$local->nombre_local;
 
 				$this->load->view('templades/header',$this->data);
 				$this->load->view('pages/perfil-local_view',$this->data);

@@ -7,8 +7,8 @@ Class Home extends CI_Controller
     {
     	parent::__construct();
     	$this->load->helper('url');
-         $this->load->library('email');
-
+        $this->load->library('email');
+        $this->data['title']="Bienvenido a Foodland";
     	
     }
     

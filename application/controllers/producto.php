@@ -6,6 +6,7 @@ class Producto extends CI_Controller {
     {
     	parent::__construct();
     	$this->load->helper('url');
+        $this->data['title']="";
     }
 
 	public function index()
@@ -22,6 +23,7 @@ class Producto extends CI_Controller {
 			$this->uum->agregar_contador($id);
             $buscar=$this->uum->get_producto_buscador();
 
+            $this->data['title']=$productos->titulo_producto;
 			$this->data['productos']= $productos;
 			$this->data['sector_entregas_particular']=$sector_entregas_particular;
 			$this->data['sector_entregas']=$sector_entregas;
@@ -63,6 +65,7 @@ class Producto extends CI_Controller {
                 }
                
             }
+        $this->data['title']="Busqueda: ".$producto;
         if($contador==0){
             $lista="";
              $this->fb();
