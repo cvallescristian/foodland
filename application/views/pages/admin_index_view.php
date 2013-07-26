@@ -2,12 +2,12 @@
 <!-- Login -->   
 <div class="main">
   	<div class="container">
-		<div class="bloque_blanco span5">
+		<div class="bloque_blanco span5 offset6 ">
 			<form class="form-horizontal"  method="post" action="<?= base_url(); ?>admin/login">
 			<fieldset>
 			<div class="widget stacked widget-table action-table">				
-				<div class="widget-header">
-					<h4> Administración de Locales </h4>
+				<div class="widget-header">					
+					<h3 style="text-align:center"> Administración de Locales </h3>
 				</div>				
 				<div class="widget-content">					
 						<div class="control-group">
