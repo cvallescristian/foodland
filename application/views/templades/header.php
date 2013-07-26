@@ -78,41 +78,28 @@
                                 <li><a href="<?= base_url();?>home?sector=<?= $s->id_sector_entrega  ?>"><?= $s->nombre_sector_entrega ?></a></li>
                                 <?php }?>
                             </ul>
-                        </li>   
-                        <li><a href="#test_modal_login" data-toggle="modal">Iniciar Sesion</a></li>
-                  <!-- PHP Login        
+                        </li>
+                        <?php if($this->session->userdata('user_profile')) : 
+                              $usuario= $this->session->userdata('user_profile');
+                        ?>
+                           <a href="" class="dropdown-toggle" data-toggle="dropdown"> <?= $usuario['first_name'];?></a>
+                       
+                      <?php else : ?>
+                                   <li><a href="#test_modal_login" data-toggle="modal">Iniciar Sesion</a></li>
+                      <?php endif; ?>
+                         
                    <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown">
-                            <font><font>
-                                 <?php if($this->session->userdata('user_profile')) : 
-                                        $usuario= $this->session->userdata('user_profile');
-                                        echo $usuario['first_name'];
-                                    ?>
-
-                                    <?php else : ?>
-                                    Iniciar Sesion
-                                    <?php endif; ?>
-                            </font></font><b class="caret"></b>
-                        </a>
                         <div class="dropdown-menu" style="padding: 15px; color:white;" >
                             <div class="span3">
                                 <div >
-                                    <?php if($this->session->userdata('user_profile')) : 
-                                        $usuario= $this->session->userdata('user_profile');
-                                        
-                                    ?>
-                                     <div class="logout">
+                                   <div class="logout">
                                         <p><a href="<?php echo $logout_url; ?>">Cerrar Sesion</a></p>
                                     </div>
-                                    <?php else : ?>
-                                    <font><font>Iniciar con:</font></font>
-                                        <a href="<?php echo $login_url; ?>"><img src="<?= base_url();?>img/icono-facebook.png" width="40px"></a>                                                                     
-                                    <?php endif; ?>                                   
                                 </div>
                             </div>
                         </div>
                     </li> 
-                     -->                                      
+                                                       
                 </ul>
             </div>
        </div>
@@ -130,7 +117,8 @@
                 <div class="span12 header">
                     <h4>Iniciar Sesión con Facebook</h4>
                     <div class="span4 social">
-                        <a href="" class="circle facebook">
+
+                        <a href="<?= $login_url; ?>" class="circle facebook">
                             <img src="<?= base_url()?>img/img_redes/face.png" alt="">
                         </a>
                         <!-- login Twitter Facebook
