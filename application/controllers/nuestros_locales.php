@@ -27,6 +27,7 @@ class Nuestros_locales extends CI_Controller {
 			$this->data['locales_ramdom']=$locales_ramdom;
 			$this->data['buscar']=$buscar;
 			$this->data['titulo']="";
+			$this->data['title']="Nuestros locales";
 
 			$this->load->view('templades/header',$this->data);
 			$this->load->view('pages/nuestros_locales_view',$this->data);
@@ -57,6 +58,7 @@ class Nuestros_locales extends CI_Controller {
 				$this->data['locales']=$locales;
 				$this->data['locales_ramdom']=$locales_ramdom;
 				$this->data['titulo']="Haz buscado por : $nombre";
+				$this->data['title']="Locales de : $nombre";
 
 			
 				$this->load->view('templades/header',$this->data);

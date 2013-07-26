@@ -16,7 +16,7 @@ class admin_model extends CI_Model{
     return $final_result;    
   }
   function get_local(){
-     $query="select * from Local";
+     $query="select * from Local order by nombre_local asc";
      $result = $this->db->query($query);
      return $result->result();   
   }
@@ -46,7 +46,7 @@ class admin_model extends CI_Model{
              $this->db->delete('Local_sector_entrega', $data);
   }
   function get_producto(){
-     $query="select * from Producto";
+     $query="select * from Producto order by id_local asc";
      $result = $this->db->query($query);
      return $result->result(); 
   }

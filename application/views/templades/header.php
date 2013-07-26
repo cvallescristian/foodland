@@ -4,7 +4,7 @@
     <link rel="shortcut icon" href="img/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <title>Bienvenido a Foodland</title>
+     <title><?= $title ?></title>
         <link rel="stylesheet" type="text/css" href="<?= base_url();?>css/theme.css">
         <link href="<?= base_url();?>css/css.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="<?= base_url();?>css/home.css"> 
