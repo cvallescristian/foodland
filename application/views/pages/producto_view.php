@@ -192,7 +192,7 @@
 	
 	<!-- Inicio del pup-pop -->
 <!-- Inicio del pup-pop -->
-<div class="modal fade" id="test_modal">
+<div class="modal2 fade" id="test_modal">
     <div class="modal-header">
       <a class="close" data-dismiss="modal">&times;</a>
       <h3>Muchas gracias por visitar Foodland</h3>

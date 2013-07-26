@@ -82,18 +82,22 @@
                         <?php if($this->session->userdata('user_profile')) : 
                               $usuario= $this->session->userdata('user_profile');
                         ?>
-                           <a href="" class="dropdown-toggle" data-toggle="dropdown"> <?= $usuario['first_name'];?></a>
+                        
+                        <li class="dropdown">
+                          
+                         <a href="" class="dropdown-toggle" data-toggle="dropdown"> <?= $usuario['first_name'];?> <b class="caret"></b></a>
+                         </font></font>
                        
                       <?php else : ?>
                                    <li><a href="#test_modal_login" data-toggle="modal">Iniciar Sesion</a></li>
                       <?php endif; ?>
                          
-                   <li class="dropdown">
+                   
                         <div class="dropdown-menu" style="padding: 15px; color:white;" >
-                            <div class="span3">
+                            <div class="span2">
                                 <div >
                                    <div class="logout">
-                                        <p><a href="<?php echo $logout_url; ?>">Cerrar Sesion</a></p>
+                                        <p><a href="<?php echo $logout_url; ?>" >Cerrar Sesion</a></p>
                                     </div>
                                 </div>
                             </div>
