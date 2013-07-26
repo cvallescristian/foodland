@@ -952,7 +952,7 @@
   }
 }
 
-@media (max-width: 979px) {
+@media (max-width: 1115px) {
   body {
     padding-top: 0;
   }
@@ -1094,6 +1094,10 @@
   .nav-collapse.collapse {
     height: 0;
     overflow: hidden;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.86);
+    top: -1px;
+
   }
   .navbar .btn-navbar {
     display: block;

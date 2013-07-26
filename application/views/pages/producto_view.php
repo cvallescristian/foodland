@@ -6,7 +6,8 @@
        <link href="<?= base_url();?>css/social-buttons.css" rel="stylesheet">
 
 	    
-	<div class="heads" style="position:relative;background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>); background-size:100% 100%;">
+	<div class="heads" style="background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>) fixed transparent;
+	 							background-size:100% 35%;">
 		<div class="container" >
 			<div class="row-fluid">
 				<div class="span12">

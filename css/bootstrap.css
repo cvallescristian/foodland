@@ -19,6 +19,20 @@
   content: "";
 }
 
+.close2{
+position: relative;
+right: 100px;
+margin-top: 50px;  
+float: right;
+font-size: 50px;
+font-weight: bold;
+line-height: 18px;
+color: #FFFFFF;
+text-shadow: 0 1px 0 #ffffff;
+opacity: 1;
+filter: alpha(opacity=20);
+}
+
 .clearfix:after {
   clear: both;
 }
@@ -169,11 +183,15 @@ textarea {
   overflow: auto;
   vertical-align: top;
 }
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     #partner-slider,
     #feature_slider {
         display: none;
     }
+    #test_modal_login{
+        display: none;
+    }
+    
     #prod{
      
     }
@@ -5299,26 +5317,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 
-.modal2 {
-position: fixed;
-top: 50%;
-left: 40%;
-z-index: 1050;
-width: 680px;
-margin: -250px 0 0 -340px;
-background-color: #ffffff;
-border: 1px solid #999;
-border: 1px solid rgba(0, 0, 0, 0.3);
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
--webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
--moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
--webkit-background-clip: padding-box;
--moz-background-clip: padding-box;
-background-clip: padding-box;
-}
+
 
 .modal.fade {
   top: -105%;

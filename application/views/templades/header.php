@@ -112,12 +112,12 @@
 <!-- pup-pop Login -->
 
 
-    <div class="modal fade" id="test_modal_login">
+  <div class="modal fade" id="test_modal_login">
   
     <div id="sign_in1">
         <div class="container">
             <div class="row"> 
-              <a class="close" data-dismiss="modal">&times;</a>
+              <a class="close2" data-dismiss="modal">&times;</a>
                 <div class="span12 header">
                     <h4>Iniciar Sesión con Facebook</h4>
                     <div class="span4 social">
