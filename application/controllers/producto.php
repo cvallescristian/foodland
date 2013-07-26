@@ -19,6 +19,9 @@ class Producto extends CI_Controller {
 			$sector_entregas_particular= $this->uum->get_sector_entrega_particular($id);
 			$detalle_local=$this->uum->get_local_particular($id);
 			$tipo_producto=$this->uum->get_tipo_producto_particular($id);
+            $categorias = $this->uum->get_categoria();
+            $tipo_producto_nombre = $this->uum->get_tipo_producto_detalle_producto($tipo_producto);
+            $productos_random = $this->uum->get_producto_random_categoria($tipo_producto);
 			$this->uum->agregar_contador($id);
             $buscar=$this->uum->get_producto_buscador();
 
@@ -27,6 +30,9 @@ class Producto extends CI_Controller {
 			$this->data['sector_entregas']=$sector_entregas;
 			$this->data['detalle_locales']=$detalle_local;
 			$this->data['id_tipo_producto']=$tipo_producto;
+            $this->data['id_tipo_producto_nombre']=$tipo_producto_nombre;
+            $this->data['categorias'] = $categorias;
+            $this->data['productos_random'] = $productos_random;
             $this->data['buscar']=$buscar;
 			//var_dump($this->session->all_userdata());
 			$this->load->view('templades/header',$this->data);

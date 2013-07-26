@@ -60,6 +60,16 @@ class home_model extends CI_Model{
         $result = $this->db->query($query);
         return $result->result();      
     }
+    function get_producto_random_categoria($id){ //exclusivamente para el index
+        $query = "select * from Producto";
+
+            $query.=" where id_tipo_producto = '$id'";
+
+
+        $query.=" order by rand() limit 3";
+        $result = $this->db->query($query);
+        return $result->result();      
+    }
 
     function get_categoria(){
         $query="select * from Tipo_producto";
@@ -115,6 +125,17 @@ class home_model extends CI_Model{
          $re=$result->result();
          foreach ($re as $r) {
             return $r->id_tipo_producto;
+            break;
+         }
+    }
+    function get_tipo_producto_detalle_producto($id){ //esto es solamente para los productos para saber su tipo de producto
+
+
+        $query="select * from Tipo_producto where id_tipo_producto='$id'";
+        $result = $this->db->query($query);
+         $re=$result->result();
+         foreach ($re as $r) {
+            return $r;
             break;
          }
     }
