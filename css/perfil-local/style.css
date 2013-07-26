@@ -1,11 +1,5 @@
-/*!
- * Fransisca Image Galery
- *
- * Afriq Yasin Ramadhan
- */
- 
 
- body {
+body {
     padding-top: 70px;
 	background:#fafafa;
     background: url(../../img/body-bg.png) repeat;
