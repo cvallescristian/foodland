@@ -81,18 +81,22 @@
 									      <td>Dirección:</td>
 									      <td><?= $detalle_locales->direccion_local;?></td>
 									    </tr>
+									    <?php if($detalle_locales->horario_entrada!="" && $detalle_locales->horario_salida!="" ){ ?>
+									    
 									    <tr>
 									      <td>Horario de atención:</td>
-									      <td><?php if($detalle_locales->horario_entrada!="" && $detalle_locales->horario_salida!="" ){ ?>
+									      <td>
                                 <li><font><font>Lunes a Viernes: de <?= $detalle_locales->horario_entrada?> hasta <?= $detalle_locales->horario_salida?></font></font></li>
                                 <li><font><font>S&aacutebado y Domingo: de <?= $detalle_locales->horario_entrada_fds?> hasta <?= $detalle_locales->horario_salida_fds?></font></font></li>
-                            <?php } ?></td>
+                            </td>
 									    </tr>
+									    <?php } ?>
 									    <tr>
+									    <?php if($detalle_locales->sitio_referencia!=""){ ?>
 									      <td>Sitio Web:</td>
 									      <td><?= $detalle_locales->sitio_referencia?></td>
 									    </tr>
-
+										<?php } ?>
 									  </tbody>
 									</table>
 
