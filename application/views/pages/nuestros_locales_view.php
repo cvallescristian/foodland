@@ -138,7 +138,7 @@
 
 <!-- Javascript -->
 <script src="<?= base_url();?>js/js-locales/jquery.min.js"></script>
-<script src="<?= base_url();?>js/js-locales/bootstrap.js"></script>
+
 <script src="<?= base_url();?>js/js-locales/jquery.tweet.js"></script>
 <script src="<?= base_url();?>js/js-locales/jflickrfeed.min.js"></script>
 <script src="<?= base_url();?>js/js-locales/magazine.js"></script>

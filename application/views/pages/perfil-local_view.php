@@ -64,7 +64,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="<?= base_url();?>js/perfil_local/jquery-1.7.2.min.js"></script>
-    <script src="<?= base_url();?>js/perfil_local/bootstrap.js"></script>
+ 
     <script src="<?= base_url();?>js/perfil_local/image-gallery.js"></script>
     <script src="<?= base_url();?>js/perfil_local/jquery.mousewheel-3.0.6.pack.js"></script>
     <script src="<?= base_url();?>js/perfil_local/jquery.fancybox.js"></script>

@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="<?= base_url();?>css/home.css"> 
         <link rel="stylesheet" href="<?= base_url();?>css/style_footer.css">
         <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css"> 
+        <link href="<?= base_url();?>css/sign-in.css" rel="stylesheet">
+      
 
         <script type="text/javascript">
         
@@ -76,7 +78,9 @@
                                 <li><a href="<?= base_url();?>home?sector=<?= $s->id_sector_entrega  ?>"><?= $s->nombre_sector_entrega ?></a></li>
                                 <?php }?>
                             </ul>
-                        </li>                        
+                        </li>   
+                        <li><a href="#test_modal_login" data-toggle="modal">Iniciar Sesion</a></li>
+                  <!-- PHP Login        
                    <li class="dropdown">
                         <a href="" class="dropdown-toggle" data-toggle="dropdown">
                             <font><font>
@@ -107,8 +111,44 @@
                                 </div>
                             </div>
                         </div>
-                    </li>                    
+                    </li> 
+                     -->                                      
                 </ul>
             </div>
        </div>
     </div>
+
+<!-- pup-pop Login -->
+
+
+    <div class="modal fade" id="test_modal_login">
+  
+    <div id="sign_in1">
+        <div class="container">
+            <div class="row"> 
+              <a class="close" data-dismiss="modal">&times;</a>
+                <div class="span12 header">
+                    <h4>Iniciar Sesión con Facebook</h4>
+                    <div class="span4 social">
+                        <a href="" class="circle facebook">
+                            <img src="<?= base_url()?>img/img_redes/face.png" alt="">
+                        </a>
+                        <!-- login Twitter Facebook
+                         <a href="" class="circle twitter">
+                            <img src="<?= base_url()?>img/img_redes/twt.png" alt="">
+                        </a>
+                         <a href="" class="circle gplus">
+                            <img src="<?= base_url()?>img/img_redes/gplus.png" alt="">
+                        </a>
+                        -->
+                    </div>
+                </div>
+
+         
+                
+            </div>
+        </div>
+    </div>
+   
+</div>
+<!-- Termino pup-pop -->
