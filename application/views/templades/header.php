@@ -21,7 +21,8 @@
         <link rel="stylesheet" href="<?= base_url();?>css/home.css"> 
         <link rel="stylesheet" href="<?= base_url();?>css/style_footer.css">
         <link rel="stylesheet" href="<?= base_url();?>css/fondocarousel.css"> 
-        <link href="<?= base_url();?>css/sign-in.css" rel="stylesheet">
+        <link href="<?= base_url();?>css/sign-in.css" rel="stylesheet">        
+        <link rel="stylesheet" href="<?= base_url();?>css/about.css">
       
 
         <script type="text/javascript">

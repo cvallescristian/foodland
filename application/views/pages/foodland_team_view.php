@@ -1,42 +1,87 @@
-	<div class="row">
-		<section id="categoria" class="portfolio rev">
-	        <div class="container" id="buttom_categoria">
-	            <div class="row">
-	                <div class="span12 center">
-	                    <h1 class="big-heading"><font><font>Foodland Team</font></font></h1>
-	                </div>
-	            </div>
-	        </div>        
-	    </section>
-		<section id="categoria" class="portfolio rev">	        	        
-			<div class="offset3 span2">
-	<!--	<img src="img/diego.jpg" class="img-circle"> -->
-				<h3 class="title">Diego Reyes Delgado</h3>				
-				<h4 class="text" style="text-align:center">Desarrollador front-end del sitio. <br><br>diego@<br>foodland.cl</h4>
- 		   	</div>
- 		   	<div class="offset1 span2">
-	<!--	<img src="img/cristian.jpg" class="img-circle"> -->
-				<h3 class="title">Cristian Valles Pereira</h3>				
-				<h4 class="text" style="text-align:center">CEO y desarrollador back-end. <br><br>cristian@<br>foodland.cl</h4>
-	 		</div>
-			<div class="offset1 span2">
-	<!--	<img src="img/carlos.jpg" class="img-circle">-->
-				<h3 class="title">Carlos Bugeño Rodríguez</h3>				
-				<h4 class="text" style="text-align:center">Jefe de marketing y diseñador. <br><br>carlos@<br>foodland.cl</h4>
-		   	</div>		   	
-		   	<div class="offset3">
-			   	<div class="offset1 span2">
-	<!--			<img src="img/diego.jpg" class="img-circle"> -->
-					<h3 class="title">David Cid Castro</h3>					
-					<h4 class="text" style="text-align:center">Desarrollador front-end del sitio. <br><br>david@<br>foodland.cl</h4>
-				</div>	
-				<div class="offset1 span2">
-	<!--			<img src="img/jonathan.jpg" class="img-circle">	-->
-					<h3 class="title">Jonathan Galassi</h3>								
-					<h4 class="text" style="text-align:center">Desarrollador back-end del sitio. <br><br>jonathan@<br>foodland.cl</h4>
-			   	</div>					
-			</div>
-	    </section>	    			
-		<br>		
-	</div>
-<br><br>
+<section id="categoria" class="portfolio rev">
+    <div class="container" id="buttom_categoria">
+        <div class="row">
+            <div class="span12 center">
+                <h1 class="big-heading"><font><font>Foodland Team</font></font></h1>
+            </div>
+        </div>
+    </div>        
+</section>
+<div id="team">	
+        <div class="container">
+            <div class="row people">            	            		            
+                <div class="row row1">                	
+                 	<div class="span6 bio_box">
+                        <a  id="menu" href="https://about.me/cristian.valles">
+                    		<img src="./img/ale.png" width="200" class="img-circle">
+             			</a>                           
+                        <div class="info">
+                            <h3>Cristian Valles</h3>
+                            <p class="area">CEO y desarrollador back-end.<br>cristian@foodland.cl</p>
+                            <a href="http://cleancanvas.herokuapp.com/about-us.html#" class="facebook">
+                                <span class="socialicons ico1"></span>
+                                <span class="socialicons_h ico1h"></span>
+                            </a>                            
+                        </div>
+                 	</div>
+                 	<div class="span6 bio_box bio_boxr">
+                        <a  id="menu" href="https://about.me/jhonatan.galassi">
+                    		<img src="./img/ale.png" width="200" class="img-circle">
+             			</a>                           
+                        <div class="info">
+                            <h3>Jhonatan Galassi</h3>
+                            <p class="area">Desarrollador back-end del sitio.<br>jonathan@foodland.cl</p>
+                            <a href="http://cleancanvas.herokuapp.com/about-us.html#" class="facebook">
+                                <span class="socialicons ico1"></span>
+                                <span class="socialicons_h ico1h"></span>
+                            </a>                            
+                        </div>
+                 	</div>
+                </div>
+                <div class="row row1">					
+                	<div class="span6 bio_box">
+                        <a  id="menu" href="https://about.me/diego.reyes">
+                    		<img src="./img/ale.png" width="200" class="img-circle">
+             			</a>                           
+                        <div class="info">
+                            <h3>Diego Reyes</h3>
+                            <p class="area">Desarrollador front-end del sitio.<br>diego@foodland.cl</p>
+                            <a href="http://cleancanvas.herokuapp.com/about-us.html#" class="facebook">
+                                <span class="socialicons ico1"></span>
+                                <span class="socialicons_h ico1h"></span>
+                            </a>                            
+                        </div>
+                 	</div>
+                    <div class="span6 bio_box bio_boxr">
+                        <a  id="menu" href="https://about.me/david.cid">
+                    		<img src="./img/david.jpg" width="200" class="img-circle">
+             			</a>                           
+                        <div class="info">
+                            <h3>David Cid Castro</h3>
+                            <p class="area">Desarrollador front-end del sitio.<br>david@foodland.cl</p>
+                            <a href="http://cleancanvas.herokuapp.com/about-us.html#" class="facebook">
+                                <span class="socialicons ico1"></span>
+                                <span class="socialicons_h ico1h"></span>
+                            </a>                            
+                        </div>
+                 	</div>                 	
+                </div>
+                <div class="row row1">
+                	<div class="span6 bio_box">
+                        <a  id="menu" href="https://about.me/diego.reyes">
+                    		<img src="./img/ale.png" width="200" class="img-circle">
+             			</a>                           
+                        <div class="info">
+                            <h3>Carlos Bugeño</h3>
+                            <p class="area">Jefe de marketing y diseñador.<br>carlos@foodland.cl</p>
+                            <a href="http://cleancanvas.herokuapp.com/about-us.html#" class="facebook">
+                                <span class="socialicons ico1"></span>
+                                <span class="socialicons_h ico1h"></span>
+                            </a>                            
+                        </div>
+                 	</div>
+                </div>				
+
+            </div>                                    
+        </div>
+    </div>
