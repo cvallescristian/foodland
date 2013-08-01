@@ -9,10 +9,6 @@ class Nuestros_locales extends CI_Controller {
 	}
 
 	public function index()	{
-
-
-
-			
 			$this->fb();
 			$this->load ->model('home_model','uum');
 			$this->load ->model('locales_model','uum2');

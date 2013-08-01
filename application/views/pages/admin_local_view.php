@@ -2,7 +2,7 @@
     <div class="container">
       <div class="row">
       	
-      	<div class="span9 offset1">     	<!-- lista locales -->
+      	<div class="span10 offset1">     	<!-- lista locales -->
       		<h1>Local</h1>
       		<a class="btn btn-success" href="<?= base_url();?>admin_local/nuevo_local">Agregar nuevo Local</a>  		
 			<div class="widget stacked widget-table action-table">				
@@ -20,6 +20,7 @@
 								<th>Email</th>
 								<th>Borrar</th>
 								<th>Editar</th>
+								<th>Ver Local</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -32,6 +33,7 @@
 								<td><?= $l->email  ?></td>
 								<td> <a href="<?= base_url();?>admin_local/borrar_local?id=<?= $l->id_local; ?>" class="btn btn-danger">Borrar</a></td>
 								<td><a href="<?= base_url();?>admin_local/editar_local?id=<?= $l->id_local; ?>" class="btn btn-info">Editar</a></td>
+								<td><a href="<?= base_url()?>admin_detalle_local?id=<?= $l->id_local; ?>" class="btn btn-warning">Ver</a></td>
 							</tr>
 						<?php	
 						} ?>
