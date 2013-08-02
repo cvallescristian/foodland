@@ -16,7 +16,7 @@
 					<div class="shortcuts">
 						<a href="javascript:;" class="shortcut">
 							<i class="shortcut-icon icon-list-alt"></i>
-							<span class="shortcut-label"><a href="<?= base_url()?>admin_detalle_local/detalle_producto">Productos del local</a></span>
+							<span class="shortcut-label"><a href="<?= base_url()?>admin_detalle_local/detalle_producto?id=<?= $id?>">Productos del local</a></span>
 						</a>
 						
 						

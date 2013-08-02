@@ -6,11 +6,12 @@ class Admin_detalle_local extends CI_Controller {
 
 	public function index()
 	{
-
-		if($this->session->userdata('id')==""){
+		$id=$this->input->get('id');
+		if($this->session->userdata('id')=="" || $id==""){
 			$root= base_url()."admin";
 			header("Location: $root");
 		}else{
+
 			$this->load->model('admin_model','uum');
 			$this->load->model('home_model','uum2');
 			$locales= $this->uum->get_local();
@@ -21,6 +22,7 @@ class Admin_detalle_local extends CI_Controller {
 			}
 			$data['locales']=$locales;
 			$data['sectores']=$sectores;
+			$data['id']=$id;
 	
 			$this->load->view('templades/header_admin',$data);
 			$this->load->view('templades/header_detalle_local',$data);
