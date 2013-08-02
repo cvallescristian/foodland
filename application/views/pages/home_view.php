@@ -16,6 +16,19 @@
         });
     });
 </script>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=150921735071642";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
 <!-- inicio portasda -->
     <section id="feature_slider">
         <div id="fondo">
@@ -49,6 +62,8 @@
             </div>
         </div>
         
+
+
     </section> 
 <!-- fin portada -->       
 
@@ -98,19 +113,23 @@
 
                         <div class="span12 center">
 
-                            <h1 class="big-heading"><font><font>Productos por llamado Telefonico</font></font></h1>
+                            <h1 class="big-heading"><font><font>Productos por llamado Telefónico</font></font></h1>
                             
                             <h4 class="sub-heading"><font><font>Te mostramos lo mejor de nuestra linea telefonica...</font></font></h4>
                         </div>
 
+                        <div class="span10">
                      <?php 
                         foreach ($productos_random as $producto) {
                             $id= $producto->id_producto;
                             $id_local=$producto->id_local;
                        
                       ?>
+
+                     
                         <!-- Inicio Bloque Grande-->
-                        <div class="span4 project bloque_producto" >
+
+                        <div class="span3 project bloque_producto" >
                             <!-- Imagen de fondo-->
                             <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
                             <!-- Logo del local-->
@@ -128,27 +147,53 @@
                         </div>
                         <!-- Termino Bloque Grande-->
                         <?php } ?>
+
+                        </div>
+
+                       
+                                <!-- SideBar -->
+                <div class="span3 sidebar" id="categoria" style=" background:rgba(0, 0, 0, 0.75);" >
+                    <div class="box">
+                        <div class="sidebar_header center">
+                            <h3>Categorias</h3>
+                        </div>
+
+                        <ul  style="color:#0080FF;">
+                            <h4>
+                                <ul>
+                                    <li><a href="">Pizza</a></li>
+                                    <li><a href="">Sushi</a></li>
+                                    <li><a href="">Casera</a></li>
+                                    <li><a href="">Comida China</a></li>
+                                    <li><a href="">Sandwich</a></li>
+                                </ul>
+                            </h4>
+                        </ul>
                     </div>
-                    <section id="cat">
-                   </section> 
+                    <br>
+                    
+
+                    <div class="box2">
+                        <div class="sidebar_header center">
+                            <h3>Facebook Foodland</h3>
+                        </div>
+
+                       <div class="fb-like"  style="margin-left:20px;"data-href="https://www.facebook.com/FoodLandValparaiso?fref=ts" data-width="70" data-colorscheme="dark" data-show-faces="true" data-send="false"></div>
+                    </div>
+
+                 
+
+                 
+                </div>
+                   
+                      
+                    </div>
+
+                
     </section>
 <!-- Termino Productos-->
 
-<!-- Inicio Categoria-->
-    <section id="categoria" class="portfolio rev">
-        <div class="container" id="buttom_categoria">
-            <div class="row">
-                <div class="span12 center">
-                    <h1 class="big-heading"><font><font>Productos por categoría</font></font></h1>
-                    <h4 class="sub-heading"><font><font>Todos nuetros productos diferenciados por tipo de producto</font></font></h4>
-                </div>
-                <div class="span12 center">
-                    <button class="btn btn-danger btn-large" id="button">Cargar Todos los productos por categoria</button>
-                </div> 
-            </div>
-        </div>
-        
-    </section>
-<!-- Fin categoria-->
+
  <script type="text/javascript" src="<?= base_url();?>js/index-slider.js"></script>  
+<script src="<?= base_url();?>js/theme.js"></script>
  

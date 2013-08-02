@@ -2694,7 +2694,7 @@ a,a:hover {
 }
 
 .sidebar {
-    background:#F7F7F7;
+   
     padding:8px;
     margin-top:10px;
     border-radius:4px;
@@ -2703,8 +2703,9 @@ a,a:hover {
 .sidebar h4 {
     margin-bottom:10px;
     padding-bottom:10px;
-    text-transform:uppercase;
+   
     border-bottom:1px solid #eee;
+    color: white;
 }
 
 /*portfolio
