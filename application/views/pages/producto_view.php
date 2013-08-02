@@ -2,10 +2,24 @@
      <link rel="stylesheet" href="<?= base_url();?>css/css_productos2/style.css"> 
        <link href="<?= base_url();?>css/css_productos/productos_global.css" rel="stylesheet" media="screen">
        <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
-    
+    	<script src="<?= base_url()?>js/ajax.js"></script>
        <link href="<?= base_url();?>css/social-buttons.css" rel="stylesheet">
 
-	    
+<script type="text/javascript">
+    // using JQUERY's ready method to know when all dom elements are rendered
+    $(document).ready(function(){
+      // set an on click on the button
+      $("#button").click(function(){
+        // get the time if clicked via an ajax get queury
+        // see the code in the controller time.php
+        $.get("<?= base_url();?>producto/agregar_visita?id=<?= $_GET['id']; ?>");        
+        
+        
+        });
+    });
+
+    
+</script>	    
 	<div class="heads" style="background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>) fixed transparent;
 	 							background-size:100% 35%;">
 		<div class="container" >
@@ -52,7 +66,7 @@
 							<p>HashTag : <span class="label label-warning">#<?= $id_tipo_producto_nombre->nombre_tipo_producto ?></span></p>
 							<br>
 							<h4>$<?= $productos->precio ?></h4>
-							<p><a href="#test_modal" data-toggle="modal" class="btn btn-warning btn-large"><i class="icon-shopping-cart"></i> Ver Telefono</a></p>
+							<p><a href="#test_modal" id="button" name="button" data-toggle="modal" class="btn btn-warning btn-large"><i class="icon-shopping-cart"></i> Ver Telefono</a></p>
 						</div>
 					</div>
 					

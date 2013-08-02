@@ -152,7 +152,27 @@ class home_model extends CI_Model{
             }
         }
         return $buscar;
+    }
+    function get_visita($id){
+        $fecha = date('Y-m-d');
+        $query = "select * from Cont_visita where id_producto = '$id' and fecha = '$fecha'";
+        $result = $this->db->query($query);
+        return $result->result();         
     }   
+    function agregar_visita_nueva($data,$id){
+        $fecha = date('Y-m-d');
+        $query = "select * from Cont_visita where id_producto = '$id' and fecha = '$fecha'";
+        $result = $this->db->query($query);
+        if($result->result() == '' or $result->result() == NULL){
+            $this->db->insert('Cont_visita',$data);
+        }
+        else
+        {
+         $this->db->where('id_producto', $id);
+         $this->db->where('fecha', $fecha);
+         $this->db->update('Cont_visita', $data);
+        }
+    }
 }
 
  ?>

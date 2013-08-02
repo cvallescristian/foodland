@@ -222,6 +222,20 @@ class Producto extends CI_Controller {
 
         redirect(base_url(), 'refresh');
      }
+    public function agregar_visita(){
+
+        $id=$this->input->get('id');
+        $this->load->model('home_model','uum');
+        $visita = $this->uum->get_visita($id);
+        $data = array( //datos del local
+                       'id_producto' => $id,
+                       'fecha' => date('Y-m-d'),
+                       'visita' => $visita[0]->visita + 1
+                    );
+        $this->uum->agregar_visita_nueva($data,$id);
+
+        
+    }
 	
 }
 
