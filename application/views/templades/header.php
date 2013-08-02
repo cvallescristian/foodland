@@ -48,7 +48,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
          </a>      
-        <div class="span3">
+        <div class="span3" id="logo_foodland">
              <a  id="menu" href="<?= base_url();?>">
                     <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">BETA</sup>
              </a>   

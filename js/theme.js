@@ -9,14 +9,14 @@
                 
                 if(jQuery(this).scrollTop()>860){
                     jQuery('#categoria').css('position','fixed');
-                    jQuery('#categoria').css('right','20px');
+                    jQuery('#categoria').css('right','30px');
                     jQuery('#categoria').css('top','80px');
                     jQuery('#categoria').css('bottom','20px');
-                    jQuery('#categoria').css('height','400px');
+                    jQuery('#categoria').css('height','500px');
                 }else{
                    
                     jQuery('#categoria').css('position','absolute');
-                    jQuery('#categoria').css('right','20px');
+                    jQuery('#categoria').css('right','30px');
                     jQuery('#categoria').css('bottom','30px');
                     jQuery('#categoria').css('top','240px');
                 }

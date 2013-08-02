@@ -191,7 +191,16 @@ textarea {
     #test_modal_login{
         display: none;
     }
+
+    #categoria{
+      display: none;
+    }
     
+    #logo_foodland{
+      margin-left: 30px;
+      width: 100px;
+      height: 20px;
+    }
     #prod{
      
     }

@@ -27,7 +27,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <!-- inicio portasda -->
     <section id="feature_slider">
@@ -41,7 +41,8 @@
                     <h2>Eso que imaginas lo puedes encontrar <a href="#sector_reparto" style="color:rgb(210, 226, 26)">aquí</a> en Foodland </h2>
                     </p>
                 </div>
-                <div id="fb-root"></div>
+
+                     <div id="fb-root"></div>
                 <script>(function(d, s, id) {
                   var js, fjs = d.getElementsByTagName(s)[0];
                   if (d.getElementById(id)) return;
@@ -58,6 +59,7 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                             </div>
                              </div>
+           
                 
             </div>
         </div>
@@ -178,9 +180,21 @@
                             <h3>Facebook Foodland</h3>
                         </div>
 
-                       <div class="fb-like"  style="margin-left:20px;"data-href="https://www.facebook.com/FoodLandValparaiso?fref=ts" data-width="70" data-colorscheme="dark" data-show-faces="true" data-send="false"></div>
+                       <div class="fb-like"  style="margin-left:20px;" data-href="https://www.facebook.com/FoodLandValparaiso?fref=ts" data-width="70" data-colorscheme="dark" data-show-faces="true" data-send="false"></div>
                     </div>
 
+                    <div class="box2">
+                        <div class="sidebar_header center">
+                            <h3>Twitter Foodland</h3>
+                        </div>
+
+                            <div class="span1"  style="margin-left:80px;">
+                               <a href="https://twitter.com/FoodLand_Valpo" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large" data-show-screen-name="false">Seguir a @FoodLand_Valpo</a>
+                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                             
+                             </div>
+
+                        </div>
                  
 
                  
