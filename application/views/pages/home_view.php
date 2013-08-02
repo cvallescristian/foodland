@@ -93,6 +93,7 @@
             </div>
             <div class="span11  offset1 center">
                 <div class="row">
+                    <div class="span2"><h4><a href="<?= base_url();?>home">Todos los Sectores</a></h4></div>
                     <?php foreach ($sector_entregas as $sector_entrega) {
                     ?>
                         <div class="span2"><h4><a href="<?= base_url();?>home?sector=<?= $sector_entrega->id_sector_entrega?>#prod"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
@@ -161,8 +162,9 @@
                         <ul  style="color:#0080FF;">
                             <h4>
                                 <ul>
+                                    <li><a href="<?= base_url() ?>home?sector=<?=$sector?>">Todo</a></li>
                             <?php foreach ($categoria as $pro){ ?>
-                                    <li><a href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>"><?=$pro->nombre_tipo_producto?></a></li>
+                                    <li><a href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&sector=<?=$sector?>"><?=$pro->nombre_tipo_producto?></a></li>
                                     <?php } ?>
                                 </ul>
                             </h4>

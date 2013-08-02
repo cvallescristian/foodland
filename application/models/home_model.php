@@ -70,7 +70,29 @@ class home_model extends CI_Model{
         $result = $this->db->query($query);
         return $result->result();      
     }
+    function get_producto_random_categoria_home($id){
+         $query = "select * from Producto";
 
+            $query.=" where id_tipo_producto = '$id'";
+
+
+        $query.=" order by rand() limit 3";
+        $result = $this->db->query($query);
+        return $result->result();        
+    }
+    function get_producto_random_categoria_sector($id,$sector_entrega){
+                $query = "select * from Producto,Local_sector_entrega";
+        if($sector_entrega!=""){
+            $query.=" where Local_sector_entrega.id_sector_entrega=$sector_entrega and Producto.id_local=Local_sector_entrega.id_local";
+        }else{
+            $query.=" where Producto.id_local=Local_sector_entrega.id_local";
+        }
+        $query.=" and id_tipo_producto = '$id'";
+        $query.=" order by rand() limit 18";
+        $result = $this->db->query($query);
+        return $result->result(); 
+
+    }
     function get_categoria(){
         $query="select * from Tipo_producto";
          $result = $this->db->query($query);

@@ -22,8 +22,11 @@ Class Home extends CI_Controller
 			$this->load ->model('home_model','uum');
 			$productos_random= $this->uum->get_producto_random($sector);
             if($tipo_producto != '' or $tipo_producto!=0){
-                $productos_random= $this->uum->get_producto_random_categoria($tipo_producto);
+                $productos_random= $this->uum->get_producto_random_categoria_home($tipo_producto);
 
+            }
+            if($tipo_producto != '' and $sector != ''){
+                $productos_random= $this->uum->get_producto_random_categoria_sector($tipo_producto,$sector);
             }
             $sector_entregas = $this->uum->get_sector_entrega();
             $buscar=$this->uum->get_producto_buscador();
