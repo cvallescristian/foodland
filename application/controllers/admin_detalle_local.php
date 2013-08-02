@@ -31,12 +31,13 @@ class Admin_detalle_local extends CI_Controller {
 		
 	}
 	public function detalle_producto(){
+		$id=$this->input->get('id');
 		if($this->session->userdata('id')==""){
 			$root= base_url()."admin";
 			header("Location: $root");
 		}else{
 			$this->load->model('admin_model','uum');
-			$producto = $this->uum->get_producto();
+			$producto = $this->uum->get_producto_id($id);
 			$locales = $this->uum->get_local();
 			$tipo_producto= $this->uum->get_tipo_producto();
 			$data['producto'] = $producto;

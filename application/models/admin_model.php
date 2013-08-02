@@ -50,6 +50,13 @@ class admin_model extends CI_Model{
      $result = $this->db->query($query);
      return $result->result(); 
   }
+   function get_producto_id($id){
+     $query="select * from Producto";
+     $query.=" where id_local='$id'";
+     $query.=" order by id_local asc";
+     $result = $this->db->query($query);
+     return $result->result(); 
+  }
  
   function get_tipo_producto(){
      $query="select * from Tipo_producto";

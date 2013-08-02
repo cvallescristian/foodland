@@ -42,7 +42,7 @@
   								<?php foreach ($locales as $pro){
 
   								?>
-  								<option value="<?= $pro->id_local ?>"><?= $pro->nombre_local ?> </option>
+  								<option value="<?= $pro->id_local ?>" disabled><?= $pro->nombre_local ?> </option>
   								<?php } ?>
 							</select>
 						    </div>
