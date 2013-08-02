@@ -161,11 +161,9 @@
                         <ul  style="color:#0080FF;">
                             <h4>
                                 <ul>
-                                    <li><a href="">Pizza</a></li>
-                                    <li><a href="">Sushi</a></li>
-                                    <li><a href="">Casera</a></li>
-                                    <li><a href="">Comida China</a></li>
-                                    <li><a href="">Sandwich</a></li>
+                            <?php foreach ($categoria as $pro){ ?>
+                                    <li><a href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>"><?=$pro->nombre_tipo_producto?></a></li>
+                                    <?php } ?>
                                 </ul>
                             </h4>
                         </ul>

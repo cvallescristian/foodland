@@ -17,14 +17,20 @@ Class Home extends CI_Controller
         
         $this->fb();
     	$sector=$this->input->get('sector');
+        $tipo_producto = $this->input->get('tipo_producto');
 		if(is_numeric($sector) || $sector==""){
 			$this->load ->model('home_model','uum');
 			$productos_random= $this->uum->get_producto_random($sector);
+            if($tipo_producto != '' or $tipo_producto!=0){
+                $productos_random= $this->uum->get_producto_random_categoria($tipo_producto);
+
+            }
             $sector_entregas = $this->uum->get_sector_entrega();
             $buscar=$this->uum->get_producto_buscador();
 		//	echo "<pre>".print_r($productos,true)."</pre>";
+			$categoria = $this->uum->get_categoria();
 			
-			
+            $this->data['categoria']=$categoria;
 			$this->data['productos_random']=$productos_random;
 			$this->data['sector_entregas']=$sector_entregas;
 			$this->data['sector']=$sector;
