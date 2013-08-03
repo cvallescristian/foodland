@@ -821,6 +821,22 @@ height: 50px;
   #sector_reparto{
     margin-top:65px;
   }
+
+  #categoria_producto{
+    display: none;    
+
+  }
+#imagenes_carousel{
+     display: none;    
+
+}
+
+#tab3{
+  display: none;  
+}
+#table3{
+  display: none; 
+}
   body {
     padding-right: 20px;
     padding-left: 20px;
@@ -915,7 +931,7 @@ height: 50px;
   }
   .modal.fade.in {
     top: 20px;
-    margin-left: 22%;
+    margin-left: 8%;
   }
   .close2{
     position: absolute;
@@ -925,6 +941,8 @@ height: 50px;
 }
 
 @media (max-width: 480px) {
+
+
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
@@ -1119,7 +1137,7 @@ height: 50px;
     height: 0;
     overflow: hidden;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.86);
+    background-color: rgba(0, 0, 0, 0.9);
     top: 22px;
 
   }
@@ -1132,9 +1150,5 @@ height: 50px;
   }
 }
 
-@media (min-width: 980px) {
-  .nav-collapse.collapse {
-    height: auto !important;
-    overflow: visible !important;
-  }
+
 }

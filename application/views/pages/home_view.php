@@ -111,7 +111,7 @@
 
                      
                         <!-- Inicio Bloque Grande-->
-
+                        <a href="<?= base_url() ?>producto?id=<?= $id ?>">
                         <div class="span3 project bloque_producto" id="imagen_producto">
                             <!-- Imagen de fondo-->
                             <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
@@ -121,13 +121,22 @@
 
                             <div class="cnt">
                                 <!-- Titulo Del producto-->
-                                <h3><font><font><?= $producto->titulo_producto ?></font></font></h3>
+                                <h4><font><font><?= $producto->titulo_producto ?></font></font></h4>
                                  <!-- Precio Del producto-->
-                                 <h3><font><font> $<?=  $producto->precio  ?></font></font></h3>
-                                <br><br>
+                                 <h4><font><font> $<?=  $producto->precio  ?></font></font></h4>
+
+                                <br>
+
+                                <h6><i class="icon-user"></i> 3 Personas </h6>
+                                
+                                 <br>
+
                                 <a href="<?= base_url() ?>producto?id=<?= $id ?>" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
+                        
+                               
                             </div>
                         </div>
+                        </a>
                         <!-- Termino Bloque Grande-->
                         <?php } ?>
 

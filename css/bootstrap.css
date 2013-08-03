@@ -183,7 +183,28 @@ textarea {
   overflow: auto;
   vertical-align: top;
 }
-@media (max-width: 1000px) {
+
+/*!
+  Tamano para Tablet
+ */
+
+@media (max-width: 1120px) and  (min-width: 550px)   {
+  #categoria_producto{
+      display: none;
+    }
+
+     #pagina_producto{
+      margin-top: 60px;
+      margin-left: 100px;
+    }
+    #banner_producto{
+      display: none;
+    }
+}
+
+
+
+@media (max-width: 1120px)  {
     #partner-slider,
     #feature_slider {
         display: none;
@@ -209,6 +230,15 @@ textarea {
       height: 20px;
      
     }
+
+    #contenido_pagina_perfil{
+      margin-top: 60px;
+    }
+    #contenido_pagina_locales{
+      margin-top: 100px;
+    }
+  
+  
     #showcase .features_op1_row .feature {
         margin-bottom: 60px;
     }
@@ -285,6 +315,12 @@ textarea {
     #showcase .features_op1_row .feature:hover .img_box{
         box-shadow:none;
     }
+
+    #imagen_locales {
+    width: 250px;
+}
+
+
 }
 
 @media print {
@@ -905,6 +941,7 @@ h5 {
 h6 {
   font-size: 11.9px;
 }
+
 
 h1 small {
   font-size: 24.5px;

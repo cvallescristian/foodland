@@ -20,7 +20,7 @@
 
     
 </script>	    
-	<div class="heads" style="background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>) fixed transparent;
+	<div id="banner_producto" class="heads" style="background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>) fixed transparent;
 	 							background-size:100% 35%;">
 		<div class="container" >
 			<div class="row-fluid">
@@ -32,13 +32,13 @@
 	</div>
 	
 	<div class="page-content">
-		<div class="container">
+		<div class="container" id="pagina_producto">
 			
 			
-			<div class="row-fluid">
+			<div class="row-fluid" >
 				<div class="span10 single-item">
 					<div class="row-fluid">
-						<div class="span6">
+						<div class="span6" id="foto_producto">
 							<div id="itemsingle" class="carousel slide clearfix">
 							
 								<div class="carousel-inner">
@@ -51,32 +51,38 @@
 								  
 								</div>
 								
-								<ol class="carousel-indicators">
+								<ol class="carousel-indicators" id="imagenes_carousel">
 								  <li data-target="#itemsingle" data-slide-to="0" class="active"><img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.jpeg" alt="slider detail dodolan manuk"></li>
 								  <li data-target="#itemsingle" data-slide-to="1" class=""><img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" alt="slider detail dodolan manuk"></li>
 								</ol>
 							
 							</div>
 						</div>
-						<div class="span6">
+						<div class="span6" id="detalle_producto">
 							<h3><?=$productos->titulo_producto;?></h3> <br>
 							<p><?= $productos->descrip_producto?></p>
+							
+							<br>
+							<h7>Sectores de Reparto: </h7> 
+							<p> Viña centro, Gomez Carreño, Reñaca</p>
+							<br>
+							<h7>Condiciones Adicionales del Reparto: </h7> 
+							<p> Reparto desde 1 a 15 norte en Viña del Mar</p>
 							<br>
 
 							<p>HashTag : <span class="label label-warning">#<?= $id_tipo_producto_nombre->nombre_tipo_producto ?></span></p>
-							<br>
 							<h4>$<?= $productos->precio ?></h4>
 							<p><a href="#test_modal" id="button" name="button" data-toggle="modal" class="btn btn-warning btn-large"><i class="icon-shopping-cart"></i> Ver Telefono</a></p>
 						</div>
 					</div>
 					
-					<div class="row-fluid">
+					<div class="row-fluid" id="mapa-local">
 						<div class="span12">
 							<div class="tabbable">
 							  <ul class="nav nav-tabs">
 								<li class="active"><a href="detail.html#tab1" data-toggle="tab">Mapa local</a></li>
 								<li class=""><a href="detail.html#tab2" data-toggle="tab">Sobre el local</a></li>
-								<li class=""><a href="detail.html#tab3" data-toggle="tab">Comidas relacionadas</a></li>
+								<li class="" id="table3"><a href="detail.html#tab3" data-toggle="tab">Comidas relacionadas</a></li>
 							  </ul>
 							  <div class="tab-content">
 								<div class="tab-pane active" id="tab1">
@@ -175,7 +181,7 @@
 				
 				<!--break-->
 				
-				<div class="span2">
+				<div class="span2" id="categoria_producto">
 					<div class="row-fluid sidebar">
 						<div class="span12">
 							<h3>Categoria</h3>

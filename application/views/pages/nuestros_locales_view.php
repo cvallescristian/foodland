@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="<?= base_url()?>css/css-locales/nuestros_locales.css">
 
 <!-- Main Area -->
-<div class="main-area">
+<div class="main-area" id="contenido_pagina_locales">
 	<div class="container">
 		<div class="row">
 			<div class="span12 center">
@@ -70,7 +70,7 @@
 					 foreach ($locales as $l ) { ?>
 					<div class="span4">
 						<div class="post bloque_chico">
-							<a href="<?= base_url()?>perfil_local?id=<?= $l->id_local?>"><img src="<?= base_url();?>img/locales/<?= $l->id_local?>_logo.png" alt="Placeholder"></a>
+							<a href="<?= base_url()?>perfil_local?id=<?= $l->id_local?>"><img src="<?= base_url();?>img/locales/<?= $l->id_local?>_logo.png" id="imagen_locales" alt="Placeholder"></a>
 							<div class="summary">
 								<h2><a href=""><?= $l->nombre_local  ?></a></h2>
 								<p><?= $l->direccion_local ?></p>

@@ -20,6 +20,16 @@
                     jQuery('#categoria').css('bottom','30px');
                     jQuery('#categoria').css('top','240px');
                 }
+
+                 if(jQuery(this).scrollTop()>2060){
+
+                     jQuery('#categoria').css('position','absolute');
+                    jQuery('#categoria').css('right','30px');
+                    jQuery('#categoria').css('bottom','30px');
+                    jQuery('#categoria').css('top','1520px');
+                }
+
+
             });
           
         });

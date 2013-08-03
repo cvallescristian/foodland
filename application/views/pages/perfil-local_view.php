@@ -1,6 +1,6 @@
 <link href="<?= base_url();?>css/perfil-local/style.css" rel="stylesheet">
 <link rel="stylesheet" href="<?= base_url()?>css/perfil-local/perfil-local.css">
- <div class="container" style="margin-top:30px;">
+ <div class="container" id="contenido_pagina_perfil">
         <div class="row">
             <div class="span3 left-sidebar">
                 <div class="account-settings">
