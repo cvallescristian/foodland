@@ -78,6 +78,10 @@
   .hidden-tablet {
     display: none !important;
   }
+  #feature_slider{
+     display: none !important;
+
+  }
 }
 
 @media (max-width: 767px) {
@@ -513,6 +517,20 @@
   .span3 {
     width: 166px;
   }
+  #imagen_producto{
+    width: 228px;
+
+  }
+  #ancho_productos{
+    width: 745px;
+  }
+  #buscador{
+    margin-left: 132px;
+  }
+  #logo_foodland{
+    width: 150px;
+height: 50px;
+  }
   .span2 {
     width: 104px;
   }
@@ -801,7 +819,7 @@
 
 @media (max-width: 767px) {
   #sector_reparto{
-    margin-top:30px;
+    margin-top:65px;
   }
   body {
     padding-right: 20px;
@@ -897,6 +915,12 @@
   }
   .modal.fade.in {
     top: 20px;
+    margin-left: 22%;
+  }
+  .close2{
+    position: absolute;
+    top:0px;
+    right: 10%;
   }
 }
 
@@ -1001,7 +1025,7 @@
   }
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
-    padding: 9px 15px;
+    padding: 9px 50px;
     font-weight: bold;
     color: #777777;
     -webkit-border-radius: 3px;
@@ -1096,7 +1120,7 @@
     overflow: hidden;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.86);
-    top: -1px;
+    top: 22px;
 
   }
   .navbar .btn-navbar {

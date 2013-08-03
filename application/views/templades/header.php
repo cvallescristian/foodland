@@ -41,7 +41,7 @@
 
 </head>
 <body>
-    <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px;">
+    <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px; position:fixed;">
       <div class="navbar-inner" >
          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
@@ -53,7 +53,7 @@
                     <img src="<?= base_url();?>img/logo2.png" width="200" height="40"> <sup style="color:white;">BETA</sup>
              </a>   
          </div>
-         <div class="span2">
+         <div class="span2" id="buscador">
             <form class="form-search" action="<?= base_url()?>producto/buscar" method="post">
               <div class="input-append" id="buscador">
                 <input type="text" name="search" id="search" class="search-query" placeholder="¿Qué quieres comer?" autocomplete="off" required>

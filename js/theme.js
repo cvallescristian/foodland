@@ -12,7 +12,7 @@
                     jQuery('#categoria').css('right','30px');
                     jQuery('#categoria').css('top','80px');
                     jQuery('#categoria').css('bottom','20px');
-                    jQuery('#categoria').css('height','500px');
+                    jQuery('#categoria').css('height','600px');
                 }else{
                    
                     jQuery('#categoria').css('position','absolute');

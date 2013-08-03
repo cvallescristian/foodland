@@ -40,27 +40,7 @@
                     
                     <h2>Eso que imaginas lo puedes encontrar <a href="#sector_reparto" style="color:rgb(210, 226, 26)">aquí</a> en Foodland </h2>
                     </p>
-                </div>
-
-                     <div id="fb-root"></div>
-                <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=281140838696478";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-                
-                    <div class="span3 offset9" id="redes_sociales">
-                        <h4>Redes Sociales</h4>
-                            <div class="fb-like span1"  style="z-index: 999" data-href="https://www.facebook.com/FoodLandValparaiso" data-send="false" data-layout="box_count" data-width="200" data-show-faces="true" data-font="tahoma"></div>
-                            <div class="span1 ">
-                               <a href="https://twitter.com/FoodLand_Valpo" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large" data-show-screen-name="false">Seguir a @FoodLand_Valpo</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                            </div>
-                             </div>
-           
-                
+                </div>        
             </div>
         </div>
         
@@ -121,7 +101,7 @@
                             <h4 class="sub-heading"><font><font>Te mostramos lo mejor de nuestra linea telefonica...</font></font></h4>
                         </div>
 
-                        <div class="span10">
+                        <div class="span10" id="ancho_productos">
                      <?php 
                         foreach ($productos_random as $producto) {
                             $id= $producto->id_producto;
@@ -132,7 +112,7 @@
                      
                         <!-- Inicio Bloque Grande-->
 
-                        <div class="span3 project bloque_producto" >
+                        <div class="span3 project bloque_producto" id="imagen_producto">
                             <!-- Imagen de fondo-->
                             <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
                             <!-- Logo del local-->

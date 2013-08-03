@@ -422,9 +422,10 @@
         height: auto;
     }
     #sign_in1 .header h4{
-        color: #333;
+        color: #FFFFFF;
         line-height: 35px;
         text-shadow:none;
+        margin-left: 50%;
     }
     #sign_in1 .header p{
         line-height: 24px;
