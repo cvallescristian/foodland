@@ -75,11 +75,117 @@
             </div>
             <div class="span11  offset1 center">
                 <div class="row">
+
+                    <!-- Php de Lugares 
                     <div class="span2"><h4><a href="<?= base_url();?>home">Todos los Sectores</a></h4></div>
+
                     <?php foreach ($sector_entregas as $sector_entrega) {
                     ?>
-                        <div class="span2"><h4><a href="<?= base_url();?>home?sector=<?= $sector_entrega->id_sector_entrega?>#prod"><?= $sector_entrega->nombre_sector_entrega?></a></h4></div>
+                        <div class="span2">
+                            <h4>
+                                <a href="<?= base_url();?>home?sector=<?= $sector_entrega->id_sector_entrega?>#prod">
+                            <?= $sector_entrega->nombre_sector_entrega?></a>
+                            </h4>
+                        </div>
                     <?php } ?>
+                    -->
+
+
+                     <ul class="nav nav-pills">
+                    
+                        <li class="dropdown" style="margin-left:50px;">
+                            <a class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            href="#">
+                            <h4>Valparaiso</h4>
+                            
+                            <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>Opcion 1</li>
+                                <li>Opcion 2</li>
+                                <li>Opcion 3</li>
+                            </ul>
+                        </li>
+
+                         <li class="dropdown" style="margin-left:50px;">
+                            <a class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            href="#">
+                            <h4>Valparaiso</h4>
+                            
+                            <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>Opcion 1</li>
+                                <li>Opcion 2</li>
+                                <li>Opcion 3</li>
+                            </ul>
+                        </li>
+
+                         <li class="dropdown" style="margin-left:50px;">
+                            <a class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            href="#">
+                            <h4>Valparaiso</h4>
+                            
+                            <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>Opcion 1</li>
+                                <li>Opcion 2</li>
+                                <li>Opcion 3</li>
+                            </ul>
+                        </li>
+
+                         <li class="dropdown" style="margin-left:50px;">
+                            <a class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            href="#">
+                            <h4>Valparaiso</h4>
+                            
+                            <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>Opcion 1</li>
+                                <li>Opcion 2</li>
+                                <li>Opcion 3</li>
+                            </ul>
+                        </li>
+
+                         <li class="dropdown" style="margin-left:50px;">
+                            <a class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            href="#">
+                            <h4>Valparaiso</h4>
+                            
+                            <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>Opcion 1</li>
+                                <li>Opcion 2</li>
+                                <li>Opcion 3</li>
+                            </ul>
+                        </li>
+
+                         <li class="dropdown" style="margin-left:50px;">
+                            <a class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            href="#">
+                            <h4>Valparaiso</h4>
+                            
+                            <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>Opcion 1</li>
+                                <li>Opcion 2</li>
+                                <li>Opcion 3</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
                 </div>    
             </div>
  
@@ -108,6 +214,7 @@
                             $id_local=$producto->id_local;
                        
                       ?>
+
 
                      
                         <!-- Inicio Bloque Grande-->
@@ -144,18 +251,18 @@
 
                        
                                 <!-- SideBar -->
-                <div class="span3 sidebar" id="categoria" style=" background:rgba(0, 0, 0, 0.75);" >
+                <div class="span3 sidebar" id="categoria" style=" background:rgb(230, 230, 230);   " >
                     <div class="box">
                         <div class="sidebar_header center">
                             <h3>Categorias</h3>
                         </div>
 
-                        <ul  style="color:#0080FF;">
+                        <ul >
                             <h4>
                                 <ul>
-                                    <li><a href="<?= base_url() ?>home?sector=<?=$sector?>">Todo</a></li>
+                                    <li class="active"><a <a style="   color: #BE3F3F;"  href="<?= base_url() ?>home?sector=<?=$sector?>">Todo</a></li>
                             <?php foreach ($categoria as $pro){ ?>
-                                    <li><a href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&sector=<?=$sector?>"><?=$pro->nombre_tipo_producto?></a></li>
+                                    <li><a style="   color: #949494;" href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&sector=<?=$sector?>"><?=$pro->nombre_tipo_producto?></a></li>
                                     <?php } ?>
                                 </ul>
                             </h4>
