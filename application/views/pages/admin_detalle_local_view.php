@@ -1,14 +1,19 @@
 <div class="container">
+	<?php if($title!=""){ ?>
+	<div class="alert alert-success">
+		<?= $title?>
+	</div>
+	<?php } ?>
 	<div class="row">
 		<div class="span12">
 			<div class="span3">
-				<a class="btn btn-info btn-large" href="javascript:history.back(1)">volver al menu de locales</a>
+				<a class="btn btn-info btn-large" href="javascript:history.back(1)">Volver al listado de  locales</a>
 				<br>
 				<br>
 			</div>
 		</div>
 		<div class="span12">
-      		
+      		<h1><?= $local->nombre_local?></h1>
 			<div class="widget stacked">
 					
 				<div class="widget-header">
@@ -23,7 +28,7 @@
 							<i class="shortcut-icon icon-list-alt"></i>
 							<span class="shortcut-label">Productos del local</span>
 						</a>
-							<a href="<?= base_url()?>admin_detalle_local/detalle_producto?id=<?= $id?>" class="shortcut">
+							<a href="<?= base_url()?>admin_detalle_local/editar_local?id=<?= $id?>" class="shortcut">
 							<i class="shortcut-icon icon-th"></i>
 							<span class="shortcut-label">Editar local</span>
 
@@ -84,15 +89,15 @@
 							<div class="span4 offset1">
 								<p>
 						    		<strong>ID</strong>: 20 <br><br>
-						    		<strong>Nombre</strong>: aka-sushi <br><br>
-									<strong>Dirección</strong>: Palmira romano 117, Quilpué<br><br>
-									<strong>Teléfono</strong>: 111111111 <br><br>
-									<strong>Email</strong>: email@email.cl <br><br>
-									<strong>Horario semana</strong>: de 10:00 a 23:00 hrs <br><br>
-									<strong>Horario fin de semana</strong>: de 10:00a 23:00 hrs <br><br>
+						    		<strong>Nombre</strong>: <?= $local->nombre_local ?> <br><br>
+									<strong>Dirección</strong>: <?= $local->direccion_local ?><br><br>
+									<strong>Teléfono</strong>: <?= $local->telefono_local ?> <br><br>
+									<strong>Email</strong>: <?= $local->email ?> <br><br>
+									<strong>Horario semana</strong>: de <?= $local->horario_entrada ?> a <?= $local->horario_salida ?> hrs <br><br>
+									<strong>Horario fin de semana</strong>: de <?= $local->horario_entrada_fds ?> a <?= $local->horario_salida_fds ?> hrs <br><br>
 									<strong>Sectores de reparto</strong>: Con con, villa alemana, quilpue <br><br>
-									<strong>Cond. adicionales reparto</strong>: de 1 a 15 norte <br><br>
-									<strong>Sitio de referencia</strong>: <a href="">http://foodland.cl</a> <br><br>
+									<strong>Cond. adicionales reparto</strong>: <?= $local->descrip_adicional ?> <br><br>
+									<strong>Sitio de referencia</strong>: <a href=""><?=$local->sitio_referencia  ?></a> <br><br>
 
 						    	</p>
 						    </div>

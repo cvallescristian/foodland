@@ -30,8 +30,15 @@ class admin_model extends CI_Model{
      foreach ($res as $r) {
         return $r->id_local;   
      }
-     
-
+  }
+    function get_local_particular($id){
+    $query="select * from Local where id_local='$id'";
+    $result=$this->db->query($query);
+    $re= $result->result();
+    foreach ($re as $r) {
+      return $r;
+      break;
+    }
   }
    function agregar_sector_local($id_sector,$id_local){
         $data = array( //datos del local
@@ -43,7 +50,7 @@ class admin_model extends CI_Model{
   function eliminar_sector_local($id){
 
             $this->db->where('id_local', $id);
-             $this->db->delete('Local_sector_entrega', $data);
+            $this->db->delete('Local_sector_entrega');
   }
   function get_producto(){
      $query="select * from Producto order by id_local asc";

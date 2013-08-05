@@ -1,6 +1,10 @@
 <div class="container">
 	<div class="row">
-		  <div class="span5 offset3">      	<!-- editar local -->
+		<div class="span11 offset1">
+			<a class="btn btn-info btn-large" href="javascript:history.back(1)">Volver a menu del local </a>
+			<br><br>
+		</div>
+		  <div class="span7 offset1">      	<!-- editar local -->
 	    	<div class="widget stacked">					
 				<div class="widget-header">
 				<i class="icon-th-list"></i>
@@ -8,7 +12,7 @@
 				</div>				
 				<div class="widget-content">
 					<fieldset>					
-					<form class="form-horizontal" method="post" action="<?= base_url();?>admin_local/editar_local_agregar?id=<?= $_GET['id']; ?>"  enctype="multipart/form-data" >
+					<form class="form-horizontal" method="post" action="<?= base_url();?>admin_detalle_local/editar_local_agregar?id=<?= $_GET['id']; ?>"  enctype="multipart/form-data" >
 						
 						<div class="control-group">
 							<?php foreach ($locales as $l) {
