@@ -95,7 +95,7 @@
 									<strong>Email</strong>: <?= $local->email ?> <br><br>
 									<strong>Horario semana</strong>: de <?= $local->horario_entrada ?> a <?= $local->horario_salida ?> hrs <br><br>
 									<strong>Horario fin de semana</strong>: de <?= $local->horario_entrada_fds ?> a <?= $local->horario_salida_fds ?> hrs <br><br>
-									<strong>Sectores de reparto</strong>: Con con, villa alemana, quilpue <br><br>
+									<strong>Sectores de reparto</strong>: <?php foreach ($sectores as $s) { echo $s->nombre_subsector_entrega.", ";} ?> <br><br>
 									<strong>Cond. adicionales reparto</strong>: <?= $local->descrip_adicional ?> <br><br>
 									<strong>Sitio de referencia</strong>: <a href=""><?=$local->sitio_referencia  ?></a> <br><br>
 

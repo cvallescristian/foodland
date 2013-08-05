@@ -15,6 +15,7 @@ class Admin_detalle_local extends CI_Controller {
 			$this->load->model('admin_model','uum');
 			
 			$local= $this->uum->get_local_particular($id);
+			$sectores= $this->uum->get_sector_reparto_particular($id);
 			$respuesta=$this->input->get('inf');
 			$title="";
 			if($respuesta==1){
@@ -23,6 +24,7 @@ class Admin_detalle_local extends CI_Controller {
 			$data['id']=$id;
 			$data['title']=$title;
 			$data['local']=$local;
+			$data['sectores']=$sectores;
 	
 			$this->load->view('templades/header_admin',$data);
 			$this->load->view('templades/header_detalle_local',$data);
@@ -100,7 +102,8 @@ class Admin_detalle_local extends CI_Controller {
 	           'horario_entrada' => $this->input->post('inputHorarioEntrada'),
 	           'horario_salida' => $this->input->post('inputHorarioSalida'),
 	           'horario_entrada_fds' => $this->input->post('inputHorarioEntradaFds'),
-	           'horario_salida_fds' => $this->input->post('inputHorarioSalidaFds')
+	           'horario_salida_fds' => $this->input->post('inputHorarioSalidaFds'),
+	           'descrip_adicional' => $this->input->post('inputCondicionesAdicionales')
 	    	);
 	    	//datos de la foto
 	    	$config['upload_path'] = base_url()."img/locales/";  

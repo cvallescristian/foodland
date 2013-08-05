@@ -31,7 +31,7 @@ class admin_model extends CI_Model{
         return $r->id_local;   
      }
   }
-    function get_local_particular($id){
+  function get_local_particular($id){
     $query="select * from Local where id_local='$id'";
     $result=$this->db->query($query);
     $re= $result->result();
@@ -39,6 +39,11 @@ class admin_model extends CI_Model{
       return $r;
       break;
     }
+  }
+  function get_sector_reparto_particular($id_local){
+    $query="select * from Local_subsector_entrega,Subsector_entrega where Local_subsector_entrega.id_local='$id_local' and Local_subsector_entrega.id_subsector_entrega=Subsector_entrega.id_subsector_entrega";
+    $result=$this->db->query($query);
+    return $result->result();
   }
    function agregar_sector_local($id_sector,$id_local){
         $data = array( //datos del local

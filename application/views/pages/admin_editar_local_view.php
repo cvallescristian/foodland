@@ -52,6 +52,12 @@
 						      <input type="text" id="inputSitioWeb" name="inputSitioWeb" value="<?= substr($l->sitio_referencia, 7);  ?>" required>
 						    </div>
 						  </div>
+						   <div class="control-group">
+						    <label class="control-label" for="inputSitioWeb">Condiciones Adicionales</label>
+						    <div class="controls">
+						    <textarea id="inputCondicionesAdicionales" name="inputCondicionesAdicionales"><?= $l->descrip_adicional  ?></textarea>
+						    </div>
+						  </div>
 						  <div class="control-group">
 						    <label class="control-label" for="inputLogo">Logo</label>
 						    <div class="controls">
