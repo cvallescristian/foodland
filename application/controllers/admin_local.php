@@ -41,8 +41,9 @@ class Admin_local extends CI_Controller {
 			header("Location: $root");
 		}else{
 			$this->load->model('home_model','uum');
+			$sector_reparto = $this->uum->get_sector_entrega();
 			$subsector_reparto= $this->uum->get_sub_sector_entrega();
-
+			$data['sector_repartos']=$sector_reparto;
 			$data['subsector_repartos']=$subsector_reparto;
 			$this->load->view('templades/header_admin',$data);
 			$this->load->view('pages/admin_nuevo_local_view',$data);

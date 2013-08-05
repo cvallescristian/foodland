@@ -67,8 +67,12 @@
 						  <div class="control-group">
 						    <label class="control-label" for="inputLogo">Sectores de Reparto</label>
 						    <div class="controls">
+						    <?php foreach ($sector_padre as $sec_padre) {
 						    
+						     ?>
+						     <p><?= $sec_padre->nombre_sector_entrega  ?></p>
 						    <?php foreach ($sector_repartos as $s) {
+						    	if($sec_padre->id_sector_entrega == $s->id_sector_entrega){
 							    	foreach ($sector_entrega as $se) {
 								    		$check = "";
 								    		if($s->id_subsector_entrega == $se->id_subsector_entrega){
@@ -82,7 +86,7 @@
 				  					<?= $s->nombre_subsector_entrega  ?>
 								</label>	<br>
 						    	<?php 
-						    			}
+						    			}}}
 						    		 
 						    	?>
 						    </div>

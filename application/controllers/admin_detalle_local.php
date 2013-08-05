@@ -71,10 +71,12 @@ class Admin_detalle_local extends CI_Controller {
 			$id= $this->input->get('id');
 			$this->load->model('admin_model','uum');
 			$locales= $this->uum->get_local();
+			$sector_padre=$this->uum->get_sector_entrega();
 			$sector_reparto= $this->uum->get_sub_sector_entrega();
 			$sector_entrega= $this->uum->get_sector_entrega_edicion($id);
 		
 			$data['locales']=$locales;
+			$data['sector_padre']=$sector_padre;
 			$data['sector_repartos']=$sector_reparto;
 			$data['sector_entrega']=$sector_entrega;
 			$this->load->view('templades/header_admin',$data);
@@ -120,15 +122,16 @@ class Admin_detalle_local extends CI_Controller {
 			$this->load->model('admin_model','uum');
 			$id_local_nuevo= $this->uum->editar_local($data,$id);
 			$root= base_url()."admin_detalle_local?inf=1&id=".$id;
-			redirect($root);
+			
 			$id_local_editar = $_GET['id'];
 	  		move_uploaded_file($_FILES['userfile']['tmp_name'],"img/locales/$id_local_editar"."_logo.png");
 		 	//	$root= base_url()."admin_local?al=1";
   			//	echo "<script>location.href='$root';</script>";	
-			$this->uum->eliminar_sector_local($_GET['id']);
+			$this->uum->eliminar_sector_local($id);
   			foreach ($checkbox as $s ) {
-  				$this->uum->agregar_sector_local($s,$_GET['id']);
+  				$this->uum->agregar_sector_local($s,$id);
   			}
+  			redirect($root);
 		}
     }
 }
