@@ -236,8 +236,10 @@ textarea {
     }
     #contenido_pagina_locales{
       margin-top: 100px;
+    margin-top: 50px;
     }
   
+      
   
     #showcase .features_op1_row .feature {
         margin-bottom: 60px;

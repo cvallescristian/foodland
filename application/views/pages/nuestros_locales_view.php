@@ -3,7 +3,7 @@
 <!-- Main Area -->
 <div class="main-area" id="contenido_pagina_locales">
 	<div class="container">
-		<div class="row">
+		<div class="row" id="contenido_pagina">
 			<div class="span12 center">
                 <h1 class="big-heading"><font><font>Nuestros Locales</font></font></h1>
                 <h4 class="sub-heading"><font><font>Te mostramos todos los locales delivery asociado a Foodland</font></font></h4>
@@ -11,10 +11,10 @@
            <div class="span5 center">
            	<h4 class="sub heading"><?= $titulo  ?></h4>
            </div>
-			<div class="span8"> <!--- Inicio Bloque de la izquierda-->
+			<div class="span8" id="todos_los_locales"> <!--- Inicio Bloque de la izquierda-->
 				
 				<!-- inicio carrousel -->
-				<div class="span6 offset1 center">
+				<div class="span6 offset1 center" id="carousel_locales">
 				<?php 
 				if($locales_ramdom==""){
 					?>
@@ -68,7 +68,7 @@
 					<?php
 					if($locales!=""){
 					 foreach ($locales as $l ) { ?>
-					<div class="span4">
+					<div class="span4" id="imagenes_locales">
 						<div class="post bloque_chico">
 							<a href="<?= base_url()?>perfil_local?id=<?= $l->id_local?>"><img src="<?= base_url();?>img/locales/<?= $l->id_local?>_logo.png" id="imagen_locales" alt="Placeholder"></a>
 							<div class="summary">

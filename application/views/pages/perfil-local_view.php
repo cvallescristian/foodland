@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="<?= base_url()?>css/perfil-local/perfil-local.css">
  <div class="container" id="contenido_pagina_perfil">
         <div class="row">
-            <div class="span3 left-sidebar">
+            <div class="span3 left-sidebar" id="detalles_local">
                 <div class="account-settings">
                     <img src="<?=base_url();?>img/locales/<?= $local->id_local?>_logo.png">
                 </div>
@@ -27,8 +27,8 @@
                     <?php } ?>
                 </div>
             </div>
-            <div class="span9 content-setting">
-                  <div class="span9 center">
+            <div class="span9 content-setting" id="productos-local">
+                  <div class="span9 center" id="productos-local">
 
                             <h1 class="big-heading"><font><font><?= $local->nombre_local?></font></font></h1>
                             

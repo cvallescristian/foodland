@@ -118,6 +118,17 @@
                   .offset1 {
                     margin-left: 10px;
                     }
+
+                    #categorias_phone {
+                    position: relative;
+                    top: 12px;
+                    margin-left: 400px;
+                    width: 150px;
+                    }
+                  #categoria_phone{
+                    margin-left: 150px;
+
+                  }
   .span12,
   .row-fluid .span12 {
     width: 100%;
