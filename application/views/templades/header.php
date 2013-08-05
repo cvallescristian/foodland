@@ -77,9 +77,9 @@
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <?php foreach ($sector_entregas as $s) {
+                                <?php foreach ($sub_sector_entregas as $s) {
                                 ?>    
-                                <li><a href="<?= base_url();?>home?sector=<?= $s->id_sector_entrega  ?>"><?= $s->nombre_sector_entrega ?></a></li>
+                                <li><a href="<?= base_url();?>home?subsector=<?= $s->id_subsector_entrega  ?>"><?= $s->nombre_subsector_entrega ?></a></li>
                                 <?php }?>
                             </ul>
                         </li>
@@ -164,9 +164,9 @@
                         <ul >
                             <h4>
                                 <ul>
-                                    <li class="active"><a <a style="   color: #BE3F3F;"  href="<?= base_url() ?>home?sector=<?=$sector?>">Todo</a></li>
+                                    <li class="active"><a <a style="   color: #BE3F3F;"  href="<?= base_url() ?>home?subsector=<?=$subsector?>">Todo</a></li>
                             <?php foreach ($categoria as $pro){ ?>
-                                    <li><a style="   color: #ffffff;" href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&sector=<?=$sector?>"><?=$pro->nombre_tipo_producto?></a></li>
+                                    <li><a style="   color: #ffffff;" href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&subsector=<?=$subsector?>"><?=$pro->nombre_tipo_producto?></a></li>
                                     <?php } ?>
                                 </ul>
                             </h4>

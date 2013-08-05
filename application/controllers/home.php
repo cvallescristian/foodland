@@ -16,19 +16,20 @@ Class Home extends CI_Controller
     {   
         
         $this->fb();
-    	$sector=$this->input->get('sector');
+    	$subsector=$this->input->get('subsector');
         $tipo_producto = $this->input->get('tipo_producto');
-		if(is_numeric($sector) || $sector==""){
+		if(is_numeric($subsector) || $subsector==""){
 			$this->load ->model('home_model','uum');
-			$productos_random= $this->uum->get_producto_random($sector);
+			$productos_random= $this->uum->get_producto_random($subsector);
             if($tipo_producto != '' or $tipo_producto!=0){
                 $productos_random= $this->uum->get_producto_random_categoria_home($tipo_producto);
 
             }
-            if($tipo_producto != '' and $sector != ''){
-                $productos_random= $this->uum->get_producto_random_categoria_sector($tipo_producto,$sector);
+            if($tipo_producto != '' and $subsector != ''){
+                $productos_random= $this->uum->get_producto_random_categoria_sector($tipo_producto,$subsector);
             }
             $sector_entregas = $this->uum->get_sector_entrega();
+            $sub_sector_entregas = $this->uum->get_sub_sector_entrega();
             $buscar=$this->uum->get_producto_buscador();
 		//	echo "<pre>".print_r($productos,true)."</pre>";
 			$categoria = $this->uum->get_categoria();
@@ -36,7 +37,8 @@ Class Home extends CI_Controller
             $this->data['categoria']=$categoria;
 			$this->data['productos_random']=$productos_random;
 			$this->data['sector_entregas']=$sector_entregas;
-			$this->data['sector']=$sector;
+            $this->data['sub_sector_entregas']=$sub_sector_entregas;
+			$this->data['subsector']=$subsector;
             $this->data['buscar']=$buscar;
 			$this->load->view('templades/header',$this->data);
             $this->load->view('pages/home_view',$this->data);
@@ -102,16 +104,16 @@ Class Home extends CI_Controller
         redirect(site_url());
     }
     public function categoria(){
-        $sector=$this->input->get('sector');
+        $subsector=$this->input->get('subsector');
 
         $this->load ->model('home_model','uum');
-            $productos= $this->uum->get_producto($sector);
+            $productos= $this->uum->get_producto($subsector);
             $tipo_productos = $this->uum->get_categoria();
             
             $this->data['tipo_productos']=$tipo_productos;
             $this->data['productos']=$productos;
         if($sector!=""){    
-            $this->data['sector']=$sector;
+            $this->data['subsector']=$subsector;
         }
 
             $this->load->view('ajax/_categoria',$this->data);
