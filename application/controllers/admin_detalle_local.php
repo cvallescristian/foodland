@@ -71,7 +71,7 @@ class Admin_detalle_local extends CI_Controller {
 			$id= $this->input->get('id');
 			$this->load->model('admin_model','uum');
 			$locales= $this->uum->get_local();
-			$sector_reparto= $this->uum->get_sector_entrega();
+			$sector_reparto= $this->uum->get_sub_sector_entrega();
 			$sector_entrega= $this->uum->get_sector_entrega_edicion($id);
 		
 			$data['locales']=$locales;

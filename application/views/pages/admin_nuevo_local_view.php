@@ -52,11 +52,11 @@
 						  <div class="control-group">
 						    <label class="control-label" for="inputLogo">Sectores de Reparto</label>
 						    <div class="controls">
-						    <?php foreach ($sector_repartos as $s) {
+						    <?php foreach ($subsector_repartos as $s) {
 						    	?>
 						    	 <label class="checkbox inline">
-				  					<input type="checkbox" name="check[]" value="<?= $s->id_sector_entrega?>" >
-				  					<?= $s->nombre_sector_entrega  ?>
+				  					<input type="checkbox" name="check[]" value="<?= $s->id_subsector_entrega?>" >
+				  					<?= $s->nombre_subsector_entrega  ?>
 								</label>	<br>
 						    	<?php 
 						    		} 

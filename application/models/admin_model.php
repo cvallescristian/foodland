@@ -47,15 +47,15 @@ class admin_model extends CI_Model{
   }
    function agregar_sector_local($id_sector,$id_local){
         $data = array( //datos del local
-             'id_sector_entrega' => $id_sector,
+             'id_subsector_entrega' => $id_sector,
              'id_local' => $id_local
         );
-         $this->db->insert('Local_sector_entrega', $data);
+         $this->db->insert('Local_subsector_entrega', $data);
     }
   function eliminar_sector_local($id){
 
             $this->db->where('id_local', $id);
-            $this->db->delete('Local_sector_entrega');
+            $this->db->delete('Local_subsector_entrega');
   }
   function get_producto(){
      $query="select * from Producto order by id_local asc";
@@ -157,15 +157,19 @@ class admin_model extends CI_Model{
     }
   }
   function get_sector_entrega_edicion($id){
-    $query ="select * from Local_sector_entrega where id_local='$id'";
+    $query ="select * from Local_subsector_entrega where id_local='$id'";
     $result=$this->db->query($query);
-    $re= $result->result();
-    return $re;
+    return $result->result(); 
   }
   function get_sector_entrega(){
         $query="select * from Sector_entrega";
          $result = $this->db->query($query);
          return $result->result();    
+    }
+   function get_sub_sector_entrega(){
+        $query="select * from Subsector_entrega";
+         $result = $this->db->query($query);
+         return $result->result();  
     }
   function get_miembros(){
      $query="select * from Members";
