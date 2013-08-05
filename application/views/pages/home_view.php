@@ -54,7 +54,7 @@
     <div class="container">
         <div class="row">
             <div class="span12 center">
-                <h1 class="big-heading"><font><font>
+                <h1 class="big-heading" id="letra_grande"><font><font>
                      <?php 
                         $nombre_sector="";
                         if($sector==""){
@@ -73,7 +73,7 @@
                 <h4 class="sub-heading"><font><font>Así podrás encontrar más fácilmente productos a tu domicilio</font></font></h4>
                         
             </div>
-            <div class="span11  offset1 center">
+            <div class="span11  offset1 center" id="lugares">
                 <div class="row">
 
                     <!-- Php de Lugares 
@@ -202,7 +202,7 @@
 
                         <div class="span12 center">
 
-                            <h1 class="big-heading"><font><font>Productos por llamado Telefónico</font></font></h1>
+                            <h1 class="big-heading" id="letra_grande"><font><font>Productos por llamado Telefónico</font></font></h1>
                             
                             <h4 class="sub-heading"><font><font>Te mostramos lo mejor de nuestra linea telefonica...</font></font></h4>
                         </div>

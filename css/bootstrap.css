@@ -319,6 +319,10 @@ textarea {
     #imagen_locales {
     width: 250px;
 }
+  #buscador{
+
+    margin-left: 70px;
+  }
 
 
 }

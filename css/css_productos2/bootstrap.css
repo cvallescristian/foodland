@@ -17,6 +17,165 @@
   Tamano para Tablet
  */
 
+
+
+
+
+@media (max-width: 767px){
+  #sector_reparto{
+    margin-top:65px;
+  }
+
+  #categoria_producto{
+    display: none;    
+
+  }
+#imagenes_carousel{
+     display: none;    
+
+}
+
+#tab3{
+  display: none;  
+}
+#table3{
+  display: none; 
+}
+
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  .dl-horizontal dt {
+    float: none;
+    width: auto;
+    clear: none;
+    text-align: left;
+  }
+  .dl-horizontal dd {
+    margin-left: 0;
+  }
+  .container {
+    width: auto;
+  }
+  .row-fluid {
+    width: 100%;
+  }
+  .row,
+  .thumbnails {
+    margin-left: 0;
+  }
+  .thumbnails > li {
+    float: none;
+    margin-left: 0;
+  }
+
+
+                  .span11 {
+                  width: 750px;
+                  }
+                  .big-heading {
+                  font-size: 33px;
+                  line-height: 1;
+                  letter-spacing: -3px;
+                  text-align: center;
+                  }
+
+                  .sub-heading {
+                  font-size: 12px;
+                  font-weight: 300;
+                  color: rgb(59, 60, 61);
+                  text-transform: uppercase;
+                  text-align: center;
+                  letter-spacing: 1px;
+                  }
+
+
+                  .nav-pills > li > a {
+                  padding-top: 0px;
+                  padding-bottom: 0px;
+                  margin-top: 1px;
+                  margin-bottom: 6px;
+                  -webkit-border-radius: 5px;
+                  -moz-border-radius: 5px;
+                  border-radius: 5px;
+                  }
+
+                
+                  .big-heading {
+                    font-size: 44px;
+                    line-height: 1;
+                    letter-spacing: -3px;
+                    text-align: center;
+                  }
+
+
+                  .offset1 {
+                    margin-left: 10px;
+                    }
+  .span12,
+  .row-fluid .span12 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .row-fluid [class*="offset"]:first-child {
+    margin-left: 0;
+  }
+  .input-large,
+  .input-xlarge,
+  .input-xxlarge,
+  input[class*="span"],
+  select[class*="span"],
+  textarea[class*="span"],
+  .uneditable-input {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .input-prepend input,
+  .input-append input,
+  .input-prepend input[class*="span"],
+  .input-append input[class*="span"] {
+    display: inline-block;
+    width: 75px;
+    font-size: 9px;
+
+  }
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 0;
+  }
+  .modal {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    margin: 0;
+  }
+  .modal.fade {
+    top: -100px;
+  }
+  .modal.fade.in {
+    top: 20px;
+    margin-left: 8%;
+  }
+  .close2{
+    position: absolute;
+    top:0px;
+    right: 10%;
+  }
+}
+
 @media (max-width: 1120px) {
     #partner-slider,
     #feature_slider {
@@ -30,19 +189,7 @@
       display: none;
     }
     
-    #logo_foodland{
-      margin-left: 30px;
-      width: 100px;
-      height: 30px;
-    }
-    #buscador{
-      position: absolute;
-      top: 0px;
-      margin-left: 74px;
-      width: 50px;
-      height: 20px;
-     
-    }
+
 
     #banner_producto{
       display: none;
@@ -132,16 +279,13 @@ display: block;
       width: 122%;
     }
 
-    #detalle_producto{
 
+   #detalle_producto {
       position: relative;
       margin-top: -30px;
-      margin-left: 30px;
-      width: 300px;
-
-    }
     
-
+      width: 300px;
+      }
     #foto_producto{
 
       width: 120%;
@@ -154,6 +298,13 @@ display: block;
       width: 83%;
 margin-left: -150px;
     }
+
+    .span12 {
+width: 290px;
+}
+#enlaces_footer{
+  margin-left: 20px;
+}
 
 }
 

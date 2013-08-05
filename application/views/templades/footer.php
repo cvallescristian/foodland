@@ -21,7 +21,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="span3">
+                    <div class="span3" id="enlaces_footer">
                         <br><br><br>
                         <h2><font><font>Enlaces </font></font></h2>
                         <ul class="unstyled footer-links">

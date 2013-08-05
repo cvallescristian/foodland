@@ -466,7 +466,7 @@ body.pull_top {
 		position: fixed;
 	}
 	.navbar.transparent.navbar-inverse .navbar-inner {
-		background: #252528;
+		background: rgba(37, 37, 40, 0.9);
 	}
 	.navbar-inverse .nav-collapse .nav > li > a, 
 	.navbar-inverse .nav-collapse .dropdown-menu a {
@@ -537,6 +537,9 @@ body.pull_top {
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
+.navbar.transparent.navbar-inverse .navbar-inner {
+		background: rgba(37, 37, 40, 0.9);
+	}
 }
 
 /* Icons

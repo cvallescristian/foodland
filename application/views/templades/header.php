@@ -41,7 +41,7 @@
 
 </head>
 <body>
-    <div class="navbar transparent navbar-inverse navbar-fixed-top" style="height:45px; position:fixed;">
+    <div class="navbar transparent navbar-inverse navbar-fixed-top" style="position:fixed;" id="barra_menu">
       <div class="navbar-inner" >
          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
@@ -62,11 +62,14 @@
               
             </form>
          </div>
-          
+         <div class="span2" id="categorias_phone">
+          <a href="#test_modal_categorias" data-toggle="modal" style="color:white;">Categoria productos</a>
+         </div> 
             
           <div class="nav-collapse collapse" cz-shortcut-listen="true">
                 <ul class="nav pull-right"> 
                         <li><a href="<?= base_url();?>">Inicio</a></li>
+                  
                         <li><a href="<?= base_url()?>nuestros_locales">Nuestros Locales</a></li>
                         <li class="dropdown">
                             <a href="" class="dropdown-toggle" data-toggle="dropdown">
@@ -145,3 +148,35 @@
    
 </div>
 <!-- Termino pup-pop -->
+
+
+
+  <div class="modal fade" id="test_modal_categorias">
+                    <!-- SideBar -->
+
+                <div class="span3 sidebar" id="categoria_phone" >
+
+                    <div class="box">
+                        <div class="sidebar_header center">
+                            <h3>Categorias</h3><a class="close2" data-dismiss="modal">&times;</a>
+                        </div>
+
+                        <ul >
+                            <h4>
+                                <ul>
+                                    <li class="active"><a <a style="   color: #BE3F3F;"  href="<?= base_url() ?>home?sector=<?=$sector?>">Todo</a></li>
+                            <?php foreach ($categoria as $pro){ ?>
+                                    <li><a style="   color: #ffffff;" href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&sector=<?=$sector?>"><?=$pro->nombre_tipo_producto?></a></li>
+                                    <?php } ?>
+                                </ul>
+                            </h4>
+                        </ul>
+                    </div>
+                    <br>
+                  
+
+                 
+                </div>
+                   
+   
+</div>
