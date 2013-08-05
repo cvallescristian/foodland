@@ -17,7 +17,15 @@ class Admin_local extends CI_Controller {
 			$sectores=$this->uum2->get_sector_entrega();
 			$añadir_producto=$this->input->get('al');
 			if($añadir_producto==1){
-				echo "<script>alert('Local agregado satisfactoriamente')</script>";
+				$data['title']= "Local agregado satisfactoriamente";
+				$data['alert']=1;
+			}else if($añadir_producto==3){
+				$data['title']="Local eliminado satisfactoriamente";
+				$data['alert']=3;
+				 
+			}else{
+				$data['title']="";
+				$data['alert']="";
 			}
 			$data['locales']=$locales;
 			$data['sectores']=$sectores;
@@ -86,18 +94,7 @@ class Admin_local extends CI_Controller {
 		}
 		
     }
-    public function borrar_local(){
-    	if($this->session->userdata('id')==""){
-			$root= base_url()."admin";
-			header("Location: $root");
-		}else{
-			$id=$this->input->get('id');
-			$this->load->model('admin_model','uum');
-			$this->uum->borrar_local($id);
-			$root= base_url()."admin_local";
-    		echo "<script>location.href='$root';</script>";
-		}
-    }
+    
 	public function nuevo_sector(){
 		if($this->session->userdata('id')==""){
 			$root= base_url()."admin";

@@ -48,4 +48,16 @@ class Admin_detalle_local extends CI_Controller {
 			$this->load->view('pages/admin_detalle_producto_local_view',$data);
 		}
 	}
+	public function borrar_local(){
+    	if($this->session->userdata('id')==""){
+			$root= base_url()."admin";
+			header("Location: $root");
+		}else{
+			$id=$this->input->get('id');
+			$this->load->model('admin_model','uum');
+			$this->uum->borrar_local($id);
+			$root= base_url()."admin_local?al=3&id".$id;
+    		redirect($root);
+		}
+    }
 }

@@ -49,13 +49,19 @@
 					<li class="">					
 						<a href="<?= base_url();?>admin_local">
 							<i class="icon-map-marker"></i>
-							<span>Locales-Sectores</span>
+							<span>Locales</span>
 						</a>	    
 					</li>					
 					<li class="">					
 						<a href="<?= base_url();?>admin_producto">
 							<i class="icon-barcode"></i>
-							<span>Productos</span>							
+							<span> Tipo de Productos</span>							
+						</a>				
+					</li>
+					<li class="">					
+						<a href="<?= base_url();?>admin_sector_reparto">
+							<i class="icon-tag"></i>
+							<span> Sectores de reparto</span>							
 						</a>				
 					</li>
 					<li class="">					

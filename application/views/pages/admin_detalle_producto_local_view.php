@@ -2,8 +2,10 @@
 	<div class="container">
 		<div class="row">
 				<div class="span10 offset1">     <!-- lista productos -->		
+			<a class="btn btn-info btn-large" href="javascript:history.back(1)">Volver al local</a>
+			<br><br>
 			<h1>Producto</h1>
-      		<a class="btn btn-success" href="<?= base_url();?>admin_producto/nuevo_producto">Agregar nuevo Producto</a> 
+			<a class="btn btn-success" href="<?= base_url();?>admin_producto/nuevo_producto">Agregar nuevo Producto</a> 
 			<div class="widget stacked widget-table action-table">				
 				<div class="widget-header">
 					<i class="icon-th-list"></i>

@@ -124,17 +124,7 @@ class admin_model extends CI_Model{
     //borramos el local
     $query ="delete from Local where id_local='$id' ";
     $this->db->query($query);
-    $dir= base_url()."img/locales/$id"."_logo.png";
-    echo $dir;
-    if(file_exists($dir)) 
-    { 
-      if(unlink($dir)){
-          print "El archivo fue borrado"; 
-       } 
-    } 
-    else{
-      print "Este archivo no existe"; 
-    }
+    
 
   }
   function agregar_sector($data){
