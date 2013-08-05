@@ -234,11 +234,10 @@ textarea {
     #contenido_pagina_perfil{
       margin-top: 60px;
     }
-    #contenido_pagina_locales{
-      margin-top: 100px;
+   #contenido_pagina_locales {
     margin-top: 50px;
+    margin-left: -12px;
     }
-  
       
   
     #showcase .features_op1_row .feature {
@@ -469,7 +468,7 @@ a:focus {
 }
 
 .span8 {
-  width: 620px;
+  width: 640px;
 }
 
 .span7 {
