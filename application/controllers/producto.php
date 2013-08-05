@@ -18,6 +18,7 @@ class Producto extends CI_Controller {
 			$productos = $this->uum->get_producto_particular($id);
 			$sector_entregas= $this->uum->get_sector_entrega();
 			$sector_entregas_particular= $this->uum->get_sector_entrega_particular($id);
+            $subsector_entregas_particular = $this->uum->get_subsector_entrega_particular($id);
 			$detalle_local=$this->uum->get_local_particular($id);
 			$tipo_producto=$this->uum->get_tipo_producto_particular($id);
             $categorias = $this->uum->get_categoria();
@@ -29,6 +30,7 @@ class Producto extends CI_Controller {
             $this->data['title']=$productos->titulo_producto;
 			$this->data['productos']= $productos;
 			$this->data['sector_entregas_particular']=$sector_entregas_particular;
+            $this->data['subsector_entregas_particular']=$subsector_entregas_particular;
 			$this->data['sector_entregas']=$sector_entregas;
 			$this->data['detalle_locales']=$detalle_local;
 			$this->data['id_tipo_producto']=$tipo_producto;

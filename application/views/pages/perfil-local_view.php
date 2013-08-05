@@ -22,6 +22,8 @@
                     <?php } if($local->email!="" && $local->email!="test@test.cl"){?>
                     <p><strong>E-mail: </strong></p>
                     <p><a href=""><?= $local->email?></a></p>
+                    <p><strong>Descripción Adicional del Reparto: </strong></p>
+                    <p><?=$local->descrip_adicional?></p>
                     <?php } ?>
                 </div>
             </div>

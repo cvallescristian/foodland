@@ -63,11 +63,15 @@
 							<p><?= $productos->descrip_producto?></p>
 							
 							<br>
-							<h7>Sectores de Reparto: </h7> 
-							<p> Viña centro, Gomez Carreño, Reñaca</p>
+							<h7>Sectores de Reparto: </h7>
+							<?php foreach ($subsector_entregas_particular as $subsectorparticular) {
+								?>
+							
+							<p> <?=$subsectorparticular->nombre_subsector_entrega?>,</p>
+							<?php } ?>
 							<br>
 							<h7>Condiciones Adicionales del Reparto: </h7> 
-							<p> Reparto desde 1 a 15 norte en Viña del Mar</p>
+							<p> <?=$detalle_locales->descrip_adicional?></p>
 							<br>
 
 							<p>HashTag : <span class="label label-warning">#<?= $id_tipo_producto_nombre->nombre_tipo_producto ?></span></p>

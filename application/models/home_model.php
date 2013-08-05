@@ -109,6 +109,12 @@ class home_model extends CI_Model{
          $result = $this->db->query($query);
          return $result->result();  
     }
+    function get_subsector_entrega_particular($id_producto){
+        $query="select nombre_subsector_entrega from Producto,Subsector_entrega,Local_subsector_entrega";
+        $query.=" where Producto.id_producto='$id_producto' and Producto.id_local=Local_subsector_entrega.id_local and  Subsector_entrega.id_subsector_entrega=Local_subsector_entrega.id_subsector_entrega";
+        $result= $this->db->query($query);
+         return $result->result(); 
+    }
     function get_sector_entrega_particular($id_producto){
         $query="select nombre_sector_entrega from Producto,Sector_entrega,Local_sector_entrega";
         $query.=" where Producto.id_producto='$id_producto' and Producto.id_local=Local_sector_entrega.id_local and  Sector_entrega.id_sector_entrega=Local_sector_entrega.id_sector_entrega";

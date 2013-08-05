@@ -166,7 +166,7 @@
 
                                 <br>
 
-                                <h6><i class="icon-user"></i> 3 Personas </h6>
+                                <h6><i class="icon-user"></i> <?=  $producto->numero_personas  ?> Personas </h6>
                                 
                                  <br>
 
