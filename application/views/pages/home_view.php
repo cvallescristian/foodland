@@ -91,10 +91,10 @@
                     -->
 
 
-                     <ul class="nav nav-pills">
+                     <ul class="nav nav-pills" style="margin-left:2px;">
                     <?php foreach ($sector_entregas as $sector_entrega) {
                     ?>                   
-                        <li class="dropdown" style="margin-left:50px;">
+                        <li class="dropdown span2" >
                             <a class="dropdown-toggle"
                             data-toggle="dropdown"
                             href="#">
