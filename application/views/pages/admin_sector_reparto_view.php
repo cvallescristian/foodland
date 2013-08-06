@@ -2,7 +2,7 @@
 	<div class="row">
 		 <div class="span12">
 		 	<h1>Sectores</h1>
-		 	<a href="<?= base_url();?>admin_local/nuevo_sector"class="btn btn-success btn-large">Agregar nuevo Sector</a>
+		 	<a href="<?= base_url();?>admin_sector_reparto/nuevo_sector"class="btn btn-success btn-large">Agregar nuevo Sector</a>
 		 	<br><br><br>
 
 		 </div>
@@ -56,15 +56,18 @@
 							</tr>
 						</thead>
 						<tbody>
-						<?php foreach ($sectores as $s) {
+						<?php 
+						$i=0; 
+						foreach ($subsectores as $sb) {
 						?>
 							<tr>
-								<td>sector padre</td>
-								<td><?= $s->nombre_sector_entrega  ?></td>
-								<td> <a href="" class="btn btn-danger">Borrar</a></td>
+								<td><?= $sector_padre[$i];  ?></td>
+								<td><?= $sb->nombre_subsector_entrega  ?></td>
+								<td><a href="" class="btn btn-danger">Borrar</a></td>
 								<td><a href="" class="btn btn-info">Editar</a></td>
 							</tr>
 						<?php	
+						$i++;
 						} ?>
 						
 						</tbody>

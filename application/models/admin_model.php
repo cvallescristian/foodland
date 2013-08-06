@@ -155,7 +155,9 @@ class admin_model extends CI_Model{
       return $r;
       break;
     }
+
   }
+  
   function get_sector_entrega_edicion($id){
     $query ="select * from Local_subsector_entrega where id_local='$id'";
     $result=$this->db->query($query);

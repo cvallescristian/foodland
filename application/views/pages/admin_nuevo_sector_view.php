@@ -16,6 +16,19 @@
 						    <div class="controls">
 						      <input type="text" id="inputNombreSector" name="inputNombre" placeholder="ej : XL Express" value="<?php if($sector!=""){ echo $sector->nombre_sector_entrega; } ?>" required>
 						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="inputNombre">Sector Padre</label>
+						    <div class="controls">
+						    <select name="" id="">
+						    	<option value="0">--Soy subsector--</option>
+						    	<?php foreach ($sectores as $s ) {
+						    	?>
+									<option value="<?= $s->id_sector_entrega?>"><?= $s->nombre_sector_entrega ?></option>
+						    	<?php 
+						    	} ?>
+						    </select>
+						    </div>
 						  </div>						 
 						  <div class="control-group" style="margin-right: 60px;">
 						    <div class="controls">
