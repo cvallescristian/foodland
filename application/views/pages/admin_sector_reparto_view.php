@@ -27,8 +27,8 @@
 						?>
 							<tr>
 								<td><?= $s->nombre_sector_entrega  ?></td>
-								<td> <a href="" class="btn btn-danger">Borrar</a></td>
-								<td><a href="" class="btn btn-info">Editar</a></td>
+								<td> <a href="<?= base_url()?>admin_sector_reparto/borrar_sector?id=<?= $s->id_sector_entrega?>&tip=1" class="btn btn-danger">Borrar</a></td>
+								<td><a href="<?= base_url()?>admin_sector_reparto/editar_sector?id=<?= $s->id_sector_entrega?>&tip=1" class="btn btn-info">Editar</a></td>
 							</tr>
 						<?php	
 						} ?>
@@ -63,8 +63,8 @@
 							<tr>
 								<td><?= $sector_padre[$i];  ?></td>
 								<td><?= $sb->nombre_subsector_entrega  ?></td>
-								<td><a href="" class="btn btn-danger">Borrar</a></td>
-								<td><a href="" class="btn btn-info">Editar</a></td>
+								<td><a href="<?= base_url()?>admin_sector_reparto/borrar_sub_sector?id=<?= $sb->id_subsector_entrega?>&tip=2" class="btn btn-danger">Borrar</a></td>
+								<td><a href="<?= base_url()?>admin_sector_reparto/editar_sector?id=<?= $sb->id_subsector_entrega?>&tip=2" class="btn btn-info">Editar</a></td>
 							</tr>
 						<?php	
 						$i++;

@@ -150,8 +150,23 @@ class admin_model extends CI_Model{
 
      $this->db->delete('Sector_entrega');
   }
+    function borrar_sub_sector($id){
+     $this->db->where('id_subsector_entrega',$id);
+
+     $this->db->delete('Subsector_entrega');
+  }
   function get_sector_entrega_particular($id){
     $query ="select * from Sector_entrega where id_sector_entrega='$id'";
+    $result=$this->db->query($query);
+    $re= $result->result();
+    foreach ($re as $r) {
+      return $r;
+      break;
+    }
+
+  }
+  function get_sub_sector_entrega_particular($id){
+    $query ="select * from Subsector_entrega where id_subsector_entrega='$id'";
     $result=$this->db->query($query);
     $re= $result->result();
     foreach ($re as $r) {
@@ -198,6 +213,16 @@ class admin_model extends CI_Model{
             $this->db->where('id_producto', $id);
              $this->db->update('Producto', $data);
 
+  }
+  function editar_sector($data,$id)
+  {
+            $this->db->where('id_sector_entrega', $id);
+             $this->db->update('Sector_entrega', $data);
+  }
+  function editar_subsector($data,$id)
+  {
+            $this->db->where('id_subsector_entrega', $id);
+             $this->db->update('Subsector_entrega', $data);    
   }
 }
 
