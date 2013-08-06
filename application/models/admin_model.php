@@ -142,6 +142,9 @@ class admin_model extends CI_Model{
   function agregar_sector($data){
     $this->db->insert('Sector_entrega',$data);
   }
+  function agregar_subsector($data){
+    $this->db->insert('Subsector_entrega',$data);
+  }
   function borrar_sector($id){
      $this->db->where('id_sector_entrega',$id);
 

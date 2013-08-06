@@ -42,14 +42,21 @@ class Admin_sector_reparto extends CI_Controller {
 			$root= base_url()."admin";
 			header("Location: $root");
 		}else{
-			$data = array( 
-	           'nombre_sector_entrega' => $this->input->post('inputNombre'),
-	        );
 			$this->load->model('admin_model','uum');
-			$this->uum->agregar_sector($data);
-
-			$root= base_url()."admin_local";
-    		echo "<script>location.href='$root';</script>";
+			if($this->input->post('inputSectorPadre')==""){ //es un subsector
+				$data = array( 
+	           	'nombre_sector_entrega' => $this->input->post('inputNombre'),
+				);
+				$this->uum->agregar_sector($data);
+			}else{
+				$data = array( 
+	           	'nombre_subsector_entrega' => $this->input->post('inputNombre'),
+				'id_sector_entrega' => $this->input->post('inputSectorPadre')
+				);
+				$this->uum->agregar_subsector($data);
+			}
+			$root= base_url()."Admin_sector_reparto?inf=1";
+    		redirect($root);
 		}
 	}
 	 public function borrar_sector()

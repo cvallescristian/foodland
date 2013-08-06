@@ -9,7 +9,7 @@
 				</div>				
 				<div class="widget-content">
 					<fieldset>					
-					<form class="form-horizontal" method="post" action="<?= base_url()?>admin_local/nuevo_sector_agregar" >
+					<form class="form-horizontal" method="post" action="<?= base_url()?>admin_sector_reparto/nuevo_sector_agregar" >
 						
 						<div class="control-group">
 						    <label class="control-label" for="inputNombre">Nombre del sector</label>
@@ -18,10 +18,10 @@
 						    </div>
 						  </div>
 						  <div class="control-group">
-						    <label class="control-label" for="inputNombre">Sector Padre</label>
+						    <label class="control-label" for="inputSectorPadre">Sector Padre</label>
 						    <div class="controls">
-						    <select name="" id="">
-						    	<option value="0">--Soy subsector--</option>
+						    <select name="inputSectorPadre" id="">
+						    	<option value="">--Soy Sector Padre--</option>
 						    	<?php foreach ($sectores as $s ) {
 						    	?>
 									<option value="<?= $s->id_sector_entrega?>"><?= $s->nombre_sector_entrega ?></option>
