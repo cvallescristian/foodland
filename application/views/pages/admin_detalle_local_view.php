@@ -88,7 +88,7 @@
 				<div class="widget-content">
 							<div class="span4 offset1">
 								<p>
-						    		<strong>ID</strong>: 20 <br><br>
+						    		<strong>ID</strong>: <?= $local->id_local ?> <br><br>
 						    		<strong>Nombre</strong>: <?= $local->nombre_local ?> <br><br>
 									<strong>Dirección</strong>: <?= $local->direccion_local ?><br><br>
 									<strong>Teléfono</strong>: <?= $local->telefono_local ?> <br><br>
