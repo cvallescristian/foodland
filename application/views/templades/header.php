@@ -71,18 +71,7 @@
                         <li><a href="<?= base_url();?>">Inicio</a></li>
                   
                         <li><a href="<?= base_url()?>nuestros_locales">Nuestros Locales</a></li>
-                        <li class="dropdown">
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
-                                Sector reparto
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <?php foreach ($sub_sector_entregas as $s) {
-                                ?>    
-                                <li><a href="<?= base_url();?>home?subsector=<?= $s->id_subsector_entrega  ?>"><?= $s->nombre_subsector_entrega ?></a></li>
-                                <?php }?>
-                            </ul>
-                        </li>
+                       
                         <?php if($this->session->userdata('user_profile')) : 
                               $usuario= $this->session->userdata('user_profile');
                         ?>

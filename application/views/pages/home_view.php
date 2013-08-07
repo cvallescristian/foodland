@@ -141,6 +141,7 @@
 
                         <div class="span10" id="ancho_productos">
                      <?php 
+                        $i=0;
                         foreach ($productos_random as $producto) {
                             $id= $producto->id_producto;
                             $id_local=$producto->id_local;
@@ -164,6 +165,7 @@
                                 <h4><font><font><?= $producto->titulo_producto ?></font></font></h4>
                                  <!-- Precio Del producto-->
                                  <h4><font><font> $<?=  $producto->precio  ?></font></font></h4>
+                                <!-- like
                                 <div href="#" class="like ">
                                    <i class="icon-heart"></i>
                                     <span class="trigger"></span>
@@ -177,7 +179,7 @@
                                 
                                 </div>
                                 <br>
-
+                                -->
                                 <h6><i class="icon-user"></i> <?=  $producto->numero_personas  ?> Personas </h6>
                                 
                                  <br>
@@ -189,50 +191,48 @@
                         </div>
                         </a>
                         <!-- Termino Bloque Grande-->
-                        <?php } ?>
+                        <?php $i++;} ?>
 
                         </div>
 
                        
                                 <!-- SideBar -->
-                <div class="span3 sidebar" id="categoria" style=" background:rgb(230, 230, 230);   " >
-                    <div class="box">
+                <div class="span2" id="<?php if($i>3){echo "categoria";} ?>"  style=" background:rgb(230, 230, 230);   " >
+                   
                         <div class="sidebar_header center">
                             <h3>Categorias</h3>
                         </div>
 
                         <ul >
-                            <h4>
+                            
                                 <ul>
                                     <li class="active"><a <a style="   color: #BE3F3F;"  href="<?= base_url() ?>home?subsector=<?=$subsector?>">Todo</a></li>
                             <?php foreach ($categoria as $pro){ ?>
                                     <li><a style="   color: #949494;" href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&subsector=<?=$subsector?>"><?=$pro->nombre_tipo_producto?></a></li>
                                     <?php } ?>
                                 </ul>
-                            </h4>
+                            
                         </ul>
-                    </div>
+                    
                     <br>
                     
 
-                    <div class="box2">
+                    <div class="box2 center">
                         <div class="sidebar_header center">
                             <h3>Facebook Foodland</h3>
                         </div>
-
-                       <div class="fb-like"  style="margin-left:20px;" data-href="https://www.facebook.com/FoodLandValparaiso?fref=ts" data-width="70" data-colorscheme="dark" data-show-faces="true" data-send="false"></div>
+                        <div class="fb-follow" data-href="https://www.facebook.com/FoodLandValparaiso" data-width="30" data-layout="box_count" data-show-faces="true"></div>
                     </div>
 
-                    <div class="box2">
+                    <div class="box2 center">
                         <div class="sidebar_header center">
                             <h3>Twitter Foodland</h3>
                         </div>
 
-                            <div class="span1"  style="margin-left:80px;">
-                               <a href="https://twitter.com/FoodLand_Valpo" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large" data-show-screen-name="false">Seguir a @FoodLand_Valpo</a>
+                             <a href="https://twitter.com/FoodLand_Valpo" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large" data-show-screen-name="false">Seguir a @FoodLand_Valpo</a>
                                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                              
-                             </div>
+                             
 
                         </div>
                  
