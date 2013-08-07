@@ -66,7 +66,7 @@ class home_model extends CI_Model{
             $query.=" where id_tipo_producto = '$id'";
 
 
-        $query.=" order by rand() limit 3";
+        $query.=" order by rand() limit 18";
         $result = $this->db->query($query);
         return $result->result();      
     }
@@ -76,7 +76,7 @@ class home_model extends CI_Model{
             $query.=" where id_tipo_producto = '$id'";
 
 
-        $query.=" order by rand() limit 3";
+        $query.=" order by rand() limit 18";
         $result = $this->db->query($query);
         return $result->result();        
     }
