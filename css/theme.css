@@ -28,6 +28,100 @@
     z-index: 10;
 }
 
+#icono_corazon{
+	margin-left: 200px;
+	color: rgb(224, 163, 31);
+}
+
+
+.like {
+opacity: 0.5;
+width: 50px;
+height: 50px;
+bottom: 100px;
+right: -6px;
+z-index: 10;
+overflow: hidden;
+position: absolute;
+top: 80px;
+border: 1px solid #ddd;
+background-color: #f3f3f3;
+-webkit-transition: opacity 100ms ease-in;
+right: -4px;
+border-radius: 5px 5px 0 5px;
+-moz-border-radius: 5px 5px 0 5px;
+-webkit-border-radius: 5px 5px 0 5px;
+box-shadow: 0 1px 1px 0 rgba(0,0,0,0.07);
+z-index: 10;
+}
+
+
+.no-like {
+opacity: 0.5;
+width: 50px;
+height: 50px;
+bottom: 100px;
+right: -6px;
+z-index: 10;
+overflow: hidden;
+position: absolute;
+top: 80px;
+border: 1px solid #ddd;
+background-color: #f3f3f3;
+-webkit-transition: opacity 100ms ease-in;
+left: -4px;
+border-radius: 5px 5px 5px 0;
+-moz-border-radius: 5px 5px 5px 0;
+-webkit-border-radius: 5px 5px 5px 0;
+box-shadow: 0 1px 1px 0 rgba(0,0,0,0.07);
+z-index: 10;
+}
+
+.like .shadow {
+	right: 0;
+	background-position: 0 0;
+	border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+}
+
+.like .shadow {
+	top: 0;
+	width: 7px;
+	height: 50px;
+	z-index: 100;
+	display: block;
+	position: absolute;
+	background-image: url(../img/like-menu-shadow.png?1375494980);
+}
+
+
+.like .trigger {
+	right: 0;
+	z-index: 9;
+	float: right;
+	border-radius: 5px 5px 0 5px;
+	-moz-border-radius: 5px 5px 0 5px;
+	-webkit-border-radius: 5px 5px 0 5px;
+	background-image: url(../img/want-menu-sprite.png?1375494980);
+	background-size: 350px;
+	background-position: 0 0;
+}
+
+
+.like .trigger {
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	z-index: 9;
+	width: 50px;
+	height: 50px;
+	background-color: #f3f3f3;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
 html {
 	margin: 0;
 }

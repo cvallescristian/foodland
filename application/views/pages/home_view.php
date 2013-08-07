@@ -159,11 +159,23 @@
                             </span>
 
                             <div class="cnt">
+                            
                                 <!-- Titulo Del producto-->
                                 <h4><font><font><?= $producto->titulo_producto ?></font></font></h4>
                                  <!-- Precio Del producto-->
                                  <h4><font><font> $<?=  $producto->precio  ?></font></font></h4>
+                                <div href="#" class="like ">
+                                   <i class="icon-heart"></i>
+                                    <span class="trigger"></span>
+                                   
+                                </div>
 
+
+                                <div href="#" class="no-like">
+                                    <i class="icon-heart"></i>
+                                    <span class="trigger"></span>
+                                
+                                </div>
                                 <br>
 
                                 <h6><i class="icon-user"></i> <?=  $producto->numero_personas  ?> Personas </h6>
