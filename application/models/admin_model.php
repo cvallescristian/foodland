@@ -227,12 +227,10 @@ class admin_model extends CI_Model{
   function get_visitas_totales($id){
       $query ="select visita from Cont_visita where id_local='$id'";
       $result=$this->db->query($query);
-      $re= $result->result();
-      $visitas = 0;
-      foreach ($re as $r) {
-        $visitas = $visitas + $r;
-    }      
-    return $visitas;
+      $re= $result->result_array();
+        return $re;
+        
+    
   }
 }
 

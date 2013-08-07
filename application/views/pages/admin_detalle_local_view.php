@@ -58,7 +58,16 @@
 					<div class="stats">
 						
 						<div class="stat">
-							<span class="stat-value"><?=$visitas_totales?></span>									
+						<?php 			
+						$visitas = 0;
+						foreach ($visitas_totales as $visita) {
+							foreach ($visita as $key) {
+								# code...
+							
+							$visitas = $visitas + $key;
+						} }
+						?>
+							<span class="stat-value"><?=$visitas?></span>									
 							Cantidad totales de visita
 						</div> <!-- /stat -->
 						
