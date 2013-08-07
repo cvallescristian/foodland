@@ -232,6 +232,25 @@ class admin_model extends CI_Model{
         
     
   }
+  function get_visitas_diarias($id){
+      $fecha = date('Y-m-d');
+      $query ="select visita from Cont_visita where id_local='$id' and fecha='$fecha'";
+      $result=$this->db->query($query);
+      $re= $result->result_array();
+        return $re;
+        
+    
+  }
+  function get_visitas_dia_anterior($id){
+      $fecha = date('Y-m').'-'.(date('d')-1);
+      $query ="select visita from Cont_visita where id_local='$id' and fecha='$fecha'";
+      $result=$this->db->query($query);
+      $re= $result->result_array();
+        return $re;
+        
+    
+  }
+  
 }
 
  ?>

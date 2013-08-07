@@ -22,11 +22,15 @@ class Admin_detalle_local extends CI_Controller {
 				$title="Local editado satisfactoriamente";
 			}
 			$visitas_totales= $this->uum->get_visitas_totales($id);
+			$visitas_diarias= $this->uum->get_visitas_diarias($id);
+			$visitas_dia_anterior= $this->uum->get_visitas_dia_anterior($id);
 			$data['id']=$id;
 			$data['title']=$title;
 			$data['local']=$local;
 			$data['sectores']=$sectores;
 			$data['visitas_totales']=$visitas_totales;
+			$data['visitas_diarias']=$visitas_diarias;
+			$data['visitas_dia_anterior']=$visitas_dia_anterior;
 			$this->load->view('templades/header_admin',$data);
 			$this->load->view('templades/header_detalle_local',$data);
 			$this->load->view('pages/admin_detalle_local_view',$data);

@@ -70,15 +70,36 @@
 							<span class="stat-value"><?=$visitas?></span>									
 							Cantidad totales de visita
 						</div> <!-- /stat -->
-						
+						<?php 			
+						$visitas = 0;
+						foreach ($visitas_diarias as $visita) {
+		
+							$visitas = $visitas + $visita['visita'];
+						}
+						?>						
 						<div class="stat">
-							<span class="stat-value">9,249</span>									
-							Cantidad de visitas esta semana
+							<span class="stat-value"><?=$visitas?></span>									
+							Cantidad de visitas hoy
 						</div> <!-- /stat -->
-						
+						<?php 			
+						$visitashoy = 0;
+						foreach ($visitas_diarias as $visita) {
+		
+							$visitashoy = $visitashoy + $visita['visita'];
+						}
+						?>	
+						<?php 			
+						$visitasayer = 0;
+						foreach ($visitas_dia_anterior as $visita) {
+		
+							$visitasayer = $visitasayer + $visita['visita'];
+						}
+						$porcentajevisitas = (($visitashoy-$visitasayer)/$visitasayer)*100;
+
+						?>							
 						<div class="stat">
-							<span class="stat-value">70%</span>									
-							Porcentaje de aumento de visitas
+							<span class="stat-value"><?=$porcentajevisitas?>%</span>									
+							Porcentaje de aumento de visitas con respecto a ayer
 						</div> <!-- /stat -->
 						
 					</div> <!-- /stats -->
