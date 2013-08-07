@@ -58,7 +58,7 @@
 					<div class="stats">
 						
 						<div class="stat">
-							<span class="stat-value">12,386</span>									
+							<span class="stat-value"><?=$visitas_totales?></span>									
 							Cantidad totales de visita
 						</div> <!-- /stat -->
 						

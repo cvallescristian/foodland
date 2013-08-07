@@ -227,11 +227,14 @@ class Producto extends CI_Controller {
     public function agregar_visita(){
 
         $id=$this->input->get('id');
+        $idlocal = $this->input->get('idd');
         $this->load->model('home_model','uum');
         $visita = $this->uum->get_visita($id);
         $data = array( //datos del local
                        'id_producto' => $id,
                        'fecha' => date('Y-m-d'),
+                       'dia' => date('D'),
+                       'id_local' => $idlocal,
                        'visita' => $visita[0]->visita + 1
                     );
         $this->uum->agregar_visita_nueva($data,$id);

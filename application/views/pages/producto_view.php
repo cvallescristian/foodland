@@ -12,7 +12,7 @@
       $("#button").click(function(){
         // get the time if clicked via an ajax get queury
         // see the code in the controller time.php
-        $.get("<?= base_url();?>producto/agregar_visita?id=<?= $_GET['id']; ?>");        
+        $.get("<?= base_url();?>producto/agregar_visita?id=<?= $_GET['id']; ?>&idd=<?=$productos->id_local?>");        
         
         
         });

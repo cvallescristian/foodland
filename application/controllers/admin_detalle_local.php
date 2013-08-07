@@ -21,11 +21,12 @@ class Admin_detalle_local extends CI_Controller {
 			if($respuesta==1){
 				$title="Local editado satisfactoriamente";
 			}
+			$visitas_totales= $this->uum->get_visitas_totales($id);
 			$data['id']=$id;
 			$data['title']=$title;
 			$data['local']=$local;
 			$data['sectores']=$sectores;
-	
+			$data['visitas_totales']=$visitas_totales;
 			$this->load->view('templades/header_admin',$data);
 			$this->load->view('templades/header_detalle_local',$data);
 			$this->load->view('pages/admin_detalle_local_view',$data);
@@ -42,9 +43,11 @@ class Admin_detalle_local extends CI_Controller {
 			$producto = $this->uum->get_producto_id($id);
 			$locales = $this->uum->get_local();
 			$tipo_producto= $this->uum->get_tipo_producto();
+			
 			$data['producto'] = $producto;
 			$data['locales'] = $locales; 
 			$data['tipo_producto']=$tipo_producto;
+			
 			$this->load->view('templades/header_admin',$data);
 			$this->load->view('templades/header_detalle_local',$data);
 			$this->load->view('pages/admin_detalle_producto_local_view',$data);
