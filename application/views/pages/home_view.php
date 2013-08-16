@@ -30,23 +30,9 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <!-- inicio portasda -->
-    <section id="feature_slider">
-        <div id="fondo">
-        </div>
-        <div class="container">
-            <div class="row">
-               <div id="portada1" class="span3 " style="" >
-                   <p><h1>¿Hambre?</h1>
-                    
-                    <h2>Eso que imaginas lo puedes encontrar <a href="#sector_reparto" style="color:rgb(210, 226, 26)">aquí</a> en Foodland </h2>
-                    </p>
-                </div>        
-            </div>
-        </div>
-        
-
-
-    </section> 
+<section class="portfolio2 center">
+    <h1><img src="<?= base_url()?>/img/dos.png">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Elige el producto que deseas </h1>
+</section>
 <!-- fin portada -->       
 
 <!-- Inicio Sector Reparto -->
@@ -63,6 +49,7 @@
                             ?> Estas en 
                             <?php foreach ($sub_sector_entregas as $s ) {
                                 if($s->id_subsector_entrega==$subsector){
+                                    $sec=$s->nombre_subsector_entrega;
                                     echo "$s->nombre_subsector_entrega,  ¿Deseas cambiar de sector?";
                                     $nombre_sector=$s->nombre_subsector_entrega;
                                     break;
@@ -131,26 +118,16 @@
                 <div class="container">
 
                     <div class="row">
-
-                        <div class="span12 center">
-
-                            <h1 class="big-heading" id="letra_grande"><font><font>Productos por llamado Telefónico</font></font></h1>
-                            
-                            <h4 class="sub-heading"><font><font>Te mostramos lo mejor de nuestra linea telefonica...</font></font></h4>
-                        </div>
-
-                        <div class="span10" id="ancho_productos">
-                     <?php 
-                        $i=0;
-                        foreach ($productos_random as $producto) {
-                            $id= $producto->id_producto;
-                            $id_local=$producto->id_local;
-                       
-                      ?>
-
-
-                     
-                        <!-- Inicio Bloque Grande-->
+                     <div class="span10" aling="center"id="ancho_productos">
+                            <h1 class="big-heading" id="letra_grande"><font><font>Productos en Promoción </font></font></h1>
+                            <h4 class="sub-heading"><font><font>Elige promociones exclusivas que foodland tiene para ti</font></font></h4>
+                            <?php 
+                                $i=0;
+                                foreach ($productos_random as $producto) {
+                                    $id= $producto->id_producto;
+                                    $id_local=$producto->id_local;
+                               
+                              ?>
                         <a href="<?= base_url() ?>producto?id=<?= $id ?>">
                         <div class="span3 project bloque_producto" id="imagen_producto">
                             <!-- Imagen de fondo-->
@@ -197,47 +174,20 @@
 
                        
                                 <!-- SideBar -->
-                <div class="span2" id="<?php if($i>3){echo "categoria";} ?>"  style=" background:rgb(230, 230, 230);   " >
+                <div class="span2 category" id="<?php if($i>3){echo "categoria";} ?>"  >
                    
                         <div class="sidebar_header center">
                             <h3>Categorias</h3>
                         </div>
-
                         <ul >
-                            
                                 <ul>
-                                    <li class="active"><a <a style="   color: #BE3F3F;"  href="<?= base_url() ?>home?subsector=<?=$subsector?>">Todo</a></li>
+                                    <li class="active"><a <a s  href="<?= base_url() ?>home?subsector=<?=$subsector?>">Todo</a></li>
                             <?php foreach ($categoria as $pro){ ?>
-                                    <li><a style="   color: #949494;" href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&subsector=<?=$subsector?>"><?=$pro->nombre_tipo_producto?></a></li>
+                                    <li><a  href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&subsector=<?=$subsector?>"><?=$pro->nombre_tipo_producto?></a></li>
                                     <?php } ?>
                                 </ul>
-                            
                         </ul>
-                    
                     <br>
-                    
-
-                    <div class="box2 center">
-                        <div class="sidebar_header center">
-                            <h3>Facebook Foodland</h3>
-                        </div>
-                        <div class="fb-follow" data-href="https://www.facebook.com/FoodLandValparaiso" data-width="30" data-layout="box_count" data-show-faces="true"></div>
-                    </div>
-
-                    <div class="box2 center">
-                        <div class="sidebar_header center">
-                            <h3>Twitter Foodland</h3>
-                        </div>
-
-                             <a href="https://twitter.com/FoodLand_Valpo" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large" data-show-screen-name="false">Seguir a @FoodLand_Valpo</a>
-                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                             
-                             
-
-                        </div>
-                 
-
-                 
                 </div>
                    
                       
