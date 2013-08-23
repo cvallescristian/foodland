@@ -8,8 +8,8 @@
   overflow: hidden;
   position: fixed;
   background: #0b0b0b;
-  opacity: 0.8;
-  filter: alpha(opacity=80); }
+  opacity: 0.9;
+  filter: alpha(opacity=90); }
 
 .mfp-wrap {
   top: 0;
@@ -21,8 +21,16 @@
   outline: none !important;
   -webkit-backface-visibility: hidden; }
 
+
+#login{
+ 
+    height: 80%;
+   background: #f0eee8 url('../img/valpo2.png')no-repeat;
+  background-size: 100% 300px;
+}
 .mfp-container {
-  height: 100%;
+
+ background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   position: absolute;
   width: 100%;
@@ -53,7 +61,8 @@
 
 .mfp-inline-holder .mfp-content,
 .mfp-ajax-holder .mfp-content {
-  width: 100%;
+  width: 90%;
+  height: 60%;
   cursor: auto; }
 
 .mfp-ajax-cur {
@@ -265,7 +274,7 @@ button::-moz-focus-inner {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
   background: black; }
 
 .mfp-iframe-holder .mfp-close {
