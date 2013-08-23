@@ -362,7 +362,10 @@ span.underline {
   margin-top: 20px;
   background: #faa732;
   color: #fff;
-  padding: 25px 80px;
+  padding-top: 11px;
+  padding-bottom: 25px;
+  height: 11px;
+  width: 147px;
   margin: 15px 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1073,8 +1076,9 @@ section#portada{
 
 }
 .cuadro_portada{
-  background-color: rgba(235, 80, 85, 0.91);
+  background-color: rgba(44, 21, 21, 0.58);
   margin-top: 40px;
+  border-radius:5px 5px 5px 5px;
 }
 #booton-foodland{
   position: relative;
