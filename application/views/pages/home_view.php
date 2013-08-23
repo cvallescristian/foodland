@@ -31,12 +31,13 @@
 
 <!-- inicio portasda -->
 <section class="portfolio2 center">
-    <h1><img src="<?= base_url()?>/img/dos.png">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Elige el producto que deseas </h1>
+    <h2><img src="<?= base_url()?>/img/dos.png" style="width:60px">  &nbsp; &nbsp; &nbsp; Elige el producto que deseas </h2>
 </section>
 <!-- fin portada -->       
 
 <!-- Inicio Sector Reparto -->
-<section class="portfolio rev" id="sector_reparto">
+<section class="portfolio rev" id="sector_reparto" style="background: url(<?= base_url()?>img/dondeestas.png);background-size: 100% 100%;">
+
     <div class="container">
         <div class="row">
             <div class="span12 center">
@@ -129,6 +130,59 @@
                                
                               ?>
                         <a href="<?= base_url() ?>producto?id=<?= $id ?>">
+                        <div class="span3 project bloque_producto" id="imagen_producto" >
+                            <!-- Imagen de fondo-->
+                            <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
+                            <!-- Logo del local-->
+                            <span class="overlay"> 
+                            </span>
+
+                            <div class="cnt">
+                            
+                                <!-- Titulo Del producto-->
+                                <h4><font><font><?= $producto->titulo_producto ?></font></font></h4>
+                                 <!-- Precio Del producto-->
+                                 <h4><font><font> $<?=  $producto->precio  ?></font></font></h4>
+                                <!-- like
+                                <div href="#" class="like ">
+                                   <i class="icon-heart"></i>
+                                    <span class="trigger"></span>
+                                   
+                                </div>
+
+
+                                <div href="#" class="no-like">
+                                    <i class="icon-heart"></i>
+                                    <span class="trigger"></span>
+                                
+                                </div>
+                                <br>
+                                -->
+                                <h6><i class="icon-user"></i> <?=  $producto->numero_personas  ?> Personas </h6>
+                                
+                                 <br>
+
+                                <a href="<?= base_url() ?>producto?id=<?= $id ?>" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
+                        
+                               
+                            </div>
+                        </div>
+                        </a>
+                        <!-- Termino Bloque Grande-->
+                        <?php $i++;} ?>
+
+                        </div>
+                        <div class="span10" aling="center"id="ancho_productos">
+                            <h1 class="big-heading" id="letra_grande"><font><font>Productos Cercanos a ti </font></font></h1>
+                            <h4 class="sub-heading"><font><font>Productos de locales que estan cercanos a tu ubicación</font></font></h4>
+                            <?php 
+                                $i=0;
+                                foreach ($productos_random as $producto) {
+                                    $id= $producto->id_producto;
+                                    $id_local=$producto->id_local;
+                               
+                              ?>
+                        <a href="<?= base_url() ?>producto?id=<?= $id ?>">
                         <div class="span3 project bloque_producto" id="imagen_producto">
                             <!-- Imagen de fondo-->
                             <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
@@ -174,27 +228,24 @@
 
                        
                                 <!-- SideBar -->
-                <div class="span2 category" id="<?php if($i>3){echo "categoria";} ?>"  >
-                   
-                        <div class="sidebar_header center">
-                            <h3>Categorias</h3>
-                        </div>
-                        <ul >
-                                <ul>
-                                    <li class="active"><a <a s  href="<?= base_url() ?>home?subsector=<?=$subsector?>">Todo</a></li>
-                            <?php foreach ($categoria as $pro){ ?>
-                                    <li><a  href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&subsector=<?=$subsector?>"><?=$pro->nombre_tipo_producto?></a></li>
-                                    <?php } ?>
+                        <div class="span2 category" id="<?php if($i>3){echo "categoria";} ?>"  >
+                           
+                                <div class="sidebar_header center">
+                                    <h3>Categorias</h3>
+                                </div>
+                                <ul >
+                                        <ul>
+                                            <li class="active"><a <a s  href="<?= base_url() ?>home?subsector=<?=$subsector?>">Todo</a></li>
+                                    <?php foreach ($categoria as $pro){ ?>
+                                            <li><a  href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&subsector=<?=$subsector?>"><?=$pro->nombre_tipo_producto?></a></li>
+                                            <?php } ?>
+                                        </ul>
                                 </ul>
-                        </ul>
-                    <br>
-                </div>
-                   
-                      
+                            <br>
+                        </div>
                     </div>
-
-                
-    </section>
+                </div>
+        </section>
 <!-- Termino Productos-->
 
 
