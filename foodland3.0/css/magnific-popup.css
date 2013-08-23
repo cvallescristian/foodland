@@ -578,7 +578,7 @@ img.mfp-img {
       }
       /* animate in */
       .my-mfp-slide-bottom.mfp-ready.mfp-bg {
-        opacity: 0.5;
+        opacity: 0.7;
       }
       /* animate out */
       .my-mfp-slide-bottom.mfp-removing.mfp-bg {
