@@ -4,6 +4,7 @@
        <link href="<?= base_url();?>css/css_productos/main.css" rel="stylesheet">
     	<script src="<?= base_url()?>js/ajax.js"></script>
        <link href="<?= base_url();?>css/social-buttons.css" rel="stylesheet">
+		<link rel="stylesheet" href="<?= base_url()?>css/css-locales/nuestros_locales.css">
 
 <script type="text/javascript">
     // using JQUERY's ready method to know when all dom elements are rendered
@@ -12,38 +13,24 @@
       $("#button").click(function(){
         // get the time if clicked via an ajax get queury
         // see the code in the controller time.php
-        $.get("<?= base_url();?>producto/agregar_visita?id=<?= $_GET['id']; ?>&idd=<?=$productos->id_local?>");        
-        
-        
+        $.get("<?= base_url();?>producto/agregar_visita?id=<?= $_GET['id']; ?>&idd=<?=$productos->id_local?>");                
         });
     });
-
-    
 </script>	    
-	<div id="banner_producto" class="heads" style="background: url(<?= base_url().'img/tipo_producto/'.$id_tipo_producto.'.png'?>) fixed transparent;
-	 							background-size:100% 35%;">
-		<div class="container" >
-			<div class="row-fluid">
-				<div class="span12">
-					<h2><span>//</span> <?=$productos->titulo_producto;?></h2>
-				</div>
-			</div>
-		</div>
-	</div>
-	
+	<section class="portfolio2 center" style="margin-top:65px">
+	    <h1><img src="<?= base_url()?>/img/tres.png">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pincha en <em>Ver Teléfono</em> y llama </h1>
+	</section>
+
 	<div class="page-content">
 		<div class="container" id="pagina_producto">
-			
-			
 			<div class="row-fluid" >
 				<div class="span10 single-item">
 					<div class="row-fluid">
 						<div class="span6" id="foto_producto">
-							<div id="itemsingle" class="carousel slide clearfix">
-							
+							<div id="itemsingle" class="carousel slide clearfix">							
 								<div class="carousel-inner">
 								  <div class="item active">
-									<img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.jpeg" alt="slider detail dodolan manuk">
+									<img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.jpeg" alt="slider detail dodolan manuk" style="background-size: 200px 200px;">
 								  </div>
 								  <div class="item">
 									<img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" alt="slider detail dodolan manuk">
@@ -54,30 +41,21 @@
 								<ol class="carousel-indicators" id="imagenes_carousel">
 								  <li data-target="#itemsingle" data-slide-to="0" class="active"><img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.jpeg" alt="slider detail dodolan manuk"></li>
 								  <li data-target="#itemsingle" data-slide-to="1" class=""><img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" alt="slider detail dodolan manuk"></li>
-								</ol>
-							
-							</div>
+								</ol>							
+							</div>														
 						</div>
-						<div class="span6" id="detalle_producto">
+						<div class="span6 post bloque_chico" id="detalle_producto">
 							<h3><?=$productos->titulo_producto;?></h3> <br>
-							<p><?= $productos->descrip_producto?></p>
-							
-							<br>
-							<h7>Sectores de Reparto: </h7>
-							<?php foreach ($subsector_entregas_particular as $subsectorparticular) {
-								?>
-							
-							<p> <?=$subsectorparticular->nombre_subsector_entrega?>,</p>
-							<?php } ?>
-							<br>
+							<h7>Ingredientes: </h7> 
+							<p><?= $productos->descrip_producto?></p>													
 							<h7>Condiciones Adicionales del Reparto: </h7> 
 							<p> <?=$detalle_locales->descrip_adicional?></p>
 							<br>
-
 							<p>HashTag : <span class="label label-warning">#<?= $id_tipo_producto_nombre->nombre_tipo_producto ?></span></p>
-							<h4>$<?= $productos->precio ?></h4>
-							<p><a href="#test_modal" id="button" name="button" data-toggle="modal" class="btn btn-warning btn-large"><i class="icon-shopping-cart"></i> Ver Telefono</a></p>
-						</div>
+							<h4>$<?= $productos->precio ?></h4>													
+							<br><br><br>
+							<a href="#test_modal" id="button" name="button" data-toggle="modal" style="margin-top:-20px" class="offset3 span7 btn btn-danger btn-large"><i class="icon-shopping-cart"></i> Ver Telefono</a>			
+						</div>						
 					</div>
 					
 					<div class="row-fluid" id="mapa-local">
@@ -183,34 +161,27 @@
 					</div>
 				</div>
 				
-				<!--break-->
-				
+				<!--break-->	
 				<div class="span2" id="categoria_producto">
 					<div class="row-fluid sidebar">
 						<div class="span12">
-							<h3>Categoria</h3>
+							<h3>Sectores</h3>
 							<ul class="nav nav-tabs nav-stacked">
 							<?php foreach ($categorias as $cat){
 								$class = '';
 									if($cat->nombre_tipo_producto == $id_tipo_producto_nombre->nombre_tipo_producto)
 									{
 										$class ='active';
-									}
-								
+									}								
   								?>
 							  <li class="<?=$class?>"><a><?= $cat->nombre_tipo_producto ?></a></li>
-
 							  <?php								}
-  								?>
-
-							  
+  								?>  
 							</ul>
-							
-						
 						</div>
 					</div>
 				</div>
-			
+	
 			</div>
 		</div>
 	</div>
@@ -279,6 +250,13 @@
   google.maps.event.addDomListener(window, 'load', initialize);
 
 </script>
+<script>
+        $(document).ready(function(){
+            $('.carousel').carousel({
+                interval: 5000
+            });
+        });
+    </script> 
 <!-- Termino pup-pop -->
 <script type="text/javascript" src='../js/scriptsproductos.js'> </script>
 
