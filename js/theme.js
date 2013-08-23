@@ -7,16 +7,16 @@
         jQuery(function () {
             jQuery(window).scroll(function () {
                 
-                if(jQuery(this).scrollTop()>860){
+                if(jQuery(this).scrollTop()>600){
                     jQuery('#categoria').css('position','fixed');
-                    jQuery('#categoria').css('right','30px');
+                    jQuery('#categoria').css('right','0px');
                     jQuery('#categoria').css('top','80px');
                     jQuery('#categoria').css('bottom','20px');
                     jQuery('#categoria').css('height','250px');
                 }else{
                    
                     jQuery('#categoria').css('position','absolute');
-                    jQuery('#categoria').css('right','30px');
+                    jQuery('#categoria').css('right','0px');
                     jQuery('#categoria').css('bottom','30px');
                     jQuery('#categoria').css('top','240px');
                      jQuery('#categoria').css('height','250px');
@@ -25,9 +25,9 @@
                  if(jQuery(this).scrollTop()>2060){
 
                      jQuery('#categoria').css('position','absolute');
-                    jQuery('#categoria').css('right','30px');
+                    jQuery('#categoria').css('right','0px');
                     jQuery('#categoria').css('bottom','30px');
-                    jQuery('#categoria').css('top','1520px');
+                    jQuery('#categoria').css('top','2520px');
                 }
 
 

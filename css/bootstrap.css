@@ -4242,14 +4242,15 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
   border-color: #eeeeee #eeeeee #dddddd;
+  color:black;
 }
 
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
-  color: #555555;
+  color: white;
   cursor: default;
-  background-color: #ffffff;
+  background-color:#faa732;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }

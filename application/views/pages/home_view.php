@@ -37,7 +37,6 @@
 
 <!-- Inicio Sector Reparto -->
 <section class="portfolio rev" id="sector_reparto" style="background: url(<?= base_url()?>img/dondeestas.png);background-size: 100% 100%;">
-
     <div class="container">
         <div class="row">
             <div class="span12 center">
@@ -61,6 +60,7 @@
                 <h4 class="sub-heading"><font><font>Así podrás encontrar más fácilmente productos a tu domicilio</font></font></h4>
                         
             </div>
+
             <div class="span11  offset1 center" id="lugares">
                 <div class="row">
 
@@ -114,116 +114,122 @@
 </section>
 <!-- Fin sector reparto -->
 <!-- Inicio Productos-->    
-    <section class="portfolio" id="prod" style="position:relative; ">
+    <section class="portfolio" id="prod" style="position:relative; background: url('<?php base_url()?>img/greyzz.png')">
 
                 <div class="container">
 
                     <div class="row">
-                     <div class="span10" aling="center"id="ancho_productos">
-                            <h1 class="big-heading" id="letra_grande"><font><font>Productos en Promoción </font></font></h1>
-                            <h4 class="sub-heading"><font><font>Elige promociones exclusivas que foodland tiene para ti</font></font></h4>
-                            <?php 
-                                $i=0;
-                                foreach ($productos_random as $producto) {
-                                    $id= $producto->id_producto;
-                                    $id_local=$producto->id_local;
-                               
-                              ?>
-                        <a href="<?= base_url() ?>producto?id=<?= $id ?>">
-                        <div class="span3 project bloque_producto" id="imagen_producto" >
-                            <!-- Imagen de fondo-->
-                            <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
-                            <!-- Logo del local-->
-                            <span class="overlay"> 
-                            </span>
+                    
+                        <div class=" offset3 span4 lista_productos">
+                            <ul class="nav nav-tabs" id="myTab">
+                              <li class="active"><a href="#Promocion">Productos en promocion</a></li>
+                              <li><a href="#OtrosProductos">Otros productos</a></li>
+                            </ul>
+                        </div>
+                        <div class="span12">
+                            <div class="tab-content">
+                                  <div class="tab-pane active" id="Promocion">
+                                        <div class="span10" id="ancho_productos">
+                                            <h1 class="big-heading" id="letra_grande"><font><font>Productos en Promoción </font></font></h1>
+                                            <?php 
+                                                $i=0;
+                                                foreach ($productos_random as $producto) {
+                                                    $id= $producto->id_producto;
+                                                    $id_local=$producto->id_local;
+                                            ?>
+                                            <a href="<?= base_url() ?>producto?id=<?= $id ?>">
+                                                <div class="span3 project bloque_producto" id="imagen_producto" >
+                                                    <!-- Imagen de fondo-->
+                                                    <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
+                                                    <!-- Logo del local-->
+                                                    <span class="overlay"> 
+                                                    </span>
 
-                            <div class="cnt">
-                            
-                                <!-- Titulo Del producto-->
-                                <h4><font><font><?= $producto->titulo_producto ?></font></font></h4>
-                                 <!-- Precio Del producto-->
-                                 <h4><font><font> $<?=  $producto->precio  ?></font></font></h4>
-                                <!-- like
-                                <div href="#" class="like ">
-                                   <i class="icon-heart"></i>
-                                    <span class="trigger"></span>
-                                   
-                                </div>
+                                                    <div class="cnt">
+                                                    
+                                                        <!-- Titulo Del producto-->
+                                                        <h4><font><font><?= $producto->titulo_producto ?></font></font></h4>
+                                                         <!-- Precio Del producto-->
+                                                         <h4><font><font> $<?=  $producto->precio  ?></font></font></h4>
+                                                        <!-- like
+                                                        <div href="#" class="like ">
+                                                           <i class="icon-heart"></i>
+                                                            <span class="trigger"></span>
+                                                           
+                                                        </div>
 
 
-                                <div href="#" class="no-like">
-                                    <i class="icon-heart"></i>
-                                    <span class="trigger"></span>
-                                
-                                </div>
-                                <br>
-                                -->
-                                <h6><i class="icon-user"></i> <?=  $producto->numero_personas  ?> Personas </h6>
-                                
-                                 <br>
+                                                        <div href="#" class="no-like">
+                                                            <i class="icon-heart"></i>
+                                                            <span class="trigger"></span>
+                                                        
+                                                        </div>
+                                                        <br>
+                                                        -->
+                                                        <h6><i class="icon-user"></i> <?=  $producto->numero_personas  ?> Personas </h6>
+                                                        
+                                                         <br>
 
-                                <a href="<?= base_url() ?>producto?id=<?= $id ?>" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
-                        
-                               
+                                                        <a href="<?= base_url() ?>producto?id=<?= $id ?>" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- Termino Bloque Grande-->
+                                            <?php $i++;} ?>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tab-pane" id="OtrosProductos">
+                                        <div class="span10" aling="center"id="ancho_productos">
+                                            <h1 class="big-heading" id="letra_grande"><font><font>Otros Productos </font></font></h1>
+                                            <?php 
+                                                $i=0;
+                                                foreach ($productos_random as $producto) {
+                                                    $id= $producto->id_producto;
+                                                    $id_local=$producto->id_local;
+                                            ?>
+                                            <a href="<?= base_url() ?>producto?id=<?= $id ?>">
+                                                <div class="span3 project bloque_producto" id="imagen_producto" >
+                                                    <!-- Imagen de fondo-->
+                                                    <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
+                                                    <!-- Logo del local-->
+                                                    <span class="overlay"> 
+                                                    </span>
+
+                                                    <div class="cnt">
+                                                    
+                                                        <!-- Titulo Del producto-->
+                                                        <h4><font><font><?= $producto->titulo_producto ?></font></font></h4>
+                                                         <!-- Precio Del producto-->
+                                                         <h4><font><font> $<?=  $producto->precio  ?></font></font></h4>
+                                                        <!-- like
+                                                        <div href="#" class="like ">
+                                                           <i class="icon-heart"></i>
+                                                            <span class="trigger"></span>
+                                                           
+                                                        </div>
+
+
+                                                        <div href="#" class="no-like">
+                                                            <i class="icon-heart"></i>
+                                                            <span class="trigger"></span>
+                                                        
+                                                        </div>
+                                                        <br>
+                                                        -->
+                                                        <h6><i class="icon-user"></i> <?=  $producto->numero_personas  ?> Personas </h6>
+                                                        
+                                                         <br>
+
+                                                        <a href="<?= base_url() ?>producto?id=<?= $id ?>" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- Termino Bloque Grande-->
+                                            <?php $i++;} ?>
+                                        </div>                                    
+                                    </div>
                             </div>
-                        </div>
-                        </a>
-                        <!-- Termino Bloque Grande-->
-                        <?php $i++;} ?>
-
-                        </div>
-                        <div class="span10" aling="center"id="ancho_productos">
-                            <h1 class="big-heading" id="letra_grande"><font><font>Productos Cercanos a ti </font></font></h1>
-                            <h4 class="sub-heading"><font><font>Productos de locales que estan cercanos a tu ubicación</font></font></h4>
-                            <?php 
-                                $i=0;
-                                foreach ($productos_random as $producto) {
-                                    $id= $producto->id_producto;
-                                    $id_local=$producto->id_local;
-                               
-                              ?>
-                        <a href="<?= base_url() ?>producto?id=<?= $id ?>">
-                        <div class="span3 project bloque_producto" id="imagen_producto">
-                            <!-- Imagen de fondo-->
-                            <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
-                            <!-- Logo del local-->
-                            <span class="overlay"> 
-                            </span>
-
-                            <div class="cnt">
-                            
-                                <!-- Titulo Del producto-->
-                                <h4><font><font><?= $producto->titulo_producto ?></font></font></h4>
-                                 <!-- Precio Del producto-->
-                                 <h4><font><font> $<?=  $producto->precio  ?></font></font></h4>
-                                <!-- like
-                                <div href="#" class="like ">
-                                   <i class="icon-heart"></i>
-                                    <span class="trigger"></span>
-                                   
-                                </div>
-
-
-                                <div href="#" class="no-like">
-                                    <i class="icon-heart"></i>
-                                    <span class="trigger"></span>
-                                
-                                </div>
-                                <br>
-                                -->
-                                <h6><i class="icon-user"></i> <?=  $producto->numero_personas  ?> Personas </h6>
-                                
-                                 <br>
-
-                                <a href="<?= base_url() ?>producto?id=<?= $id ?>" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
-                        
-                               
-                            </div>
-                        </div>
-                        </a>
-                        <!-- Termino Bloque Grande-->
-                        <?php $i++;} ?>
-
                         </div>
 
                        
@@ -247,8 +253,16 @@
                 </div>
         </section>
 <!-- Termino Productos-->
-
+<script>
+$(function () {
+    $('#myTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+})
+ </script>
 
  <script type="text/javascript" src="<?= base_url();?>js/index-slider.js"></script>  
 <script src="<?= base_url();?>js/theme.js"></script>
+<script src="<?php base_url() ?>js/bootstrap-tab.js"></script>
  

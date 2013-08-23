@@ -23,6 +23,11 @@ html,body {
     font-family:'Open Sans', sans-serif;
     background-color:white;
 }
+.lista_productos a{
+
+    color:black;
+
+}
 
 /*#features,#support,#testimonials,#news, #bottom{background-color: #f4f5f6;}*/
 /* Wrapper for page content to push down footer */
