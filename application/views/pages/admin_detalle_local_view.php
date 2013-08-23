@@ -94,8 +94,12 @@
 		
 							$visitasayer = $visitasayer + $visita['visita'];
 						}
-						$porcentajevisitas = (($visitashoy-$visitasayer)/$visitasayer)*100;
-
+						if($visitasayer == 0){
+							$porcentajevisitas = 0;
+						}
+						else{
+							$porcentajevisitas = (($visitashoy-$visitasayer)/$visitasayer)*100;
+							}
 						?>							
 						<div class="stat">
 							<span class="stat-value"><?=$porcentajevisitas?>%</span>									

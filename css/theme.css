@@ -130,7 +130,7 @@ body {
 	background: #DDDCE2 url(../img/body-bg.png) repeat left top;
 	-webkit-font-smoothing: antialiased;
 	font-family: 'Lato', sans-serif !important;
-	padding-top: 107px;
+	padding-top: 65px;
 	background-color: #f5f5f5;
 }
 @media (max-width: 979px) {
@@ -165,11 +165,15 @@ textarea {
 }
 #sector_reparto{
 	padding:10px;
-	margin-top: 65px;
+	
 
 }
-#categoria{
+.category{
 	padding:0px;
+	background: #e05a54;
+	color: white;
+	margin-top:150px;
+}
 }
 #buttom_categoria{
 	padding:20px;

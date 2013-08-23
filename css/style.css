@@ -1157,7 +1157,7 @@ html[xmlns] .slides {
 }
 
 .big-heading {
-    font-size:56px;
+    font-size:44px;
     line-height:1;
     letter-spacing:-3px;
     text-align:center;
@@ -2722,10 +2722,15 @@ a,a:hover {
    
     padding:80px 0 60px;
     background:#FFF;
-    color:#8E959C;
+    color:black;
     border-bottom:1px solid #DDD;
     border-top:1px solid #DDDCDC;
 
+}
+.portfolio2{
+   padding: 10px;
+    background: #e05a54;
+    color: #FFFFFF;
 }
 
 .portfolio.rev {

@@ -62,9 +62,6 @@
               
             </form>
          </div>
-         <div class="span2" id="categorias_phone">
-          <a href="#test_modal_categorias" data-toggle="modal" style="color:white;">Categoria productos</a>
-         </div> 
             
           <div class="nav-collapse collapse" cz-shortcut-listen="true">
                 <ul class="nav pull-right"> 
@@ -101,6 +98,7 @@
             </div>
        </div>
     </div>
+    
 
 <!-- pup-pop Login -->
 
@@ -140,32 +138,3 @@
 
 
 
-  <div class="modal fade" id="test_modal_categorias">
-                    <!-- SideBar -->
-
-                <div class="span3 sidebar" id="categoria_phone" >
-
-                    <div class="box">
-                        <div class="sidebar_header center">
-                            <h3>Categorias</h3><a class="close2" data-dismiss="modal">&times;</a>
-                        </div>
-
-                        <ul >
-                            <h4>
-                                <ul>
-                                    <li class="active"><a <a style="   color: #BE3F3F;"  href="<?= base_url() ?>home?subsector=<?=$subsector?>">Todo</a></li>
-                            <?php foreach ($categoria as $pro){ ?>
-                                    <li><a style="   color: #ffffff;" href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&subsector=<?=$subsector?>"><?=$pro->nombre_tipo_producto?></a></li>
-                                    <?php } ?>
-                                </ul>
-                            </h4>
-                        </ul>
-                    </div>
-                    <br>
-                  
-
-                 
-                </div>
-                   
-   
-</div>

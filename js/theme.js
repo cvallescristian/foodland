@@ -12,13 +12,14 @@
                     jQuery('#categoria').css('right','30px');
                     jQuery('#categoria').css('top','80px');
                     jQuery('#categoria').css('bottom','20px');
-                    jQuery('#categoria').css('height','600px');
+                    jQuery('#categoria').css('height','250px');
                 }else{
                    
                     jQuery('#categoria').css('position','absolute');
                     jQuery('#categoria').css('right','30px');
                     jQuery('#categoria').css('bottom','30px');
                     jQuery('#categoria').css('top','240px');
+                     jQuery('#categoria').css('height','250px');
                 }
 
                  if(jQuery(this).scrollTop()>2060){
