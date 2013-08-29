@@ -27,6 +27,20 @@
 							</select>
 						    </div>
 						  </div>
+						  						  <div class="control-group">
+							    <label class="control-label" for="inputHorarioEntrada">Promoción</label>
+							    <div class="controls">
+							    	<select name="inputPromocion">
+										<option value="0"
+										>No es Promoción
+										</option>
+										<option value="1"
+										>Promoción
+										</option>
+
+							    	</select>
+							    </div>
+							  </div>
 						  <div class="control-group">
 						    <label class="control-label" for="inputLocal">Tipo Producto</label>
 						    <div class="controls">
