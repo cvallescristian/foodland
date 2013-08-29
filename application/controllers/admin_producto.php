@@ -111,7 +111,8 @@ class Admin_producto extends CI_Controller {
            'precio' =>$this->input->post('inputPrecio'),
            'descrip_producto' =>$this->input->post('inputDescripcion'),
            'id_local' => $this->input->post('inputLocal'),
-           'id_tipo_producto' => $this->input->post('inputProducto')
+           'id_tipo_producto' => $this->input->post('inputProducto'),
+           'promocion_producto' => $this->input->post('inputPromocion')
     	);
 
     	$config['upload_path'] = base_url()."img/locales/";  

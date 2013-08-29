@@ -48,6 +48,38 @@
 						    </div>
 						  </div>
 						  <div class="control-group">
+							    <label class="control-label" for="inputHorarioEntrada">Promoción</label>
+							    <div class="controls">
+							    	<select name="inputPromocion">
+		  								<?php foreach ($productos as $pro){
+		  									if($pro->id_producto == $_GET['id']){
+												break;
+											}
+										}
+										if ($pro->promocion_producto == 1)
+										{
+											$tipo1 = 'Promoción';
+											$tipo2 = 'No es Promoción';
+											$valor = 0;
+										}
+										else
+										{
+											$tipo2 = 'Promoción';
+											$tipo1 = 'No es Promoción';
+											$valor = 1;
+										}
+		  								?>
+										<option value="<?=$pro->id_local?>"
+										><?=$tipo1?>
+										</option>
+										<option value="<?=$valor?>"
+										><?=$tipo2?>
+										</option>
+
+							    	</select>
+							    </div>
+							  </div>
+						  <div class="control-group">
 						    <label class="control-label" for="inputLocal">Tipo Producto</label>
 						    <div class="controls">
 						      <select name='inputProducto'>
