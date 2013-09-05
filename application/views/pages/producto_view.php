@@ -45,7 +45,7 @@
 							</div>														
 						</div>
 						<div class="span6 post bloque_chico" id="detalle_producto">
-							<h3><?=$productos->titulo_producto;?></h3> <br>
+							<h3><?=$productos->titulo_producto;?></h3>
 							<h7>Ingredientes: </h7> 
 							<p><?= $productos->descrip_producto?></p>													
 							<h7>Condiciones Adicionales del Reparto: </h7> 
@@ -53,9 +53,10 @@
 							<p>HashTag : <span class="label label-warning">#<?= $id_tipo_producto_nombre->nombre_tipo_producto ?></span></p>
 							<h4>$<?= $productos->precio ?></h4>													
 							<br><br><br>
-							<a href="#test_modal" id="button" name="button" data-toggle="modal" style="margin-top:-20px" class="offset3 span7 btn btn-danger btn-large"><i class="icon-shopping-cart"></i> Ver Telefono</a>			
-						</div>						
+							<a href="#test_modal" id="button" name="button" data-toggle="modal" style="margin-top:-20px" class="offset3 span7 btn btn-danger btn-large"><i class="icon-shopping-cart"></i> Ver Telefono</a>																			
+						</div>									
 					</div>
+					<br><br><br><br>
 					
 					<div class="row-fluid" id="mapa-local">
 						<div class="span12">
@@ -166,16 +167,11 @@
 						<div class="span12">
 							<h3>Sectores</h3>
 							<ul class="nav nav-tabs nav-stacked">
-							<?php foreach ($categorias as $cat){
-								$class = '';
-									if($cat->nombre_tipo_producto == $id_tipo_producto_nombre->nombre_tipo_producto)
-									{
-										$class ='active';
-									}								
-  								?>
-							  <li class="<?=$class?>"><a><?= $cat->nombre_tipo_producto ?></a></li>
-							  <?php								}
-  								?>  
+							  <li><a>Viña del Mar</a></li>
+							  <li><a>Valparaíso</a></li>
+							  <li><a>Limache</a></li>
+							  <li><a>Quillota</a></li>
+							  <li><a>Quilpué</a></li>
 							</ul>
 						</div>
 					</div>
