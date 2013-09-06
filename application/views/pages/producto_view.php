@@ -45,15 +45,17 @@
 							</div>														
 						</div>
 						<div class="span6 post bloque_chico" id="detalle_producto">
-							<h3><?=$productos->titulo_producto;?></h3>
-							<h7>Ingredientes: </h7> 
-							<p><?= $productos->descrip_producto?></p>													
-							<h7>Condiciones Adicionales del Reparto: </h7> 
-							<p> <?=$detalle_locales->descrip_adicional?></p>
-							<p>HashTag : <span class="label label-warning">#<?= $id_tipo_producto_nombre->nombre_tipo_producto ?></span></p>
-							<h4>$<?= $productos->precio ?></h4>													
-							<br><br><br>
-							<a href="#test_modal" id="button" name="button" data-toggle="modal" style="margin-top:-20px" class="offset3 span7 btn btn-danger btn-large"><i class="icon-shopping-cart"></i> Ver Telefono</a>																			
+							<div class="span10" style="margin-left:40px;">
+								<h3><?=$productos->titulo_producto;?></h3>
+								<h7>Ingredientes: </h7> 
+								<p><?= $productos->descrip_producto?></p>													
+								<h7>Condiciones Adicionales del Reparto: </h7> 
+								<p> <?=$detalle_locales->descrip_adicional?></p>
+								<p>HashTag : <span class="label label-warning">#<?= $id_tipo_producto_nombre->nombre_tipo_producto ?></span></p>
+								<h4>$<?= $productos->precio ?></h4>													
+								<br><br><br>
+								<a href="#test_modal" id="button" name="button" data-toggle="modal" style="margin-top:-20px" class="offset3 span7 btn btn-danger btn-large"><i class="icon-shopping-cart"></i> Ver Telefono</a>																			
+							</div>
 						</div>									
 					</div>
 					<br><br><br><br>
