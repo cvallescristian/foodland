@@ -18,15 +18,39 @@ Class Home extends CI_Controller
         $this->fb();
     	$subsector=$this->input->get('subsector');
         $tipo_producto = $this->input->get('tipo_producto');
+        $productos_random=[];
 		if(is_numeric($subsector) || $subsector==""){
 			$this->load ->model('home_model','uum');
-			$productos_random= $this->uum->get_producto_random($subsector);
-            if($tipo_producto != '' or $tipo_producto!=0){
-                $productos_random= $this->uum->get_producto_random_categoria_home($tipo_producto);
+            $session ='1';
+            $gustos=0;
+            $productos_gusto=[];
+            if($session =='1')
+            {
+                $gusto_usuario= $this->uum->get_gusto_usuario($session);
+                $productos_generales_gusto=[];
 
+                foreach ($gusto_usuario as $gusto) {
+
+                    $gustos=$gusto->id_tipo_producto;
+                    
+                    $productos_gusto= $this->uum->get_producto_random_categoria_gusto($gustos,$subsector);
+                    $productos_generales_gusto=$productos_generales_gusto+$productos_gusto;
+                }
+                
             }
-            if($tipo_producto != '' and $subsector != ''){
-                $productos_random= $this->uum->get_producto_random_categoria_sector($tipo_producto,$subsector);
+			$productos_random= $this->uum->get_producto_random($subsector,$gustos);
+            if($tipo_producto != '' or $tipo_producto!=0){
+                $productos_random= $this->uum->get_producto_random_categoria_home($tipo_producto,$gustos);
+                $this->data['productos_random']=$productos_random;
+            }
+
+            else if($tipo_producto != '' and $subsector != ''){
+                $productos_random= $this->uum->get_producto_random_categoria_sector($tipo_producto,$subsector,$gustos);
+                $this->data['productos_random']=$productos_random;
+            }
+            else
+            {
+                $this->data['productos_random']=$productos_gusto + $productos_random;
             }
             $sector_entregas = $this->uum->get_sector_entrega();
             $sub_sector_entregas = $this->uum->get_sub_sector_entrega();
@@ -35,7 +59,7 @@ Class Home extends CI_Controller
 			$categoria = $this->uum->get_categoria();
 			
             $this->data['categoria']=$categoria;
-			$this->data['productos_random']=$productos_random;
+
 			$this->data['sector_entregas']=$sector_entregas;
             $this->data['sub_sector_entregas']=$sub_sector_entregas;
 			$this->data['subsector']=$subsector;
