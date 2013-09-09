@@ -27,22 +27,7 @@
 				<div class="span10 single-item">
 					<div class="row-fluid">
 						<div class="span6" id="foto_producto">
-							<div id="itemsingle" class="carousel slide clearfix">							
-								<div class="carousel-inner">
-								  <div class="item active">
-									<img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.jpeg" alt="slider detail dodolan manuk" style="background-size: 200px 200px;">
-								  </div>
-								  <div class="item">
-									<img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" alt="slider detail dodolan manuk">
-								  </div>
-								  
-								</div>
-								
-								<ol class="carousel-indicators" id="imagenes_carousel">
-								  <li data-target="#itemsingle" data-slide-to="0" class="active"><img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.jpeg" alt="slider detail dodolan manuk"></li>
-								  <li data-target="#itemsingle" data-slide-to="1" class=""><img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" alt="slider detail dodolan manuk"></li>
-								</ol>							
-							</div>														
+							<img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.jpeg" alt="slider detail dodolan manuk">								
 						</div>
 						<div class="span6 post bloque_chico" id="detalle_producto">
 							<div class="span10" style="margin-left:40px;">
@@ -166,6 +151,7 @@
 				<!--break-->	
 				<div class="span2" id="categoria_producto">
 					<div class="row-fluid sidebar">
+						<img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" alt="slider detail dodolan manuk">
 						<div class="span12">
 							<h3>Sectores</h3>
 							<ul class="nav nav-tabs nav-stacked">
