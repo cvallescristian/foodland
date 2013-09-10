@@ -23,7 +23,7 @@ class Producto extends CI_Controller {
 			$tipo_producto=$this->uum->get_tipo_producto_particular($id);
             $categorias = $this->uum->get_categoria();
             $tipo_producto_nombre = $this->uum->get_tipo_producto_detalle_producto($tipo_producto);
-            $productos_random = $this->uum->get_producto_random_categoria($tipo_producto);
+            $productos_random = $this->uum->get_producto_random_categoria($tipo_producto,0);
 			$this->uum->agregar_contador($id);
             $buscar=$this->uum->get_producto_buscador();
 
