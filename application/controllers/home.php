@@ -34,7 +34,7 @@ Class Home extends CI_Controller
                     $gustos=$gusto->id_tipo_producto;
                     
                     $productos_gusto= $this->uum->get_producto_random_categoria_gusto($gustos,$subsector);
-                    $productos_generales_gusto=$productos_generales_gusto$productos_gusto;
+                    $productos_generales_gusto=$productos_generales_gusto+$productos_gusto;
                 }
                 
             }
@@ -50,7 +50,7 @@ Class Home extends CI_Controller
              }
             else
             {
-                $this->data['productos_random']=$productos_gusto  $productos_random;
+                $this->data['productos_random']=$productos_gusto+$productos_random;
              }
 
             $sector_entregas = $this->uum->get_sector_entrega();
