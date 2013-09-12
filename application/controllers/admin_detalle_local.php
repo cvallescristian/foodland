@@ -33,7 +33,7 @@ class Admin_detalle_local extends CI_Controller {
 			$data['visitas_dia_anterior']=$visitas_dia_anterior;
 			$this->load->view('templades/header_admin',$data);
 			$this->load->view('templades/header_detalle_local',$data);
-			$this->load->view('pages/admin_detalle_local_view',$data);
+			$this->load->view('pages/admin/admin_detalle_local_view',$data);
 		}
 		
 	}
@@ -54,7 +54,7 @@ class Admin_detalle_local extends CI_Controller {
 			
 			$this->load->view('templades/header_admin',$data);
 			$this->load->view('templades/header_detalle_local',$data);
-			$this->load->view('pages/admin_detalle_producto_local_view',$data);
+			$this->load->view('pages/admin/admin_detalle_producto_local_view',$data);
 		}
 	}
 	public function borrar_local(){
@@ -87,7 +87,7 @@ class Admin_detalle_local extends CI_Controller {
 			$data['sector_repartos']=$sector_reparto;
 			$data['sector_entrega']=$sector_entrega;
 			$this->load->view('templades/header_admin',$data);
-			$this->load->view('pages/admin_editar_local_view',$data);
+			$this->load->view('pages/admin/admin_editar_local_view',$data);
 		}
     }
 

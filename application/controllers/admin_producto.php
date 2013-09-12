@@ -20,7 +20,7 @@ class Admin_producto extends CI_Controller {
 			$data['locales'] = $locales; 
 			$data['tipo_producto']=$tipo_producto;
 			$this->load->view('templades/header_admin',$data);
-			$this->load->view('pages/admin_producto_view',$data);
+			$this->load->view('pages/admin/admin_producto_view',$data);
 		
 	}
 	public function nuevo_producto(){
@@ -35,7 +35,7 @@ class Admin_producto extends CI_Controller {
 			$data['locales'] = $locales; 
 			$data['producto'] = $producto;		
 			$this->load->view('templades/header_admin',$data);
-			$this->load->view('pages/admin_nuevo_producto_view',$data);
+			$this->load->view('pages/admin/admin_nuevo_producto_view',$data);
 		}
 		
 	}

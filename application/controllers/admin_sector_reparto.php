@@ -19,7 +19,7 @@ class Admin_sector_reparto extends CI_Controller {
 			$data['subsectores']=$subsectores;
 
 			$this->load->view('templades/header_admin');
-			$this->load->view('pages/admin_sector_reparto_view',$data);
+			$this->load->view('pages/admin/admin_sector_reparto_view',$data);
 		
 	}
 	public function nuevo_sector(){
@@ -34,7 +34,7 @@ class Admin_sector_reparto extends CI_Controller {
 			$data['sectores']=$sectores;
 
 			$this->load->view('templades/header_admin');
-			$this->load->view('pages/admin_nuevo_sector_view',$data);
+			$this->load->view('pages/admin/admin_nuevo_sector_view',$data);
 		}
 	}
 	public function nuevo_sector_agregar(){
@@ -109,7 +109,7 @@ class Admin_sector_reparto extends CI_Controller {
 			$data['sectores']=$sectores;
 			
 			$this->load->view('templades/header_admin',$data);
-			$this->load->view('pages/admin_editar_sector_view',$data);
+			$this->load->view('pages/admin/admin_editar_sector_view',$data);
 		}
 	}
 	public function editar_sector_agregar(){

@@ -10,12 +10,12 @@ class Admin_member extends CI_Controller {
 
 			$data['members']=$members;
 			$this->load->view('templades/header_admin');
-			$this->load->view('pages/admin_member_view',$data);
+			$this->load->view('pages/admin/admin_member_view',$data);
 		
 	}
 	public function nuevo_member(){
 			$this->load->view('templades/header_admin');
-			$this->load->view('pages/admin_nuevo_member_view');
+			$this->load->view('pages/admin/admin_nuevo_member_view');
 		
 	}
 	public function nuevo_member_agregar(){

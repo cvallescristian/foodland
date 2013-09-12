@@ -31,7 +31,7 @@ class Admin_local extends CI_Controller {
 			$data['sectores']=$sectores;
 	
 			$this->load->view('templades/header_admin',$data);
-			$this->load->view('pages/admin_local_view',$data);
+			$this->load->view('pages/admin/admin_local_view',$data);
 		}
 		
 	}
@@ -46,7 +46,7 @@ class Admin_local extends CI_Controller {
 			$data['sector_repartos']=$sector_reparto;
 			$data['subsector_repartos']=$subsector_reparto;
 			$this->load->view('templades/header_admin',$data);
-			$this->load->view('pages/admin_nuevo_local_view',$data);
+			$this->load->view('pages/admin/admin_nuevo_local_view',$data);
 		}
 	}
 	public function nuevo_local_agregar(){

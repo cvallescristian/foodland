@@ -16,7 +16,7 @@ class Admin extends CI_Controller {
 		}
 		if($this->session->userdata('id')==""){
 			$this->load->view('templades/header_logo');
-			$this->load->view('pages/admin_index_view');
+			$this->load->view('pages/admin/admin_index_view');
 		}else{
 			$root= base_url()."admin_local";
 			header("Location: $root");
