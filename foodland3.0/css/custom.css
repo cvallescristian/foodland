@@ -11,7 +11,7 @@ body {
 
 #logins{
 
-  background-color: #A5A5A5;
+  background-color: rgba(0, 0, 0, 0.5);
 
 }
 h1 {
@@ -46,7 +46,7 @@ a:focus {
   text-decoration: none;
 }
 a:link {
-  color: #353232;
+  color: #ffffff;
   -webkit-transition: color 300ms linear;
   -moz-transition: color 300ms linear;
   -o-transition: color 300ms linear;
@@ -369,7 +369,7 @@ span.underline {
   background: #faa732;
   color: #fff;
   padding-top: 11px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   height: 0px;
   width: 147px;
   
@@ -823,7 +823,7 @@ form .form-actions {
   background-color: #043d5d;
 }
 .tip {
-  margin: 0 auto;
+  margin: 15px auto;
 }
 .tooltip .tooltip-inner {
   max-width: 200px;
@@ -1197,7 +1197,7 @@ section#footer-cta .location .btn {
   background-attachment: fixed;
 }
 #about h1 {
-  text-transform: uppercase;
+  font-size: 30px;
   margin: 0 0 0.7em;
   font-weight: 400;
 }

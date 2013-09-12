@@ -217,7 +217,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #005580;
+  color: #fff;
   text-decoration: underline;
 }
 .img-rounded {
@@ -2648,7 +2648,7 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #faa732;
 }
 .nav > li > a > img {
   max-width: none;
