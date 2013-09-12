@@ -18,7 +18,7 @@ class home_model extends CI_Model{
         foreach ($arreglo as $a) {
             if($cont==0){ //primer elemento
                 $arre[$cont]=$a;
-                $cont;
+                $cont++;
 
             }else{
                 $band=0;
