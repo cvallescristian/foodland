@@ -49,67 +49,38 @@ class home_model extends CI_Model{
             break;
         }
     }
-    function get_producto_random($subsector_entrega,$gustos){ //exclusivamente para el index
+    function get_producto_random($subsector_entrega){ //exclusivamente para el index
         $query = "select * from Producto,Local_subsector_entrega";
         if($subsector_entrega!=""){
             $query.=" where Local_subsector_entrega.id_subsector_entrega=$subsector_entrega and Producto.id_local=Local_subsector_entrega.id_local";
         }else{
             $query.=" where Producto.id_local=Local_subsector_entrega.id_local";
         }
-        $query.=" and id_tipo_producto != '$gustos'";
         $query.=" order by rand() limit 18";
         $result = $this->db->query($query);
         return $result->result();      
     }
-    function get_producto_random_categoria($id,$gustos){ //exclusivamente para el index
+    function get_producto_random_categoria($id){ //exclusivamente para el index
         $query = "select * from Producto";
 
             $query.=" where id_tipo_producto = '$id'";
-            $query.=" and id_tipo_producto != '$gustos'";
 
 
         $query.=" order by rand() limit 18";
         $result = $this->db->query($query);
         return $result->result();      
     }
-    function get_gusto_usuario($id)
-    {
-        $query = "select * from Usuario_tipo_producto";
-        $query.=" where id_usuario = '$id'";
-        $query.="order by cont_visitas desc limit 1";
-        
-        $result = $this->db->query($query);
-        return $result->result(); 
-    }
-    function get_producto_random_categoria_gusto($id,$subsector_entrega){ //exclusivamente para el index
-        $query = "select * from Producto,Local_subsector_entrega";
-        if($subsector_entrega!=""){
-            $query.=" where Local_subsector_entrega.id_subsector_entrega=$subsector_entrega and Producto.id_local=Local_subsector_entrega.id_local";
-        }else{
-            $query.=" where Producto.id_local=Local_subsector_entrega.id_local";
-        }
-            $query.=" and id_tipo_producto = '$id'";
-
-
-        $query.=" order by rand() limit 6";
-        $result = $this->db->query($query);
-        return $result->result();      
-    }
-    function get_producto_random_categoria_home($id,$gustos){
+    function get_producto_random_categoria_home($id){
          $query = "select * from Producto";
 
             $query.=" where id_tipo_producto = '$id'";
-            if($id != $gustos)
-            {
-                $query.=" and id_tipo_producto != '$gustos'";
-            }
 
 
         $query.=" order by rand() limit 18";
         $result = $this->db->query($query);
         return $result->result();        
     }
-    function get_producto_random_categoria_sector($id,$subsector_entrega,$gustos){
+    function get_producto_random_categoria_sector($id,$subsector_entrega){
         $query = "select * from Producto,Local_subsector_entrega";
         if($subsector_entrega!=""){
             $query.=" where Local_subsector_entrega.id_subsector_entrega=$subsector_entrega and Producto.id_local=Local_subsector_entrega.id_local";
@@ -117,7 +88,6 @@ class home_model extends CI_Model{
             $query.=" where Producto.id_local=Local_subsector_entrega.id_local";
         }
         $query.=" and id_tipo_producto = '$id'";
-        $query.=" and id_tipo_producto != '$gustos'";
         $query.=" order by rand() limit 18";
         $result = $this->db->query($query);
         return $result->result(); 

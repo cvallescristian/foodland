@@ -1,10 +1,6 @@
 body {
-  font-family: 'Lato', sans-serif !important;
+  font-family: "freight-sans-pro", "Lato", Helvetica, sans-serif;
   color: white;
-}
-
-#logins{
-  background-color: #e05a54;
 }
 ::selection {
   background: #464542;
@@ -44,7 +40,7 @@ a:focus {
   text-decoration: none;
 }
 a:link {
-  color: #424141;
+  color: #252525;
   -webkit-transition: color 300ms linear;
   -moz-transition: color 300ms linear;
   -o-transition: color 300ms linear;
@@ -820,7 +816,7 @@ form .form-actions {
   background-color: #043d5d;
 }
 .tip {
-  margin-top: 14px;
+  margin: 0 auto;
 }
 .tooltip .tooltip-inner {
   max-width: 200px;
@@ -929,7 +925,7 @@ form .form-actions {
 .mfp-container h2 {
   font-size: 2em;
   margin-bottom: 0.5em;
-  color:#FFFFFF;
+  color:#464545;
 }
 .close {
   text-shadow: none;
@@ -1075,15 +1071,14 @@ section#home.app {
 section#portada{
 
    background: #f0eee8 url('../img/sushi2.jpg')no-repeat;
-  background-size: 100% 402px;
+  background-size: 100% 600px;
   height: 290px;
 
 }
 .cuadro_portada{
-  background-color: rgba(39, 38, 38, 0.58);
+  background-color: rgba(44, 21, 21, 0.58);
   margin-top:20px;
-  padding: 0px 30px;
-  font-size: 12px;
+  border-radius:5px 5px 5px 5px;
 }
 #booton-foodland{
   position: relative;
