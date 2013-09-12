@@ -36,10 +36,7 @@ class home_model extends CI_Model{
         }
         return $arre;      
     }
-    function ordenar($arreglo){
-        
-              
-    }
+
     function get_producto_particular($id){
         $query="select * from Producto where id_producto='$id' ";
         $result= $this->db->query($query);
@@ -175,7 +172,7 @@ class home_model extends CI_Model{
         foreach ($re as $r) {
             $cant=$r->cant_visitas;
         }
-        $cant=$cant1; //le aumentamos 1 al contador de visitas
+        $cant=$cant+1; //le aumentamos 1 al contador de visitas
 
         //luego lo guardamos a la base de datos la cantidad final de visitas
         $query="update Producto set cant_visitas='$cant' where id_producto='$id_producto'";
