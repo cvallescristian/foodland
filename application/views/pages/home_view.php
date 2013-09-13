@@ -3,6 +3,7 @@
   <link rel="stylesheet" href="<?= base_url();?>css/css/reset.css">
   <!-- Global CSS for the page and tiles -->
   <link rel="stylesheet" href="<?= base_url();?>css/css/main.css">
+   <link rel="stylesheet" href="<?= base_url();?>css/css/style.css">
 <script>
     // using JQUERY's ready method to know when all dom elements are rendered
     $( document ).ready(function () {
@@ -31,11 +32,7 @@
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-<!-- inicio portasda -->
-<section class="portfolio2 center">
-    <h2><img src="<?= base_url()?>/img/dos.png" style="width:60px">  &nbsp; &nbsp; &nbsp; Elige el producto que deseas </h2>
-</section>
-<!-- fin portada -->       
+     
 
 <!-- Inicio Sector Reparto -->
 <section class="portfolio rev" id="sector_reparto" style="background: url(<?= base_url()?>img/dondeestas.png);background-size: 100% 100%;">
@@ -115,21 +112,29 @@
     </div>
 </section>
 <!-- Fin sector reparto -->
+<!-- inicio portasda -->
+<section class="portfolio2 center">
+    <h2><img src="<?= base_url()?>/img/dos.png" style="width:60px">  &nbsp; &nbsp; &nbsp; Elige el producto que deseas </h2>
+</section>
+<!-- fin portada -->  
 <!-- Inicio Productos-->    
     <section class="portfolio" id="prod" style="position:relative; background: url('<?php base_url()?>img/greyzz.png')">
 
                 <div class="container">
 
                     <div class="row">
-                    
-                        <div class=" offset3 span4 lista_productos">
-                            <ul class="nav nav-tabs" id="myTab">
-                              <li class="active"><a href="#Promocion">Productos en promocion</a></li>
-                              <li><a href="#OtrosProductos">Otros productos</a></li>
-                            </ul>
+                        <div class="span12" >
+                            <h1 class="big-heading" id="letra_grande"><font><font>Puedes Seleccionar un tipo de producto </font></font></h1>
                         </div>
                         <div class="span12">
-                            <h1 class="big-heading" id="letra_grande"><font><font>Productos en Promoción </font></font></h1>
+                          <br>
+                          <ol id="filters">
+                                <?php foreach ($categoria as $c ) {
+                                ?>
+                                 <li data-filter="<?= $c->id_tipo_producto?>"> <font><font><?= $c->nombre_tipo_producto?></font></font> </li>
+                                <?php 
+                                } ?>
+                             </ol>
                         </div>
                     </div>
                 </div>
@@ -163,7 +168,7 @@
                                                       $id_local=$producto->id_local;
                                                     ?>        
                                                         <!-- These are our grid blocks -->
-                                                        <li style="position:relative; " align="center"><img src="<?= base_url();?>img/locales/<?=$id?>.jpeg" width="200" ><p><h5><?= $producto->titulo_producto ?></h5></p></li>
+                                                        <li data-filter-class='["<?= $producto->id_tipo_producto ?>"]' align="center" ><img src="<?= base_url();?>img/locales/<?=$id?>.jpeg" width="200" ><p><h5><?= $producto->titulo_producto ?></h5></p></li>
                                                         <!-- End of grid blocks -->
                                                       
                                                     <?php } ?>
@@ -194,27 +199,38 @@
           container: $('#tiles'), // Optional, used for some extra CSS styling
           offset: 16, // Optional, the distance between grid items
           outerOffset: 20, // Optional the distance from grid to parent
-          flexibleWidth: 350 // Optional, the maximum width of a grid item
+          flexibleWidth: 300 // Optional, the maximum width of a grid item
         };
 
         // Get a reference to your grid items.
-        var handler = $('#tiles li');
+        var handler = $('#tiles li'),
+            filters = $('#filters li');
 
         // Call the layout function.
         handler.wookmark(options);
+
+         var onClickFilter = function(event) {
+          var item = $(event.currentTarget),
+              activeFilters = [];
+
+
+          if (!item.hasClass('active')) {
+            filters.removeClass('active');
+          }
+          item.toggleClass('active');
+
+          // Filter by the currently selected filter
+          if (item.hasClass('active')) {
+            activeFilters.push(item.data('filter'));
+          }
+
+          handler.wookmarkInstance.filter(activeFilters);
+        }
+
+        // Capture filter click events.
+        filters.click(onClickFilter);
       });
     })(jQuery);
   </script>
-<script>
-$(function () {
-    $('#myTab a').click(function (e) {
-        e.preventDefault();
-        $(this).tab('show');
-    })
-})
- </script>
 
- <script type="text/javascript" src="<?= base_url();?>js/index-slider.js"></script>  
-<script src="<?= base_url();?>js/theme.js"></script>
-<script src="<?php base_url() ?>js/bootstrap-tab.js"></script>
  

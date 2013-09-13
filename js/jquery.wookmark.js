@@ -131,7 +131,7 @@
       if (filters.length) {
         // Collect active filters
         for (i = 0; i < filters.length; i++) {
-          filter = $.trim(filters[i].toLowerCase());
+          filter = $.trim(filters[i]);
           if (filter in this.filterClasses) {
             activeFilters.push(this.filterClasses[filter]);
           }
