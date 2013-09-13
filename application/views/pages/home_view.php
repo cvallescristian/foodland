@@ -4,6 +4,7 @@
   <!-- Global CSS for the page and tiles -->
   <link rel="stylesheet" href="<?= base_url();?>css/css/main.css">
    <link rel="stylesheet" href="<?= base_url();?>css/css/style.css">
+    <link rel="stylesheet" href="<?= base_url();?>css/css/colorbox.css">
 <script>
     // using JQUERY's ready method to know when all dom elements are rendered
     $( document ).ready(function () {
@@ -168,7 +169,15 @@
                                                       $id_local=$producto->id_local;
                                                     ?>        
                                                         <!-- These are our grid blocks -->
-                                                        <li data-filter-class='["<?= $producto->id_tipo_producto ?>"]' align="center" ><img src="<?= base_url();?>img/locales/<?=$id?>.jpeg" width="200" ><p><h5><?= $producto->titulo_producto ?></h5></p></li>
+                                                        <li data-filter-class='["<?= $producto->id_tipo_producto ?>"]' align="center" >
+                                                          <a href="<?= base_url();?>img/locales/<?=$id?>.jpeg" rel="lightbox">
+                                                            <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg" width="200" >
+                                                          </a> 
+                                                            <p>
+                                                              <h5><?= $producto->titulo_producto ?></h5>
+                                                            </p>
+                                                         
+                                                        </li>
                                                         <!-- End of grid blocks -->
                                                       
                                                     <?php } ?>
@@ -186,6 +195,7 @@
  <script src="<?= base_url();?>js/libs/jquery.min.js"></script>
   <script src="<?= base_url();?>js/libs/jquery.imagesloaded.js"></script>
   <!-- Include the plug-in -->
+   <script src="<?= base_url();?>js/libs/jquery.colorbox-min.js"></script>
   <script src="<?= base_url();?>js/jquery.wookmark.js"></script>
 
   <!-- Once the page is loaded, initalize the plug-in. -->
@@ -208,6 +218,11 @@
 
         // Call the layout function.
         handler.wookmark(options);
+
+        // Init lightbox
+        $('a', handler).colorbox({
+          rel: 'lightbox'
+        });
 
          var onClickFilter = function(event) {
           var item = $(event.currentTarget),
