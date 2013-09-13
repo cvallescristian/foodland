@@ -1,6 +1,8 @@
  <link rel="stylesheet" href="<?= base_url();?>css/slider-main.css">     
 <script src="<?= base_url()?>js/ajax.js"></script>
-
+  <link rel="stylesheet" href="<?= base_url();?>css/css/reset.css">
+  <!-- Global CSS for the page and tiles -->
+  <link rel="stylesheet" href="<?= base_url();?>css/css/main.css">
 <script>
     // using JQUERY's ready method to know when all dom elements are rendered
     $( document ).ready(function () {
@@ -127,132 +129,82 @@
                             </ul>
                         </div>
                         <div class="span12">
-                            <div class="tab-content">
-                                  <div class="tab-pane active" id="Promocion">
-                                        <div class="span10" id="ancho_productos">
-                                            <h1 class="big-heading" id="letra_grande"><font><font>Productos en Promoción </font></font></h1>
-                                            <?php 
-                                                $i=0;
-                                                foreach ($productos_random as $producto) {
-                                                    $id= $producto->id_producto;
-                                                    $id_local=$producto->id_local;
-                                            ?>
-                                            <a href="<?= base_url() ?>producto?id=<?= $id ?>">
-                                                <div class="span3 project bloque_producto" id="imagen_producto" >
-                                                    <!-- Imagen de fondo-->
-                                                    <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
-                                                    <!-- Logo del local-->
-                                                    <span class="overlay"> 
-                                                    </span>
-
-                                                    <div class="cnt">
-                                                    
-                                                        <!-- Titulo Del producto-->
-                                                        <h4><font><font><?= $producto->titulo_producto ?></font></font></h4>
-                                                         <!-- Precio Del producto-->
-                                                         <h4><font><font> $<?=  $producto->precio  ?></font></font></h4>
-                                                        <!-- like
-                                                        <div href="#" class="like ">
-                                                           <i class="icon-heart"></i>
-                                                            <span class="trigger"></span>
-                                                           
-                                                        </div>
-
-
-                                                        <div href="#" class="no-like">
-                                                            <i class="icon-heart"></i>
-                                                            <span class="trigger"></span>
-                                                        
-                                                        </div>
-                                                        <br>
-                                                        -->
-                                                        <h6><i class="icon-user"></i> <?=  $producto->numero_personas  ?> Personas </h6>
-                                                        
-                                                         <br>
-
-                                                        <a href="<?= base_url() ?>producto?id=<?= $id ?>" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- Termino Bloque Grande-->
-                                            <?php $i++;} ?>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="tab-pane" id="OtrosProductos">
-                                        <div class="span10" aling="center"id="ancho_productos">
-                                            <h1 class="big-heading" id="letra_grande"><font><font>Otros Productos </font></font></h1>
-                                            <?php 
-                                                $i=0;
-                                                foreach ($productos_random as $producto) {
-                                                    $id= $producto->id_producto;
-                                                    $id_local=$producto->id_local;
-                                            ?>
-                                            <a href="<?= base_url() ?>producto?id=<?= $id ?>">
-                                                <div class="span3 project bloque_producto" id="imagen_producto" >
-                                                    <!-- Imagen de fondo-->
-                                                    <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg"  class="img-rounded"> 
-                                                    <!-- Logo del local-->
-                                                    <span class="overlay"> 
-                                                    </span>
-
-                                                    <div class="cnt">
-                                                    
-                                                        <!-- Titulo Del producto-->
-                                                        <h4><font><font><?= $producto->titulo_producto ?></font></font></h4>
-                                                         <!-- Precio Del producto-->
-                                                         <h4><font><font> $<?=  $producto->precio  ?></font></font></h4>
-                                                        <!-- like
-                                                        <div href="#" class="like ">
-                                                           <i class="icon-heart"></i>
-                                                            <span class="trigger"></span>
-                                                           
-                                                        </div>
-
-
-                                                        <div href="#" class="no-like">
-                                                            <i class="icon-heart"></i>
-                                                            <span class="trigger"></span>
-                                                        
-                                                        </div>
-                                                        <br>
-                                                        -->
-                                                        <h6><i class="icon-user"></i> <?=  $producto->numero_personas  ?> Personas </h6>
-                                                        
-                                                         <br>
-
-                                                        <a href="<?= base_url() ?>producto?id=<?= $id ?>" class="btn btn-warning btn-large"><font><font>Ver detalles</font></font></a>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- Termino Bloque Grande-->
-                                            <?php $i++;} ?>
-                                        </div>                                    
-                                    </div>
-                            </div>
-                        </div>
-
-                       
-                                <!-- SideBar -->
-                        <div class="span2 category" id="<?php if($i>3){echo "categoria";} ?>"  >
-                           
-                                <div class="sidebar_header center">
-                                    <h3>Categorias</h3>
-                                </div>
-                                <ul >
-                                        <ul>
-                                            <li class="active"><a <a s  href="<?= base_url() ?>home?subsector=<?=$subsector?>">Todo</a></li>
-                                    <?php foreach ($categoria as $pro){ ?>
-                                            <li><a  href="<?= base_url() ?>home?tipo_producto=<?= $pro->id_tipo_producto ?>&subsector=<?=$subsector?>"><?=$pro->nombre_tipo_producto?></a></li>
-                                            <?php } ?>
-                                        </ul>
-                                </ul>
-                            <br>
+                            <h1 class="big-heading" id="letra_grande"><font><font>Productos en Promoción </font></font></h1>
                         </div>
                     </div>
                 </div>
         </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                        <div class="span12">
+                            <div class="tab-content">
+                                  <div class="tab-pane active" id="Promocion">
+                                                <div id="main" role="main">
+                                                   <style>
+                                                    /**
+                                                     * Grid items
+                                                     */
+                                                    #tiles li {
+                                                      -moz-box-sizing: border-box;
+                                                           box-sizing: border-box;
+                                                    }
+
+                                                    #tiles li img {
+                                                      width: 100%;
+                                                      height: auto;
+                                                    }
+                                                  </style>
+                                                <ul id="tiles">
+                                                  <?php 
+                                                    $i=0;
+                                                    foreach ($productos_random as $producto) {
+                                                      $id= $producto->id_producto;
+                                                      $id_local=$producto->id_local;
+                                                    ?>        
+                                                        <!-- These are our grid blocks -->
+                                                        <li style="position:relative; " align="center"><img src="<?= base_url();?>img/locales/<?=$id?>.jpeg" width="200" ><p><h5><?= $producto->titulo_producto ?></h5></p></li>
+                                                        <!-- End of grid blocks -->
+                                                      
+                                                    <?php } ?>
+                                                </ul>
+                                                    </div>
+                                                
+                                            
+                                        </div>
+                                    </div>
+                            </div>
+                </div>
+            </div>
+        </section>
 <!-- Termino Productos-->
+ <script src="<?= base_url();?>js/libs/jquery.min.js"></script>
+  <script src="<?= base_url();?>js/libs/jquery.imagesloaded.js"></script>
+  <!-- Include the plug-in -->
+  <script src="<?= base_url();?>js/jquery.wookmark.js"></script>
+
+  <!-- Once the page is loaded, initalize the plug-in. -->
+ <script type="text/javascript">
+    (function ($){
+      $('#tiles').imagesLoaded(function() {
+        // Prepare layout options.
+        var options = {
+          itemWidth: 200, // Optional min width of a grid item
+          autoResize: true, // This will auto-update the layout when the browser window is resized.
+          container: $('#tiles'), // Optional, used for some extra CSS styling
+          offset: 16, // Optional, the distance between grid items
+          outerOffset: 20, // Optional the distance from grid to parent
+          flexibleWidth: 350 // Optional, the maximum width of a grid item
+        };
+
+        // Get a reference to your grid items.
+        var handler = $('#tiles li');
+
+        // Call the layout function.
+        handler.wookmark(options);
+      });
+    })(jQuery);
+  </script>
 <script>
 $(function () {
     $('#myTab a').click(function (e) {
