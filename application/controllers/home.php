@@ -18,23 +18,23 @@ Class Home extends CI_Controller
         $this->fb();
     	$subsector=$this->input->get('subsector');
         $tipo_producto = $this->input->get('tipo_producto');
-		$productos_random=[];
+		$productos_random;
         if(is_numeric($subsector) || $subsector==""){
 			$this->load ->model('home_model','uum');
 			 $session ='1';
             $gustos=0;
-            $productos_gusto=[];
+            $productos_gusto;
             if($session =='1')
             {
                 $gusto_usuario= $this->uum->get_gusto_usuario($session);
-                $productos_generales_gusto=[];
+
 
                 foreach ($gusto_usuario as $gusto) {
 
                     $gustos=$gusto->id_tipo_producto;
                     
                     $productos_gusto= $this->uum->get_producto_random_categoria_gusto($gustos,$subsector);
-                    $productos_generales_gusto=$productos_generales_gusto+$productos_gusto;
+                    $productos_gusto+=$productos_gusto;
                 }
                 
             }
