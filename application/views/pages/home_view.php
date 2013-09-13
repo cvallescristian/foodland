@@ -226,44 +226,6 @@
 
           handler.wookmarkInstance.filter(activeFilters);
         }
-                function applyLayout() {
-          $('#tiles').imagesLoaded(function() {
-            // Destroy the old handler
-            if (handler.wookmarkInstance) {
-              handler.wookmarkInstance.clear();
-            }
-
-            // Create a new layout handler.
-            handler = $('#tiles li');
-            handler.wookmark(options);
-          });
-        }
-
-        /**
-         * When scrolled all the way to the bottom, add more tiles.
-         */
-        function onScroll(event) {
-          // Check if we're within 100 pixels of the bottom edge of the broser window.
-          var winHeight = window.innerHeight ? window.innerHeight : $(window).height(); // iphone fix
-          var closeToBottom = ($(window).scrollTop() + winHeight > $(document).height() - 100);
-
-          if (closeToBottom) {
-            // Get the first then items from the grid, clone them, and add them to the bottom of the grid.
-            var items = $('#tiles li'),
-                firstTen = items.slice(0, 10);
-            $('#tiles').append(firstTen.clone());
-
-            applyLayout();
-          }
-        };
-
-        // Capture scroll event.
-        $(window).bind('scroll', onScroll);
-
-        // Call the layout function.
-        handler = $('#tiles li');
-        handler.wookmark(options);
-
         // Capture filter click events.
         filters.click(onClickFilter);
       });
