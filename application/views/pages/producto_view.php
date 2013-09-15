@@ -149,11 +149,16 @@
 				</div>
 				
 				<!--break-->	
-				<div class="span2" id="categoria_producto">
+				<div class="span2">
 					<div class="row-fluid sidebar">
-						<img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" alt="slider detail dodolan manuk">
-						<div class="span12">
-							<h3>Sectores</h3>
+						<div class="post bloque_chico" style="height:250px" id="detalle_producto">
+							<h3>Local:</h3>
+							<div class="span12" style="margin-left:-25px;">
+								<img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" alt="slider detail dodolan manuk">
+							</div>
+						</div>									
+						<div class="span12" id="sectores_producto">
+							<h3>Sectores</h3> <!--sectores local-->
 							<ul class="nav nav-tabs nav-stacked">
 							  <li><a>Viña del Mar</a></li>
 							  <li><a>Valparaíso</a></li>
