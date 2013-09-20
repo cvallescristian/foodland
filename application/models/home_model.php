@@ -54,7 +54,7 @@ class home_model extends CI_Model{
             $query.=" where Producto.id_local=Local_subsector_entrega.id_local";
         }
         $query.=" and id_tipo_producto != '$gustos'";
-        $query.=" order by rand() limit 18";
+        $query.=" order by rand() ";
         $result = $this->db->query($query);
         return $result->result();      
     }

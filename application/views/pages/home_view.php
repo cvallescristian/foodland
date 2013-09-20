@@ -143,7 +143,7 @@
         <section>
             <div class="container">
                 <div class="row">
-                        <div class="span12">
+                        <div class="span10 offset1">
                             <div class="tab-content">
                                   <div class="tab-pane active" id="Promocion">
                                                 <div id="main" role="main">
@@ -170,11 +170,10 @@
                                                     ?>        
                                                         <!-- These are our grid blocks -->
                                                         <li data-filter-class='["<?= $producto->id_tipo_producto ?>"]' align="center" >
-                                                          <a href="<?= base_url();?>img/locales/<?=$id?>.jpeg" rel="lightbox">
                                                             <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg" width="200" >
-                                                          </a> 
                                                             <p>
-                                                              <h5><?= $producto->titulo_producto ?></h5>
+                                                              <h5 style="color:rgb(214, 18, 18)" ><?= $producto->titulo_producto ?></h5>
+                                                              <h3>$ <?= $producto->precio?></h3>
                                                             </p>
                                                          
                                                         </li>
@@ -219,10 +218,7 @@
         // Call the layout function.
         handler.wookmark(options);
 
-        // Init lightbox
-        $('a', handler).colorbox({
-          rel: 'lightbox'
-        });
+        
 
          var onClickFilter = function(event) {
           var item = $(event.currentTarget),
