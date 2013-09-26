@@ -21,11 +21,12 @@ Class Home extends CI_Controller
 		$productos_random;
         if(is_numeric($subsector) || $subsector==""){
 			$this->load ->model('home_model','uum');
-			 $session ='1';
+			 $session ='2';
             $gustos=0;
             $productos_gusto;
-            if($session =='1')
+            if($session =='2')
             {
+
                 $gusto_usuario= $this->uum->get_gusto_usuario($session);
 
 
@@ -36,6 +37,7 @@ Class Home extends CI_Controller
                     $productos_gusto= $this->uum->get_producto_random_categoria_gusto($gustos,$subsector);
                     $productos_gusto+=$productos_gusto;
                 }
+
                 
             }
            $productos_random= $this->uum->get_producto_random($subsector,$gustos);
@@ -48,9 +50,13 @@ Class Home extends CI_Controller
                 $productos_random= $this->uum->get_producto_random_categoria_sector($tipo_producto,$subsector,$gustos);
                 $this->data['productos_random']=$productos_random;
              }
-            else
+            else if($gusto_usuario!=NULL)
             {
                 $this->data['productos_random']=$productos_gusto+$productos_random;
+             }
+             else
+             {
+                $this->data['productos_random']=$productos_random;
              }
 
             $sector_entregas = $this->uum->get_sector_entrega();
