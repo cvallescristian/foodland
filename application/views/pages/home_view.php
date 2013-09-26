@@ -126,7 +126,10 @@
                     <div class="row">
                         <div class="span12" >
                             <h1 class="big-heading" id="letra_grande"><font><font>Puedes Seleccionar un tipo de producto </font></font></h1>
-                        </div>
+                            <!-- Button to trigger modal -->
+
+ 
+                 </div>
                         <div class="span12">
                           <br>
                           <ol id="filters">
@@ -174,11 +177,25 @@
                                                             <p>
                                                               <h5 style="color:rgb(214, 18, 18)" ><?= $producto->titulo_producto ?></h5>
                                                               <h3>$ <?= $producto->precio?></h3>
+                                                              <a href="#myModal<?= $id ?>" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
                                                             </p>
                                                          
                                                         </li>
                                                         <!-- End of grid blocks -->
-                                                      
+                                                          <!-- Modal -->
+                                                      <div id="myModal<?= $id ?>" class="span8 offset1 modal hide fade " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                        <div class="modal-header">
+                                                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                          <h3 style="color:rgb(214, 18, 18)" ><?= $producto->titulo_producto ?></h3>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg" width="350" >
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+                                                          <button class="btn btn-primary">Save changes</button>
+                                                        </div>
+                                                      </div>
                                                     <?php } ?>
                                                 </ul>
                                                     </div>
@@ -243,4 +260,5 @@
     })(jQuery);
   </script>
 
+       
  
