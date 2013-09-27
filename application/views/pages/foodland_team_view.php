@@ -55,8 +55,8 @@
                             <img src="./img/david.jpg" width="200" class="img-circle">
                         </a>                           
                         <div class="info">
-                            <h3>David Cid Castro</h3>
-                            <p class="area">Desarrollador front-end back-end<br>david@foodland.cl</p>
+                            <h3>David Cid</h3>
+                            <p class="area">Apoyo front-end back-end<br>david@foodland.cl</p>
                             <a href="http://www.facebook.com/david.a.castro.79" class="facebook">
                                 <span class="socialicons ico1"></span>
                             </a>                            
