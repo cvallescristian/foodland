@@ -1,4 +1,4 @@
-		<section id="categoria" class="portfolio rev">
+		<section id="categoria" class="portfolio">
 	        <div class="container" id="buttom_categoria">
 	            <div class="row">
 	                <div class="span12 center">
@@ -7,27 +7,26 @@
 	            </div>
 	        </div>        
 	    </section>	    
-	    <section class="portfolio" id="prod" style="position:relative; ">
+	    <section class="portfolio rev" id="prod" style="position:relative; ">
 	        <div class="row">
-	            <div class="offset2 span5">
+	            <div class="offset2 span6">
 					<h4 class="text">En los últimos años, en nuestro país hemos visto el gran 
 					aumento de los locales de comida con entrega a domicilio o delivery, 
 					teniendo gran éxito de ventas. Dichos locales ofrecen de lo más variado en 
 					comidas: sushi, pizza, comida rápida y hasta comidas caseras, han sido 
 					incluidos en este mercado en expansión.</h4>
 				</div>	
-				<div class="offset1 span4">
+				<div class="offset2 span4">
 					<img src="img/slider/3.jpg" class="img-polaroid">
 				</div>	
 	        </div>        
 	    </section>	    
-		<section id="categoria" class="portfolio rev">		
+		<section id="categoria" class="portfolio">		
 		    <div class="row">
-			    <div class="offset2 span4">
-			    	<br>
+			    <div class="offset2 span5">
 					<img src="img/slider/1.jpg" class="img-polaroid">
 				</div>	
-				<div class="offset1 span5">
+				<div class="offset1 span7">
 					<h4 class="text">   Foodland es nuestra empresa emprendedora e innovadora, 
 					formada por un grupo de jóvenes universitarios el año 2012, cuya misión es 
 					mostrar, a través de esta plataforma, una gran gama de locales delivery de 
@@ -40,9 +39,9 @@
 				</div>	
 			</div>        
 	    </section>	    
-		<section class="portfolio" id="prod" style="position:relative; ">
+		<section class="portfolio rev" id="prod" style="position:relative; ">
 	        <div class="row">
-	            <div class="offset1 span5">
+	            <div class="offset3 span5">
 						<h3 class="text">Esperamos que tu experiencia en Foodland.cl sea
 						 grata para ti, estaremos trabajando para ofrecerte el mejor servicio.</h3>
 					</div>	
@@ -51,3 +50,4 @@
 					</div>	
 	        </div>        
 	    </section>	    		
+	    <section class="portfolio" id="prod" style="position:relative; "></section>	    		

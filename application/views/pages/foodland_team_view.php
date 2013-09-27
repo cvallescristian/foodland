@@ -17,7 +17,7 @@
                         </a>                           
                         <div class="info">
                             <h3>Cristian Valles</h3>
-                            <p class="area">CEO y desarrollador back-end.<br>cristian@foodland.cl</p>
+                            <p class="area">CEO.<br>cristian@foodland.cl</p>
                             <a href="https://www.facebook.com/stilexmagic?fref=ts" class="facebook">
                                 <span class="socialicons ico1"></span>
                             </a>                            
@@ -56,14 +56,14 @@
                         </a>                           
                         <div class="info">
                             <h3>David Cid Castro</h3>
-                            <p class="area">Desarrollador front-end del sitio.<br>david@foodland.cl</p>
+                            <p class="area">Desarrollador front-end back-end<br>david@foodland.cl</p>
                             <a href="http://www.facebook.com/david.a.castro.79" class="facebook">
                                 <span class="socialicons ico1"></span>
                             </a>                            
                         </div>
                     </div>                  
-                </div>
-                <div class="row row1">
+                </div> 
+                <div class="row row1">                  
                     <div class="span6 bio_box">
                         <a  id="menu" href="https://about.me/diego.reyes">
                             <img src="./img/carlos.jpg" width="200" class="img-circle">
@@ -73,6 +73,34 @@
                             <p class="area">Jefe de marketing y diseñador.<br>carlos@foodland.cl</p>
                             <a href="http://www.facebook.com/patadaenlaraja?fref=ts" class="facebook">
                                 <span class="socialicons ico1"></span>
+                                <span class="socialicons_h ico1h"></span>
+                            </a>                            
+                        </div>
+                    </div>
+                    <div class="span6 bio_box bio_boxr">
+                        <a  id="menu" href="https://about.me/david.cid">
+                            <img src="./img/ignacio.jpg" width="200" class="img-circle">
+                        </a>                           
+                        <div class="info">
+                            <h3 style="margin-left:-18px">Juan Ignacio Ojeda</h3>
+                            <p class="area">Proyectos.<br>ignacio@foodland.cl</p>
+                            <a href="https://www.facebook.com/jignacio.ojeda" class="facebook">
+                                <span class="socialicons ico1"></span>
+                            </a>                            
+                        </div>
+                    </div>                  
+                </div> 
+                </div>              
+                <div class="row row1">
+                    <div class="span6 bio_box">
+                        <a  id="menu">
+                            <img src="./img/rebeca.jpg" width="200" class="img-circle">
+                        </a>                           
+                        <div class="info">
+                            <h3>Rebeca Cruces</h3>                            
+                            <p class="area"><br>rebeca@foodland.cl</p>
+                            <a href="https://www.facebook.com/rebeca.a.acuna" class="facebook">
+                                <span class="socialicons ico1"></span>
                             </a>                            
                         </div>
                     </div>
@@ -80,4 +108,3 @@
 
             </div>                                    
         </div>
-    </div>
