@@ -28,19 +28,21 @@
 					<div class="row-fluid">
 						<div class="span6" id="foto_producto">
 							<img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.jpeg" alt="slider detail dodolan manuk">	
-							<div class="post bloque_chico" style="margin-top:20px;" id="detalle_producto">
-							<div class="span12">
-								<img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" alt="slider detail dodolan manuk">
-							</div>
-						</div>							
+													
 						</div>
 						<div class="span6 post bloque_chico" id="detalle_producto">
 							<div class="span10" style="margin-left:40px;">
 								<h3><?=$productos->titulo_producto;?></h3>
+								
 								<h7>Ingredientes: </h7> 
-								<p><?= $productos->descrip_producto?></p>													
+								<p><?= $productos->descrip_producto?>.</p>													
 								<h7>Condiciones Adicionales del Reparto: </h7> 
 								<p> <?=$detalle_locales->descrip_adicional?></p>
+								<div class="post bloque_chico" style="margin-top:20px;" id="detalle_producto">
+								<h7>Local:</h7>
+								<img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" alt="slider detail dodolan manuk">
+								
+								</div>	
 								<p>HashTag : <span class="label label-warning">#<?= $id_tipo_producto_nombre->nombre_tipo_producto ?></span></p>
 								<h4>$<?= $productos->precio ?></h4>													
 								<br><br><br>
@@ -48,7 +50,7 @@
 							</div>
 						</div>									
 					</div>
-					<br><br><br><br>
+					
 					
 					<div class="row-fluid" id="mapa-local">
 						<div class="span12">

@@ -11,12 +11,10 @@ a {
 a:hover {
 	color:red;
 }
-.bloque_chico{
-	height: 200px;
-}
+
 .bloque_chico img{
-	width: 300px;
-	height: 200px;
+	width: 150px;
+	height: 100px;
 	margin-left: 25px;
 }
 .bloque_carrousel img{
@@ -37,6 +35,9 @@ a:hover {
 
 }
 
+#foto_producto{
+	margin-top: 20px;
+}
 .header-bar .logo {
 	color: #5ecaff;
 	font-size: 24px;
