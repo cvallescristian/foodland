@@ -1,6 +1,6 @@
 body {
 	background: #EEE;
-	color: #8E959C;
+	color: #4D4D4D;
 	background: url(../../img/body-bg.png) repeat;
 
 }
@@ -12,7 +12,7 @@ a:hover {
 	color:red;
 }
 .bloque_chico{
-	height: 323px;
+	height: 200px;
 }
 .bloque_chico img{
 	width: 300px;
@@ -88,11 +88,8 @@ a:hover {
 
 .post {
 	padding: 8px;
-	border-radius: 2px;
-	background: #FFF;
 	margin-bottom: 20px;
-	box-shadow: 0px 0px 27px 0 #EEE;
-	border: 2px solid #DDD;
+
 }
 
 .post h2 {

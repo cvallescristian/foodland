@@ -27,7 +27,12 @@
 				<div class="span10 single-item">
 					<div class="row-fluid">
 						<div class="span6" id="foto_producto">
-							<img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.jpeg" alt="slider detail dodolan manuk">								
+							<img src="<?= base_url();?>img/locales/<?= $productos->id_producto?>.jpeg" alt="slider detail dodolan manuk">	
+							<div class="post bloque_chico" style="margin-top:20px;" id="detalle_producto">
+							<div class="span12">
+								<img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" alt="slider detail dodolan manuk">
+							</div>
+						</div>							
 						</div>
 						<div class="span6 post bloque_chico" id="detalle_producto">
 							<div class="span10" style="margin-left:40px;">
@@ -39,7 +44,7 @@
 								<p>HashTag : <span class="label label-warning">#<?= $id_tipo_producto_nombre->nombre_tipo_producto ?></span></p>
 								<h4>$<?= $productos->precio ?></h4>													
 								<br><br><br>
-								<a href="#test_modal" id="button" name="button" data-toggle="modal" style="margin-top:-20px" class="offset3 span7 btn btn-danger btn-large"><i class="icon-shopping-cart"></i> Ver Telefono</a>																			
+								<a href="#test_modal" id="button" name="button" data-toggle="modal" style="margin-top:-20px;background: #E05454;" class="offset3 span7 btn btn-danger btn-large"><i class="icon-shopping-cart"></i> Ver Teléfono</a>																			
 							</div>
 						</div>									
 					</div>
@@ -151,12 +156,7 @@
 				<!--break-->	
 				<div class="span2">
 					<div class="row-fluid sidebar">
-						<div class="post bloque_chico" style="height:250px" id="detalle_producto">
-							<h3>Local:</h3>
-							<div class="span12" style="margin-left:-25px;">
-								<img src="<?= base_url();?>img/locales/<?= $detalle_locales->id_local ?>_logo.png" alt="slider detail dodolan manuk">
-							</div>
-						</div>									
+															
 						<div class="span12" id="sectores_producto">
 							<h3>Sectores</h3> <!--sectores local-->
 							<ul class="nav nav-tabs nav-stacked">
