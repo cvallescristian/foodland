@@ -184,16 +184,23 @@
                                                         <!-- End of grid blocks -->
                                                           <!-- Modal -->
                                                       <div id="myModal<?= $id ?>" class="span8 offset1 modal hide fade " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                                        <div class="modal-header">
+                                                        <div class="modal-header" align="center">
                                                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                          <h3 style="color:rgb(214, 18, 18)" ><?= $producto->titulo_producto ?></h3>
+                                                          <h2 style="color:rgb(214, 18, 18)" ><?= $producto->titulo_producto ?></h2>
                                                         </div>
-                                                        <div class="modal-body">
-                                                          <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg" width="350" >
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                          <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
-                                                          <button class="btn btn-primary">Save changes</button>
+                                                        <div class="modal-body" style="background: url('img/greyzz.png')">
+                                                          <div class="span3">
+                                                              <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg" width="350" >
+                                                                <p class="precio_poppup">$<?= $producto->precio?></p>
+                                                          </div>
+                                                          <div class="span4">
+                                                            <h4>Descripción del producto</h4>
+                                                            <p style="text-align=justify;padding:5px"><?= $producto->descrip_producto?></p>
+                                                            <h4>Sobre el local</h4>
+                                                            <p style="text-align=justify;padding:5px"> 
+                                                              <?= $producto->descrip_producto ?>
+                                                            </p>
+                                                          </div>
                                                         </div>
                                                       </div>
                                                     <?php } ?>
