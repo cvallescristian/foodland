@@ -172,15 +172,15 @@
                                                       $id_local=$producto->id_local;
                                                     ?>        
                                                         <!-- These are our grid blocks -->
+                                                        <a href="#myModal<?= $id ?>" role="button"  data-toggle="modal">
                                                         <li data-filter-class='["<?= $producto->id_tipo_producto ?>"]' align="center" >
                                                             <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg" width="200" >
                                                             <p>
                                                               <h5 style="color:rgb(214, 18, 18)" ><?= $producto->titulo_producto ?></h5>
-                                                              <h3>$ <?= $producto->precio?></h3>
-                                                              <a href="#myModal<?= $id ?>" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+                                                              <h3 style="color:black">$ <?= $producto->precio?></h3>
                                                             </p>
-                                                         
                                                         </li>
+                                                        </a>
                                                         <!-- End of grid blocks -->
                                                           <!-- Modal -->
                                                       <div id="myModal<?= $id ?>" class="span8 offset1 modal hide fade " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -194,12 +194,23 @@
                                                                 <p class="precio_poppup">$<?= $producto->precio?></p>
                                                           </div>
                                                           <div class="span4">
-                                                            <h4>Descripción del producto</h4>
-                                                            <p style="text-align=justify;padding:5px"><?= $producto->descrip_producto?></p>
-                                                            <h4>Sobre el local</h4>
-                                                            <p style="text-align=justify;padding:5px"> 
-                                                              <?= $producto->descrip_producto ?>
-                                                            </p>
+                                                            <div class="span4" id="descrip producto">
+                                                              <h4>Descripción del producto</h4>
+                                                              <div class="span4">
+                                                                <p style="text-align=justify;padding:5px"><?= $producto->descrip_producto?></p>
+                                                              </div>
+                                                            </div>
+                                                            <div class="span4">
+                                                                <h4>Sobre el local</h4>
+                                                                <div class="span1 offset1">
+                                                                  <img src="<?= base_url() ?>img/locales/27_logo.png" alt="">
+                                                                   <h5><p style="text-align=justify;padding:5px">Metpizza</p></h5>
+                                                                </div>
+                                                                <div class="span4">
+                                                                  <p style="text-align=justify;padding:5px">Horario de atencion: Lunes a Viernes de 00:00 hrs a 00:00 hrs Sabados y Domingos de 00:00 hrs a 00:00 hrs</p>
+                                                                </div>                                                              
+                                                            </div>
+
                                                           </div>
                                                         </div>
                                                       </div>
