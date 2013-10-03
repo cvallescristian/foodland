@@ -68,6 +68,16 @@ class home_model extends CI_Model{
         $result = $this->db->query($query);
         return $result->result();      
     }
+    function buscar_local_nombre($formato){ //exclusivamente para el index
+        $query = "select id_local from Local";
+            $query.=" where nombre_local = '$formato'";
+        $result = $this->db->query($query);
+        $re= $result->result();      
+        foreach ($re as $r ) {
+            return $r->id_local;
+            break;
+        }
+    }
     function get_gusto_usuario($id)
     {
         $query = "select * from Usuario_tipo_producto";

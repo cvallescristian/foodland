@@ -15,6 +15,7 @@ class Nuestros_locales extends CI_Controller {
 			$sector_entregas = $this->uum->get_sector_entrega();
 			$tipo_productos = $this->uum->get_categoria();
 			$buscar=$this->uum->get_producto_buscador();
+
 			$locales= $this->uum2->get_locales();
 			$locales_ramdom= $this->uum2->get_locales_ramdom();
 			$this->data['sector_entregas']=$sector_entregas;
@@ -64,6 +65,24 @@ class Nuestros_locales extends CI_Controller {
 				echo "Error en la consulta SQL <br>";
 				redirect(base_url()."nuestros_locales");
 			}
+	}
+
+	public function buscarlocales(){
+			$formato =$this->input->post('searchlocales'); //el formato es para ver si es categoria(1) o ubicacion(2) 
+			$this->load ->model('home_model','uum');
+		 	$id= $this->uum->buscar_local_nombre($formato);
+		 	if($id != NULL)
+		 	{
+				redirect(base_url()."perfil_local?id=".$id); 
+		 	}
+		 	else
+		 	{
+		 		$this->data['title']="Foodland: $formato";
+		 		$this->load->view('templades/header',$this->data);
+				$this->load->view('pages/nuestros_locales/buscarlocales_view');
+				$this->load->view('templades/footer');
+		 	}
+		 	
 	}
 	  private function fb()
     {

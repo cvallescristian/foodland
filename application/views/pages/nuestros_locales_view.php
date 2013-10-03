@@ -101,6 +101,16 @@
 				<div class="row">
 					<!-- inicio categorias -->
 					<div class="span4 center"><h4>Busqueda por...</h4></div>
+
+					<div class="span2" id="buscadorlocal">
+						<form class="form-search" action="<?= base_url()?>nuestros_locales/buscarlocales" method="post">
+							<div class="input-append" id="buscadorlocal">
+								<input type="text" name="searchlocales" id="searchlocales" class="search-query" placeholder="¿Qué local estás buscando?" autocomplete="off" required>
+								<button type="submit"  class="btn btn-warning"><i class="icon icon-search"></i></button>
+							</div>
+
+						</form>
+					</div>
 					<div class="span4 side-nav">
 						<ul class="nav nav-tabs nav-stacked">
 							<li class="title"><a href="<?= base_url() ?>nuestros_locales">Todo</a></li>
@@ -133,7 +143,15 @@
 	</div>
 <!-- End Main Area -->
 </div>
+    <script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
+<script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-typeahead.js"></script>
+<script>  
+ var subjects = [<?php foreach ($locales as $b ) {
 
+     echo "'$b->nombre_local',";
+ } ?>];   
+$('#searchlocales').typeahead({source: subjects})  
+</script> 
 <!-- Javascript -->
 <script src="<?= base_url();?>js/js-locales/jquery.min.js"></script>
 <script src="<?= base_url();?>js/js-locales/jquery.tweet.js"></script>
