@@ -202,13 +202,8 @@
                                                             </div>
                                                             <div class="span4">
                                                                 <h4>Sobre el local</h4>
-                                                                <div class="span1 offset1">
-                                                                  <img src="<?= base_url() ?>img/locales/<?= $producto->id_local?>_logo.png" alt="">
-                                                                   <h5><p style="text-align=justify;padding:5px"><?= $producto->nombre_local?></p></h5>
-                                                                </div>
-                                                                <div class="span4">
-                                                                  <p style="text-align=justify;padding:5px">Horario de atencion: Lunes a Viernes de <?= $producto->horario_entrada?> hrs a <?= $producto->horario_salida?> hrs Sabados y Domingos de <?= $producto->horario_entrada?> hrs a <?= $producto->horario_salida_fds?> hrs</p>
-                                                                </div>                                                              
+                                                                  <p><strong>Nombre:    </strong><?= $producto->nombre_local?></p><br>
+                                                                  <p><strong>Horario de Atención:   </strong>Lunes a Viernes de <?= $producto->horario_entrada?> hrs a <?= $producto->horario_salida?> hrs Sabados y Domingos de <?= $producto->horario_entrada?> hrs a <?= $producto->horario_salida_fds?> hrs</p>
                                                             </div>
 
                                                           </div>
