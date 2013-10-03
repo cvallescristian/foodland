@@ -14,7 +14,28 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
   padding: 5px;
   font-size: 30px;
   text-align: center;
-  background: #D8D0D0;
+  background: #faa732;
+  color:white;
+}
+.boton_rojo_claro{
+  background:#e05a54; 
+  color:white;
+}
+.boton_rojo_claro:hover{
+  background: #DD271F;
+  color: white;
+}
+.boton_amarillo{
+  margin-left: 32px;
+  margin-top: 10px;
+  background: #faa732;
+  color: white;
+}
+.boton_amarillo:hover{
+  margin-left: 32px;
+  margin-top: 10px;
+  background: #FACA32;
+  color:white;
 }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #F30808; color: #fff; text-shadow: none; }

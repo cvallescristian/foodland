@@ -189,22 +189,26 @@
                                                           <h2 style="color:rgb(214, 18, 18)" ><?= $producto->titulo_producto ?></h2>
                                                         </div>
                                                         <div class="modal-body" style="background: url('img/greyzz.png')">
-                                                          <div class="span3">
+                                                          <div class="span3" align="center">
                                                               <img src="<?= base_url();?>img/locales/<?=$id?>.jpeg" width="350" >
                                                                 <p class="precio_poppup">$<?= $producto->precio?></p>
+                                                                <a href="<?= base_url();?>producto?id=<?= $id ?>" class="btn btn-large boton_rojo_claro">Ver detalle del producto</a>
                                                           </div>
                                                           <div class="span4">
-                                                            <div class="span4" id="descrip producto">
+                                                            
                                                               <h4>Descripción del producto</h4>
                                                               <div class="span4">
-                                                                <p style="text-align=justify;padding:5px"><?= $producto->descrip_producto?></p>
+                                                                <p style="text-align=justify;"><?= $producto->descrip_producto?></p>
                                                               </div>
-                                                            </div>
-                                                            <div class="span4">
-                                                                <h4>Sobre el local</h4>
-                                                                  <p><strong>Nombre:    </strong><?= $producto->nombre_local?></p><br>
-                                                                  <p><strong>Horario de Atención:   </strong>Lunes a Viernes de <?= $producto->horario_entrada?> hrs a <?= $producto->horario_salida?> hrs Sabados y Domingos de <?= $producto->horario_entrada?> hrs a <?= $producto->horario_salida_fds?> hrs</p>
-                                                            </div>
+                                                              <h4>Sobre el local</h4>
+                                                              <div class="span4">
+                                                                
+                                                                <p style="text-align=justify;"><strong>Nombre:    </strong><?= $producto->nombre_local?></p>
+                                                                <p style="text-align=justify;"><strong>Horario de Atención:   </strong><br>&nbsp;&nbsp;&nbsp;Lunes a Viernes de <?= $producto->horario_entrada?> hrs a <?= $producto->horario_salida?> hrs <br>&nbsp;&nbsp;&nbsp;Sabados y Domingos de <?= $producto->horario_entrada?> hrs a <?= $producto->horario_salida_fds?> hrs</p>
+                                                                <div class="span3">  
+                                                                  <a href="<?= base_url();?>perfil_local?id=<?= $producto->id_local;?>" class="btn boton_amarillo">Ver más productos del local</a>
+                                                              </div>
+                                                              </div>
 
                                                           </div>
                                                         </div>
