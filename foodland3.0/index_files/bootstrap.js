@@ -1903,6 +1903,9 @@
 
  /* CAROUSEL PLUGIN DEFINITION
   * ========================== */
+      $('#myCarousel').carousel({
+        interval: 3000
+      });
 
   var old = $.fn.carousel
 

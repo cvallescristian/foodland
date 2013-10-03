@@ -11,7 +11,7 @@ body {
 
 #logins{
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(100, 100, 100, 0.79);
 
 }
 h1 {
@@ -1077,16 +1077,30 @@ section#home.app {
 
 section#portada{
 
-   background: #f0eee8 url('../img/sushi2.jpg')no-repeat;
+   background: #f0eee8 url('../img/slide_1.jpg')no-repeat;
   background-size: 100% 420px;
   height: 290px;
 
 }
+
+
+
 .cuadro_portada{
-  background-color: rgba(44, 21, 21, 0.58);
-  margin-top:20px;
+  background-color: rgba(202, 60, 60, 0.86);
+  margin-top:50px;
   border-radius:5px 5px 5px 5px;
   padding: 0px 20px;
+  height: 150px;
+}
+
+.portada2{
+
+  position: relative;
+  margin-top: -20px;
+  width: 500px;
+  height: 60px;
+  padding: 10px;
+
 }
 #booton-foodland{
   position: relative;
