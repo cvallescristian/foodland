@@ -161,12 +161,45 @@
 															
 						<div class="span12" id="sectores_producto">
 							<h3>Sectores</h3> <!--sectores local-->
-							<ul class="nav nav-tabs nav-stacked">
-							  <li><a>Viña del Mar</a></li>
-							  <li><a>Valparaíso</a></li>
-							  <li><a>Limache</a></li>
-							  <li><a>Quillota</a></li>
-							  <li><a>Quilpué</a></li>
+							<ul class="nav nav-tabs nav-stacked"role="menu" aria-labelledby="dLabel">
+							  <li class="dropdown-submenu pull-left"><a>Viña del Mar</a>
+							  	  <ul class="dropdown-menu">
+								        <li><a href="">Valparaíso</a></li>
+							  			<li><a href="">Limache</a></li>
+							  			 <li><a href="">Valparaíso</a></li>
+							  			<li><a href="">Limache</a></li>
+							  			 <li><a href="">Valparaíso</a></li>
+							  			<li><a href="">Limache</a></li>
+								  </ul>
+							  </li>
+							 <li class="dropdown-submenu pull-left"><a>Viña del Mar</a>
+							  	  <ul class="dropdown-menu">
+								        <li><a href="">Valparaíso</a></li>
+							  			<li><a href="">Limache</a></li>
+							  			 <li><a href="">Valparaíso</a></li>
+							  			<li><a href="">Limache</a></li>
+							  			 <li><a href="">Valparaíso</a></li>
+							  			<li><a href="">Limache</a></li>
+								  </ul>
+							  </li><li class="dropdown-submenu pull-left"><a>Viña del Mar</a>
+							  	  <ul class="dropdown-menu">
+								        <li><a href="">Valparaíso</a></li>
+							  			<li><a href="">Limache</a></li>
+							  			 <li><a href="">Valparaíso</a></li>
+							  			<li><a href="">Limache</a></li>
+							  			 <li><a href="">Valparaíso</a></li>
+							  			<li><a href="">Limache</a></li>
+								  </ul>
+							  </li><li class="dropdown-submenu pull-left"><a>Viña del Mar</a>
+							  	  <ul class="dropdown-menu">
+								        <li><a href="">Valparaíso</a></li>
+							  			<li><a href="">Limache</a></li>
+							  			 <li><a href="">Valparaíso</a></li>
+							  			<li><a href="">Limache</a></li>
+							  			 <li><a href="">Valparaíso</a></li>
+							  			<li><a href="">Limache</a></li>
+								  </ul>
+							  </li>
 							</ul>
 						</div>
 					</div>

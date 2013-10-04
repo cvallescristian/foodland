@@ -130,11 +130,7 @@ html,body {
     padding: 0;;
 }
 
-.dropdown-menu li > a {
-    color:#a5a5a5;
-    padding: 10px;
-    border-bottom: 1px solid #474747;
-}
+
 
 .navbar-fixed-top .navbar-inner,.navbar-static-top .navbar-inner {
     box-shadow:none;

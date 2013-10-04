@@ -82,7 +82,7 @@
                             <img src="./img/ignacio.jpg" width="200" class="img-circle">
                         </a>                           
                         <div class="info">
-                            <h3 style="margin-left:-18px">Juan Ignacio Ojeda</h3>
+                            <h3 style="margin-left:-20px">Juan Ignacio Ojeda</h3>
                             <p class="area">Proyectos.<br>ignacio@foodland.cl</p>
                             <a href="https://www.facebook.com/jignacio.ojeda" class="facebook">
                                 <span class="socialicons ico1"></span>
