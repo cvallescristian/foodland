@@ -1,35 +1,21 @@
 <!DOCTYPE html>
-<!-- saved from url=(0045)http://detail.herokuapp.com/user-profile.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Detail Admin - User Profile</title>
-    
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <!-- bootstrap -->
-    <link href="http://detail.herokuapp.com/css/bootstrap/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-overrides.css" type="text/css" rel="stylesheet">
-
-    <!-- libraries -->
-    <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
-
-    <!-- global styles -->
-    <link rel="stylesheet" type="text/css" href="css/layout.css">
-    <link rel="stylesheet" type="text/css" href="css/elements.css">
-    <link rel="stylesheet" type="text/css" href="css/icons.css">
-    
-    <!-- this page specific styles -->
-    <link rel="stylesheet" href="css/user-profile.css" type="text/css" media="screen">
-
-    <!-- open sans font -->
-    <link href="css/css" rel="stylesheet" type="text/css">
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-<link rel="stylesheet" type="text/css" id="skin-file" href="css/dark.css"></head>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Mi Perfil Foodland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="<?= base_url();?>css/css_perfil/bootstrap.css" rel="stylesheet">
+    <link href="<?= base_url();?>css/css_perfil/bootstrap-overrides.css" type="text/css" rel="stylesheet">
+    <link href="<?= base_url();?>css/css_perfil/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="<?= base_url();?>css/css_perfil/layout.css"rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_perfil/elements.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_perfil/icons.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_perfil/user-profile.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="<?= base_url();?>css/css_perfil/css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_perfil/dark.css" rel="stylesheet" type="text/css" id="skin-file">
+</head>
 <body style="">
-
-    <!-- navbar -->
+    <!-- HEADER -->
     <header class="navbar navbar-inverse" role="banner">
         <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
@@ -119,55 +105,41 @@
             </li>
         </ul>
     </header>
-    <!-- end navbar -->
+    <!-- //HEADER -->
 
     <!-- sidebar -->
     <div id="sidebar-nav">
         <ul id="dashboard-menu">
             <li>                
-                <a href="perfil.html">
+                <a href="perfil_view.php">
                     <i class="icon-home"></i>
                     <span>Usuarios</span>
                 </a>
             </li>            
-            <li>
-                <a href="cambiar_datos.html">
+             <li>
+                <a href="cambiar_datos_view.php">
                     <i class="icon-edit"></i>
                     <span>Cambiar Datos</span>
                 </a>
             </li>
-
              <li>
-                <a href="amigos.html">
+                <a href="amigos_view.php">
                     <i class="icon-group"></i>
                     <span>Amigos en FoodLand</span>
                 </a>
-            </li>
-            
-            
+            </li>            
         </ul>
     </div>
     <!-- end sidebar -->
 
-
 	<!-- main container -->
     <div class="content">
-        
         <br><br><br><br>
-        
-      
         <div class="settings-wrapper " id="pad-wrapper">
             <div class="row">
-                <!-- avatar column -->
-                
-
-                <!-- edit form column -->
-                <div class="col-md-7 personal-info" style="margin-left:100px;">
-                   
+                <div class="col-md-7 personal-info" style="margin-left:100px;">                
                     <h3 class="personal-title">Personal info</h3>
-                    <br>
-                    <br>
-
+                    <br> <br>
                     <form class="form-horizontal" role="form">
                         <div class="form-group">
                             <label class="col-lg-2 control-label">Nombres:</label>
@@ -180,15 +152,13 @@
                             <div class="col-lg-8">
                                 <input class="form-control" type="text" value="Galvan">
                             </div>
-                        </div>
-                      
+                        </div>                      
                         <div class="form-group">
                             <label class="col-lg-2 control-label">Email:</label>
                             <div class="col-lg-8">
                                 <input class="form-control" type="text" value="alejandra@design.com">
                             </div>
-                        </div>
-                        
+                        </div>                        
                         <div class="form-group">
                             <label class="col-lg-2 control-label">Username:</label>
                             <div class="col-lg-8">
@@ -216,21 +186,17 @@
                 </div>
                 <div class="col-md-3 col-md avatar-box">
                     <div class="personal-image">
-                        <img src="img/foto.jpg" class="avatar img-circle">
-                        <p>Sube una foto diferente...</p>
-                        
+                        <img src="/img/diego.jpg" width="200" class="avatar img-circle">
+                        <p>Sube una foto diferente...</p>                        
                         <input type="file">
                     </div>
                 </div>
             </div>            
         </div>
     </div>
-    <!-- end main container -->
 
-
-	<!-- scripts -->
-    <script src="./perfil_files/jquery-latest.js"></script>
-    <script src="./perfil_files/bootstrap.min.js"></script>
-    <script src="./perfil_files/theme.js"></script>
-
-</body></html>
+    <script src="<?= base_url();?>js/js_perfil/jquery-latest.js"></script>
+    <script src="<?= base_url();?>js/js_perfil/bootstrap.min.js"></script>
+    <script src="<?= base_url();?>js/js_perfil/theme.js"></script>
+</body>
+</html>

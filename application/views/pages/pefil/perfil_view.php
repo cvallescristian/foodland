@@ -1,35 +1,21 @@
 <!DOCTYPE html>
-<!-- saved from url=(0045)http://detail.herokuapp.com/user-profile.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Perfil Usuario</title>
-    
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Mi Perfil Foodland</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <!-- bootstrap -->
-    <link href="http://detail.herokuapp.com/css/bootstrap/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-overrides.css" type="text/css" rel="stylesheet">
-
-    <!-- libraries -->
-    <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
-
-    <!-- global styles -->
-    <link rel="stylesheet" type="text/css" href="css/layout.css">
-    <link rel="stylesheet" type="text/css" href="css/elements.css">
-    <link rel="stylesheet" type="text/css" href="css/icons.css">
-    
-    <!-- this page specific styles -->
-    <link rel="stylesheet" href="css/user-profile.css" type="text/css" media="screen">
-
-    <!-- open sans font -->
-    <link href="css/css" rel="stylesheet" type="text/css">
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-<link rel="stylesheet" type="text/css" id="skin-file" href="css/dark.css"></head>
+    <link href="<?= base_url();?>css/css_perfil/bootstrap.css" rel="stylesheet">
+    <link href="<?= base_url();?>css/css_perfil/bootstrap-overrides.css" type="text/css" rel="stylesheet">
+    <link href="<?= base_url();?>css/css_perfil/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="<?= base_url();?>css/css_perfil/layout.css"rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_perfil/elements.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_perfil/icons.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_perfil/user-profile.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="<?= base_url();?>css/css_perfil/css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_perfil/dark.css" rel="stylesheet" type="text/css" id="skin-file">
+</head>
 <body style="">
-
-    <!-- navbar -->
+    <!-- HEADER -->
     <header class="navbar navbar-inverse" role="banner">
         <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
@@ -41,12 +27,7 @@
             <a class="navbar-brand" href=""><img src="img/logo2.png" width="150"></a>
         </div>
         <ul class="nav navbar-nav pull-right hidden-xs">
-
-
-
-
             <!-- Notificaciones y mensajes.
-
 
             <li class="notification-dropdown hidden-xs hidden-sm">
                 <a href="" class="trigger">
@@ -117,7 +98,6 @@
                     </div>
                 </div>
             </li>
-
             -->
 
             <li class="">
@@ -140,66 +120,56 @@
             </li>
         </ul>
     </header>
-    <!-- end navbar -->
+    <!-- end HEADER -->
 
     <!-- sidebar -->
     <div id="sidebar-nav">
         <ul id="dashboard-menu">
             <li>                
-                <a href="perfil.html">
+                <a href="perfil_view.php">
                     <i class="icon-home"></i>
                     <span>Usuarios</span>
                 </a>
             </li>            
              <li>
-                <a href="cambiar_datos.html">
+                <a href="cambiar_datos_view.php">
                     <i class="icon-edit"></i>
                     <span>Cambiar Datos</span>
                 </a>
             </li>
-
              <li>
-                <a href="amigos.html">
+                <a href="amigos_view.php">
                     <i class="icon-group"></i>
                     <span>Amigos en FoodLand</span>
                 </a>
-            </li>
-            
-            
+            </li>            
         </ul>
     </div>
     <!-- end sidebar -->
 
-
 	<!-- main container -->
     <div class="content">
-         <br><br><br>
-        
-        
+         <br><br><br>        
         <div id="pad-wrapper" class="user-profile">
             <!-- header -->
             <div class="row header">
                 <div class="col-md-8">
-                    <img src="./perfil_files/contact-profile.png" class="avatar img-circle">
-                    <h3 class="name">Alejandra Galván Castillo</h3>
+                    <img src="/img/diego.jpg" class="avatar img-circle" height="150">
+                    <h3 class="name">Diego ql</h3>
                     <span class="area">Graphic Designer</span>
                 </div>
-                <a class="btn-flat icon pull-right delete-user" data-toggle="tooltip" title="" data-placement="top" data-original-title="Eliminar usuario">
-                    Eliminar Cuenta    <i class="icon-trash"></i>
+                <a class="btn-flat icon pull-right delete-user" data-toggle="tooltip" data-placement="top" data-original-title="Eliminar usuario"> Eliminar Cuenta <i class="icon-trash"></i>
                 </a>
-                 <a href="cambiar_datos.html" class="btn-flat icon large pull-right edit">
+                 <a href="cambiar_datos_view.php" class="btn-flat icon large pull-right edit">
                     Editar datos personales
                 </a>
             </div>
 
             <div class="row profile">
-                <!-- bio, new note & orders column -->
                 <div class="col-md-9 bio">
                     <div class="profile-box">
-
                         <h6>Pedidos en FoodLand</h6>
-                        <br>
-                        <!-- recent orders table -->
+                        <br>                        
                         <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -221,7 +191,6 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- row -->
                                 <tr class="first">
                                     <td>
                                         <a href="">#459</a>
@@ -266,15 +235,11 @@
                                 </tr>
                             </tbody>
                         </table>
-
                         <br>
                         <br>
-
 
                         <h6>Historial en FoodLand</h6>
                         <br>
-                        <br>
-                        <!-- recent orders table -->
                         <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -296,7 +261,6 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- row -->
                                 <tr class="first">
                                     <td>
                                         <a href="">#459</a>
@@ -341,15 +305,12 @@
                                 </tr>
                             </tbody>
                         </table>
-
-                    
                     </div>
                 </div>
 
-                <!-- side address column -->
                 <div class="col-md-3 col-xs-12 address pull-right">
                     <h6>Mis Gustos</h6>
-                    <table class="table table-hover">
+                        <table class="table table-hover">
                             <thead>
                                 <tr>
                                     <th class="col-md-2">
@@ -357,7 +318,6 @@
                                     </th>
                                 </tr>
                             </thead>  
-
                             <tbody>
                                 <tr>
                                   <td>Pizzas</td>
@@ -365,24 +325,18 @@
                                 <tr>
                                   <td>Sandwich</td>
                                 </tr>
-
                                 <tr>
                                   <td>Sushi</td>
                                 </tr>
-
-
                             </tbody>
-                    
+                        </table>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end main container -->
-
-
-	<!-- scripts -->
-    <script src="./perfil_files/jquery-latest.js"></script>
-    <script src="./perfil_files/bootstrap.min.js"></script>
-    <script src="./perfil_files/theme.js"></script>
-
-</body></html>
+	
+    <script src="<?= base_url();?>js/js_perfil/jquery-latest.js"></script>
+    <script src="<?= base_url();?>js/js_perfil/bootstrap.min.js"></script>
+    <script src="<?= base_url();?>js/js_perfil/theme.js"></script>
+</body>
+</html>

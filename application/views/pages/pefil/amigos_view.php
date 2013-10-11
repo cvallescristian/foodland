@@ -1,36 +1,21 @@
 <!DOCTYPE html>
-<!-- saved from url=(0045)http://detail.herokuapp.com/user-profile.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Detail Admin - User Profile</title>
-    
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <!-- bootstrap -->
-    <link href="http://detail.herokuapp.com/css/bootstrap/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-overrides.css" type="text/css" rel="stylesheet">
-
-    <!-- libraries -->
-    <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
-
-    <!-- global styles -->
-    <link rel="stylesheet" type="text/css" href="css/layout.css">
-    <link rel="stylesheet" type="text/css" href="css/elements.css">
-    <link rel="stylesheet" type="text/css" href="css/icons.css">
-    
-    <!-- this page specific styles -->
-    <link rel="stylesheet" href="css/user-profile.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/user-list.css" type="text/css" media="screen">
-
-    <!-- open sans font -->
-    <link href="css/css" rel="stylesheet" type="text/css">
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-<link rel="stylesheet" type="text/css" id="skin-file" href="css/dark.css"></head>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Mi Perfil Foodland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="<?= base_url();?>css/css_perfil/bootstrap.css" rel="stylesheet">
+    <link href="<?= base_url();?>css/css_perfil/bootstrap-overrides.css" type="text/css" rel="stylesheet">
+    <link href="<?= base_url();?>css/css_perfil/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="<?= base_url();?>css/css_perfil/layout.css"rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_perfil/elements.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_perfil/icons.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_perfil/user-profile.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="<?= base_url();?>css/css_perfil/css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_perfil/dark.css" rel="stylesheet" type="text/css" id="skin-file">
+</head>
 <body style="">
-
-    <!-- navbar -->
+    <!-- HEADER -->
     <header class="navbar navbar-inverse" role="banner">
         <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
@@ -41,8 +26,7 @@
             </button>
             <a class="navbar-brand" href=""><img src="img/logo2.png" width="150"></a>
         </div>
-        <ul class="nav navbar-nav pull-right hidden-xs">
-            
+        <ul class="nav navbar-nav pull-right hidden-xs">            
             <li class="notification-dropdown hidden-xs hidden-sm">
                 <a href="" class="trigger">
                     <i class="icon-warning-sign"></i>
@@ -120,40 +104,36 @@
             </li>
         </ul>
     </header>
-    <!-- end navbar -->
+    <!-- //HEADER -->
 
     <!-- sidebar -->
     <div id="sidebar-nav">
         <ul id="dashboard-menu">
             <li>                
-                <a href="perfil.html">
+                <a href="perfil_view.php">
                     <i class="icon-home"></i>
                     <span>Usuarios</span>
                 </a>
             </li>            
-            <li>
-                <a href="cambiar_datos.html">
+             <li>
+                <a href="cambiar_datos_view.php">
                     <i class="icon-edit"></i>
                     <span>Cambiar Datos</span>
                 </a>
             </li>
-
              <li>
-                <a href="amigos.html">
+                <a href="amigos_view.php">
                     <i class="icon-group"></i>
                     <span>Amigos en FoodLand</span>
                 </a>
-            </li>
-            
-            
+            </li>            
         </ul>
     </div>
     <!-- end sidebar -->
 
+    <!-- main content -->
     <div class="content">
-        <br><br><br>
-        <!-- settings changer -->
-        
+        <br><br><br>        
         <div id="pad-wrapper" class="users-list">
             <div class="row header">
                 <h3>Amigos en Foodland</h3>
@@ -162,12 +142,8 @@
                 <br>
                 <div class="col-md-10 col-sm-12 col-xs-12 pull-right">
                     <input type="text" class="col-md-5 search" placeholder="Pon un Nombre de usuario...">
-                    
-                    <!-- custom popup filter -->
-                    <!-- styles are located in css/elements.css -->
-                    <!-- script that enables this dropdown is located in js/theme.js -->
                     <div class="ui-dropdown">
-                        <div class="head" data-toggle="tooltip" title="" data-original-title="Click me!">
+                        <div class="head" data-toggle="tooltip" title="" data-original-title="Click me!" style="margin-top:10px">
                             Filtrar usuarios
                             <i class="arrow-down"></i>
                         </div>  
@@ -184,10 +160,8 @@
                                     <select>
                                         <option>Nombre</option>
                                         <option>Email</option>
-                                        <option>Numero de compras</option>
-                                        
-                                    </select>
-                                    
+                                        <option>Numero de compras</option>                                        
+                                    </select>                                    
                                     <input type="text" class="form-control">
                                     <a class="btn-flat small">Add filter</a>
                                 </div>
@@ -197,7 +171,6 @@
                 </div>
             </div>
 
-            <!-- Users table -->
             <div class="row">
                 <div class="col-md-12">
                     <table class="table table-hover">
@@ -218,12 +191,10 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <!-- row -->
                         <tr class="first">
                             <td>
-                                <img src="img/foto.jpg" width="80" class="img-circle avatar hidden-phone">
+                                <img src="img/diego.jpg" width="80" class="img-circle avatar hidden-phone">
                                 <a href="" class="name">Alejandra Galvan Castillo</a>
-                                
                             </td>
                             <td>
                                 Mar 13, 2012
@@ -235,10 +206,9 @@
                                 <a href="">alejandra@canvas.com</a>
                             </td>
                         </tr>
-                        <!-- row -->
                         <tr>
                             <td>
-                                <img src="img/foto.jpg" width="80" class="img-circle avatar hidden-phone">
+                                <img src="img/diego.jpg" width="80" class="img-circle avatar hidden-phone">
                                 <a href="" class="name">Alejandra Galvan Castillo</a>
                                 
                             </td>
@@ -252,10 +222,9 @@
                                 <a href="">alejandra@canvas.com</a>
                             </td>
                         </tr>
-                        <!-- row -->
                         <tr>
                             <td>
-                                <img src="img/foto.jpg" width="80" class="img-circle avatar hidden-phone">
+                                <img src="img/diego.jpg" width="80" class="img-circle avatar hidden-phone">
                                 <a href="" class="name">Alejandra Galvan Castillo</a>
                                
                             </td>
@@ -269,10 +238,9 @@
                                 <a href="">alejandra@canvas.com</a>
                             </td>
                         </tr>
-                        <!-- row -->
                         <tr>
                             <td>
-                                <img src="img/foto.jpg" width="80" class="img-circle avatar hidden-phone">
+                                <img src="img/diego.jpg" width="80" class="img-circle avatar hidden-phone">
                                 <a href="" class="name">Alejandra Galvan Castillo</a>
                                
                             </td>
@@ -286,10 +254,9 @@
                                 <a href="">alejandra@canvas.com</a>
                             </td>
                         </tr>
-                        <!-- row -->
                         <tr>
                             <td>
-                                <img src="img/foto.jpg" width="80" class="img-circle avatar hidden-phone">
+                                <img src="img/diego.jpg" width="80" class="img-circle avatar hidden-phone">
                                 <a href="" class="name">Alejandra Galvan Castillo</a>
                                
                             </td>
@@ -303,10 +270,9 @@
                                 <a href="">alejandra@canvas.com</a>
                             </td>
                         </tr>
-                        <!-- row -->
                         <tr>
                             <td>
-                                <img src="img/foto.jpg" width="80" class="img-circle avatar hidden-phone">
+                                <img src="img/diego.jpg" width="80" class="img-circle avatar hidden-phone">
                                 <a href="" class="name">Alejandra Galvan Castillo</a>
                                 
                             </td>
@@ -320,10 +286,9 @@
                                 <a href="">alejandra@canvas.com</a>
                             </td>
                         </tr>
-                        <!-- row -->
                         <tr>
                             <td>
-                                <img src="img/foto.jpg" width="80"  class="img-circle avatar hidden-phone">
+                                <img src="img/diego.jpg" width="80"  class="img-circle avatar hidden-phone">
                                 <a href="" class="name">Alejandra Galvan Castillo</a>
                                 
                             </td>
@@ -337,10 +302,9 @@
                                 <a href="">alejandra@canvas.com</a>
                             </td>
                         </tr>
-                        <!-- row -->
                         <tr>
                             <td>
-                                <img src="img/foto.jpg" width="80" class="img-circle avatar hidden-phone">
+                                <img src="img/diego.jpg" width="80" class="img-circle avatar hidden-phone">
                                 <a href="" class="name">Alejandra Galvan Castillo</a>
                                 
                             </td>
@@ -354,10 +318,9 @@
                                 <a href="">alejandra@canvas.com</a>
                             </td>
                         </tr>
-                        <!-- row -->
                         <tr>
                             <td>
-                                <img src="img/foto.jpg" width="80" class="img-circle avatar hidden-phone">
+                                <img src="img/diego.jpg" width="80" class="img-circle avatar hidden-phone">
                                 <a href="" class="name">Alejandra Galvan Castillo</a>
                                
                             </td>
@@ -376,22 +339,17 @@
                 </div>                
             </div>
             <ul class="pagination pull-right">
-                <li><a href="http://detail.herokuapp.com/user-list.html#">‹</a></li>
-                <li class="active"><a href="http://detail.herokuapp.com/user-list.html#">1</a></li>
-                <li><a href="http://detail.herokuapp.com/user-list.html#">2</a></li>
-                <li><a href="http://detail.herokuapp.com/user-list.html#">3</a></li>
-                <li><a href="http://detail.herokuapp.com/user-list.html#">4</a></li>
-                <li><a href="http://detail.herokuapp.com/user-list.html#">5</a></li>
-                <li><a href="http://detail.herokuapp.com/user-list.html#">›</a></li>
+                <li><a href="inicio#">‹</a></li>
+                <li><a href="1#">1</a></li>
+                <li><a href="2#">2</a></li>
+                <li><a href="3#">3</a></li>
+                <li><a href="final#">›</a></li>
             </ul>
-            <!-- end users table -->
         </div>
     </div>
-    <!-- end main container -->
 
-	<!-- scripts -->
-    <script src="./perfil_files/jquery-latest.js"></script>
-    <script src="./perfil_files/bootstrap.min.js"></script>
-    <script src="./perfil_files/theme.js"></script>
-
-</body></html>
+    <script src="<?= base_url();?>js/js_perfil/jquery-latest.js"></script>
+    <script src="<?= base_url();?>js/js_perfil/bootstrap.min.js"></script>
+    <script src="<?= base_url();?>js/js_perfil/theme.js"></script>
+</body>
+</html>

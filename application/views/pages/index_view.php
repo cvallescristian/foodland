@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="css_index/style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="<?= base_url();?>js/js_index/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="<?= base_url();?>js/js_index/jquery.jcarousel.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/skins/skin.css" />
     <script type="text/javascript">
       jQuery(document).ready(function() {
           jQuery('#mycarousel').jcarousel({
@@ -24,14 +22,16 @@
           });
       });
     </script>
-    <link rel="stylesheet" href="<?= base_url();?>css/css_index/bootstrap.css">
-    <link rel="stylesheet" href="<?= base_url();?>css/css_index/custom.css">
-    <link rel="stylesheet" href="<?= base_url();?>css/css_index/responsive.css">
-    <link rel="stylesheet" href="<?= base_url();?>css/css_index/fonts.css">
-    <link rel="stylesheet" href="<?= base_url();?>css/css_index/magnific-popup.css">
-    <link rel="stylesheet" href="<?= base_url();?>css/css_index/jquery.bxslider.css">
-    <link rel="stylesheet" href="<?= base_url();?>css/css_index/animate.css">   
-    <link href="<?= base_url();?>css/./css_index/css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css_index/style.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/skins/skin.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url();?>css/css_index/bootstrap.css"rel="stylesheet">
+    <link href="<?= base_url();?>css/css_index/custom.css"rel="stylesheet">
+    <link href="<?= base_url();?>css/css_index/responsive.css"rel="stylesheet">
+    <link href="<?= base_url();?>css/css_index/fonts.css"rel="stylesheet">
+    <link href="<?= base_url();?>css/css_index/magnific-popup.css"rel="stylesheet">
+    <link href="<?= base_url();?>css/css_index/jquery.bxslider.css"rel="stylesheet">
+    <link href="<?= base_url();?>css/css_index/animate.css"  rel="stylesheet">
+    <link href="<?= base_url();?>css/css_index/css" rel="stylesheet" type="text/css">
   </head>
 <body data-twttr-rendered="true">
   <header class="clearfix">    
@@ -58,8 +58,8 @@
               <h3>Entra a Foodland Iniciando Sesión ó con tu ubicación</h3>
             <center>
               <div class="social-face portada2" >
-                <a href="" target="_blank"><img src="./img/sm-facebook.png" alt="20" width="50"></a>
-                <a href="" target="_blank"><img src="./img/sm-twitter.png" style="margin-left:15px;" alt="20" width="50"></a>
+                <a href="#"><img src="./img/sm-facebook.png" alt="20" width="50"></a>
+                <a href="#"><img src="./img/sm-twitter.png" style="margin-left:15px;" alt="20" width="50"></a>
                 <a href="#logins" role="button" class="modal-form btn cta2" data-toggle="modal" style="margin-left:50px; margin-top:40px;">Pon tu dirección</a>       
               </div>   
             </center>

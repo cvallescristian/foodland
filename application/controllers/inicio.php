@@ -1,9 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Inicio extends CI_Controller {
+class Perfil extends CI_Controller {
 
 	public function index()	{
 
-			$this->load->view('pages/index_view');
+			$this->load->view('pages/perfil/perfil_view');
 	}
 }
