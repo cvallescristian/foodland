@@ -9,7 +9,6 @@ class Perfil_usuario extends CI_Controller {
 
 	public function cambiar_datos(){
 
-			$this->load->model('home_model','uum');
 			$this->load->view('pages/perfil/cambiar_datos_view');
 	}
 
