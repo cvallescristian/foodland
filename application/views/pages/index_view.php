@@ -162,7 +162,7 @@
 
 <!-- POP UP "PON TU DIRECCION" -->
 
-  <div id="logins"  class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div id="logins"  class="modal hide fade">
     <div class="container">
         <div class="row">
             <br><br><br>

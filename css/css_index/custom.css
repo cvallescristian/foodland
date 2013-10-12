@@ -1077,7 +1077,7 @@ section#home.app {
 
 section#portada{
 
-   background: #f0eee8 url('/img/slide_1.jpg')no-repeat;
+   background: #f0eee8 url('../../img/slide_1.jpg')no-repeat;
   background-size: 100% 420px;
   height: 290px;
 

@@ -4252,9 +4252,9 @@ a.thumbnail:focus {
 .modal {
   position: fixed;
   top: 10%;
-  left: 50%;
+  left: 27%;
   z-index: 1050;
-  width: 560px;
+  width: auto;
   margin-left: -280px;
   background-color: #ffffff;
   border: 1px solid #999;
