@@ -18,7 +18,7 @@
     });
 </script>	    
 	<section class="portfolio2 center" style="margin-top:65px">
-	    <h1><img src="<?= base_url()?>/img/tres.png">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pincha en <em>Ver Teléfono</em> y llama </h1>
+	    <h1><img src="<?= base_url()?>/img/tres.png" width="80">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pincha en <em>Ver Teléfono</em> y llama </h1>
 	</section>
 
 	<div class="page-content">
@@ -160,7 +160,7 @@
 					<div class="row-fluid sidebar">
 															
 						<div class="span12" id="sectores_producto">
-							<h3>Sectores</h3> <!--sectores local-->
+							<h3 align="center">Sectores de reparto</h3> <!--sectores local-->
 							<ul class="nav nav-tabs nav-stacked"role="menu" aria-labelledby="dLabel">
 							  <li class="dropdown-submenu pull-left"><a>Viña del Mar</a>
 							  	  <ul class="dropdown-menu">

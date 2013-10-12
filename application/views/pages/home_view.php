@@ -115,7 +115,7 @@
 <!-- Fin sector reparto -->
 <!-- inicio portasda -->
 <section class="portfolio2 center">
-    <h2><img src="<?= base_url()?>/img/dos.png" style="width:60px">  &nbsp; &nbsp; &nbsp; Elige el producto que deseas </h2>
+    <h2><img src="<?= base_url()?>img/dos.png" width="80">  &nbsp; &nbsp; &nbsp; Elige el producto que deseas </h2>
 </section>
 <!-- fin portada -->  
 <!-- Inicio Productos-->    
