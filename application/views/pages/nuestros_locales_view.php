@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="<?= base_url()?>css/css-locales/nuestros_locales.css">
+<link rel="stylesheet" href="<?= base_url()?>css/css-locales/locales.css">
+
 
 <!-- Main Area -->
 <div class="main-area" id="contenido_pagina_locales">
@@ -11,10 +13,10 @@
            <div class="span5 center">
            	<h4 class="sub heading"><?= $titulo  ?></h4>
            </div>
-			<div class="span8" id="todos_los_locales"> <!--- Inicio Bloque de la izquierda-->
+			<div class="span12" id="todos_los_locales"> <!--- Inicio Bloque de la izquierda-->
 				
 				<!-- inicio carrousel -->
-				<div class="span6 offset1 center" id="carousel_locales">
+				<div class="span6 center" id="carousel_locales">
 				<?php 
 				if($locales_ramdom==""){
 					?>
@@ -63,30 +65,8 @@
 				
 				<!-- Termino carrousel -->
 
-				<!-- Inicio bloque chico -->
-				<div class="row">
-					<?php
-					if($locales!=""){
-					 foreach ($locales as $l ) { ?>
-					<div class="span4" id="imagenes_locales">
-						<div class="post bloque_chico">
-							<a href="<?= base_url()?>perfil_local?id=<?= $l->id_local?>"><img src="<?= base_url();?>img/locales/<?= $l->id_local?>_logo.png" id="imagen_locales" alt="Placeholder"></a>
-							<div class="summary">
-								<h2><a href=""><?= $l->nombre_local  ?></a></h2>
-								<p><?= $l->direccion_local ?></p>
-
-							</div>
-						</div>
-					</div>
-					<?php } }?>
-					
-				</div>
-				<!-- Termino bloque chico -->
-			</div>
-			
-
 			<!-- inicio bloque de la derecha -->
-			<div class="span4">
+			<div class="span4 offset1">
 				<!-- inicio buscador -->
 				<!--
 				<form class="form-inline well">
@@ -139,6 +119,33 @@
 				</div>
 			</div>
 			<!-- termino bloque de la derecha -->
+
+			
+			</div>
+			<div class="span12" style="margin-top:100px;">
+				<!-- Inicio bloque chico -->
+				<div class="row">
+					<?php
+					if($locales!=""){
+					 foreach ($locales as $l ) { ?>
+					<div class="span4" id="imagenes_locales">
+						<div class="post bloque_chico">
+							<a href="<?= base_url()?>perfil_local?id=<?= $l->id_local?>"><img src="<?= base_url();?>img/locales/<?= $l->id_local?>_logo.png" id="imagen_locales" alt="Placeholder"></a>
+							<div class="summary">
+								<h2><a href=""><?= $l->nombre_local  ?></a></h2>
+								<p><?= $l->direccion_local ?></p>
+
+							</div>
+						</div>
+					</div>
+					<?php } }?>
+					
+				</div>
+
+			</div>
+				<!-- Termino bloque chico -->
+			
+
 		</div>
 	</div>
 <!-- End Main Area -->
