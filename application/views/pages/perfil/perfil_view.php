@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Mi Perfil Foodland</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="<?= base_url();?>css/css_perfil/bootstrap.css" rel="stylesheet">
-    <link href="<?= base_url();?>css/css_perfil/bootstrap-overrides.css" type="text/css" rel="stylesheet">
-    <link href="<?= base_url();?>css/css_perfil/font-awesome.css" type="text/css" rel="stylesheet">
-    <link href="<?= base_url();?>css/css_perfil/layout.css"rel="stylesheet" type="text/css">
-    <link href="<?= base_url();?>css/css_perfil/elements.css" rel="stylesheet" type="text/css">
-    <link href="<?= base_url();?>css/css_perfil/icons.css" rel="stylesheet" type="text/css">
-    <link href="<?= base_url();?>css/css_perfil/user-profile.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="<?= base_url();?>css/css_perfil/css" rel="stylesheet" type="text/css">
-    <link href="<?= base_url();?>css/css_perfil/dark.css" rel="stylesheet" type="text/css" id="skin-file">
-</head>
-<body>
+
     <div class="content">
          <br><br><br>        
         <div id="pad-wrapper" class="user-profile">
