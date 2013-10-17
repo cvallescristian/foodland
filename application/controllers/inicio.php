@@ -39,9 +39,9 @@ Class Inicio extends CI_Controller
 
    
     
-	$loginParams = array('scope' => 'email','scope' => 'publish_stream','redirect_uri' => base_url().'/fb_auth');
+	$loginParams = array('scope' => 'email','scope' => 'publish_stream','redirect_uri' => base_url().'inicio/fb_auth');
 	$this->data['login_url'] = $this->facebook->getLoginUrl($loginParams);
-	$logoutParams = array( 'next' => site_url().'/logout');
+	$logoutParams = array( 'next' => site_url().'inicio/logout');
 	$this->data['logout_url'] = $this->facebook->getLogoutUrl($logoutParams);
 	}
 	
