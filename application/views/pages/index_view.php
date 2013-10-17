@@ -142,17 +142,10 @@
        <div class="container">
           <h1 align="center">Locales Asociados</h1>
             <ul id="mycarousel" class="jcarousel-skin-tango" style="left:0px;">
-              <li><img src="img/met.png" width="150" height="150" alt="" /></li>
-              <li><img src="img/yakata.png" width="150" height="150" alt="" /></li>
-              <li><img src="img/mono.png" width="150" height="150" alt="" /></li>
-              <li><img src="img/met.png" width="150" height="150" alt="" /></li>
-              <li><img src="img/yakata.png" width="150" height="150" alt="" /></li>
-              <li><img src="img/mono.png" width="150" height="150" alt="" /></li>
-              <li><img src="img/met.png" width="150" height="150" alt="" /></li>
-              <li><img src="img/yakata.png" width="150" height="150" alt="" /></li>
-              <li><img src="img/mono.png" width="150" height="150" alt="" /></li>
-              <li><img src="img/met.png" width="150" height="150" alt="" /></li>
-              <li><img src="img/yakata.png" width="150" height="150" alt="" /></li>
+          <?php foreach ($locales as $local ) {
+                                ?>
+              <li><img src="img/locales/<?=$local->id_local;?>_logo.png" width="150" height="150" alt="" /></li>
+              <?php } ?>
             </ul> 
         </div>
       </section>

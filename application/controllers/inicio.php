@@ -19,10 +19,10 @@ Class Inicio extends CI_Controller
             $this->load ->model('home_model','uum');
             $sector_entregas = $this->uum->get_sector_entrega();
             $sub_sector_entregas = $this->uum->get_sub_sector_entrega();	
-
+            $locales = $this->uum->get_locales();
             $this->data['sector_entregas']=$sector_entregas;
             $this->data['sub_sector_entregas']=$sub_sector_entregas;
-
+            $this->data['locales']=$locales;
             $this->load->view('pages/index_view',$this->data);
 
 
