@@ -98,14 +98,14 @@
       </div>
       <?php else: ?>
             <div class="container">
-        <div class="row">
-          <div class="span8 cuadro_portada offset1">
-              <h3>Entra a Foodland Iniciando Sesión ó con tu ubicación</h3>
+        <div class="row">          
+          <div class="span5 cuadro_portada offset7">
+              <h3 align="center">Entra a Foodland Iniciando Sesión ó con tu ubicación</h3> <br>
             <center>
               <div class="social-face portada2" >
-                                        <a href="<?= $login_url; ?>" class="circle facebook">
-                            <img src="./img/sm-facebook.png" alt="20" width="50">
-                        </a>
+                  <a href="<?= $login_url; ?>" class="circle facebook">
+                    <img src="./img/sm-facebook.png" alt="20" width="50">
+                  </a>
                 <a href="#"><img src="./img/sm-twitter.png" style="margin-left:15px;" alt="20" width="50"></a>
               </div>   
             </center>
