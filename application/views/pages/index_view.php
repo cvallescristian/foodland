@@ -175,87 +175,29 @@
             </center>
             <div class="span11  offset1 center" id="lugares">
                 <div class="row">
-                   <ul class="nav nav-pills" style="margin-left:2px;">
+                        <ul class="nav nav-pills" style="margin-left:2px;">
+                    <?php foreach ($sector_entregas as $sector_entrega) {
+                    ?>                   
                         <li class="dropdown span2" >
                             <a class="dropdown-toggle"
                             data-toggle="dropdown"
                             href="#">
-                            <h4>Viña del Mar</h4>
+                            <h4><?=$sector_entrega->nombre_sector_entrega?></h4>
                             
                             <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                     
-                                <li><a href="">Centro</a></li>
-                                <li><a href="">Recreo</a></li>
-                                <li><a href="">Centro</a></li>
-                                <li><a href="">Recreo</a></li>
+                       <?php foreach ($sub_sector_entregas as $sub_sector) { 
+                                    if($sub_sector->id_sector_entrega == $sector_entrega->id_sector_entrega)
+                                    {
+                            ?>
+                                <li><a href="<?= base_url();?>home?subsector=<?= $sub_sector->id_subsector_entrega?>#prod">
+                            <?=$sub_sector->nombre_subsector_entrega?></a></li>
+                                <?php } } ?>
                             </ul>
                         </li>
-                          <li class="dropdown span2" >
-                            <a class="dropdown-toggle"
-                            data-toggle="dropdown"
-                            href="#">
-                            <h4>Viña del Mar</h4>
-                            
-                            <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                     
-                                <li><a href="">Centro</a></li>
-                                <li><a href="">Recreo</a></li>
-                                <li><a href="">Centro</a></li>
-                                <li><a href="">Recreo</a></li>
-                            </ul>
-                        </li>
-                          <li class="dropdown span2" >
-                            <a class="dropdown-toggle"
-                            data-toggle="dropdown"
-                            href="#">
-                            <h4>Viña del Mar</h4>
-                            
-                            <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                     
-                                <li><a href="">Centro</a></li>
-                                <li><a href="">Recreo</a></li>
-                                <li><a href="">Centro</a></li>
-                                <li><a href="">Recreo</a></li>
-                            </ul>
-                        </li>
-                          <li class="dropdown span2" >
-                            <a class="dropdown-toggle"
-                            data-toggle="dropdown"
-                            href="#">
-                            <h4>Viña del Mar</h4>
-                            
-                            <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                     
-                                <li><a href="">Centro</a></li>
-                                <li><a href="">Recreo</a></li>
-                                <li><a href="">Centro</a></li>
-                                <li><a href="">Recreo</a></li>
-                            </ul>
-                        </li>
-                          <li class="dropdown span2" >
-                            <a class="dropdown-toggle"
-                            data-toggle="dropdown"
-                            href="#">
-                            <h4>Viña del Mar</h4>
-                            
-                            <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                     
-                                <li><a href="">Centro</a></li>
-                                <li><a href="">Recreo</a></li>
-                                <li><a href="">Centro</a></li>
-                                <li><a href="">Recreo</a></li>
-                            </ul>
-                        </li>
+                        <?php } ?>
+
                     </ul>
                 </div>  
                 <br><br><br>  
