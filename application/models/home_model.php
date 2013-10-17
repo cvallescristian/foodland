@@ -243,6 +243,30 @@ class home_model extends CI_Model{
          $this->db->update('Cont_visita', $data);
         }
     }
+   function agregar_usuario($data)
+    {
+        $this->db->insert('Usuario',$data);       
+    }
+    function get_usuario($id)
+    {
+        $query = "select id_usuario from Usuario where id_facebook='$id'";
+        $result = $this->db->query($query);
+         $re=$result->result();
+         foreach ($re as $r) {
+            return $r->id_usuario;
+            break;
+         }     
+    }
+    function agregar_amigo($data,$id1,$id2)
+    {
+        $query = "select * from Amigos_facebook where id_usuario_1 ='$id1' and id_usuario_2='$id2'";
+        $query.=" or id_usuario_1 ='$id2' and id_usuario_2 ='$id1'";
+        $result = $this->db->query($query);
+        if($result->result() == NULL){
+            $this->db->insert('Amigos_facebook',$data);
+        }
+        
+    }
 }
 
  ?>

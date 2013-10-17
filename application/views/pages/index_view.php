@@ -52,22 +52,68 @@
   </header> 
   <div class="wrapper">
     <section id="portada">
+      <?php if($this->session->userdata('user_profile')) : 
+      $usuario= $this->session->userdata('user_profile');
+    ?>   
       <div class="container">
+          <div class="row">
+              <br><br><br>
+              <center>
+              <div class="span8 offset2 center">
+                  <h2 class="big-heading" id="letra_grande"><font><font>
+                  Así podrás encontrar más fácilmente productos a tu domicilio
+                  </font></font></h2>
+              </div>
+              </center>
+              <div class="span11  offset1 center" id="lugares">
+                  <div class="row">
+                          <ul class="nav nav-pills" style="margin-left:2px;">
+                      <?php foreach ($sector_entregas as $sector_entrega) {
+                      ?>                   
+                          <li class="dropdown span2" >
+                              <a class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              href="#">
+                              <h4><?=$sector_entrega->nombre_sector_entrega?></h4>
+                              
+                              <b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                         <?php foreach ($sub_sector_entregas as $sub_sector) { 
+                                      if($sub_sector->id_sector_entrega == $sector_entrega->id_sector_entrega)
+                                      {
+                              ?>
+                                  <li><a href="<?= base_url();?>home?subsector=<?= $sub_sector->id_subsector_entrega?>#prod">
+                              <?=$sub_sector->nombre_subsector_entrega?></a></li>
+                                  <?php } } ?>
+                              </ul>
+                          </li>
+                          <?php } ?>
+
+                      </ul>
+                  </div>  
+                  <br><br><br>  
+              </div>
+          </div>
+      </div>
+      <?php else: ?>
+            <div class="container">
         <div class="row">
           <div class="span8 cuadro_portada offset1">
               <h3>Entra a Foodland Iniciando Sesión ó con tu ubicación</h3>
             <center>
               <div class="social-face portada2" >
-                <a href="#"><img src="./img/sm-facebook.png" alt="20" width="50"></a>
+                                        <a href="<?= $login_url; ?>" class="circle facebook">
+                            <img src="./img/sm-facebook.png" alt="20" width="50">
+                        </a>
                 <a href="#"><img src="./img/sm-twitter.png" style="margin-left:15px;" alt="20" width="50"></a>
-                <a href="#logins" role="button" class="modal-form btn cta2" data-toggle="modal" style="margin-left:50px; margin-top:40px;">Pon tu dirección</a>       
               </div>   
             </center>
             </div>
           </div>
         </div>
       </section>  
-
+      <?php endif; ?>
       <section style="background:#222222">
         <div class="container">
           <div class="row">
@@ -160,52 +206,8 @@
         <input type="submit" class="submit btn cta" value="Send your message">
       </form>
 
-<!-- POP UP "PON TU DIRECCION" -->
 
-  <div id="logins"  class="modal hide fade">
-    <div class="container">
-        <div class="row">
-            <br><br><br>
-            <center>
-            <div class="span8 offset2 center">
-                <h2 class="big-heading" id="letra_grande"><font><font>
-                Así podrás encontrar más fácilmente productos a tu domicilio
-                </font></font></h2>
-            </div>
-            </center>
-            <div class="span11  offset1 center" id="lugares">
-                <div class="row">
-                        <ul class="nav nav-pills" style="margin-left:2px;">
-                    <?php foreach ($sector_entregas as $sector_entrega) {
-                    ?>                   
-                        <li class="dropdown span2" >
-                            <a class="dropdown-toggle"
-                            data-toggle="dropdown"
-                            href="#">
-                            <h4><?=$sector_entrega->nombre_sector_entrega?></h4>
-                            
-                            <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                       <?php foreach ($sub_sector_entregas as $sub_sector) { 
-                                    if($sub_sector->id_sector_entrega == $sector_entrega->id_sector_entrega)
-                                    {
-                            ?>
-                                <li><a href="<?= base_url();?>home?subsector=<?= $sub_sector->id_subsector_entrega?>#prod">
-                            <?=$sub_sector->nombre_subsector_entrega?></a></li>
-                                <?php } } ?>
-                            </ul>
-                        </li>
-                        <?php } ?>
 
-                    </ul>
-                </div>  
-                <br><br><br>  
-            </div>
-        </div>
-    </div>
-  </div> <!-- // POP UP "PON TU DIRECCION" -->
-     
 <script src="<?= base_url();?>js/./js_index/lte-ie7.js"></script>
 <script src="<?= base_url();?>js/./js_index/bootstrap.js"></script>
 <script src="<?= base_url();?>js/./js_index/custom.js"></script>    

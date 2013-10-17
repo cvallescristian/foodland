@@ -27,7 +27,6 @@ Class Inicio extends CI_Controller
 
 
     }
-
     private function fb()
     {
 	$config = array
@@ -37,11 +36,12 @@ Class Inicio extends CI_Controller
     	);
 	$this->load->library('facebook', $config);
 	$user = $this->facebook->getUser();
+
    
     
-	$loginParams = array('scope' => 'email','scope' => 'publish_stream','redirect_uri' => base_url().'home/fb_auth');
+	$loginParams = array('scope' => 'email','scope' => 'publish_stream','redirect_uri' => base_url().'/fb_auth');
 	$this->data['login_url'] = $this->facebook->getLoginUrl($loginParams);
-	$logoutParams = array( 'next' => site_url().'/home/logout');
+	$logoutParams = array( 'next' => site_url().'/logout');
 	$this->data['logout_url'] = $this->facebook->getLogoutUrl($logoutParams);
 	}
 	
@@ -54,12 +54,52 @@ Class Inicio extends CI_Controller
         );
 	$this->load->library('facebook', $config);
 	$user = $this->facebook->getUser();
+    
+    
 	if($user)
         {
             try 
             {
+            $this->load ->model('home_model','uum');
             $user_profile = $this->facebook->api('/me');
-            $this->session->set_userdata('user_profile', $user_profile);
+            $user_friend=$this->facebook->api('/me/friends');
+            $existe_usuario= $this->uum->get_usuario($user_profile['id']);
+            if($existe_usuario == NULL)
+            {
+                $data= array(
+                    'id_facebook' => $user_profile['id'],
+                    'nombre_usuario' => $user_profile['first_name']
+                    );
+                $this->uum->agregar_usuario($data);
+            }
+            $usuario1= $this->uum->get_usuario($user_profile['id']);
+            
+            foreach ($user_friend as $friend) {
+                foreach ($friend as $user) {
+                    
+                    
+                    $amigo= $this->uum->get_usuario($user['id']);
+
+                    if($amigo != NULL)
+                    {
+                        
+                        $dataamigo = array(
+                            'id_usuario_1' => $usuario1,
+                            'id_usuario_2' => $amigo
+                            );
+                        $this->uum->agregar_amigo($dataamigo,$usuario1,$amigo);
+                    }
+                }
+            }
+            $data = array(
+                                'login_state'=> 1,
+                                'user_profile' => $user_profile
+                                );
+            $this->session->set_userdata($data);
+
+
+
+
             //si quieres publicar en el muro del tipo
             /* 
             $mensaje='posh posh.';
@@ -67,7 +107,8 @@ Class Inicio extends CI_Controller
 
             */
             
-             redirect(site_url());
+            
+            redirect(site_url());
             }
             catch (FacebookApiException $e)
             {
@@ -79,8 +120,10 @@ Class Inicio extends CI_Controller
     
     public function logout(){
         $this->session->unset_userdata('user_profile');
+        $this->session->unset_userdata('login_state');
         redirect(site_url());
     }
+
     public function categoria(){
         $subsector=$this->input->get('subsector');
 
